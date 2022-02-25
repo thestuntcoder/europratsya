@@ -5,6 +5,7 @@
 Nobody likes leaving their home, let alone being forced out of it.
 
 The goal of this project is to help Ukrainians citizens:
+
 1. Get their CV's translated;
 2. Find job opportunities in EU (in English, and Ukrainian);
 3. Find fair employers that won't take advantage of their situation;
@@ -39,6 +40,12 @@ npm install
 npx prettier --write src/pages/.jsx
 ```
 
+## Setup pre-commit hooks
+
+```
+pre-commit install
+```
+
 ## Test the website?
 
 Build images:
@@ -57,16 +64,4 @@ Check coverage:
 
 ```
 npm run test --coverage
-```
-
-End-to-end tests?
-
-```
-npm run test:e2e
-```
-
-## Setup pre-commit hooks
-
-```
-pre-commit install
 ```
