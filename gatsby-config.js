@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-      title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+      title: `Europratsya`,
+    siteUrl: `http://www.europratsya.com/`
   },
   plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
