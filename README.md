@@ -1,54 +1,72 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby minimal starter
+  We invite Ukrainians to Europe
 </h1>
 
-## 🚀 Quick start
+Nobody likes leaving their home, let alone being forced out of it.
 
-1.  **Create a Gatsby site.**
+The goal of this project is to help Ukrainians citizens:
+1. Get their CV's translated;
+2. Find job opportunities in EU (in English, and Ukrainian);
+3. Find fair employers that won't take advantage of their situation;
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Project is going to be open sourced, written in Gatsby so if you wish to contribute, reach out via contact form on the website, or open issue on Github.
+
+If you wish to help with development:
+
+## 🏃‍♂️ Quick start
+
+1.  **Start the website locally.**
+
+    Use the Gatsby CLI to start site:
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    npm install
+    npm run develop
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Edit `jsx` files in `src/pages/` to see our site update in real-time!
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+3.  **Open the site locally and start customizing!**
 
-3.  **Open the code and start customizing!**
+    Our site is now running at http://localhost:8000!
 
-    Your site is now running at http://localhost:8000!
+## Make code prettier?
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+```
+npm install
+npx prettier --write src/pages/.jsx
+```
 
-4.  **Learn more**
+## Test the website?
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Build images:
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+npm test -- -u
+```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Run tests:
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+npm test
+```
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Check coverage:
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```
+npm run test --coverage
+```
 
-## 🚀 Quick start (Gatsby Cloud)
+End-to-end tests?
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+```
+npm run test:e2e
+```
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## Setup pre-commit hooks
+
+```
+pre-commit install
+```
