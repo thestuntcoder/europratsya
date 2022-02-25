@@ -100,7 +100,7 @@ export default function Home() {
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                  <p class="text-sm font-medium text-indigo-600">
+                  <p class="text-sm font-medium text-blue-500">
                     <a href="#" class="hover:underline">
                       {' '}
                       Stuttgart, Germany{' '}
@@ -154,7 +154,7 @@ export default function Home() {
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                  <p class="text-sm font-medium text-indigo-600">
+                  <p class="text-sm font-medium text-blue-500">
                     <a href="#" class="hover:underline">
                       {' '}
                       Dublin, Ireland{' '}
@@ -209,7 +209,7 @@ export default function Home() {
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                  <p class="text-sm font-medium text-indigo-600">
+                  <p class="text-sm font-medium text-blue-500">
                     <a href="#" class="hover:underline">
                       {' '}
                       Paris, France{' '}
