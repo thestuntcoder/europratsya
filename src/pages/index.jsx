@@ -6,10 +6,8 @@ export default function Home() {
   return (
     <LayoutPage>
       <Helmet>
-        <title>
-          Europratsya
-        </title>
+        <title>Europratsya</title>
       </Helmet>
     </LayoutPage>
-    );
+  );
 }
