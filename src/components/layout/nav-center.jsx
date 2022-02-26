@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import europratsyaLogo from '../../images/europratsya.png';
 
 export default class NavCenter extends React.Component {
   constructor(props) {
@@ -28,9 +28,9 @@ export default class NavCenter extends React.Component {
             <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/" aria-label="Home">
-                  <StaticImage
+                  <img
                     className="h-8 w-auto sm:h-12"
-                    src="../images/icon.png"
+                    src={europratsyaLogo}
                     alt="Europratsya logo"
                   />
                 </Link>
@@ -117,9 +117,9 @@ export default class NavCenter extends React.Component {
             >
               <div className="flex items-center justify-between px-5 pt-4">
                 <div>
-                  <StaticImage
+                  <img
                     className="h-8 w-auto"
-                    src="../images/icon.png"
+                    src={europratsyaLogo}
                     alt="Europratsya logo"
                   />
                 </div>
