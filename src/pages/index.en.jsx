@@ -54,23 +54,64 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="bg-gray-50">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-          <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            <span class="block">Are you an Employer?</span>
-            <span class="block text-gray-600">
-              Contact us if you'd like to join our project and post job ads.
-            </span>
-          </h2>
-          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-            <div class="inline-flex rounded-md shadow">
-              <a
-                href="/employers/"
-                class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700"
-              >
-                {' '}
-                Contact us{' '}
-              </a>
+      <div class="relative bg-gray-800">
+        <div class="h-56 bg-blue-500 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+          <div class="ml-8 pt-16">
+            <p class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Are you an Employer
+            </p>
+            <p class="mt-3 text-lg text-gray-300">
+              register to post your vacancies
+            </p>
+            <div class="mt-8">
+              <div class="inline-flex rounded-md shadow">
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                >
+                  Join
+                  <svg
+                    class="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <div class="md:ml-auto md:w-1/2 md:pl-10">
+            <p class="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Are you a Candidate
+            </p>
+            <p class="mt-3 text-lg text-gray-300">
+              and need CV translation help?
+            </p>
+            <div class="mt-8">
+              <div class="inline-flex rounded-md shadow">
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                >
+                  Visit the help center
+                  <svg
+                    class="-mr-1 ml-3 h-5 w-5 text-gray-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -78,7 +119,7 @@ export default function Home() {
 
       <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div class="absolute inset-0">
-          <div class="bg-white h-1/3 sm:h-2/3"></div>
+          <div class="bg-white h-1/3 sm:h-2/3" />
         </div>
         <div class="relative max-w-7xl mx-auto">
           <div class="text-center">
