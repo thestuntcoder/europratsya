@@ -24,6 +24,8 @@ export default class NavCenter extends React.Component {
     return (
       <div>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 bg-blue-500 border-b-8 border-yellow-400 text-white text-right">
+          ✉️ <a href="mailto:info@europratsya.com">info@europratsya.com</a>
+          {` `}
           <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
           <Link to="/de">DE 🇩🇪</Link>
         </div>
@@ -60,7 +62,7 @@ export default class NavCenter extends React.Component {
                         strokeLinejoin="round"
                         strokeWidth="2"
                         d="M4 6h16M4 12h16M4 18h16"
-                      ></path>
+                      />
                     </svg>
                   </button>
                 </div>
@@ -145,7 +147,7 @@ export default class NavCenter extends React.Component {
                         strokeLinejoin="round"
                         strokeWidth="2"
                         d="M6 18L18 6M6 6l12 12"
-                      ></path>
+                      />
                     </svg>
                   </button>
                 </div>
