@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 
@@ -16,20 +16,9 @@ export default class NavCenter extends React.Component {
   render() {
     let hiddenMobileVal =
       'absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-50';
-    let hiddenDesktopVal =
-      'absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-xs sm:px-0 z-50';
-    let hiddenSubmenuVal = 'px-2 w-screen max-w-xl sm:px-0';
 
     if (this.state.hiddenMobile) {
       hiddenMobileVal = 'hidden '.concat(hiddenMobileVal);
-    }
-
-    if (this.state.hiddenDesktop) {
-      hiddenDesktopVal = 'hidden '.concat(hiddenDesktopVal);
-    }
-
-    if (this.state.hiddenSubmenu) {
-      hiddenSubmenuVal = 'hidden '.concat(hiddenSubmenuVal);
     }
 
     return (
