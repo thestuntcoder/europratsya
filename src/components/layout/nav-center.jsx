@@ -23,7 +23,11 @@ export default class NavCenter extends React.Component {
 
     return (
       <div>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 bg-blue-500 border-b-8 border-yellow-400 text-white text-right">
+          <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
+          <Link to="/de">DE 🇩🇪</Link>
+        </div>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 pt-4">
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
             <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
               <div className="flex w-full items-center justify-between md:w-auto">

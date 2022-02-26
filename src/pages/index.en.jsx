@@ -12,7 +12,7 @@ export default function Home() {
         <title>Europratsya</title>
       </Helmet>
 
-      <div className="relative pt-6 pb-6">
+      <div className="relative pb-6">
         <NavCenter />
       </div>
 
