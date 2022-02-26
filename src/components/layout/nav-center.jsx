@@ -68,38 +68,6 @@ export default class NavCenter extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex md:space-x-10">
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/"
-              >
-                Home
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/work-visas/"
-              >
-                About us
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/employers/"
-              >
-                Employers
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/job-postings/"
-              >
-                Ads
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/work-visas/"
-              >
-                Work visas
-              </Link>
-            </div>
             <div className="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
               <span className="inline-flex rounded-md shadow">
                 <Link
@@ -109,6 +77,60 @@ export default class NavCenter extends React.Component {
                   Contact us
                 </Link>
               </span>
+            </div>
+          </nav>
+        </div>
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 mt-8 border-t-2 border-b-2 border-gray-500 pt-4 pb-4">
+          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
+            <div className="hidden md:flex md:space-x-10">
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/"
+              >
+                Home
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/skill-shortages/"
+              >
+                Skill shortages
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/work-visa-guide/"
+              >
+                Work visa guide
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/work-visa-guide/"
+              >
+                EU work regulations checklist
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/ukr-eduction-explainer/"
+              >
+                UK education explainer
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/ukr-expertise-explainer/"
+              >
+                UK expertise explainer
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/employers/"
+              >
+                Employers
+              </Link>
+              <Link
+                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/work-visas/"
+              >
+                About us
+              </Link>
             </div>
           </nav>
         </div>
