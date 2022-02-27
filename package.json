@@ -18,7 +18,9 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@styled-icons/fa-solid": "^10.34.0",
     "@testing-library/jest-dom": "^5.16.2",
+    "algoliasearch": "^4.12.1",
     "gatsby": "^4.8.0",
     "gatsby-plugin-algolia": "^0.26.0",
     "gatsby-plugin-i18n": "^1.0.1",
@@ -29,13 +31,16 @@
     "gatsby-plugin-react-helmet": "^5.8.0",
     "gatsby-plugin-sharp": "^4.8.1",
     "gatsby-plugin-sitemap": "^5.8.0",
+    "gatsby-plugin-styled-components": "^5.8.0",
     "gatsby-source-filesystem": "^4.8.1",
     "gatsby-transformer-sharp": "^4.8.0",
     "netlify-cms-app": "^2.15.66",
     "prettier": "^2.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-instantsearch-dom": "^6.22.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "babel-jest": "^27.5.1",
