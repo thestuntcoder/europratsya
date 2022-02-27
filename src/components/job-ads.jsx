@@ -9,7 +9,7 @@ export default function JobAds() {
         location="Stuttgart, Germany"
         profession="Data Analyst"
         expiraition_date="Mar 16, 2022"
-        salary="65.000"
+        salary="65.000 €"
         visa_requirement="Handled by employer"
         contact_detail="Contact detail"
       />
@@ -19,7 +19,7 @@ export default function JobAds() {
         location="Dublin, Ireland"
         profession="SEO expert"
         expiraition_date="Apr 16, 2022"
-        salary="45.000"
+        salary="45.000 €"
         visa_requirement="No visa required"
         contact_detail="Contact detail"
       />
@@ -29,7 +29,7 @@ export default function JobAds() {
         location="Paris, France"
         profession="SEO expert"
         expiraition_date="Mar 21, 2022"
-        salary="75.000"
+        salary="75.000 €"
         visa_requirement="No visa required"
         contact_detail="Contact detail"
       />
