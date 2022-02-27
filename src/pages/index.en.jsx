@@ -4,6 +4,7 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import JobAds from '../components/job-ads';
 import schengenImg from '../images/schengen.jpeg';
+import ukeduImg from '../images/ukedu.jpg';
 
 export default function Home() {
   return (
@@ -132,6 +133,24 @@ export default function Home() {
             </p>
           </div>
           <JobAds limit="9" />
+        </div>
+      </div>
+
+      <div class="bg-gray-100">
+        <div class="max-w-7xl mx-auto lg:flex lg:items-center lg:justify-between">
+          <img
+            class="w-full lg:h-full lg:w-auto lg:max-w-none"
+            src={ukeduImg}
+            alt="Ukrainian education"
+          />
+        </div>
+        <div class="max-w-7xl mx-auto lg:flex lg:items-center lg:justify-between">
+          <p className="text-2xl text-gray-500 text-center max-w-3xl mx-auto mt-8 mb-8">
+            Several Nobel prize winners in medicine, physics, chemistry and
+            literature hail from Ukraine. Its oldest universities are from the
+            16th and 17th century, and continue to churn out world-class
+            graduates in sciences, engineering, agriculture and mining.
+          </p>
         </div>
       </div>
     </LayoutPage>
