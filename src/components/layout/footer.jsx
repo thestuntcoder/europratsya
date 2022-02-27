@@ -3,16 +3,111 @@ import { Link } from 'gatsby';
 
 export default function Footer() {
   return (
-    <div className="bg-gray-900 font-sans text-gray-900 antialiased">
-      <div className="mx-auto max-w-screen-xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <footer className="bg-gray-800" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">
+        Footer
+      </h2>
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  Languages
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      {' '}
+                      English 🇬🇧{' '}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/uk"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      {' '}
+                      Український 🇺🇦{' '}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      to="/de"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      {' '}
+                      Deutsch 🇩🇪{' '}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  Legal
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  <li>
+                    <Link
+                      to="/privacy"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      {' '}
+                      Privacy{' '}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      to="/terms"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      {' '}
+                      Terms{' '}
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="md:grid md:grid-cols-2 md:gap-8">
+              <div></div>
+              <div className="mt-12 md:mt-0">
+                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                  Oranisation
+                </h3>
+                <ul role="list" className="mt-4 space-y-4">
+                  <li className="text-base text-gray-300 hover:text-white">
+                    Europratsya CIC
+                    <br />
+                    32 Oakbank Crescent
+                    <br />
+                    UK - Perth PH1 1DF
+                  </li>
+
+                  <li>
+                    <a
+                      href="mailto:info@europratsya.com"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      info@europratsya.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-          <p className="mt-8 text-base leading-6 text-gray-400 md:order-1 md:mt-0">
-            © 2022 — All rights reserved. / Europratsya CIC, 32 Oakbank
-            Crescent, UK - Perth PH1 1DF /{' '}
-            <a href="mailto:info@europratsya.com">info@europratsya.com</a>
+          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+            &copy; 2022 Europratsya. All rights reserved.
           </p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
