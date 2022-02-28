@@ -137,9 +137,9 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-100">
-        <div className="max-w-7xl mx-auto lg:flex lg:items-center lg:justify-between">
+        <div className="mx-auto lg:flex lg:items-center lg:justify-between">
           <img
-            className="w-full lg:h-full lg:w-auto lg:max-w-none"
+            className="w-full lg:h-full lg:max-w-none"
             src={ukeduImg}
             alt="Ukrainian education"
           />
