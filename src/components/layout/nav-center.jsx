@@ -93,7 +93,7 @@ export default class NavCenter extends React.Component {
                     id="search"
                     name="search"
                     class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-100 text-gray-600 placeholder-gray-400 focus:outline-none focus:bg-gray-200 focus:border-blue-500 focus:ring-grey-300 focus:text-gray-900 sm:text-sm"
-                    placeholder="Search"
+                    placeholder="France, PHP, work visa"
                     type="search"
                   />
                 </div>
