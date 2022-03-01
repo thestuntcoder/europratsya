@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import europratsyaLogo from '../../images/europratsya.png';
+import europratsyaLogo from '../../images/europratsya.svg';
 
 export default class NavCenter extends React.Component {
   constructor(props) {
