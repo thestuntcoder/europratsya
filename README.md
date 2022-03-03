@@ -67,3 +67,7 @@ Check coverage:
 ```
 npm run test --coverage
 ```
+
+# Want to help with pages/design?
+
+We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed. Please refer to a beautiful documentation by Tailwind if you run into any issues: https://tailwindcss.com/docs/
