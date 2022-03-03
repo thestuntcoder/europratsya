@@ -23,12 +23,6 @@ export default class NavCenter extends React.Component {
 
     return (
       <div>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 bg-blue-500 border-b-8 border-yellow-400 text-white text-right">
-          ✉️ <a href="mailto:info@europratsya.com">info@europratsya.com</a>
-          {` `}
-          <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
-          <Link to="/de">DE 🇩🇪</Link>
-        </div>
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 pt-4">
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
             <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
@@ -68,8 +62,8 @@ export default class NavCenter extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
-              <div class="max-w-lg w-full lg:max-w-xs">
+            <div className="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end w-80">
+              <div class="max-w-lg w-full">
                 <label for="search" class="sr-only">
                   Search
                 </label>
@@ -101,57 +95,65 @@ export default class NavCenter extends React.Component {
             </div>
           </nav>
         </div>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 mt-8 border-t-2 border-b-2 border-gray-500 pt-4 pb-4">
+        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4">
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
             <div className="hidden md:flex md:space-x-10">
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/"
+                to="/about-us/"
               >
-                Home
+                About us
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/skill-shortages/"
               >
-                Skill shortages
+                Skill in
+                <br />
+                {` `}demand
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/work-visa-guide/"
               >
-                Work visa guide
+                Guide for
+                <br />
+                {` `}visa/permits
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/work-visa-guide/"
+                to="/vetted-euro-employers/"
               >
-                EU work regulations checklist
+                Vetted euro
+                <br />
+                {` `}employers
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-eduction-explainer/"
               >
-                UK education explainer
+                Checklist for
+                <br />
+                {` `}safe work
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/ukr-expertise-explainer/"
+                to="/ukr-education-explainer/"
               >
-                UK expertise explainer
+                Guide to
+                <br />
+                {` `}UKR education
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/employers/"
+                to="/ukr-expertise-explained/"
               >
-                Employers
+                Guide to
+                <br />
+                {` `}UKR expertise
               </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/work-visas/"
-              >
-                About us
-              </Link>
+              <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
+              <Link to="/de">DE 🇩🇪</Link>
             </div>
           </nav>
         </div>
