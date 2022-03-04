@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import JobAds from '../components/job-ads';
-import schengenImg from '../images/schengen.jpeg';
+
 import ukeduImg from '../images/ukedu.jpg';
 import ukrBg from '../images/ukr-background.jpg';
 
@@ -159,9 +158,9 @@ export default function Home() {
         </section>
       </div>
 
-      <div class="relative py-16 bg-gray-50 overflow-hidden">
-        <div class="relative px-4 sm:px-6 lg:px-8">
-          <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+      <div className="relative py-16 bg-gray-50 overflow-hidden">
+        <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
             <p>
               We post jobs for candidates who need to set up a temporary base
               for their families outside Ukraine. We also post remote jobs
