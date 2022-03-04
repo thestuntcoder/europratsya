@@ -154,103 +154,24 @@ export default function Home() {
         </section>
       </div>
 
-      <div className="relative bg-white">
-        <div className="lg:absolute lg:inset-0" />
-      </div>
-
-      <div className="relative bg-white">
-        <div className="lg:absolute lg:inset-0">
-          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 overflow-hidden">
-            <img
-              className="h-56 w-full object-cover lg:absolute lg:h-full"
-              src={schengenImg}
-              alt="Schengen area"
-            />
-          </div>
-        </div>
-        <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
-          <div className="lg:pr-8">
-            <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                Ukrainians are warmly welcomed everywhere in Europe
-              </h2>
-              <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-                Check in here for job opportunities and introductions to
-                European employers who actively seek Ukrainian colleagues - no
-                work visas required inside Schengen.
-              </p>
-              <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-                Look out for our guide to securing work visas in the UK,
-                Ireland, Bulgaria and Croatia.
-              </p>
-              <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-                To offer jobs to Ukrainians please email{' '}
-                <a href="mailto:info@europratsya.com">info@europratsya.com</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative bg-gray-800">
-        <div className="h-56 bg-blue-500 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-          <div className="ml-8 pt-16">
-            <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Are you an Employer
+      <div class="relative py-16 bg-white overflow-hidden">
+        <div class="relative px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+            <p>
+              We post jobs for candidates who need to set up a temporary base
+              for their families outside Ukraine. We also post remote jobs
+              suitable for workers based inside Ukraine.
             </p>
-            <p className="mt-3 text-lg text-gray-300">
-              register to post your vacancies
+            <p>
+              The team in Europratsya helps Ukrainian candidates translate their
+              CVs into German or English.
             </p>
-            <div className="mt-8">
-              <div className="inline-flex rounded-md shadow">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-                >
-                  Join
-                  <svg
-                    className="-mr-1 ml-3 h-5 w-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-          <div className="md:ml-auto md:w-1/2 md:pl-10">
-            <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Are you a Candidate
+            <p>
+              Europratsya supports quality employers who meet all European work
+              directives by translating their postings into Ukrainian. While
+              most candidates will be bilingual, this allows Ukrainians to
+              search one European-wide database to match their qualifications.
             </p>
-            <p className="mt-3 text-lg text-gray-300">
-              and need CV translation help?
-            </p>
-            <div className="mt-8">
-              <div className="inline-flex rounded-md shadow">
-                <a
-                  href="#"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
-                >
-                  Send us your CV
-                  <svg
-                    className="-mr-1 ml-3 h-5 w-5 text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
-                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
-                  </svg>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -262,12 +183,22 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
-              Latest ads
+              Latest vacancies
             </h2>
-            <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-              Find employers which meet EU work regulations, so there is no
-              exploitation for migrant workers.
-            </p>
+          </div>
+          <JobAds limit="9" />
+        </div>
+      </div>
+
+      <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div className="absolute inset-0">
+          <div className="bg-white h-1/3 sm:h-2/3" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="text-center">
+            <h2 className="text-3xl tracking-tight font-extrabold text-blue-500 sm:text-4xl">
+              Relevant listings from die Zeit
+            </h2>
           </div>
           <JobAds limit="9" />
         </div>
@@ -285,8 +216,8 @@ export default function Home() {
           <p className="text-2xl text-gray-500 text-center max-w-3xl mx-auto mt-8 mb-8">
             Several Nobel prize winners in medicine, physics, chemistry and
             literature hail from Ukraine. Its oldest universities are from the
-            16th and 17th century, and continue to churn out world-class
-            graduates in sciences, engineering, agriculture and mining.
+            16th and 17th century, and continue to produce world-class graduates
+            in sciences, engineering, agriculture and mining.
           </p>
         </div>
       </div>
