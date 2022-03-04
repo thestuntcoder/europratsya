@@ -27,12 +27,12 @@ export default function Home() {
               alt="We welcome Ukrainians to European Union."
             />
             <div
-              className="absolute inset-0 bg-gray-800 mix-blend-multiply"
+              className="absolute inset-0 bg-gray-400 opacity-25"
               aria-hidden="true"
             />
           </div>
           <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className="text-2xl font-extrabold tracking-tight text-white text-center">
+            <h1 className="text-3xl font-extrabold tracking-tight text-white text-center drop-shadow-md">
               Our portal assists European employers in finding skilled Ukrainian
               workers.
             </h1>
