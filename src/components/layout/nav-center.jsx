@@ -23,8 +23,8 @@ export default class NavCenter extends React.Component {
 
     return (
       <div>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 pt-4">
-          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
+        <div className="mx-auto px-4 sm:px-6 pt-4">
+          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
             <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/" aria-label="Home">
@@ -95,8 +95,8 @@ export default class NavCenter extends React.Component {
             </div>
           </nav>
         </div>
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4">
-          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
+        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4">
+          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
             <div className="hidden md:flex md:space-x-10">
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
@@ -108,49 +108,37 @@ export default class NavCenter extends React.Component {
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/skill-shortages/"
               >
-                Skill in
-                <br />
-                {` `}demand
+                Skill in demand
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/work-visa-guide/"
               >
-                Guide for
-                <br />
-                {` `}visa/permits
+                Guide for visa/permits
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/vetted-euro-employers/"
               >
-                Vetted euro
-                <br />
-                {` `}employers
+                Vetted euro employers
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-eduction-explainer/"
               >
-                Checklist for
-                <br />
-                {` `}safe work
+                Checklist for safe work
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-education-explainer/"
               >
-                Guide to
-                <br />
-                {` `}UKR education
+                Guide to UKR education
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-expertise-explained/"
               >
-                Guide to
-                <br />
-                {` `}UKR expertise
+                Guide to UKR expertise
               </Link>
               <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
               <Link to="/de">DE 🇩🇪</Link>
