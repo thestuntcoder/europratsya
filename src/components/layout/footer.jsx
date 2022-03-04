@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import europratsyaLogo from '../../images/europratsya-white.svg';
 
 export default function Footer() {
   return (
@@ -11,7 +12,16 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
+              <div className="-mt-4">
+                <Link to="/" aria-label="Home">
+                  <img
+                    className="h-8 w-auto sm:h-12"
+                    src={europratsyaLogo}
+                    alt="Europratsya logo"
+                  />
+                </Link>
+              </div>
+              <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Languages
                 </h3>
@@ -47,6 +57,9 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
+            </div>
+
+            <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Legal
@@ -73,9 +86,6 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div></div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Oranisation
@@ -89,13 +99,15 @@ export default function Footer() {
                     UK - Perth PH1 1DF
                   </li>
 
-                  <li>
+                  <li className="text-gray-400">
                     <a
                       href="mailto:info@europratsya.com"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       info@europratsya.com
                     </a>
+                    <br />
+                    BRCT00001440441
                   </li>
                 </ul>
               </div>
