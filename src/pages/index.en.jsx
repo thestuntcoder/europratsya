@@ -9,6 +9,11 @@ import schengenImg from '../images/schengen.jpeg';
 import ukeduImg from '../images/ukedu.jpg';
 import ukrBg from '../images/ukr-background.jpg';
 
+import sponsorKaffebakeriet from '../images/sponsors/kaffebakeriet.jpeg';
+import sponsorKodit from '../images/sponsors/kodit.png';
+import sponsorSC from '../images/sponsors/stuntcoders.png';
+import sponsorTM from '../images/sponsors/tm.png';
+
 export default function Home() {
   return (
     <LayoutPage>
@@ -231,16 +236,12 @@ export default function Home() {
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img
                 className="max-h-12"
-                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                alt="Workcation"
+                src={sponsorKaffebakeriet}
+                alt="Kaffebakeriet"
               />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                alt="Mirage"
-              />
+              <img className="max-h-12" src={sponsorKodit} alt="Kodit" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img
@@ -257,18 +258,10 @@ export default function Home() {
               />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                alt="StaticKit"
-              />
+              <img className="max-h-12" src={sponsorSC} alt="StuntCoders" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/statamic-logo-gray-400.svg"
-                alt="Statamic"
-              />
+              <img className="max-h-12" src={sponsorTM} alt="Team Magnus" />
             </div>
           </div>
         </div>
