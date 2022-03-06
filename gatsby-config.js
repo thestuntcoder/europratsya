@@ -64,10 +64,10 @@ module.exports = {
         appId: process.env.ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_API_KEY,
         indexName: process.env.ALGOLIA_INDEX_NAME,
-        queries: require("./src/utils/algolia-queries"),
-        chunkSize: 10000, // default: 1000
+        queries: require('./src/utils/algolia-queries'),
+        chunkSize: 10000,
       },
-    }
+    },
   ],
 };
 

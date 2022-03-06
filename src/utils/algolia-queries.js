@@ -1,4 +1,5 @@
-const indexName = `Home`
+const indexName = `Home`;
+
 const pageQuery = `{
   pages: allSitePage {
       nodes {
@@ -18,15 +19,17 @@ const pageQuery = `{
         }
       }
     }
-  }`
+  }`;
+
 function pageToAlgoliaRecord({ node: { id, frontmatter, fields, ...rest } }) {
   return {
     objectID: id,
     ...frontmatter,
     ...fields,
     ...rest,
-  }
+  };
 }
+
 const queries = [
   {
     query: pageQuery,
@@ -34,5 +37,6 @@ const queries = [
     indexName,
     settings: { attributesToSnippet: [`excerpt:20`] },
   },
-]
-module.exports = queries
+];
+
+module.exports = queries;
