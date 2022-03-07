@@ -5,6 +5,8 @@
   We invite Ukrainians to Europe
 </h1>
 
+We do not help Ukraine, we provide help for their proud people leaving home to find a job in the EU.
+
 Nobody likes leaving their home, let alone being forced out of it.
 
 The goal of this project is to help Ukrainians citizens:
@@ -13,7 +15,7 @@ The goal of this project is to help Ukrainians citizens:
 2. Find job opportunities in EU (in English, and Ukrainian);
 3. Find fair (vetted) employers that won't take advantage of their situation;
 
-Project is going to be open sourced, written in Gatsby so if you wish to contribute, reach out via contact form on the website, or open issue on Github.
+Project is open source, written in Gatsby+Sanity.io, so if you wish to contribute, reach out via contact form on the website, or open issue on Github.
 
 ---
 
@@ -27,7 +29,7 @@ Project is going to be open sourced, written in Gatsby so if you wish to contrib
 
 ---
 
-## Help with development
+## Join as coder-volunteer?
 
 If you wish to help with development:
 
