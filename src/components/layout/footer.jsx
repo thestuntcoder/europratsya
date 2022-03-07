@@ -88,29 +88,56 @@ export default function Footer() {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Oranisation
+                  Contact
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  <li className="text-base text-gray-300 hover:text-white">
-                    Europratsya CIC
-                    <br />
-                    32 Oakbank Crescent
-                    <br />
-                    UK - Perth PH1 1DF
-                  </li>
-
-                  <li className="text-gray-400">
-                    <a
-                      href="mailto:info@europratsya.com"
+                  <li>
+                    <Link
+                      to="/contact-for-employers"
                       className="text-base text-gray-300 hover:text-white"
                     >
-                      info@europratsya.com
-                    </a>
-                    <br />
-                    BRCT00001440441
+                      For employers
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/contact-for-job-seekers"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      For job seekers
+                    </Link>
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div></div>
+            <div className="mt-12 md:mt-0">
+              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                Oranisation
+              </h3>
+              <ul role="list" className="mt-4 space-y-4">
+                <li className="text-base text-gray-300 hover:text-white">
+                  Europratsya CIC
+                  <br />
+                  32 Oakbank Crescent
+                  <br />
+                  UK - Perth PH1 1DF
+                </li>
+
+                <li className="text-gray-400">
+                  <a
+                    href="mailto:info@europratsya.com"
+                    className="text-base text-gray-300 hover:text-white"
+                  >
+                    info@europratsya.com
+                  </a>
+                  <br />
+                  BRCT00001440441
+                </li>
+              </ul>
             </div>
           </div>
         </div>
