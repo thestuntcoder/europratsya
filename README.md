@@ -5,7 +5,7 @@
   We invite Ukrainians to Europe
 </h1>
 
-We do not help Ukraine, we provide help for their proud people leaving home to find a job in the EU.
+Since the beginning of war in Ukraine, more than one million people left the country. It is estimated that 5.000.000 Ukrainians will leave their homes in 2022. It is pur mission to help them feel welcomed in the EU, and by future employers.
 
 Nobody likes leaving their home, let alone being forced out of it.
 
