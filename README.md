@@ -14,9 +14,19 @@ The goal of this project is to help Ukrainians citizens:
 
 Project is going to be open sourced, written in Gatsby so if you wish to contribute, reach out via contact form on the website, or open issue on Github.
 
+# How can you help?
+
+### 1. Share this repository on social media websites [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Support%20Ukrainians%20with%20find%20dignity%20through%20jobs%20on%20this%20open%20source%20project&url=https://github.com/dejanjacimovic/europratsya)
+
+### 2. Star this repository ⭐️
+
+### 3. Join as coder-volunteer
+
+## Help with development
+
 If you wish to help with development:
 
-## 🏃‍♂️ Quick start
+### 🏃‍♂️ Quick start
 
 1.  **Start the website locally.**
 
@@ -35,20 +45,20 @@ If you wish to help with development:
 
     Our site is now running at http://localhost:8000!
 
-## Make code prettier?
+### Make code prettier?
 
 ```
 npm install
 npx prettier --write src/pages/.jsx
 ```
 
-## Setup pre-commit hooks
+### Setup pre-commit hooks
 
 ```
 pre-commit install
 ```
 
-## Test the website?
+### Test the website?
 
 Build images:
 
@@ -68,6 +78,10 @@ Check coverage:
 npm run test --coverage
 ```
 
-# Want to help with pages/design?
+## Want to help with front-end development?
 
 We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed. Please refer to a beautiful documentation by Tailwind if you run into any issues: https://tailwindcss.com/docs/
+
+All design files can be found under `/design_files` as PDFs.
+
+# Sharing is caring!
