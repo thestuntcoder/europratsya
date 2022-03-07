@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
+import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 
@@ -15,6 +16,13 @@ export default function UkrExpertiseExplained() {
       </div>
 
       <div className="bg-white overflow-hidden">
+        <StaticImage
+          className="h-56 w-full object-cover"
+          src="../images/expertise/banner.jpg"
+          alt="Banner"
+          loading="auto"
+        />
+
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
@@ -31,7 +39,6 @@ export default function UkrExpertiseExplained() {
                   expertise. A total of 55% of the positions are middle and
                   senior levels of experience, which come with English fluency
                 </p>
-
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   How developed is their aerospace engineering?
                 </h2>
@@ -43,7 +50,6 @@ export default function UkrExpertiseExplained() {
                   enterprises, including companies involved in recovery of
                   military planes and helicopters.
                 </p>
-
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   I know about the natural resources - what is the mining
                   expertise?
@@ -55,7 +61,6 @@ export default function UkrExpertiseExplained() {
                   well as extracting iron, manganese ores, titanium and
                   aluminium.
                 </p>
-
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   Their medical schools are famous - does Ukraine have life
                   sciences too?
@@ -73,7 +78,6 @@ export default function UkrExpertiseExplained() {
                   in 70 countries worldwide, and employ 5000 Ukrainian
                   engineers.
                 </p>
-
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   Automotive industry - what is the scope?
                 </h2>
@@ -82,7 +86,6 @@ export default function UkrExpertiseExplained() {
                   buses, tractors, trucks, passenger cars, trams and rail
                   engines.
                 </p>
-
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   There’s a lot of wheat fields!
                 </h2>
