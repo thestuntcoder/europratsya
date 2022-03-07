@@ -4,7 +4,7 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import contactImg from '../images/contact/contact-form-candidates.jpg';
 
-export default function AboutUs() {
+export default function ContactEmployees() {
   return (
     <LayoutPage>
       <Helmet>
