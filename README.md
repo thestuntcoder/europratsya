@@ -1,4 +1,5 @@
 [![Build Status](https://app.travis-ci.com/dejanjacimovic/europratsya.svg?branch=master)](https://app.travis-ci.com/dejanjacimovic/europratsya)
+[![Languages](https://img.shields.io/github/languages/top/dejanjacimovic/europratsya)
 
 <h1 align="center">
   We invite Ukrainians to Europe
@@ -88,4 +89,8 @@ We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed. Please r
 
 All design files can be found under `/design_files` as PDFs.
 
+---
+
 # Sharing is caring!
+
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Support%20Ukrainians%20with%20find%20dignity%20through%20jobs%20on%20this%20open%20source%20project&url=https://github.com/dejanjacimovic/europratsya)
