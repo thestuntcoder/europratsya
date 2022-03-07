@@ -1,5 +1,5 @@
 [![Build Status](https://app.travis-ci.com/dejanjacimovic/europratsya.svg?branch=master)](https://app.travis-ci.com/dejanjacimovic/europratsya)
-[![Languages](https://img.shields.io/github/languages/top/dejanjacimovic/europratsya)
+![Languages](https://img.shields.io/github/languages/top/dejanjacimovic/europratsya)
 
 <h1 align="center">
   We invite Ukrainians to Europe
