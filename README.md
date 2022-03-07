@@ -1,3 +1,5 @@
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white&style=for-the-badge) 
+![Gatsby.js](https://img.shields.io/badge/Gatsby-%23663399.svg?logo=gatsby&logoColor=white&style=for-the-badge)
 [![Build Status](https://app.travis-ci.com/dejanjacimovic/europratsya.svg?branch=master)](https://app.travis-ci.com/dejanjacimovic/europratsya)
 ![Languages](https://img.shields.io/github/languages/top/dejanjacimovic/europratsya)
 
