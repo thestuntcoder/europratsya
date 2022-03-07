@@ -194,20 +194,6 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-        <div className="absolute inset-0">
-          <div className="bg-white h-1/3 sm:h-2/3" />
-        </div>
-        <div className="relative max-w-7xl mx-auto">
-          <div className="text-center">
-            <h2 className="text-3xl tracking-tight font-extrabold text-blue-500 sm:text-4xl">
-              Relevant listings from die Zeit
-            </h2>
-          </div>
-          <JobAds limit="9" />
-        </div>
-      </div>
-
       <div className="bg-gray-100">
         <div className="mx-auto lg:flex lg:items-center lg:justify-between">
           <img
