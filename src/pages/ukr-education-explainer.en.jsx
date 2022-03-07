@@ -31,7 +31,7 @@ export default function UkrEducationExplainer() {
                 Ukraine education FAQ
               </h1>
 
-              <div class="relative text-base float-right max-w-xs">
+              <div class="relative text-base float-right max-w-md">
                 <figure>
                   <div class="max-w-md aspect-w-12 aspect-h-12 ml-8">
                     <StaticImage
@@ -106,54 +106,60 @@ export default function UkrEducationExplainer() {
                   ECTS Grading scale
                 </h2>
 
-                <table class="table-fixed border-collapse text-sm border border-slate-200 rounded-xl">
+                <table class="table-fixed border-collapse text-sm border border-slate-200 max-w-md">
                   <thead>
                     <tr>
-                      <th className="border-b font-medium bg-slate-200 p-4 pl-8 pt-0 pb-3 text-slate-400 text-left">
+                      <th className="border-b font-medium bg-gray-200 p-4 pl-8 pt-0 pb-3 text-slate-400 text-center">
                         GRADE
                       </th>
-                      <th className="border-b font-medium bg-slate-200 p-4 pt-0 pb-3 text-slate-400 text-left">
+                      <th className="border-b font-medium bg-gray-200 p-4 pt-0 pb-3 text-slate-400 text-center">
                         WES UNDERGRADUATE CONVERSION
                       </th>
-                      <th className="border-b font-medium bg-slate-200 p-4 pr-8 pt-0 pb-3 text-slate-400s text-left">
+                      <th className="border-b font-medium bg-gray-200 p-4 pr-8 pt-0 pb-3 text-slate-400 text-center">
                         WES GRADUATE CONVERSION
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white">
                     <tr>
-                      <td>A</td>
-                      <td>A</td>
-                      <td>A</td>
+                      <td className="text-center">A</td>
+                      <td className="text-center">A</td>
+                      <td className="text-center">A</td>
+                    </tr>
+                    <tr className="bg-gray-50">
+                      <td className="text-center">B</td>
+                      <td className="text-center">B+</td>
+                      <td className="text-center">A</td>
                     </tr>
                     <tr>
-                      <td>B</td>
-                      <td>B+</td>
-                      <td>A</td>
+                      <td className="text-center">C</td>
+                      <td className="text-center">B</td>
+                      <td className="text-center">B+</td>
+                    </tr>
+                    <tr className="bg-gray-50">
+                      <td className="text-center">D</td>
+                      <td className="text-center">C+</td>
+                      <td className="text-center">B</td>
                     </tr>
                     <tr>
-                      <td>C</td>
-                      <td>B</td>
-                      <td>B+</td>
+                      <td className="text-center">E</td>
+                      <td className="text-center">C</td>
+                      <td className="text-center">B</td>
                     </tr>
-                    <tr>
-                      <td>D</td>
-                      <td>C+</td>
-                      <td>B</td>
-                    </tr>
-                    <tr>
-                      <td>E</td>
-                      <td>C</td>
-                      <td>B</td>
-                    </tr>
-                    <tr>
-                      <td>F</td>
-                      <td>F</td>
-                      <td>F</td>
+                    <tr className="bg-gray-50">
+                      <td className="text-center">F</td>
+                      <td className="text-center">F</td>
+                      <td className="text-center">F</td>
                     </tr>
                   </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="3" className="text-sm border-t text-center">
+                        © 2019 World Education Services (wenr.wes.org)
+                      </td>
+                    </tr>
+                  </tfoot>
                 </table>
-                <figure>© 2019 World Education Services (wenr.wes.org)</figure>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   What do the qualifications mean?
