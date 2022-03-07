@@ -1,7 +1,4 @@
 require('dotenv').config();
-const {
-  api: { projectId, dataset },
-} = requireConfig('../europratsya_sanity/sanity.json');
 
 module.exports = {
   siteMetadata: {
@@ -17,8 +14,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        projectId,
-        dataset,
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
         token: process.env.SANITY_TOKEN,
         watchMode: true,
         overlayDrafts: true,
