@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
+import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
+import kyivAcademy from '../images/education/library-kyiv-mohyla-academy.jpg';
 
 export default function UkrEducationExplainer() {
   return (
@@ -15,12 +17,57 @@ export default function UkrEducationExplainer() {
       </div>
 
       <div className="bg-white overflow-hidden">
+        <StaticImage
+          className="h-56 w-full object-cover"
+          src="../images/education/banner.jpg"
+          alt="Banner"
+          loading="auto"
+        />
+
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
                 Ukraine education FAQ
               </h1>
+
+              <div class="relative text-base float-right max-w-xs">
+                <figure>
+                  <div class="max-w-md aspect-w-12 aspect-h-12 ml-8">
+                    <StaticImage
+                      class="rounded-lg shadow-lg object-cover object-center"
+                      src="../images/education/assembly-hall-kyiv-polytechnic-institute.jpg"
+                      alt="Assembly hall Kyiv Polytechnic Institute"
+                      width="1184"
+                      height="1376"
+                    />
+                  </div>
+                  <figcaption class="mt-3 flex text-sm text-gray-500">
+                    <svg
+                      class="flex-none w-5 h-5 text-gray-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span class="ml-2">
+                      Images from top: Igor Sikorsky Kyiv Polytechnic Institute,
+                      Kharkiv National Medical University, Lakshya MBBS (Medical
+                      school), Hlukhiv National Pedagogical University, assembly
+                      hall of the National Technical University of Ukraine Kyiv
+                      Polytechnic Institute and (below) research library of
+                      National University of Kyiv-Mohyla Academy.
+                    </span>
+                  </figcaption>
+                </figure>
+              </div>
+
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p className="mt-24">
                   Ukraine has a 99.4% literacy rate, the highest in the world.
@@ -195,6 +242,13 @@ export default function UkrEducationExplainer() {
                   can’t issue degrees or diplomas without accreditation from
                   MOES.
                 </p>
+
+                <StaticImage
+                  className="h-56 w-full object-cover"
+                  src="../images/education/library-kyiv-mohyla-academy.jpg"
+                  alt="Kyiv Mohyla Academy"
+                  loading="auto"
+                />
               </div>
             </div>
           </div>
