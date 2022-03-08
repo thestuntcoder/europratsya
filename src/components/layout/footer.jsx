@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                  Legal
+                  Public Information
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
@@ -70,8 +70,7 @@ export default function Footer() {
                       to="/privacy"
                       className="text-base text-gray-300 hover:text-white"
                     >
-                      {' '}
-                      Privacy{' '}
+                      Privacy policy
                     </Link>
                   </li>
 
@@ -80,8 +79,7 @@ export default function Footer() {
                       to="/terms"
                       className="text-base text-gray-300 hover:text-white"
                     >
-                      {' '}
-                      Terms{' '}
+                      Our website
                     </Link>
                   </li>
                 </ul>
