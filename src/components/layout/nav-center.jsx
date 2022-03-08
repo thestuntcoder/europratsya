@@ -108,7 +108,7 @@ export default class NavCenter extends React.Component {
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/skill-shortages/"
               >
-                Skill in demand
+                Skills in demand
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
@@ -140,7 +140,7 @@ export default class NavCenter extends React.Component {
               >
                 Guide to UKR expertise
               </Link>
-              <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
+              <Link to="/uk">УКР 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
               <Link to="/de">DE 🇩🇪</Link>
             </div>
           </nav>
