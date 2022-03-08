@@ -132,13 +132,13 @@ export default class NavCenter extends React.Component {
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-education-explainer/"
               >
-                Guide to UKR education
+                UKR education FAQ
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-expertise-explained/"
               >
-                Guide to UKR expertise
+                UKR expertise FAQ
               </Link>
               <Link to="/uk">УКР 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
               <Link to="/de">DE 🇩🇪</Link>
