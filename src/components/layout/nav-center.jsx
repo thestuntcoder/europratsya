@@ -95,7 +95,7 @@ export default class NavCenter extends React.Component {
             </div>
           </nav>
         </div>
-        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4">
+        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4 hidden sm:block">
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
             <div className="hidden md:flex md:space-x-10">
               <Link
@@ -106,13 +106,13 @@ export default class NavCenter extends React.Component {
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/skills-shortages/"
+                to="/404/"
               >
                 Skills in demand
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/work-visa-guide/"
+                to="/404/"
               >
                 Guide for visa/permits
               </Link>
@@ -124,7 +124,7 @@ export default class NavCenter extends React.Component {
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/essential-checklists/"
+                to="/404/"
               >
                 Essential checklists
               </Link>
@@ -188,48 +188,53 @@ export default class NavCenter extends React.Component {
               <div className="px-2 pt-2 pb-3">
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/"
-                  role="menuitem"
-                >
-                  Home
-                </Link>
-                <Link
-                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/about-us/"
-                  role="menuitem"
                 >
                   About us
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/employers/"
-                  role="menuitem"
+                  to="/404/"
                 >
-                  Employers
+                  Skills in demand
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/job-ads/"
-                  role="menuitem"
+                  to="/404/"
                 >
-                  Ads
+                  Guide for visa/permits
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/work-visas/"
-                  role="menuitem"
+                  to="/companies/"
                 >
-                  Work visas
+                  Vetted euro employers
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/404/"
+                >
+                  Essential checklists
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/ukr-education-explainer/"
+                >
+                  UKR education FAQ
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/ukr-expertise-explained/"
+                >
+                  UKR expertise FAQ
                 </Link>
               </div>
-              <div>
-                <Link
-                  className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-blue-600 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-blue-700 focus:bg-gray-100 focus:text-blue-700 focus:outline-none"
-                  to="/contact/"
-                  role="menuitem"
-                >
-                  Contact us
-                </Link>
+              <div className="bg-gray-50 px-3 py-6 text-center">
+                <Link to="/uk">УКР 🇺🇦</Link>
+                {` `}—{` `}
+                <Link to="/">EN 🇬🇧</Link>
+                {` `}—{` `}
+                <Link to="/de">DE 🇩🇪</Link>
               </div>
             </div>
           </div>
