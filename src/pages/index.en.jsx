@@ -46,8 +46,10 @@ export default function Home() {
         >
           <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-8">
             <div className="flex flex-col rounded-2xl bg-gray-800 shadow-xl">
-              <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8">
-                <h3 className="text-xl font-medium text-white">Candidates</h3>
+              <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8 text-center">
+                <h3 className="text-2xl font-extrabold text-white">
+                  Candidates
+                </h3>
                 <p className="mt-4 text-base text-white">
                   Please check our work visa guides and skills shortages guide{' '}
                   <Link to="/skills-shortages/">country by country</Link>.
@@ -79,8 +81,10 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col rounded-2xl bg-blue-500 shadow-xl">
-              <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8">
-                <h3 className="text-xl font-medium text-white">Employers</h3>
+              <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8 text-center">
+                <h3 className="text-2xl font-extrabold text-white">
+                  Employers
+                </h3>
                 <p className="mt-4 text-base text-white">
                   To evaluate Ukrainian CVs, please check our{' '}
                   <Link to="/ukr-eduction-explainer/">
