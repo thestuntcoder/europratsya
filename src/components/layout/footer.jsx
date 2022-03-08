@@ -67,7 +67,7 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
                     <Link
-                      to="/privacy"
+                      to="/privacy-policy"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       Privacy policy
@@ -76,7 +76,7 @@ export default function Footer() {
 
                   <li>
                     <Link
-                      to="/terms"
+                      to="/our-website"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       Our website
