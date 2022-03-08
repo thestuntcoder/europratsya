@@ -106,7 +106,7 @@ export default class NavCenter extends React.Component {
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/skill-shortages/"
+                to="/skills-shortages/"
               >
                 Skills in demand
               </Link>
@@ -118,15 +118,15 @@ export default class NavCenter extends React.Component {
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/vetted-euro-employers/"
+                to="/companies/"
               >
                 Vetted euro employers
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/ukr-eduction-explainer/"
+                to="/essential-checklists/"
               >
-                Checklist for safe work
+                Essential checklists
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
