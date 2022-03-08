@@ -28,21 +28,21 @@ export default function Footer() {
                 <ul role="list" className="mt-4 space-y-4">
                   <li>
                     <Link
-                      to="/"
-                      className="text-base text-gray-300 hover:text-white"
-                    >
-                      {' '}
-                      English 🇬🇧{' '}
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
                       href="/uk"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       {' '}
                       Український 🇺🇦{' '}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      to="/"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
+                      {' '}
+                      English 🇬🇧{' '}
                     </Link>
                   </li>
 
@@ -103,7 +103,7 @@ export default function Footer() {
                       href="/contact-for-job-seekers"
                       className="text-base text-gray-300 hover:text-white"
                     >
-                      For job seekers
+                      For candidates
                     </Link>
                   </li>
                 </ul>
@@ -114,7 +114,7 @@ export default function Footer() {
             <div></div>
             <div className="mt-12 md:mt-0">
               <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                Oranisation
+                Organisation
               </h3>
               <ul role="list" className="mt-4 space-y-4">
                 <li className="text-base text-gray-300 hover:text-white">
