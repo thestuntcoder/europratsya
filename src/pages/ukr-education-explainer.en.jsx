@@ -42,7 +42,7 @@ export default function UkrEducationExplainer() {
                       height="1376"
                     />
                   </div>
-                  <figcaption class="mt-3 flex text-sm text-gray-500">
+                  <figcaption class="mt-3 flex text-sm text-gray-500 italic">
                     <svg
                       class="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
