@@ -7,6 +7,7 @@ import JobAds from '../components/job-ads';
 
 import ukeduImg from '../images/ukedu.jpg';
 import ukrBg from '../images/ukr-background-new.jpg';
+import ukrUniBg from '../images/ukr-universities.jpg';
 
 import sponsorKaffebakeriet from '../images/sponsors/kaffebakeriet.jpeg';
 import sponsorKodit from '../images/sponsors/kodit.png';
@@ -156,21 +157,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-100">
-        <div className="mx-auto lg:flex lg:items-center lg:justify-between">
+      <div className="bg-gray-100 relative h-3/4">
+        <div className="absolute inset-0">
           <img
-            className="w-full lg:h-full lg:max-w-none"
-            src={ukeduImg}
-            alt="Ukrainian education"
+            className="h-full w-full object-cover"
+            src={ukrUniBg}
+            alt="Ukrainian universities"
           />
         </div>
-        <div className="max-w-7xl mx-auto lg:flex lg:items-center lg:justify-between">
-          <p className="text-2xl text-gray-500 text-center max-w-3xl mx-auto mt-8 mb-8">
+        <div className="absolute inset-0 bg-gray-900 opacity-30"></div>
+        <div className="max-w-7xl mx-auto flex items-center justify-between z-10">
+          <div className="m-auto text-4xl font-extrabold text-white text-center align-middle mx-auto mt-64 mb-64 z-10">
             Several Nobel prize winners in medicine, physics, chemistry and
             literature hail from Ukraine. Its oldest universities are from the
             16th and 17th century, and continue to produce world-class graduates
             in sciences, engineering, agriculture and mining.
-          </p>
+          </div>
         </div>
       </div>
 
