@@ -33,7 +33,7 @@ export default function UkrEducationExplainer() {
 
               <div class="relative text-base float-right max-w-md">
                 <figure>
-                  <div class="max-w-md aspect-w-12 aspect-h-12 ml-8">
+                  <div class="max-w-md aspect-w-12 ml-8">
                     <StaticImage
                       class="rounded-lg shadow-lg object-cover object-center"
                       src="../images/education/assembly-hall-kyiv-polytechnic-institute.jpg"
