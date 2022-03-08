@@ -22,6 +22,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-sanity-image',
+      options: {
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
+        token: process.env.SANITY_TOKEN,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-i18n',
       options: {
         langKeyDefault: 'en',
