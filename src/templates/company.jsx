@@ -5,10 +5,12 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import JobAds from '../components/job-ads';
+import BlockContent from '../components/block-content';
 
 export const query = graphql`
   query CompanyTemplateQuery($id: String!) {
     company: sanityCompany(id: { eq: $id }) {
+      _rawAbout
       image {
         _key
         _type
@@ -28,29 +30,14 @@ export const query = graphql`
       slug {
         current
       }
-      about {
-        children {
-          text
-        }
-      }
     }
   }
 `;
 
 const Company = (props) => {
-  const { data = {} } = props;
   let company = props.data.company;
-
   let getImg = getImage(company.image.asset.gatsbyImageData);
 
-  let companyDescription = [];
-  for (let i in company.about) {
-    for (let j in company.about[i].children) {
-      companyDescription.push(<p>{company.about[i].children[j].text}</p>);
-    }
-  }
-
-  console.log(data);
   return (
     <LayoutPage>
       <Helmet>
@@ -82,7 +69,7 @@ const Company = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          {companyDescription}
+          <BlockContent blocks={company._rawAbout} />
         </div>
       </div>
 
