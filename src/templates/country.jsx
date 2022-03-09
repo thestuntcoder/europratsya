@@ -13,7 +13,7 @@ export const query = graphql`
 `;
 
 const Country = (props) => {
-  const { data = {}, errors } = props;
+  const { data = {} } = props;
   const { title } = data.country || {};
 
   return (
