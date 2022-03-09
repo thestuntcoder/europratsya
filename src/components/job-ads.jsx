@@ -8,7 +8,8 @@ export default function JobAds(props) {
   for (var key in props.data) {
     if (props.data[key].node.employer == null) continue;
     if (props.data[key].node.job_categories == null) continue;
-
+    if (props.data[key].node.slug == null) continue;
+    console.log();
     output.push(
       <JobAd
         employer={props.data[key].node.employer.name}
@@ -18,7 +19,7 @@ export default function JobAds(props) {
         profession={props.data[key].node.job_categories[0].title}
         expiraition_date={props.data[key].node.validUntil}
         salary={props.data[key].node.salary}
-        visa_requirement="Handled by employer"
+        title={props.data[key].node.title.en}
         contact_detail="Contact detail"
         description={
           props.data[key].node.description.en[0].children[0].text.substring(
@@ -26,6 +27,7 @@ export default function JobAds(props) {
             200
           ) + '...'
         }
+        linkto={'/job/' + props.data[key].node.slug.current}
       />
     );
 
