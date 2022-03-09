@@ -11,6 +11,7 @@ import ukrUniBg from '../images/ukr-universities.jpg';
 import sponsorKaffebakeriet from '../images/sponsors/kaffebakeriet.jpeg';
 import sponsorKodit from '../images/sponsors/kodit.png';
 import sponsorSC from '../images/sponsors/stuntcoders.png';
+import sponsorDT from '../images/sponsors/daytwo.svg';
 import sponsorTM from '../images/sponsors/tm.png';
 
 export default function Home({ data }) {
@@ -203,14 +204,10 @@ export default function Home({ data }) {
               />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg"
-                alt="Laravel"
-              />
+              <img className="max-h-12" src={sponsorSC} alt="StuntCoders" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img className="max-h-12" src={sponsorSC} alt="StuntCoders" />
+              <img className="max-h-12" src={sponsorDT} alt="DayTwo" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img className="max-h-12" src={sponsorTM} alt="Team Magnus" />
