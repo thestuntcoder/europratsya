@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
-import kyivAcademy from '../images/education/library-kyiv-mohyla-academy.jpg';
 
 export default function UkrEducationExplainer() {
   return (
