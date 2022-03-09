@@ -14,11 +14,7 @@ export default function JobAd(props) {
             <p className="text-xl font-semibold text-gray-900">
               {props.position}
             </p>
-            <p className="mt-3 text-base text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto accusantium praesentium eius, ut atque fuga culpa,
-              similique sequi cum eos quis dolorum.
-            </p>
+            <p className="mt-3 text-base text-gray-500">{props.description}</p>
           </a>
         </div>
         <div className="mt-6 flex items-center">
