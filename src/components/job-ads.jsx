@@ -9,7 +9,7 @@ export default function JobAds(props) {
     if (props.data[key].node.employer == null) continue;
     if (props.data[key].node.job_categories == null) continue;
     if (props.data[key].node.slug == null) continue;
-    console.log();
+
     output.push(
       <JobAd
         employer={props.data[key].node.employer.name}
