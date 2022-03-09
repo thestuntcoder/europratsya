@@ -31,11 +31,45 @@ export const query = graphql`
         current
       }
     }
+
+    jobs: allSanityJobPost(filter: { employer: { id: { eq: $id } } }) {
+      edges {
+        node {
+          city
+          country {
+            title
+          }
+          salary
+          title {
+            en
+          }
+          description {
+            en {
+              children {
+                text
+              }
+            }
+          }
+          employer {
+            name
+          }
+          job_categories {
+            title
+          }
+          validUntil
+          slug {
+            current
+          }
+        }
+      }
+    }
   }
 `;
 
 const Company = (props) => {
+  console.log(props.data.jobs.edges);
   let company = props.data.company;
+  let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
 
   return (
@@ -60,7 +94,7 @@ const Company = (props) => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <GatsbyImage
             image={getImg}
-            className="max-h-12"
+            className="h-24"
             alt={company.name}
             objectFit="contain"
           />
@@ -73,11 +107,17 @@ const Company = (props) => {
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-base text-3xl font-bold tracking-wide text-black mb-12">
-            Vacancies from the company
-          </h2>
+      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div className="absolute inset-0">
+          <div className="bg-white h-1/3 sm:h-2/3" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="text-left">
+            <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+              Vacancies from the company
+            </h2>
+          </div>
+          <JobAds limit="24" data={ads} />
         </div>
       </div>
     </LayoutPage>
