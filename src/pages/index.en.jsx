@@ -11,7 +11,8 @@ import ukrUniBg from '../images/ukr-universities.jpg';
 import sponsorKaffebakeriet from '../images/sponsors/kaffebakeriet.jpeg';
 import sponsorKodit from '../images/sponsors/kodit.png';
 import sponsorSC from '../images/sponsors/stuntcoders.png';
-import sponsorDT from '../images/sponsors/daytwo.png';
+import sponsorDT from '../images/sponsors/daytwo.svg';
+import sponsorGrieg from '../images/sponsors/grieg.svg';
 import sponsorTM from '../images/sponsors/tm.png';
 
 export default function Home({ data }) {
@@ -177,11 +178,7 @@ export default function Home({ data }) {
               <img className="max-h-12" src={sponsorKodit} alt="Kodit" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
-              <img
-                className="max-h-12"
-                src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                alt="Tuple"
-              />
+              <img className="max-h-12" src={sponsorGrieg} alt="Grieg" />
             </div>
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
               <img className="max-h-12" src={sponsorSC} alt="StuntCoders" />
