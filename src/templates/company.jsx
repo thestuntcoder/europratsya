@@ -5,10 +5,12 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import JobAds from '../components/job-ads';
+import BlockContent from '../components/block-content';
 
 export const query = graphql`
   query CompanyTemplateQuery($id: String!) {
     company: sanityCompany(id: { eq: $id }) {
+      _rawAbout
       image {
         _key
         _type
@@ -28,9 +30,36 @@ export const query = graphql`
       slug {
         current
       }
-      about {
-        children {
-          text
+    }
+
+    jobs: allSanityJobPost(filter: { employer: { id: { eq: $id } } }) {
+      edges {
+        node {
+          city
+          country {
+            title
+          }
+          salary
+          title {
+            en
+          }
+          description {
+            en {
+              children {
+                text
+              }
+            }
+          }
+          employer {
+            name
+          }
+          job_categories {
+            title
+          }
+          validUntil
+          slug {
+            current
+          }
         }
       }
     }
@@ -38,19 +67,11 @@ export const query = graphql`
 `;
 
 const Company = (props) => {
-  const { data = {} } = props;
+  console.log(props.data.jobs.edges);
   let company = props.data.company;
-
+  let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
 
-  let companyDescription = [];
-  for (let i in company.about) {
-    for (let j in company.about[i].children) {
-      companyDescription.push(<p>{company.about[i].children[j].text}</p>);
-    }
-  }
-
-  console.log(data);
   return (
     <LayoutPage>
       <Helmet>
@@ -70,28 +91,34 @@ const Company = (props) => {
         </div>
       </div>
 
-      <div className="overflow-hidden bg-white">
-        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto">
+      <div className="bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <GatsbyImage
             image={getImg}
-            className="max-h-12"
+            className="h-24"
             alt={company.name}
             objectFit="contain"
           />
         </div>
       </div>
 
-      <div className="overflow-hidden bg-white">
-        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
-          {companyDescription}
+      <div className="bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <BlockContent blocks={company._rawAbout} />
         </div>
       </div>
 
-      <div className="overflow-hidden bg-white">
-        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto">
-          <h2 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
-            Vacancies from the company
-          </h2>
+      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div className="absolute inset-0">
+          <div className="bg-white h-1/3 sm:h-2/3" />
+        </div>
+        <div className="relative max-w-7xl mx-auto">
+          <div className="text-left">
+            <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+              Vacancies from the company
+            </h2>
+          </div>
+          <JobAds limit="24" data={ads} />
         </div>
       </div>
     </LayoutPage>
