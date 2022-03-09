@@ -1,54 +1,50 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import { StaticImage } from 'gatsby-plugin-image';
+import LayoutPage from '../components/layout/layout-page';
+import NavCenter from '../components/layout/nav-center';
 
-// styles
-const pageStyles = {
-  color: '#232129',
-  padding: '96px',
-  fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: '#8A6534',
-  padding: 4,
-  backgroundColor: '#FFF4DB',
-  fontSize: '1.25rem',
-  borderRadius: 4,
-};
-
-// markup
-const NotFoundPage = () => {
+export default function NotFoundPage() {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{' '}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{' '}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === 'development' ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  );
-};
+    <LayoutPage>
+      <Helmet>
+        <title>Page under construction | Europratsya</title>
+      </Helmet>
 
-export default NotFoundPage;
+      <div className="relative">
+        <NavCenter />
+      </div>
+
+      <div className="overflow-hidden bg-white">
+        <StaticImage
+          className="object-cover w-full h-56"
+          src="../images/under-construction.jpg"
+          alt="Under construction banner"
+          loading="auto"
+        />
+
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
+          <div className="lg:mt-0 mt-8">
+            <h1 className="text-base text-3xl font-bold tracking-wide text-black">
+              На сайті ведуться технічні роботи / Under construction
+            </h1>
+            <div className="prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1 mx-auto text-lg prose text-gray-500">
+              <p>
+                Our team will update this page with English-language information
+                shortly.
+              </p>
+              <p>
+                Unser Team arbeitet gerade daran, Informationen in Deutsch und
+                über Deutschland für Sie zur Verfügung zu stellen.
+              </p>
+              <p>
+                Наша команда працює над оновленням цієї сторінки українською
+                мовою.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </LayoutPage>
+  );
+}

@@ -27,7 +27,7 @@ export default function ContactEmployers() {
           </div>
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 mt-8">
             <div className="lg:row-start-1 lg:col-start-2 relative">
-              <div className="max-w-prose lg:max-w-none relative mx-auto text-base">
+              <div className="max-w-prose lg:max-w-none relative mx-auto text-base italic">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img

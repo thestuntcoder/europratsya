@@ -38,7 +38,7 @@ export default function ContactEmployees() {
                       height="1376"
                     />
                   </div>
-                  <figcaption className="flex mt-3 text-sm text-gray-500">
+                  <figcaption className="flex mt-3 text-sm text-gray-500 italic">
                     <svg
                       className="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"

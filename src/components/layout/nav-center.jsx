@@ -63,14 +63,14 @@ export default class NavCenter extends React.Component {
               </div>
             </div>
             <div className="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end w-80">
-              <div class="max-w-lg w-full">
-                <label for="search" class="sr-only">
+              <div className="max-w-lg w-full">
+                <label for="search" className="sr-only">
                   Search
                 </label>
-                <div class="relative">
-                  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                     <svg
-                      class="h-5 w-5 text-gray-400"
+                      className="h-5 w-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -86,7 +86,7 @@ export default class NavCenter extends React.Component {
                   <input
                     id="search"
                     name="search"
-                    class="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-100 text-gray-600 placeholder-gray-400 focus:outline-none focus:bg-gray-200 focus:border-blue-500 focus:ring-grey-300 focus:text-gray-900 sm:text-sm"
+                    className="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-100 text-gray-600 placeholder-gray-400 focus:outline-none focus:bg-gray-200 focus:border-blue-500 focus:ring-grey-300 focus:text-gray-900 sm:text-sm"
                     placeholder="France, PHP, work visa"
                     type="search"
                   />
@@ -95,7 +95,7 @@ export default class NavCenter extends React.Component {
             </div>
           </nav>
         </div>
-        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4">
+        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4 hidden sm:block">
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
             <div className="hidden md:flex md:space-x-10">
               <Link
@@ -106,41 +106,41 @@ export default class NavCenter extends React.Component {
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/skill-shortages/"
+                to="/404/"
               >
-                Skill in demand
+                Skills in demand
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/work-visa-guide/"
+                to="/404/"
               >
                 Guide for visa/permits
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/vetted-euro-employers/"
+                to="/companies/"
               >
                 Vetted euro employers
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/ukr-eduction-explainer/"
+                to="/404/"
               >
-                Checklist for safe work
+                Essential checklists
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-education-explainer/"
               >
-                Guide to UKR education
+                UKR education FAQ
               </Link>
               <Link
                 className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/ukr-expertise-explained/"
               >
-                Guide to UKR expertise
+                UKR expertise FAQ
               </Link>
-              <Link to="/uk">UK 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
+              <Link to="/uk">УКР 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
               <Link to="/de">DE 🇩🇪</Link>
             </div>
           </nav>
@@ -188,48 +188,53 @@ export default class NavCenter extends React.Component {
               <div className="px-2 pt-2 pb-3">
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/"
-                  role="menuitem"
-                >
-                  Home
-                </Link>
-                <Link
-                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/about-us/"
-                  role="menuitem"
                 >
                   About us
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/employers/"
-                  role="menuitem"
+                  to="/404/"
                 >
-                  Employers
+                  Skills in demand
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/job-ads/"
-                  role="menuitem"
+                  to="/404/"
                 >
-                  Ads
+                  Guide for visa/permits
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/work-visas/"
-                  role="menuitem"
+                  to="/companies/"
                 >
-                  Work visas
+                  Vetted euro employers
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/404/"
+                >
+                  Essential checklists
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/ukr-education-explainer/"
+                >
+                  UKR education FAQ
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/ukr-expertise-explained/"
+                >
+                  UKR expertise FAQ
                 </Link>
               </div>
-              <div>
-                <Link
-                  className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-blue-600 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-blue-700 focus:bg-gray-100 focus:text-blue-700 focus:outline-none"
-                  to="/contact/"
-                  role="menuitem"
-                >
-                  Contact us
-                </Link>
+              <div className="bg-gray-50 px-3 py-6 text-center">
+                <Link to="/uk">УКР 🇺🇦</Link>
+                {` `}—{` `}
+                <Link to="/">EN 🇬🇧</Link>
+                {` `}—{` `}
+                <Link to="/de">DE 🇩🇪</Link>
               </div>
             </div>
           </div>
