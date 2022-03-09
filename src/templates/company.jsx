@@ -61,16 +61,17 @@ const Company = (props) => {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-base text-3xl font-bold tracking-wide text-black mb-12">
-            <Link to="/companies">Vetted euro employers</Link> > {company.name}
+      <div className="overflow-hidden bg-white">
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
+          <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
+            <Link to="/companies">Vetted euro employers</Link> >{' '}
+            <span className="text-blue-500">{company.name}</span>
           </h1>
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto">
           <GatsbyImage
             image={getImg}
             className="max-h-12"
@@ -80,15 +81,15 @@ const Company = (props) => {
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
           {companyDescription}
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-base text-3xl font-bold tracking-wide text-black mb-12">
+      <div className="overflow-hidden bg-white">
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto">
+          <h2 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
             Vacancies from the company
           </h2>
         </div>
