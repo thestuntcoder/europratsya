@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import JobAds from '../components/job-ads';
@@ -14,7 +14,7 @@ import sponsorKodit from '../images/sponsors/kodit.png';
 import sponsorSC from '../images/sponsors/stuntcoders.png';
 import sponsorTM from '../images/sponsors/tm.png';
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <LayoutPage>
       <Helmet>
@@ -157,7 +157,7 @@ export default function Home() {
               Latest vacancies
             </h2>
           </div>
-          <JobAds limit="9" />
+          <JobAds limit="9" data={data.allSanityJobPost.edges} />
         </div>
       </div>
 
@@ -222,3 +222,36 @@ export default function Home() {
     </LayoutPage>
   );
 }
+
+export const JOB_POSTS = graphql`
+  query JobPosts {
+    allSanityJobPost {
+      edges {
+        node {
+          city
+          country {
+            title
+          }
+          salary
+          title {
+            en
+          }
+          description {
+            en {
+              children {
+                text
+              }
+            }
+          }
+          employer {
+            name
+          }
+          job_categories {
+            title
+          }
+          validUntil
+        }
+      }
+    }
+  }
+`;
