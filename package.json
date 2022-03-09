@@ -18,6 +18,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@sanity/block-content-to-react": "^3.0.0",
     "@styled-icons/fa-solid": "^10.34.0",
     "@testing-library/jest-dom": "^5.16.2",
     "algoliasearch": "^4.12.1",
