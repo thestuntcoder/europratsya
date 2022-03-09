@@ -1,38 +1,40 @@
 import * as React from 'react';
 import JobAd from './job-ad';
 
-export default function JobAds() {
-  return (
-    <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+export default function JobAds(props) {
+  let output = [];
+  let limit = parseInt(props.limit);
+
+  for (var key in props.data) {
+    if (props.data[key].node.employer == null) continue;
+    if (props.data[key].node.job_categories == null) continue;
+
+    output.push(
       <JobAd
-        employer="Addidas"
-        location="Stuttgart, Germany"
-        profession="Data Analyst"
-        expiraition_date="Mar 16, 2022"
-        salary="65.000 €"
+        employer={props.data[key].node.employer.name}
+        location={
+          props.data[key].node.city + ', ' + props.data[key].node.country.title
+        }
+        profession={props.data[key].node.job_categories[0].title}
+        expiraition_date={props.data[key].node.validUntil}
+        salary={props.data[key].node.salary}
         visa_requirement="Handled by employer"
         contact_detail="Contact detail"
+        description={
+          props.data[key].node.description.en[0].children[0].text.substring(
+            0,
+            200
+          ) + '...'
+        }
       />
+    );
 
-      <JobAd
-        employer="Gilette"
-        location="Dublin, Ireland"
-        profession="SEO expert"
-        expiraition_date="Apr 16, 2022"
-        salary="45.000 €"
-        visa_requirement="No visa required"
-        contact_detail="Contact detail"
-      />
+    if (--limit <= 0) break;
+  }
 
-      <JobAd
-        employer="Metz Hairstyle"
-        location="Paris, France"
-        profession="SEO expert"
-        expiraition_date="Mar 21, 2022"
-        salary="75.000 €"
-        visa_requirement="No visa required"
-        contact_detail="Contact detail"
-      />
+  return (
+    <div className="lg:grid-cols-3 lg:max-w-none grid max-w-lg gap-5 mx-auto mt-12">
+      {output}
     </div>
   );
 }
