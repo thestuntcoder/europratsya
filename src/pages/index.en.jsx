@@ -250,6 +250,9 @@ export const JOB_POSTS = graphql`
             title
           }
           validUntil
+          slug {
+            current
+          }
         }
       }
     }
