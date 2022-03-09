@@ -26,8 +26,8 @@ const Country = (props) => {
         <NavCenter />
       </div>
 
-      <div class="bg-white overflow-hidden">
-        <div class="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <h1>{title}</h1>
         </div>
       </div>

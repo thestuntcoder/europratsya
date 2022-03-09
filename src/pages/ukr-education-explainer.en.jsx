@@ -31,20 +31,20 @@ export default function UkrEducationExplainer() {
                 Ukraine education FAQ
               </h1>
 
-              <div class="relative text-base float-right max-w-md">
+              <div className="relative text-base float-right max-w-md">
                 <figure>
-                  <div class="max-w-md aspect-w-12 ml-8">
+                  <div className="max-w-md aspect-w-12 ml-8">
                     <StaticImage
-                      class="rounded-lg shadow-lg object-cover object-center"
+                      className="rounded-lg shadow-lg object-cover object-center"
                       src="../images/education/assembly-hall-kyiv-polytechnic-institute.jpg"
                       alt="Assembly hall Kyiv Polytechnic Institute"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption class="mt-3 flex text-sm text-gray-500 italic">
+                  <figcaption className="mt-3 flex text-sm text-gray-500 italic">
                     <svg
-                      class="flex-none w-5 h-5 text-gray-400"
+                      className="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -56,7 +56,7 @@ export default function UkrEducationExplainer() {
                         clip-rule="evenodd"
                       />
                     </svg>
-                    <span class="ml-2">
+                    <span className="ml-2">
                       Images from top: Igor Sikorsky Kyiv Polytechnic Institute,
                       Kharkiv National Medical University, Lakshya MBBS (Medical
                       school), Hlukhiv National Pedagogical University, assembly
@@ -106,7 +106,7 @@ export default function UkrEducationExplainer() {
                   ECTS Grading scale
                 </h2>
 
-                <table class="table-fixed border-collapse text-sm border border-slate-200 max-w-md">
+                <table className="table-fixed border-collapse text-sm border border-slate-200 max-w-md">
                   <thead>
                     <tr>
                       <th className="border-b font-medium bg-gray-200 p-4 pl-8 pt-0 pb-3 text-slate-400 text-center">
