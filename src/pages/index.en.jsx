@@ -11,7 +11,7 @@ import ukrUniBg from '../images/ukr-universities.jpg';
 import sponsorKaffebakeriet from '../images/sponsors/kaffebakeriet.jpeg';
 import sponsorKodit from '../images/sponsors/kodit.png';
 import sponsorSC from '../images/sponsors/stuntcoders.png';
-import sponsorDT from '../images/sponsors/daytwo.svg';
+import sponsorDT from '../images/sponsors/daytwo.png';
 import sponsorTM from '../images/sponsors/tm.png';
 
 export default function Home({ data }) {
