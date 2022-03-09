@@ -26,7 +26,7 @@ export default function NotFoundPage() {
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
           <div className="lg:mt-0 mt-8">
             <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-              Page title
+              На сайті ведуться технічні роботи / Under construction
             </h1>
             <div className="prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1 mx-auto text-lg prose text-gray-500">
               <p>
