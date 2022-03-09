@@ -39,6 +39,41 @@ async function createCountryPages(graphql, actions) {
   });
 }
 
+async function createEmployerPages(graphql, actions) {
+  const { createPage } = actions;
+
+  const result = await graphql(`
+    {
+      allSanityCompany {
+        nodes {
+          id
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `);
+
+  if (result.errors) throw result.errors;
+
+  const employerNodes = (result.data.allSanityCompany || {}).nodes || [];
+
+  // Loop through the company nodes, but don't return anything
+  employerNodes.forEach((node) => {
+    const { id, slug = {} } = node;
+    if (!slug) return;
+    const path = `/company/${slug.current}`;
+
+    createPage({
+      path,
+      component: require.resolve('./src/templates/company.jsx'),
+      context: { id: node.id },
+    });
+  });
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   await createCountryPages(graphql, actions);
+  await createEmployerPages(graphql, actions);
 };
