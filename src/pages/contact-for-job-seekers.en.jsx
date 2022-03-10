@@ -75,6 +75,8 @@ export default function ContactEmployees() {
                 </p>
                 <form
                   action="#"
+                  name="candidate"
+                  data-netlify="true"
                   method="POST"
                   className="gap-y-6 grid grid-cols-1"
                 >
