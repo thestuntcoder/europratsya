@@ -133,6 +133,17 @@ export default function Home({ data }) {
             </h2>
           </div>
           <JobAds limit="9" data={data.allSanityJobPost.edges} />
+
+          <div className="mt-8 text-center">
+            <div className="inline-flex rounded-full shadow">
+              <Link
+                to="/vacancies"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+              >
+                See all vacancies
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
