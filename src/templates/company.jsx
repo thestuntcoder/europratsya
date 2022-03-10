@@ -10,7 +10,9 @@ import BlockContent from '../components/block-content';
 export const query = graphql`
   query CompanyTemplateQuery($id: String!) {
     company: sanityCompany(id: { eq: $id }) {
-      _rawAbout
+      description {
+        _rawEn
+      }
       image {
         _key
         _type
@@ -104,7 +106,7 @@ const Company = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <BlockContent blocks={company._rawAbout} />
+          <BlockContent blocks={company.description._rawEn} />
         </div>
       </div>
 
