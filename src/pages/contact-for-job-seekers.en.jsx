@@ -77,6 +77,7 @@ export default function ContactEmployees() {
                   action="#"
                   name="candidate"
                   data-netlify="true"
+                  enctype="multipart-form/data"
                   method="POST"
                   className="gap-y-6 grid grid-cols-1"
                 >
