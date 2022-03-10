@@ -14,21 +14,13 @@ async function createCountryPages(graphql, actions) {
     }
   `);
 
-  // If there are any errors in the query, cancel the build and tell us
   if (result.errors) throw result.errors;
+  const countryNodes = (result.data.allSanityCountry || {}).nodes || [];
 
-  // Let‘s gracefully handle if allSanityCatgogy is null
-  const categoryNodes = (result.data.allSanityCountry || {}).nodes || [];
-
-  // Loop through the country nodes, but don't return anything
-  categoryNodes.forEach((node) => {
-    // Desctructure the id and slug fields for each country
+  countryNodes.forEach((node) => {
     const { id, slug = {} } = node;
-
-    // If there isn't a slug, skip
     if (!slug) return;
 
-    // Make the URL with the current slug
     const path = `/countries/${slug.current}`;
 
     createPage({
@@ -56,10 +48,8 @@ async function createEmployerPages(graphql, actions) {
   `);
 
   if (result.errors) throw result.errors;
-
   const employerNodes = (result.data.allSanityCompany || {}).nodes || [];
 
-  // Loop through the company nodes, but don't return anything
   employerNodes.forEach((node) => {
     const { id, slug = {} } = node;
     if (!slug) return;
@@ -73,7 +63,40 @@ async function createEmployerPages(graphql, actions) {
   });
 }
 
+async function createJobPages(graphql, actions) {
+  const { createPage } = actions;
+
+  const result = await graphql(`
+    {
+      allSanityJobPost {
+        nodes {
+          id
+          slug {
+            current
+          }
+        }
+      }
+    }
+  `);
+
+  if (result.errors) throw result.errors;
+  const jobNodes = (result.data.allSanityJobPost || {}).nodes || [];
+
+  jobNodes.forEach((node) => {
+    const { id, slug = {} } = node;
+    if (!slug) return;
+    const path = `/job/${slug.current}`;
+
+    createPage({
+      path,
+      component: require.resolve('./src/templates/job.jsx'),
+      context: { id: node.id },
+    });
+  });
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   await createCountryPages(graphql, actions);
   await createEmployerPages(graphql, actions);
+  await createJobPages(graphql, actions);
 };

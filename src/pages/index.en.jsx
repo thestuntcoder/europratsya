@@ -110,19 +110,13 @@ export default function Home({ data }) {
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
             <p>
-              We post jobs for candidates who need to set up a temporary base
-              for their families outside Ukraine. We also post remote jobs
-              suitable for workers based inside Ukraine.
+              Europratsya post jobs for candidates who need to set up a
+              temporary base for their families outside Ukraine. We also post
+              remote jobs suitable for workers based inside Ukraine.
             </p>
             <p>
-              The team in Europratsya helps Ukrainian candidates translate their
-              CVs into German or English.
-            </p>
-            <p>
-              Europratsya supports quality employers who meet all European work
-              directives by translating their postings into Ukrainian. While
-              most candidates will be bilingual, this allows Ukrainians to
-              search one European-wide database to match their qualifications.
+              One Ukrainian-language database for skills in demand and vacancies
+              across Europe - free for candidates and employers.
             </p>
           </div>
         </div>
@@ -139,6 +133,17 @@ export default function Home({ data }) {
             </h2>
           </div>
           <JobAds limit="9" data={data.allSanityJobPost.edges} />
+
+          <div className="mt-8 text-center">
+            <div className="inline-flex rounded-full shadow">
+              <Link
+                to="/vacancies"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+              >
+                See all vacancies
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
