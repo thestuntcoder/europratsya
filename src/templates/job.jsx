@@ -40,7 +40,7 @@ const JobPost = (props) => {
       </div>
 
       <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto pb-16 px-4 sm:px-6 lg:px-8">
           <BlockContent blocks={job.description._rawEn} />
         </div>
       </div>
