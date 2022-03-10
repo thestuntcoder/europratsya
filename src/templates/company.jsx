@@ -69,7 +69,6 @@ export const query = graphql`
 `;
 
 const Company = (props) => {
-  console.log(props.data.jobs.edges);
   let company = props.data.company;
   let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
