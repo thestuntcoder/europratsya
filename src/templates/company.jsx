@@ -87,15 +87,29 @@ const Company = (props) => {
   let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
 
+  let metaTitle = company.name;
+  let metaDescription = company.name;
+  let metaImage = company.image.asset.gatsbyImageData.images.fallback.src;
+
+  if (company.seo != null && company.seo.title_en != null) {
+    metaTitle = company.seo.title_en;
+  }
+  if (company.seo != null && company.seo.description_en != null) {
+    metaDescription = company.seo.description_en;
+  }
+  if (company.seo != null && company.seo.seo_image != null) {
+    metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
+  }
+
   return (
     <LayoutPage>
       <Helmet>
         <title>{company.name}</title>
-        <meta name="description" content={company.seo.description_en} />
+        <meta name="description" content={metaDescription} />
         <meta property="og:type" content="company" />
-        <meta property="og:title" content={company.seo.title_en} />
-        <meta property="og:description" content={company.seo.description_en} />
-        <meta property="og:image" content={getImg} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
       </Helmet>
 
       <div className="relative">

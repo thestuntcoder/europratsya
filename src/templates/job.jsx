@@ -80,15 +80,29 @@ const JobPost = (props) => {
     languagesLabel = 'Optional languages';
   }
 
+  let metaTitle = job.title.en;
+  let metaDescription = job.title.en;
+  let metaImage = company.image.asset.gatsbyImageData.images.fallback.src;
+
+  if (job.seo != null && job.seo.title_en != null) {
+    metaTitle = job.seo.title_en;
+  }
+  if (job.seo != null && job.seo.description_en != null) {
+    metaDescription = job.seo.description_en;
+  }
+  if (job.seo != null && job.seo.seo_image != null) {
+    metaImage = job.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
+  }
+
   return (
     <LayoutPage>
       <Helmet>
         <title>{job.title.en}</title>
-        <meta name="description" content={job.seo.description_en} />
+        <meta name="description" content={metaDescription} />
         <meta property="og:type" content="job post" />
-        <meta property="og:title" content={job.seo.title_en} />
-        <meta property="og:description" content={job.seo.description_en} />
-        <meta property="og:image" content={getImg} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:image" content={metaImage} />
       </Helmet>
 
       <div className="relative">
