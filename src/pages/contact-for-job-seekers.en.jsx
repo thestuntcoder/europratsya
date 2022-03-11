@@ -74,7 +74,6 @@ export default function ContactEmployees() {
                   English or German free of charge.
                 </p>
                 <form
-                  action="#"
                   name="candidate"
                   data-netlify="true"
                   enctype="multipart-form/data"

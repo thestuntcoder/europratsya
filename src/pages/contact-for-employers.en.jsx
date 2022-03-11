@@ -76,7 +76,6 @@ export default function ContactEmployers() {
                   requirements.
                 </p>
                 <form
-                  action="#"
                   name="employer"
                   data-netlify="true"
                   method="POST"
