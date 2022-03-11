@@ -8,7 +8,7 @@ export default function JobAd(props) {
         <div className="flex-1">
           <p className="text-sm font-medium text-blue-500">
             <Link to={props.linkto} className="hover:underline">
-              {props.location}
+              {props.title}, {props.employer}
             </Link>
           </p>
           <Link to={props.linkto} className="block mt-2">
@@ -22,7 +22,7 @@ export default function JobAd(props) {
           <div>
             <p className="text-sm font-medium text-gray-900">
               <Link to={props.linkto} className="hover:underline">
-                {props.title}, {props.employer}
+                {props.location}
               </Link>
             </p>
             <div className="flex space-x-1 text-sm text-gray-500 capitalize">
