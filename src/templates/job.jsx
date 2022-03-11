@@ -15,6 +15,19 @@ export const query = graphql`
       title {
         en
       }
+      seo {
+        title_en
+        description_en
+        seo_image {
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
       job_languages {
         name
       }
@@ -71,6 +84,11 @@ const JobPost = (props) => {
     <LayoutPage>
       <Helmet>
         <title>{job.title.en}</title>
+        <meta name="description" content={job.seo.description_en} />
+        <meta property="og:type" content="job post" />
+        <meta property="og:title" content={job.seo.title_en} />
+        <meta property="og:description" content={job.seo.description_en} />
+        <meta property="og:image" content={getImg} />
       </Helmet>
 
       <div className="relative">
