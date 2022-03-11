@@ -27,8 +27,6 @@ export default function JobAd(props) {
             </p>
             <div className="flex space-x-1 text-sm text-gray-500 capitalize">
               {props.salary}
-              <br />
-              {props.contact_detail}
             </div>
           </div>
         </div>
