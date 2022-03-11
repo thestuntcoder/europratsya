@@ -144,7 +144,7 @@ const JobPost = (props) => {
               objectFit="contain"
             />
             <a
-              href="{company.website}"
+              href={company.website}
               target="_blank"
               className="block my-4 font-semibold text-blue-500"
             >
