@@ -120,6 +120,18 @@ const JobPost = (props) => {
             </div>
 
             <BlockContent blocks={job.description._rawEn} />
+
+            <div className="mt-8 text-center">
+              <div className="inline-flex rounded-full shadow">
+                <a
+                  href={'mailto:' + job.contact}
+                  to="/vacancies"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+                >
+                  Apply
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
