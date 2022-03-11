@@ -25,6 +25,7 @@ export const query = graphql`
       country {
         title
       }
+      contact
 
       employer {
         description {
