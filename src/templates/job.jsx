@@ -61,6 +61,11 @@ const JobPost = (props) => {
   const languages = job.job_languages.map((c) => c.name).join(' or ');
   const categories = job.job_categories.map((c) => c.title).join(', ');
 
+  let languagesLabel = 'Required language';
+  if (job.job_languages.length > 1) {
+    languagesLabel = 'Optional languages';
+  }
+
   return (
     <LayoutPage>
       <Helmet>
@@ -87,7 +92,7 @@ const JobPost = (props) => {
               <dl className="sm:grid-cols-3 grid grid-cols-1 gap-5 mt-5">
                 <div className="sm:p-6 px-4 py-5 overflow-hidden bg-blue-100 rounded-lg shadow">
                   <dt className="text-sm font-medium text-gray-500 truncate">
-                    Optional languages
+                    {languagesLabel}
                   </dt>
                   <dd className="text-large mt-1 font-semibold text-gray-900">
                     {languages}
