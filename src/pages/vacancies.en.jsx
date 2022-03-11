@@ -26,7 +26,7 @@ export default function Vacancies({ data }) {
           {edges[key].node.city + ', ' + edges[key].node.country.title}
         </td>
         <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-6">
-          Language
+          {edges[key].node.job_languages.map((c) => c.name).join(' or ')}
         </td>
       </tr>
     );
@@ -113,6 +113,9 @@ export const JOB_POSTS = graphql`
           }
           job_categories {
             title
+          }
+          job_languages {
+            name
           }
           validUntil
           slug {
