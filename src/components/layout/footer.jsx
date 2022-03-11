@@ -133,7 +133,9 @@ export default function Footer() {
                     info@europratsya.com
                   </a>
                   <br />
-                  BRCT00001440441
+                  Community interest company (not for profit)
+                  <br />
+                  Registration number: SC725877
                 </li>
               </ul>
             </div>
