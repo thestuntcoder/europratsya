@@ -88,6 +88,7 @@ export default function ContactEmployees() {
                   enctype="multipart-form/data"
                   className="gap-y-6 grid grid-cols-1"
                 >
+                  <input type="hidden" name="form-name" value="candidate" />
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
