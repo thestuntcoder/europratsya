@@ -126,6 +126,13 @@ const JobPost = (props) => {
               alt={company.name}
               objectFit="contain"
             />
+            <a
+              href="{company.website}"
+              target="_blank"
+              className="block my-4 font-semibold text-blue-500"
+            >
+              {company.website}
+            </a>
             <BlockContent blocks={company.description._rawEn} />
           </div>
         </div>
