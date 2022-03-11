@@ -13,6 +13,19 @@ export const query = graphql`
       description {
         _rawEn
       }
+      seo {
+        title_en
+        description_en
+        seo_image {
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
       image {
         _key
         _type
@@ -78,6 +91,11 @@ const Company = (props) => {
     <LayoutPage>
       <Helmet>
         <title>{company.name}</title>
+        <meta name="description" content={company.seo.description_en} />
+        <meta property="og:type" content="company" />
+        <meta property="og:title" content={company.seo.title_en} />
+        <meta property="og:description" content={company.seo.description_en} />
+        <meta property="og:image" content={getImg} />
       </Helmet>
 
       <div className="relative">
