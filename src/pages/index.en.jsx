@@ -62,9 +62,9 @@ export default function Home({ data }) {
                   <div className="inline-flex rounded-full shadow">
                     <Link
                       to="/contact-for-job-seekers/"
-                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200"
+                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 uppercase"
                     >
-                      Send us your CV
+                      Contact us
                     </Link>
                   </div>
                 </div>
@@ -94,9 +94,9 @@ export default function Home({ data }) {
                   <div className="inline-flex rounded-full shadow">
                     <Link
                       to="/contact-for-employers/"
-                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200"
+                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 uppercase"
                     >
-                      Join now
+                      Join
                     </Link>
                   </div>
                 </div>
