@@ -58,7 +58,7 @@ const JobPost = (props) => {
   const job = props.data.job;
   const company = job.employer;
   const getImg = getImage(company.image.asset.gatsbyImageData);
-  const languages = job.job_languages.map((c) => c.name).join(', ');
+  const languages = job.job_languages.map((c) => c.name).join(' or ');
   const categories = job.job_categories.map((c) => c.title).join(', ');
 
   return (
@@ -87,7 +87,7 @@ const JobPost = (props) => {
               <dl className="sm:grid-cols-3 grid grid-cols-1 gap-5 mt-5">
                 <div className="sm:p-6 px-4 py-5 overflow-hidden bg-blue-100 rounded-lg shadow">
                   <dt className="text-sm font-medium text-gray-500 truncate">
-                    Languages
+                    Optional languages
                   </dt>
                   <dd className="text-large mt-1 font-semibold text-gray-900">
                     {languages}
