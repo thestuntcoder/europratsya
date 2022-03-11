@@ -20,7 +20,7 @@ export default function JobAds(props) {
         expiraition_date={props.data[key].node.validUntil}
         salary={props.data[key].node.salary}
         title={props.data[key].node.title.en}
-        contact_detail="Contact detail"
+        contact_detail={props.data[key].node.contact}
         description={
           props.data[key].node.description.en[0].children[0].text.substring(
             0,

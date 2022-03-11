@@ -42,6 +42,7 @@ export const query = graphql`
             title
           }
           salary
+          contact
           title {
             en
           }
