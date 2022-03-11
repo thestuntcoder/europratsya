@@ -15,6 +15,16 @@ export const query = graphql`
       title {
         en
       }
+      job_languages {
+        name
+      }
+      job_categories {
+        title
+      }
+      city
+      country {
+        title
+      }
 
       employer {
         description {
@@ -45,9 +55,11 @@ export const query = graphql`
 `;
 
 const JobPost = (props) => {
-  let job = props.data.job;
-  let company = job.employer;
-  let getImg = getImage(company.image.asset.gatsbyImageData);
+  const job = props.data.job;
+  const company = job.employer;
+  const getImg = getImage(company.image.asset.gatsbyImageData);
+  const languages = job.job_languages.map((c) => c.name).join(', ');
+  const categories = job.job_categories.map((c) => c.title).join(', ');
 
   return (
     <LayoutPage>
@@ -69,14 +81,45 @@ const JobPost = (props) => {
       </div>
 
       <div className="md:flex">
-        <div className="bg-white overflow-hidden md:w-2/3">
-          <div className="relative max-w-7xl mx-auto pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="md:w-2/3 overflow-hidden bg-white">
+          <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 pb-16 mx-auto">
+            <div className="pb-12">
+              <dl className="sm:grid-cols-3 grid grid-cols-1 gap-5 mt-5">
+                <div className="sm:p-6 px-4 py-5 overflow-hidden bg-blue-100 rounded-lg shadow">
+                  <dt className="text-sm font-medium text-gray-500 truncate">
+                    Languages
+                  </dt>
+                  <dd className="text-large mt-1 font-semibold text-gray-900">
+                    {languages}
+                  </dd>
+                </div>
+
+                <div className="sm:p-6 px-4 py-5 overflow-hidden bg-blue-100 rounded-lg shadow">
+                  <dt className="text-sm font-medium text-gray-500 truncate">
+                    Location
+                  </dt>
+                  <dd className="text-large mt-1 font-semibold text-gray-900">
+                    {job.city + ', ' + job.country.title}
+                  </dd>
+                </div>
+
+                <div className="sm:p-6 px-4 py-5 overflow-hidden bg-blue-100 rounded-lg shadow">
+                  <dt className="text-sm font-medium text-gray-500 truncate">
+                    Categories
+                  </dt>
+                  <dd className="text-large mt-1 font-semibold text-gray-900">
+                    {categories}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
             <BlockContent blocks={job.description._rawEn} />
           </div>
         </div>
 
-        <div className="bg-gray-50 overflow-hidden md:w-1/3 md:-mt-24 pt-8 md:bg-white md:pt-0">
-          <div className="relative max-w-7xl mx-auto pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="bg-gray-50 md:w-1/3 md:-mt-24 md:bg-white md:pt-0 pt-8 overflow-hidden">
+          <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 pb-16 mx-auto">
             <GatsbyImage
               image={getImg}
               className="h-24"
