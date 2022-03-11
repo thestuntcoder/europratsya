@@ -75,9 +75,9 @@ export default function ContactEmployees() {
                 </p>
                 <form
                   name="candidate"
+                  method="POST"
                   data-netlify="true"
                   enctype="multipart-form/data"
-                  method="POST"
                   className="gap-y-6 grid grid-cols-1"
                 >
                   <div className="grid grid-cols-2 gap-4">
