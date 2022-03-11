@@ -23,7 +23,7 @@ export default class NavCenter extends React.Component {
 
     return (
       <div>
-        <div className="mx-auto px-4 sm:px-6 pt-4">
+        <div className="mx-auto px-3 sm:px-5 pt-4">
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
             <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
               <div className="flex w-full items-center justify-between md:w-auto">
@@ -95,53 +95,77 @@ export default class NavCenter extends React.Component {
             </div>
           </nav>
         </div>
-        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 pt-4 pb-4 hidden sm:block">
-          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
-            <div className="hidden md:flex md:space-x-10">
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/about-us/"
-              >
-                About us
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/404/"
-              >
-                Skills in demand
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/404/"
-              >
-                Guide for visa/permits
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/companies/"
-              >
-                Vetted euro employers
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/404/"
-              >
-                Essential checklists
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/ukr-education-explainer/"
-              >
-                UKR education FAQ
-              </Link>
-              <Link
-                className="font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/ukr-expertise-explained/"
-              >
-                UKR expertise FAQ
-              </Link>
-              <Link to="/uk">УКР 🇺🇦</Link> |<Link to="/">EN 🇬🇧</Link> |
-              <Link to="/de">DE 🇩🇪</Link>
+        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 bg-gray-200 hidden sm:block">
+          <nav className="relative flex  justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto">
+            <div className="hidden md:block border-r border-gray-500 p-2">
+              <div className="text-sm font-bold mb-2">ABOUT</div>
+              <div className="md:flex md:space-x-10">
+                <Link
+                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  to="/about-us/"
+                >
+                  About us
+                </Link>
+              </div>
+            </div>
+            <div className="hidden md:block border-r border-gray-500 p-2">
+              <div className="text-sm font-bold mb-2">CANDIDATES</div>
+              <div className="md:flex md:space-x-10">
+                <Link
+                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  to="/404/"
+                >
+                  Skills in demand
+                </Link>
+                <Link
+                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  to="/404/"
+                >
+                  Guide for visa/permits
+                </Link>
+                <Link
+                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  to="/companies/"
+                >
+                  Vetted euro employers
+                </Link>
+                <Link
+                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  to="/404/"
+                >
+                  Essential checklists
+                </Link>
+              </div>
+            </div>
+            <div className="hidden md:block p-2">
+              <div className="text-sm font-bold mb-2">EMPLOYERS</div>
+              <div className="md:flex md:space-x-10">
+                <Link
+                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  to="/ukr-education-explainer/"
+                >
+                  UKR education FAQ
+                </Link>
+                <Link
+                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  to="/ukr-expertise-explained/"
+                >
+                  UKR expertise FAQ
+                </Link>
+              </div>
+            </div>
+            <div className="hidden lg:block p-2 lg:w-60  h-full">
+              <div className="text-sm font-bold mb-2 text-right">
+                <Link to="/uk">УКР 🇺🇦</Link> | <Link to="/">EN 🇬🇧</Link> |{' '}
+                <Link to="/de">DE 🇩🇪</Link>
+              </div>
+            </div>
+            <div className="hidden md:block lg:hidden p-2 md:w-20  h-full">
+              <div className="text-sm font-bold mb-2 text-right">
+                <Link to="/uk">УКР 🇺🇦</Link> <br /> <Link to="/">EN 🇬🇧</Link>
+                <br />
+                <Link to="/de">DE 🇩🇪</Link>
+              </div>
             </div>
           </nav>
         </div>
