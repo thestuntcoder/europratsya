@@ -128,7 +128,7 @@ const JobPost = (props) => {
                   to="/vacancies"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
                 >
-                  Apply
+                  Contact this employer
                 </a>
               </div>
             </div>
