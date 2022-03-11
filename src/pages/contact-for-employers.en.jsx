@@ -89,6 +89,7 @@ export default function ContactEmployers() {
                   data-netlify="true"
                   className="gap-y-6 grid grid-cols-1"
                 >
+                  <input type="hidden" name="form-name" value="employer" />
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
