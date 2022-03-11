@@ -5,10 +5,18 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 
 export default function UkrExpertiseExplained() {
+  const metaDescription =
+    'An introduction to the strongest industries and fields of expertise in the Ukrainian economy.';
+  const metaTitle = 'Ukrainian sector expertise FAQ';
+
   return (
     <LayoutPage>
       <Helmet>
-        <title>Ukraine expertise explained | Europratsya</title>
+        <title>{metaTitle}</title>
+        <meta property="og:type" content="page" />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">

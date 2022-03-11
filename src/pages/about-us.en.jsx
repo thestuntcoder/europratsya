@@ -5,10 +5,19 @@ import NavCenter from '../components/layout/nav-center';
 import polarImg from '../images/about/vernadsky-polar-research-station.jpg';
 
 export default function AboutUs() {
+  const metaDescription =
+    'The story behind the small European team who wanted to make it simpler for Ukrainians to find safe, relevant work while they wait for their country to return to peace.';
+  const metaTitle =
+    'The charity group matching Ukrainian candidates with safe employers';
+
   return (
     <LayoutPage>
       <Helmet>
-        <title>About Europratsya</title>
+        <title>{metaTitle}</title>
+        <meta property="og:type" content="page" />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">
@@ -17,7 +26,7 @@ export default function AboutUs() {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
+          <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
               <h2 className="text-base text-black font-bold text-3xl tracking-wide">

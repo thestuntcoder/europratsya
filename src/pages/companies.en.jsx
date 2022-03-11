@@ -32,10 +32,18 @@ function employer(company) {
 }
 
 export default function Companies({ data }) {
+  const metaDescription =
+    'Quality employers who are positive to reviewing Ukrainian expertise and qualifications and interviewing Ukrainian candidates, vetted by Europratsya.';
+  const metaTitle = 'Employers who encourage Ukrainian candidates to apply';
+
   return (
     <LayoutPage>
       <Helmet>
-        <title>Europratsya vetted employers</title>
+        <title>{metaTitle}</title>
+        <meta property="og:type" content="page" />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">

@@ -5,10 +5,18 @@ import NavCenter from '../components/layout/nav-center';
 import contactImg from '../images/contact/contact-form-employers.jpg';
 
 export default function ContactEmployers() {
+  const metaDescription =
+    'Europratsya translates your vacancy into Ukrainian and posts your vacancy ad for free to help displaced people search one database for relevant jobs.';
+  const metaTitle = 'Help simplify work search for Ukrainians';
+
   return (
     <LayoutPage>
       <Helmet>
-        <title>Contact for employers of Ukrainians | Europratsya</title>
+        <title>{metaTitle}</title>
+        <meta property="og:type" content="page" />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">
@@ -17,7 +25,7 @@ export default function ContactEmployers() {
 
       <div className="overflow-hidden bg-white">
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
-          <div className="lg:block bg-gray-50 left-3/4 absolute top-0 bottom-0 hidden w-screen"></div>
+          <div className="lg:block bg-gray-50 left-3/4 absolute top-0 bottom-0 hidden w-screen" />
           <div className="max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none mx-auto text-base">
             <div>
               <h2 className="text-base text-3xl font-bold tracking-wide text-black">
@@ -192,7 +200,7 @@ export default function ContactEmployers() {
                       rows="4"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm"
                       placeholder="Message"
-                    ></textarea>
+                    />
                   </div>
                   <div>
                     <button

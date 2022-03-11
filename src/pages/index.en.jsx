@@ -16,10 +16,20 @@ import sponsorGrieg from '../images/sponsors/grieg.svg';
 import sponsorTM from '../images/sponsors/tm.png';
 
 export default function Home({ data }) {
+  const metaDescription =
+    'Our web portal helps job-seekers who need to set up a temporary base for their families outside Ukraine. We also post remote jobs suitable for workers based inside Ukraine. One Ukrainian-language database for skills in demand and vacancies across Europe - free for candidates and free for employers.';
+
   return (
     <LayoutPage>
       <Helmet>
-        <title>Europratsya</title>
+        <title>{company.name}</title>
+        <meta name="description" content={metaDescription} />
+        <meta property="og:type" content="page" />
+        <meta
+          property="og:title"
+          content="Not-for-profit job portal for Ukrainian job-seekers in Europe"
+        />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">
@@ -155,7 +165,7 @@ export default function Home({ data }) {
             alt="Ukrainian universities"
           />
         </div>
-        <div className="absolute inset-0 bg-gray-900 opacity-30"></div>
+        <div className="absolute inset-0 bg-gray-900 opacity-30" />
         <div className="max-w-7xl mx-auto flex items-center justify-between z-10">
           <div className="m-auto text-4xl font-extrabold text-white text-center align-middle mx-auto mt-64 mb-64 z-10">
             Several Nobel prize winners in medicine, physics, chemistry and
