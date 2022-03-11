@@ -80,7 +80,7 @@ const JobPost = (props) => {
         </div>
       </div>
 
-      <div className="md:flex">
+      <div className="md:flex relative max-w-7xl mx-auto">
         <div className="md:w-2/3 overflow-hidden bg-white">
           <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 pb-16 mx-auto">
             <div className="pb-12">
