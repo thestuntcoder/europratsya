@@ -20,7 +20,9 @@ export const query = graphql`
       }
     }
 
-    skills: sanitySkillShortages(country: { _id: { eq: $id } }) {
+    skills: sanitySkillShortages(
+      countries: { elemMatch: { _id: { eq: $id } } }
+    ) {
       description {
         _rawEn
       }
