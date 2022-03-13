@@ -33,6 +33,32 @@ export const query = graphql`
   }
 `;
 
+function visa(visa) {
+  if (visa == null) return;
+
+  return (
+    <div>
+      <h2 className="text-xl mt-8">{visa.title.en}</h2>
+      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <BlockContent blocks={visa.description._rawEn} />
+      </div>
+    </div>
+  );
+}
+
+function skills(skills) {
+  if (skills == null) return;
+
+  return (
+    <div>
+      <h2 className="text-xl mt-8">{skills.title.en}</h2>
+      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <BlockContent blocks={skills.description._rawEn} />
+      </div>
+    </div>
+  );
+}
+
 const Country = (props) => {
   const { data = {} } = props;
   const { title } = data.country || {};
@@ -50,16 +76,8 @@ const Country = (props) => {
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <h1 className="text-2xl mt-8">{title}</h1>
-
-          <h2 className="text-xl mt-8">{data.visa.title.en}</h2>
-          <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <BlockContent blocks={data.visa.description._rawEn} />
-          </div>
-
-          <h2 className="text-xl mt-8">{data.skills.title.en}</h2>
-          <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-            <BlockContent blocks={data.skills.description._rawEn} />
-          </div>
+          {visa(data.visa)}
+          {skills(data.skills)}
         </div>
       </div>
     </LayoutPage>
