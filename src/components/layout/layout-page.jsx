@@ -3,10 +3,14 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
+import { useLocation } from '@reach/router';
 
 export default function LayoutPage(content) {
   const metaTitle =
     'Europratsya helps job-seekers who need to set up a temporary base for their families outside Ukraine.';
+
+  const location = useLocation();
+
   return (
     <div>
       <Helmet>
@@ -17,7 +21,10 @@ export default function LayoutPage(content) {
           content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://europratsya.com/" />
+        <meta
+          property="og:url"
+          content={'https://europratsya.com/' + location.pathname}
+        />
         <meta
           name="twitter:image"
           content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
