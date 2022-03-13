@@ -35,7 +35,7 @@ export default function ContactEmployees() {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute('action')))
+      .then(() => alert('Thank you for your submission!'))
       .catch((error) => alert(error));
   };
 
