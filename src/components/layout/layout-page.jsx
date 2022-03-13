@@ -16,6 +16,7 @@ export default function LayoutPage(content) {
           property="og:image"
           content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
         />
+        <meta property="og:type" content="website" />
         <meta
           name="twitter:image"
           content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
