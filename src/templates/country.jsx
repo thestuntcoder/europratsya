@@ -47,7 +47,7 @@ const Country = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <h1>{title}</h1>
+          <h1 className="text-2xl mt-8">{title}</h1>
 
           <h2 className="text-xl mt-8">{data.visa.title.en}</h2>
           <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
