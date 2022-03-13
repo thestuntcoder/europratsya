@@ -82,7 +82,7 @@ export default function ContactEmployees() {
                   English or German free of charge.
                 </p>
                 <form
-                  name="candidate"
+                  name="candidateUploads"
                   method="POST"
                   data-netlify="true"
                   enctype="multipart-form/data"
@@ -166,6 +166,7 @@ export default function ContactEmployees() {
                       type="file"
                       name="file"
                       id="file"
+                      accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                     />
                   </div>
