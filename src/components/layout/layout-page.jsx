@@ -9,7 +9,7 @@ export default function LayoutPage(content) {
   const metaTitle =
     'Europratsya helps job-seekers who need to set up a temporary base for their families outside Ukraine.';
 
-  const location = useLocation();
+  const { pathname } = useLocation();
 
   return (
     <div>
@@ -23,7 +23,7 @@ export default function LayoutPage(content) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={'https://europratsya.com/' + location.pathname}
+          content={'https://europratsya.com/' + pathname}
         />
         <meta
           name="twitter:image"
