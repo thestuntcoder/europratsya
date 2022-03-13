@@ -4,7 +4,41 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import contactImg from '../images/contact/contact-form-candidates.jpg';
 
+function encode(data) {
+  const formData = new FormData();
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key]);
+  }
+
+  return formData;
+}
+
 export default function ContactEmployees() {
+  const [state, setState] = React.useState({});
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+
+  const handleAttachment = (e) => {
+    setState({ ...state, [e.target.name]: e.target.files[0] });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch((error) => alert(error));
+  };
+
   const metaDescription =
     'Europratsya translates your CV into English or German for free to help you focus on finding work and planning interviews.';
   const metaTitle = 'Time-saving CV help for Ukrainians';
@@ -87,6 +121,7 @@ export default function ContactEmployees() {
                   data-netlify="true"
                   enctype="multipart-form/data"
                   className="gap-y-6 grid grid-cols-1"
+                  onSubmit={handleSubmit}
                 >
                   <input
                     type="hidden"
@@ -108,6 +143,7 @@ export default function ContactEmployees() {
                         autocomplete="name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Full name"
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -124,6 +160,7 @@ export default function ContactEmployees() {
                         autocomplete="email"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Email"
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -141,6 +178,7 @@ export default function ContactEmployees() {
                         id="language-1"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Language 1"
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -156,6 +194,7 @@ export default function ContactEmployees() {
                         id="language-2"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Language 2"
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -172,6 +211,7 @@ export default function ContactEmployees() {
                       id="file"
                       accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
+                      onChange={handleAttachment}
                     />
                   </div>
                   <div>
@@ -188,6 +228,7 @@ export default function ContactEmployees() {
                           name="push-notifications"
                           type="radio"
                           className="focus:ring-blue-500 w-4 h-4 text-blue-600 border-gray-300"
+                          onChange={handleChange}
                         />
                         <label
                           for="push-everything"
@@ -202,6 +243,7 @@ export default function ContactEmployees() {
                           name="push-notifications"
                           type="radio"
                           className="focus:ring-blue-500 w-4 h-4 text-blue-600 border-gray-300"
+                          onChange={handleChange}
                         />
                         <label
                           for="push-email"
@@ -225,6 +267,7 @@ export default function ContactEmployees() {
                       rows="4"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm"
                       placeholder="Message"
+                      onChange={handleChange}
                     />
                   </div>
                   <div>
