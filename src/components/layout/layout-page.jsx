@@ -17,6 +17,7 @@ export default function LayoutPage(content) {
           content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
         />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://europratsya.com/" />
         <meta
           name="twitter:image"
           content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
