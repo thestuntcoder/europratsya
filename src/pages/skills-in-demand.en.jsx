@@ -46,15 +46,14 @@ export default function SkillsInDemand({ data }) {
                 Skills in demand
               </h1>
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Unemployment Map
-                </h2>
-
                 <div className="relative md:flex w-full">
                   <div className="md:w-1/3">
                     <ul>{countriesOutput}</ul>
                   </div>
                   <div className="md:w-2/3">
+                    <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                      Unemployment Map
+                    </h2>
                     <StaticImage
                       className="my-8 h-full w-auto"
                       src="../images/checklist/Unemployment-Map-2x.png"
