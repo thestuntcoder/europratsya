@@ -11,7 +11,7 @@ export const query = graphql`
       title
     }
 
-    visa: sanityVisaRequirement(country: { _id: { eq: $id } }) {
+    visa: sanityVisaRequirement(country: { id: { eq: $id } }) {
       description {
         _rawEn
       }
@@ -21,7 +21,7 @@ export const query = graphql`
     }
 
     skills: sanitySkillShortages(
-      countries: { elemMatch: { _id: { eq: $id } } }
+      countries: { elemMatch: { id: { eq: $id } } }
     ) {
       description {
         _rawEn
@@ -62,7 +62,7 @@ function skills(skills) {
 const Country = (props) => {
   const { data = {} } = props;
   const { title } = data.country || {};
-
+  console.log(data);
   return (
     <LayoutPage>
       <Helmet>
