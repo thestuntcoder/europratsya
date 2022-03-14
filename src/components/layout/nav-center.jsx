@@ -131,7 +131,7 @@ export default class NavCenter extends React.Component {
                 </Link>
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
-                  to="/404/"
+                  to="/essential-checklists/"
                 >
                   Essential checklists
                 </Link>
@@ -236,7 +236,7 @@ export default class NavCenter extends React.Component {
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/404/"
+                  to="/essential-checklists/"
                 >
                   Essential checklists
                 </Link>
