@@ -18,8 +18,7 @@ import sponsorTM from '../images/sponsors/tm.png';
 export default function Home({ data }) {
   const metaDescription =
     'Our web portal helps job-seekers who need to set up a temporary base for their families outside Ukraine. We also post remote jobs suitable for workers based inside Ukraine. One Ukrainian-language database for skills in demand and vacancies across Europe - free for candidates and free for employers.';
-  const metaTitle =
-    'Not-for-profit job portal for Ukrainian job-seekers in Europe';
+  const metaTitle = 'Non-profit job portal for Ukrainian job-seekers in Europe';
 
   return (
     <LayoutPage>
