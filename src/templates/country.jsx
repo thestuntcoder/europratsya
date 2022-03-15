@@ -76,8 +76,10 @@ function visa(visa) {
 
   return (
     <div>
-      <h2 className="text-xl mt-8 text-blue-500">{visa.title.en}</h2>
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-xl mt-8 font-extrabold text-blue-500">
+        {visa.title.en}
+      </h2>
+      <div className="relative max-w-7xl mx-auto py-8">
         <BlockContent blocks={visa.description._rawEn} />
       </div>
     </div>
@@ -89,8 +91,10 @@ function skills(skills) {
 
   return (
     <div>
-      <h2 className="text-xl mt-8 text-blue-500">{skills.title.en}</h2>
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <h2 className="text-xl mt-8 font-extrabold text-blue-500">
+        {skills.title.en}
+      </h2>
+      <div className="relative max-w-7xl mx-auto py-8">
         <BlockContent blocks={skills.description._rawEn} />
       </div>
     </div>
