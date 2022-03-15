@@ -74,7 +74,7 @@ export default function VisaPermits({ data }) {
 
 export const COUNTRIES = graphql`
   query allSanityCountries {
-    allSanityCountry(sort: { fields: title, order: ASC }) {
+    allSanityCountry(sort: { fields: title___en, order: ASC }) {
       nodes {
         slug {
           current
