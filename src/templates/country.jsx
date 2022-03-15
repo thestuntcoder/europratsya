@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
+import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
 
 export const query = graphql`
@@ -34,6 +35,43 @@ export const query = graphql`
         en
       }
     }
+
+    jobs: allSanityJobPost(filter: { country: { id: { eq: $id } } }) {
+      edges {
+        node {
+          city
+          country {
+            title {
+              en
+              uk
+              de
+            }
+          }
+          salary
+          contact
+          title {
+            en
+          }
+          description {
+            en {
+              children {
+                text
+              }
+            }
+          }
+          employer {
+            name
+          }
+          job_categories {
+            title
+          }
+          validUntil
+          slug {
+            current
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -63,10 +101,27 @@ function skills(skills) {
   );
 }
 
+function vacancies(ads) {
+  if (ads == null) return;
+
+  return (
+    <div className="bg-gray-100 overflow-hidden">
+      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+            Latest vacancies
+          </h2>
+        </div>
+        <JobAds limit="24" data={ads} />
+      </div>
+    </div>
+  );
+}
+
 const Country = (props) => {
   const { data = {} } = props;
   const { title } = data.country || {};
-  console.log(data);
+
   return (
     <LayoutPage>
       <Helmet>
@@ -84,6 +139,8 @@ const Country = (props) => {
           {skills(data.skills)}
         </div>
       </div>
+
+      {vacancies(props.data.jobs.edges)}
     </LayoutPage>
   );
 };
