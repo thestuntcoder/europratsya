@@ -167,7 +167,7 @@ const Country = (props) => {
             props.data.country.seo.seo_image,
             props.data.country.title.en
           )}
-          <h1 className="text-2xl mt-8">{props.data.country.title.en}</h1>
+          <h1 className="text-3xl mt-8">{props.data.country.title.en}</h1>
           {visa(props.data.visa)}
           {skills(props.data.skills)}
         </div>
