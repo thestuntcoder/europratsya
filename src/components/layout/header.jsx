@@ -16,6 +16,13 @@ export default function Header() {
         media="print"
         onload="this.media='all'"
       />
+      {typeof window !== 'undefined' && (
+        <script
+          defer
+          data-domain="europratsya.com"
+          src="https://plausible.io/js/plausible.js"
+        />
+      )}
     </Helmet>
   );
 }
