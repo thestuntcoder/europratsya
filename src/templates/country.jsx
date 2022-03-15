@@ -11,8 +11,6 @@ export const query = graphql`
     country: sanityCountry(id: { eq: $id }) {
       title {
         en
-        uk
-        de
       }
     }
 
@@ -43,8 +41,6 @@ export const query = graphql`
           country {
             title {
               en
-              uk
-              de
             }
           }
           salary
@@ -119,13 +115,10 @@ function vacancies(ads) {
 }
 
 const Country = (props) => {
-  const { data = {} } = props;
-  const { title } = data.country || {};
-
   return (
     <LayoutPage>
       <Helmet>
-        <title>{title}</title>
+        <title>{props.data.country.title.en}</title>
       </Helmet>
 
       <div className="relative">
@@ -134,9 +127,9 @@ const Country = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-2xl mt-8">{title}</h1>
-          {visa(data.visa)}
-          {skills(data.skills)}
+          <h1 className="text-2xl mt-8">{props.data.country.title.en}</h1>
+          {visa(props.data.visa)}
+          {skills(props.data.skills)}
         </div>
       </div>
 
