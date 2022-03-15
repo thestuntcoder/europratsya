@@ -102,7 +102,7 @@ function skills(skills) {
 }
 
 function vacancies(ads) {
-  if (ads == null) return;
+  if (ads == null || ads.length == 0) return;
 
   return (
     <div className="bg-gray-100 overflow-hidden">
