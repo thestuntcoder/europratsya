@@ -93,7 +93,7 @@ export default function ContactEmployers() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
-                        for="full-name"
+                        htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Full name
@@ -109,7 +109,7 @@ export default function ContactEmployers() {
                     </div>
                     <div>
                       <label
-                        for="email"
+                        htmlFor="email"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Email
@@ -127,7 +127,7 @@ export default function ContactEmployers() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
-                        for="company-role"
+                        htmlFor="company-role"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Role in company
@@ -142,7 +142,7 @@ export default function ContactEmployers() {
                     </div>
                     <div>
                       <label
-                        for="company-name"
+                        htmlFor="company-name"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Company name
@@ -159,7 +159,7 @@ export default function ContactEmployers() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
-                        for="phone"
+                        htmlFor="phone"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Preferred language
@@ -174,7 +174,7 @@ export default function ContactEmployers() {
                     </div>
                     <div>
                       <label
-                        for="language-2"
+                        htmlFor="language-2"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Also considered
@@ -190,7 +190,7 @@ export default function ContactEmployers() {
                   </div>
                   <div>
                     <label
-                      for="message"
+                      htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Comments (max. 500 characters)

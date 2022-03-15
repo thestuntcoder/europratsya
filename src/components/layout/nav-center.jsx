@@ -64,7 +64,7 @@ export default class NavCenter extends React.Component {
             </div>
             <div className="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end w-80">
               <div className="max-w-lg w-full">
-                <label for="search" className="sr-only">
+                <label htmlFor="search" className="sr-only">
                   Search
                 </label>
                 <div className="relative">

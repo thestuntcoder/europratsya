@@ -131,7 +131,7 @@ export default function ContactEmployees() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
-                        for="full-name"
+                        htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Full name
@@ -148,7 +148,7 @@ export default function ContactEmployees() {
                     </div>
                     <div>
                       <label
-                        for="email"
+                        htmlFor="email"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Email
@@ -167,7 +167,7 @@ export default function ContactEmployees() {
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label
-                        for="phone"
+                        htmlFor="phone"
                         className="block text-sm font-medium text-gray-700"
                       >
                         First language
@@ -183,7 +183,7 @@ export default function ContactEmployees() {
                     </div>
                     <div>
                       <label
-                        for="language-2"
+                        htmlFor="language-2"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Second language
@@ -200,7 +200,7 @@ export default function ContactEmployees() {
                   </div>
                   <div>
                     <label
-                      for="file"
+                      htmlFor="file"
                       lassName="block text-sm font-medium text-gray-700"
                     >
                       Upload CV
@@ -216,7 +216,7 @@ export default function ContactEmployees() {
                   </div>
                   <div>
                     <label
-                      for="translated"
+                      htmlFor="translated"
                       className="block text-sm font-medium text-gray-700"
                     >
                       To be translated into
@@ -231,7 +231,7 @@ export default function ContactEmployees() {
                           onChange={handleChange}
                         />
                         <label
-                          for="push-everything"
+                          htmlFor="push-everything"
                           className="block ml-3 text-sm font-medium text-gray-700"
                         >
                           English
@@ -246,7 +246,7 @@ export default function ContactEmployees() {
                           onChange={handleChange}
                         />
                         <label
-                          for="push-email"
+                          htmlFor="push-email"
                           className="block ml-3 text-sm font-medium text-gray-700"
                         >
                           German
@@ -256,7 +256,7 @@ export default function ContactEmployees() {
                   </div>
                   <div>
                     <label
-                      for="message"
+                      htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
                     >
                       Comments (max. 200 characters)
