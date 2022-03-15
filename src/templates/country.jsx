@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import JobAds from '../components/job-ads';
@@ -11,6 +12,22 @@ export const query = graphql`
     country: sanityCountry(id: { eq: $id }) {
       title {
         en
+      }
+      seo {
+        seo_image {
+          _key
+          _type
+          _rawAsset
+          _rawHotspot
+          _rawCrop
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
     }
 
@@ -118,6 +135,21 @@ function vacancies(ads) {
   );
 }
 
+function country_image(img, country_name) {
+  console.log(img);
+  if (img == null) return;
+  const getImg = getImage(img.asset.gatsbyImageData);
+
+  return (
+    <GatsbyImage
+      image={getImg}
+      className="w-full md:w-2/5 float-right ml-4 mb-4"
+      alt={country_name}
+      objectFit="contain"
+    />
+  );
+}
+
 const Country = (props) => {
   return (
     <LayoutPage>
@@ -131,6 +163,10 @@ const Country = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          {country_image(
+            props.data.country.seo.seo_image,
+            props.data.country.title.en
+          )}
           <h1 className="text-2xl mt-8">{props.data.country.title.en}</h1>
           {visa(props.data.visa)}
           {skills(props.data.skills)}
