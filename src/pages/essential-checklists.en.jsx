@@ -39,6 +39,7 @@ export default function EssentialChecklists() {
                   src="../images/checklist/Workplace-guide-English-2x.png"
                   alt="Workplace guide - English"
                   loading="auto"
+                  objectFit="contain"
                 />
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
@@ -49,6 +50,7 @@ export default function EssentialChecklists() {
                   src="../images/checklist/Workplace-guide-German-2x.png"
                   alt="Workplace-guide-German-2x.png"
                   loading="auto"
+                  objectFit="contain"
                 />
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
@@ -59,6 +61,7 @@ export default function EssentialChecklists() {
                   src="../images/checklist/Workplace-guide-Ukrainian-Russian-2x.png"
                   alt="Workplace guide - Ukrainian Russian"
                   loading="auto"
+                  objectFit="contain"
                 />
               </div>
             </div>
