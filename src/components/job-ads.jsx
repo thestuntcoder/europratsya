@@ -14,7 +14,9 @@ export default function JobAds(props) {
       <JobAd
         employer={props.data[key].node.employer.name}
         location={
-          props.data[key].node.city + ', ' + props.data[key].node.country.title
+          props.data[key].node.city +
+          ', ' +
+          props.data[key].node.country.title.en
         }
         profession={props.data[key].node.job_categories[0].title}
         expiraition_date={props.data[key].node.validUntil}

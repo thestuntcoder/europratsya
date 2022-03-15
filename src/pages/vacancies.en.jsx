@@ -23,7 +23,7 @@ export default function Vacancies({ data }) {
           {edges[key].node.employer.name}
         </td>
         <td className="whitespace-nowrap p-4 text-sm text-gray-500">
-          {edges[key].node.city + ', ' + edges[key].node.country.title}
+          {edges[key].node.city + ', ' + edges[key].node.country.title.en}
         </td>
         <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-6">
           {edges[key].node.job_languages.map((c) => c.name).join(' or ')}
@@ -95,7 +95,11 @@ export const JOB_POSTS = graphql`
         node {
           city
           country {
-            title
+            title {
+              en
+              uk
+              de
+            }
           }
           salary
           title {

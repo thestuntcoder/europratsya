@@ -217,7 +217,11 @@ export const JOB_POSTS = graphql`
         node {
           city
           country {
-            title
+            title {
+              en
+              uk
+              de
+            }
           }
           salary
           contact

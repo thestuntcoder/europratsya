@@ -36,7 +36,9 @@ export const query = graphql`
       }
       city
       country {
-        title
+        title {
+          en
+        }
       }
       contact
 
@@ -137,7 +139,7 @@ const JobPost = (props) => {
                     Location
                   </dt>
                   <dd className="text-large mt-1 font-semibold text-gray-900">
-                    {job.city + ', ' + job.country.title}
+                    {job.city + ', ' + job.country.title.en}
                   </dd>
                 </div>
 

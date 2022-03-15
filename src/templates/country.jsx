@@ -8,7 +8,11 @@ import BlockContent from '../components/block-content';
 export const query = graphql`
   query CountryTemplateQuery($id: String!) {
     country: sanityCountry(id: { eq: $id }) {
-      title
+      title {
+        en
+        uk
+        de
+      }
     }
 
     visa: sanityVisaRequirement(country: { id: { eq: $id } }) {

@@ -52,7 +52,11 @@ export const query = graphql`
         node {
           city
           country {
-            title
+            title {
+              en
+              uk
+              de
+            }
           }
           salary
           contact
