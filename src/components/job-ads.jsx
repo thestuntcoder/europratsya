@@ -30,6 +30,7 @@ export default function JobAds(props) {
           ) + '...'
         }
         linkto={'/job/' + props.data[key].node.slug.current}
+        key={key}
       />
     );
 
