@@ -19,7 +19,7 @@ export default function VisaPermits({ data }) {
     countriesOutput.push(
       <li>
         <Link to={'/countries/' + data[key].slug.current}>
-          {data[key].title}
+          {data[key].title.en}
         </Link>
       </li>
     );
@@ -79,7 +79,9 @@ export const COUNTRIES = graphql`
         slug {
           current
         }
-        title
+        title {
+          en
+        }
         id
       }
     }
