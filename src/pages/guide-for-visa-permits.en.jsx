@@ -46,7 +46,7 @@ export default function VisaPermits({ data }) {
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
                 Guides for visa permits
               </h1>
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <div className="relative md:flex w-full">
                   <div className="md:w-1/3">
                     <ul>{countriesOutput}</ul>
@@ -60,6 +60,7 @@ export default function VisaPermits({ data }) {
                       src="../images/checklist/Unemployment-Map-2x.png"
                       alt="Unemployment Map"
                       loading="auto"
+                      objectFit="contain"
                     />
                   </div>
                 </div>
