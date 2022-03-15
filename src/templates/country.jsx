@@ -136,8 +136,8 @@ function vacancies(ads) {
 }
 
 function country_image(img, country_name) {
-  console.log(img);
   if (img == null) return;
+
   const getImg = getImage(img.asset.gatsbyImageData);
 
   return (
