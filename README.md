@@ -1,3 +1,9 @@
+<!-- markdownlint-configure-file {
+  "first-line-h1": false,
+  "no-inline-html": false,
+  "no-trailing-punctuation": false
+} -->
+
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white&style=for-the-badge)
 ![Gatsby.js](https://img.shields.io/badge/Gatsby-%23663399.svg?logo=gatsby&logoColor=white&style=for-the-badge)
 [![Build Status](https://app.travis-ci.com/dejanjacimovic/europratsya.svg?branch=master)](https://app.travis-ci.com/dejanjacimovic/europratsya)
@@ -7,7 +13,9 @@
   We invite <a href="https://europratsya.com/">Ukrainians to Europe</a>
 </h1>
 
-Since the beginning of war in Ukraine, more than 1.600.000 people left the country. It is estimated that 5.000.000 Ukrainians will leave their homes in 2022. It is pur mission to help them feel welcomed in the EU, and by future employers.
+Since the beginning of war in Ukraine, more than 1.600.000 people left the country.
+It is estimated that 5.000.000 Ukrainians will leave their homes in 2022.
+It is pur mission to help them feel welcomed in the EU, and by future employers.
 
 Nobody likes leaving their home, let alone being forced out of it.
 
@@ -17,17 +25,18 @@ The goal of this project is to help Ukrainians citizens:
 2. Find job opportunities in EU (in English, and Ukrainian);
 3. Find fair (vetted) employers that won't take advantage of their situation;
 
-Project is open source, written in Gatsby+Sanity.io, so if you wish to contribute, reach out via contact form on the website, or open issue on Github.
+Project is open source, written in Gatsby+Sanity.io, so if you wish to contribute,
+reach out via contact form on the website, or open issue on Github.
 
 ---
 
 # How can you help?
 
-### 1. Share this repository on social media websites [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Support%20Ukrainians%20with%20find%20dignity%20through%20jobs%20on%20this%20open%20source%20project&url=https://github.com/dejanjacimovic/europratsya)
+## 1. Share this repository on social media websites [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Support%20Ukrainians%20with%20find%20dignity%20through%20jobs%20on%20this%20open%20source%20project&url=https://github.com/dejanjacimovic/europratsya)
 
-### 2. Star this repository ⭐️
+## 2. Star this repository ⭐️
 
-### 3. Join as coder-volunteer
+## 3. Join as coder-volunteer
 
 ---
 
@@ -37,33 +46,33 @@ If you wish to help with development:
 
 ### 🏃‍♂️ Quick start
 
-1.  **Start the website locally.**
+1. **Start the website locally.**
 
-    Use the Gatsby CLI to start site:
+   Use the Gatsby CLI to start site:
 
-    ```shell
-    npm install
-    npm run develop
-    ```
+   ```shell
+   npm install
+   npm run develop
+   ```
 
-2.  **Start developing.**
+2. **Start developing.**
 
-    Edit `jsx` files in `src/pages/` to see our site update in real-time!
+   Edit `jsx` files in `src/pages/` to see our site update in real-time!
 
-3.  **Open the site locally and start customizing!**
+3. **Open the site locally and start customizing!**
 
-    Our site is now running at http://localhost:8000!
+   Our site is now running at <http://localhost:8000>!
 
 ### Make code prettier?
 
-```
+```sh
 npm install
-npx prettier --write src/pages/.jsx
+npx prettier --write src/pages/*.jsx
 ```
 
 ### Setup pre-commit hooks
 
-```
+```sh
 pre-commit install
 ```
 
@@ -71,30 +80,32 @@ pre-commit install
 
 Build images:
 
-```
+```sh
 npm test -- -u
 ```
 
 Run tests:
 
-```
+```sh
 npm test
 ```
 
 Check coverage:
 
-```
+```sh
 npm run test --coverage
 ```
 
 ## Want to help with front-end development?
 
-We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed. Please refer to a beautiful documentation by Tailwind if you run into any issues: https://tailwindcss.com/docs/
+We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed.
+Please refer to a beautiful documentation by Tailwind
+if you run into any issues: <https://tailwindcss.com/docs/>
 
 All design files can be found under `/design_files` as PDFs.
 
 ---
 
-# Sharing is caring!
+# Sharing is caring !
 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Support%20Ukrainians%20with%20find%20dignity%20through%20jobs%20on%20this%20open%20source%20project&url=https://github.com/dejanjacimovic/europratsya)

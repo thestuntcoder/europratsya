@@ -25,7 +25,7 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Languages
                 </h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul className="mt-4 space-y-4">
                   <li>
                     <Link
                       href="/uk"
@@ -64,7 +64,7 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Public Information
                 </h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul className="mt-4 space-y-4">
                   <li>
                     <Link
                       to="/privacy-policy"
@@ -88,7 +88,7 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                   Contact
                 </h3>
-                <ul role="list" className="mt-4 space-y-4">
+                <ul className="mt-4 space-y-4">
                   <li>
                     <Link
                       to="/contact-for-employers"
@@ -116,7 +116,7 @@ export default function Footer() {
               <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
                 Organisation
               </h3>
-              <ul role="list" className="mt-4 space-y-4">
+              <ul className="mt-4 space-y-4">
                 <li className="text-base text-gray-300 hover:text-white">
                   Europratsya CIC
                   <br />

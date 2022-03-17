@@ -114,7 +114,8 @@ const JobPost = (props) => {
       <div className="overflow-hidden bg-white">
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
           <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
-            <Link to="/vacancies">Vacancies</Link> >{' '}
+            <Link to="/vacancies">Vacancies</Link>
+            <span className="mx-2">&gt;</span>
             <span className="text-blue-500">{job.title.en}</span>
           </h1>
         </div>
@@ -182,6 +183,7 @@ const JobPost = (props) => {
             <a
               href={company.website}
               target="_blank"
+              rel="noreferrer"
               className="block my-4 font-semibold text-blue-500"
             >
               {company.website}
