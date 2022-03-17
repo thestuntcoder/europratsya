@@ -44,7 +44,7 @@ export default function ContactEmployeesUk() {
   const metaTitle = 'Матеріал який допоможе українцям зі створенням резюме.';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

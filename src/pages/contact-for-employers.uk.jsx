@@ -10,7 +10,7 @@ export default function ContactEmployersUk() {
   const metaTitle = 'Допомога з полегшенням пошуку роботи для українців';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

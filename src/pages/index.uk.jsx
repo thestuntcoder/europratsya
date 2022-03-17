@@ -21,7 +21,7 @@ export default function HomeUk({ data }) {
   const metaTitle = 'Non-profit job portal for Ukrainian job-seekers in Europe';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />

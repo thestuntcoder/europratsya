@@ -11,7 +11,7 @@ export default function AboutUsUk() {
     'The charity group matching Ukrainian candidates with safe employers';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

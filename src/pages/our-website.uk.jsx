@@ -6,7 +6,7 @@ import NavCenter from '../components/layout/nav-center';
 
 export default function OurWebsiteUk() {
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>Our website | Europratsya</title>
       </Helmet>

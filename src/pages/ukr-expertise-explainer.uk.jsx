@@ -10,7 +10,7 @@ export default function UkrExpertiseExplainedUk() {
   const metaTitle = 'Запитання та відповіді про Україну';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

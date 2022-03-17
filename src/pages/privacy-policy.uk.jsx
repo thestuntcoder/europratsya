@@ -6,7 +6,7 @@ import NavCenter from '../components/layout/nav-center';
 
 export default function PrivacyPolicyUk() {
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>Політика конфіденційності | Europratsya</title>
       </Helmet>

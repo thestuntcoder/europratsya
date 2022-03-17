@@ -38,7 +38,7 @@ export default function Companies({ data }) {
     'Роботодавці, які заохочують українських кандидатів подавати заявки';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />
