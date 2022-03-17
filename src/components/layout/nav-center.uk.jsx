@@ -98,13 +98,13 @@ export default class NavCenterUk extends React.Component {
         <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 bg-gray-200 hidden sm:block">
           <nav className="relative flex  justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto">
             <div className="hidden md:block border-r border-gray-500 p-2">
-              <div className="text-sm font-bold mb-2">Про нас</div>
+              <div className="text-sm font-bold mb-2">Про</div>
               <div className="md:flex md:space-x-10">
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/uk/about-us/"
                 >
-                  Про
+                  Про нас
                 </Link>
               </div>
             </div>
