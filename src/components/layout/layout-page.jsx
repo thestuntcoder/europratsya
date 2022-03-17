@@ -3,6 +3,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
+import FooterUk from './footer.uk';
 import { useLocation } from '@reach/router';
 
 export default function LayoutPage(content) {
@@ -10,6 +11,11 @@ export default function LayoutPage(content) {
     'Europratsya helps job-seekers who need to set up a temporary base for their families outside Ukraine.';
 
   const { pathname } = useLocation();
+
+  let footer = <Footer />;
+  if (content.lang === 'uk') {
+    footer = <FooterUk />;
+  }
 
   return (
     <div>
@@ -35,7 +41,7 @@ export default function LayoutPage(content) {
       <div className="font-sans text-gray-900 antialiased">
         {content.children}
       </div>
-      <Footer />
+      {footer}
     </div>
   );
 }
