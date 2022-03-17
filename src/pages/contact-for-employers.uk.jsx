@@ -4,7 +4,7 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import contactImg from '../images/contact/contact-form-employers.jpg';
 
-export default function ContactEmployers() {
+export default function ContactEmployersUk() {
   const metaDescription =
     'Europratsya переведе вашу вакансію на українську мову і безкоштовно розмістить оголошення про вакансію, створюючи одну базу даних для пошуку роботи.';
   const metaTitle = 'Допомога з полегшенням пошуку роботи для українців';
