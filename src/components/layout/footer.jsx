@@ -28,7 +28,7 @@ export default function Footer() {
                 <ul className="mt-4 space-y-4">
                   <li>
                     <Link
-                      href="/uk"
+                      to="/uk"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       {' '}
