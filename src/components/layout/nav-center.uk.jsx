@@ -127,11 +127,11 @@ export default class NavCenterUk extends React.Component {
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/uk/companies/"
                 >
-                  Перевірені роботодавці євро
+                  Перевірені європейські роботодавці
                 </Link>
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
-                  to="/essential-checklists/"
+                  to="/uk/essential-checklists/"
                 >
                   Kонтрольні списки
                 </Link>
@@ -212,45 +212,45 @@ export default class NavCenterUk extends React.Component {
               <div className="px-2 pt-2 pb-3">
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/about-us/"
+                  to="/uk/about-us/"
                 >
-                  About us
+                  Про нас
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/skills-in-demand/"
+                  to="/uk/skills-in-demand/"
                 >
-                  Skills in demand
+                  Затребувані навички
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/guide-for-visa-permits/"
+                  to="/uk/guide-for-visa-permits/"
                 >
-                  Guide for visa/permits
+                  Посібник для отримання візи/дозволів
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/companies/"
+                  to="/uk/companies/"
                 >
-                  Vetted euro employers
+                  Перевірені європейські роботодавці
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/essential-checklists/"
+                  to="/uk/essential-checklists/"
                 >
-                  Essential checklists
+                  Kонтрольні списки
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/ukr-education-explainer/"
+                  to="/uk/ukr-education-explainer/"
                 >
-                  UKR education FAQ
+                  Освіта пояснила
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/ukr-expertise-explained/"
+                  to="/uk/ukr-expertise-explained/"
                 >
-                  UKR expertise FAQ
+                  Експертиза пояснила
                 </Link>
               </div>
               <div className="bg-gray-50 px-3 py-6 text-center">
