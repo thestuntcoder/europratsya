@@ -12,10 +12,12 @@ export const query = graphql`
     company: sanityCompany(id: { eq: $id }) {
       description {
         _rawEn
+        _rawUk
       }
       seo {
         title_en
         description_en
+        description_uk
         seo_image {
           asset {
             gatsbyImageData(
@@ -62,9 +64,15 @@ export const query = graphql`
           contact
           title {
             en
+            uk
           }
           description {
             en {
+              children {
+                text
+              }
+            }
+            uk {
               children {
                 text
               }
@@ -87,6 +95,7 @@ export const query = graphql`
 `;
 
 const Company = (props) => {
+  const language = props.pageContext.language;
   let company = props.data.company;
   let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
@@ -104,6 +113,9 @@ const Company = (props) => {
   if (company.seo != null && company.seo.seo_image != null) {
     metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
+
+  let descriptionRaw =
+    language === 'en' ? company.description._rawEn : company.description._rawUk;
 
   return (
     <LayoutPage>
@@ -142,7 +154,7 @@ const Company = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <BlockContent blocks={company.description._rawEn} />
+          <BlockContent blocks={descriptionRaw} />
         </div>
       </div>
 
