@@ -4,32 +4,41 @@ import JobAd from './job-ad';
 export default function JobAds(props) {
   let output = [];
   let limit = parseInt(props.limit);
+  const lang = props.language;
 
   for (var key in props.data) {
     if (props.data[key].node.employer == null) continue;
     if (props.data[key].node.job_categories == null) continue;
     if (props.data[key].node.slug == null) continue;
 
+    let desc =
+      lang === 'uk'
+        ? props.data[key].node.description.uk
+        : props.data[key].node.description.en;
+
     output.push(
       <JobAd
         employer={props.data[key].node.employer.name}
         location={
-          props.data[key].node.city +
-          ', ' +
-          props.data[key].node.country.title.en
+          props.data[key].node.city + ', ' + (lang === 'uk')
+            ? props.data[key].node.country.title.uk
+            : props.data[key].node.country.title.en
         }
         profession={props.data[key].node.job_categories[0].title}
         expiraition_date={props.data[key].node.validUntil}
         salary={props.data[key].node.salary}
-        title={props.data[key].node.title.en}
-        contact_detail={props.data[key].node.contact}
-        description={
-          props.data[key].node.description.en[0].children[0].text.substring(
-            0,
-            200
-          ) + '...'
+        title={
+          lang === 'uk'
+            ? props.data[key].node.title.uk
+            : props.data[key].node.title.en
         }
-        linkto={'/job/' + props.data[key].node.slug.current}
+        contact_detail={props.data[key].node.contact}
+        description={desc[0].children[0].text.substring(0, 200) + '...'}
+        linkto={
+          '/job/' +
+          (lang === 'uk' ? 'uk/' : '') +
+          props.data[key].node.slug.current
+        }
         key={key}
       />
     );
