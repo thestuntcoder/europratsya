@@ -13,7 +13,9 @@
   We invite <a href="https://europratsya.com/">Ukrainians to Europe</a>
 </h1>
 
-Since the beginning of war in Ukraine, more than 1.600.000 people left the country. It is estimated that 5.000.000 Ukrainians will leave their homes in 2022. It is pur mission to help them feel welcomed in the EU, and by future employers.
+Since the beginning of war in Ukraine, more than 1.600.000 people left the country.
+It is estimated that 5.000.000 Ukrainians will leave their homes in 2022.
+It is pur mission to help them feel welcomed in the EU, and by future employers.
 
 Nobody likes leaving their home, let alone being forced out of it.
 
@@ -23,7 +25,8 @@ The goal of this project is to help Ukrainians citizens:
 2. Find job opportunities in EU (in English, and Ukrainian);
 3. Find fair (vetted) employers that won't take advantage of their situation;
 
-Project is open source, written in Gatsby+Sanity.io, so if you wish to contribute, reach out via contact form on the website, or open issue on Github.
+Project is open source, written in Gatsby+Sanity.io, so if you wish to contribute,
+reach out via contact form on the website, or open issue on Github.
 
 ---
 
@@ -45,20 +48,20 @@ If you wish to help with development:
 
 1. **Start the website locally.**
 
-    Use the Gatsby CLI to start site:
+   Use the Gatsby CLI to start site:
 
-    ```shell
-    npm install
-    npm run develop
-    ```
+   ```shell
+   npm install
+   npm run develop
+   ```
 
 2. **Start developing.**
 
-    Edit `jsx` files in `src/pages/` to see our site update in real-time!
+   Edit `jsx` files in `src/pages/` to see our site update in real-time!
 
 3. **Open the site locally and start customizing!**
 
-    Our site is now running at <http://localhost:8000>!
+   Our site is now running at <http://localhost:8000>!
 
 ### Make code prettier?
 
@@ -95,7 +98,9 @@ npm run test --coverage
 
 ## Want to help with front-end development?
 
-We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed. Please refer to a beautiful documentation by Tailwind if you run into any issues: <https://tailwindcss.com/docs/>
+We _only_ use Tailwind CSS, so no custom CSS, or inline CSS is allowed.
+Please refer to a beautiful documentation by Tailwind
+if you run into any issues: <https://tailwindcss.com/docs/>
 
 All design files can be found under `/design_files` as PDFs.
 
