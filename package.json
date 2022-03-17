@@ -51,6 +51,7 @@
     "codecov": "^3.8.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
+    "markdownlint": "^0.25.1",
     "react-test-renderer": "^17.0.2"
   }
 }
