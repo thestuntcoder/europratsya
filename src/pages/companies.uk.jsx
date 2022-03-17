@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.uk';
 
 function employersList(edges) {
   let output = [];

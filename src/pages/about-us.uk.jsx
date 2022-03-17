@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.uk';
 import polarImg from '../images/about/vernadsky-polar-research-station.jpg';
 
 export default function AboutUsUk() {
