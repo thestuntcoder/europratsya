@@ -182,6 +182,7 @@ const JobPost = (props) => {
             <a
               href={company.website}
               target="_blank"
+              rel="noreferrer"
               className="block my-4 font-semibold text-blue-500"
             >
               {company.website}
