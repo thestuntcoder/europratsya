@@ -32,7 +32,7 @@ export default function FooterUk() {
                       className="text-base text-gray-300 hover:text-white"
                     >
                       {' '}
-                      Український 🇺🇦{' '}
+                      Українська 🇺🇦{' '}
                     </Link>
                   </li>
 
