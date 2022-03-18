@@ -214,7 +214,7 @@ export default function HomeUk({ data }) {
 
 export const JOB_POSTS = graphql`
   query JobPostsUk {
-    allSanityJobPost(sort: { fields: publishedAt, order: ASC }) {
+    allSanityJobPost(sort: { fields: publishedAt, order: DESC }) {
       edges {
         node {
           city
