@@ -34,6 +34,63 @@ reach out via contact form on the website, or open issue on Github.
 
 ## 1. Share this repository on social media websites [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Support%20Ukrainians%20with%20find%20dignity%20through%20jobs%20on%20this%20open%20source%20project&url=https://github.com/dejanjacimovic/europratsya)
 
+### 🚀 Share on
+
+<table>
+  <tr>
+    <td>
+      <a href="https://web.facebook.com/sharer.php?t=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software&u=https://github.com/dejanjacimovic/europratsya&_rdc=1&_rdr">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/facebook.svg" height="48" width="48" alt="Facebook"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.facebook.com/dialog/send?link=https://github.com/dejanjacimovic/europratsya&app_id=291494419107518&redirect_uri=https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/facebook_messenger.svg" height="48" width="48" alt="Facebook Messenger"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://twitter.com/intent/tweet?text=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software&url=https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/twitter.svg" height="48" width="48" alt="Twitter"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://web.whatsapp.com/send?text=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software%20https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/whatsapp.svg" height="48" width="48" alt="WhatsApp"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://t.me/share/url?url=https://github.com/dejanjacimovic/europratsya&text=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/telegram.svg" height="48" width="48" alt="Telegram"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.linkedin.com/shareArticle?title=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software&url=https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/linkedin.svg" height="48" width="48" alt="LinkedIn"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://vk.com/share.php?url=https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/vkontakte.svg" height="48" width="48" alt="Vkontakte"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://wordpress.com/wp-admin/press-this.php?u=https://github.com/dejanjacimovic/europratsya&t=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software&i=">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/wordpress.svg" height="48" width="48" alt="Wordpress"/>
+      </a>
+    </td>
+    <td>
+      <a href="mailto:recipient name?cc=cc&bcc=bcc&subject=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software&body=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software-https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/gmail.svg" height="48" width="48" alt="Email"/>
+      </a>
+    </td>
+    <td>
+      <a href="https://www.reddit.com/submit?title=Welcome%20Ukrainians%20to%20Europe%20by%20building%20to%20software&url=https://github.com/dejanjacimovic/europratsya">
+        <img src="https://github.com/dejanjacimovic/europratsya/blob/master/src/images/share/reddit.svg" height="48" width="48" alt="Reddit"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## 2. Star this repository ⭐️
 
 ## 3. Join as coder-volunteer
