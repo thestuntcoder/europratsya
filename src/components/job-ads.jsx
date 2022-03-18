@@ -10,10 +10,17 @@ export default function JobAds(props) {
     if (props.data[key].node.employer == null) continue;
     if (props.data[key].node.job_categories == null) continue;
     if (props.data[key].node.slug == null) continue;
+    if (
+      props.data[key].node.description.uk == null &&
+      props.data[key].node.description.en == null
+    )
+      continue;
 
     let desc =
       lang === 'uk'
-        ? props.data[key].node.description.uk
+        ? props.data[key].node.description.uk == null
+          ? props.data[key].node.description.en
+          : props.data[key].node.description.uk
         : props.data[key].node.description.en;
 
     output.push(
