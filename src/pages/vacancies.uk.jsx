@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.uk';
 
-export default function Vacancies({ data }) {
+export default function VacanciesUk({ data }) {
   const metaDescription =
     'Роботодавці які позитивно настроєнні до співбесіди з українськими кандидатами, вони також є безпечними та перевіреними.';
   const metaTitle =
@@ -17,12 +17,14 @@ export default function Vacancies({ data }) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
 
-    let linkto = '/uk/job/' + edges[key].node.slug.current;
-
     allJobAds.push(
-      <tr className="divide-x divide-gray-200">
+      <tr className="divide-x divide-gray-200" key={key}>
         <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-          <Link to={linkto}>{edges[key].node.title.uk}</Link>
+          <Link to={'/uk/job/' + edges[key].node.slug.current}>
+            {edges[key].node.title.uk === null
+              ? edges[key].node.title.en
+              : edges[key].node.title.uk}
+          </Link>
         </td>
         <td className="whitespace-nowrap p-4 text-sm text-gray-500">
           {edges[key].node.employer.name}
@@ -44,6 +46,10 @@ export default function Vacancies({ data }) {
           Роботодавці які заохочують українських кандидатів подавати заявки на
           вакансії | Europratsya
         </title>
+        <meta property="og:type" content="page" />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">
@@ -104,19 +110,14 @@ export const JOB_POSTS = graphql`
           city
           country {
             title {
+              en
               uk
             }
           }
           salary
           title {
+            en
             uk
-          }
-          description {
-            uk {
-              children {
-                text
-              }
-            }
           }
           employer {
             name
