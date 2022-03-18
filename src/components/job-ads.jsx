@@ -35,8 +35,8 @@ export default function JobAds(props) {
         contact_detail={props.data[key].node.contact}
         description={desc[0].children[0].text.substring(0, 200) + '...'}
         linkto={
-          '/job/' +
           (lang === 'uk' ? 'uk/' : '') +
+          '/job/' +
           props.data[key].node.slug.current
         }
         key={key}
