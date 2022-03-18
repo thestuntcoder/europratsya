@@ -16,12 +16,12 @@ export default function Vacancies({ data }) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
 
-    let linkto = '/job/' + edges[key].node.slug.current;
-
     allJobAds.push(
       <tr className="divide-x divide-gray-200">
         <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-          <Link to={linkto}>{edges[key].node.title.en}</Link>
+          <Link to={'/job/' + edges[key].node.slug.current}>
+            {edges[key].node.title.en}
+          </Link>
         </td>
         <td className="whitespace-nowrap p-4 text-sm text-gray-500">
           {edges[key].node.employer.name}
@@ -40,6 +40,10 @@ export default function Vacancies({ data }) {
     <LayoutPage>
       <Helmet>
         <title>Vacancies with Vetted Euro emploeyers | Europratsya</title>
+        <meta property="og:type" content="page" />
+        <meta property="og:title" content={metaTitle} />
+        <meta name="description" content={metaDescription} />
+        <meta property="og:description" content={metaDescription} />
       </Helmet>
 
       <div className="relative">
