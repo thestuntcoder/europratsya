@@ -6,8 +6,9 @@ import NavCenter from '../components/layout/nav-center';
 
 export default function EssentialChecklists() {
   const metaDescription =
-    'An Essential checklist for Ukrainians migrating to EU.';
-  const metaTitle = 'An Essential checklist for Ukrainians migrating to EU';
+    'Основний контрольний список для українців, які мігрують до ЄС.';
+  const metaTitle =
+    'Основний контрольний список для українців, які мігрують до ЄС';
 
   return (
     <LayoutPage>
@@ -28,7 +29,7 @@ export default function EssentialChecklists() {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Essential Checklists
+                Основний контрольний список для українців, які мігрують
               </h1>
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
