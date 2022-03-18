@@ -5,6 +5,10 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 
 export default function Vacancies({ data }) {
+  const metaDescription =
+    'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
+  const metaTitle = 'Job vacancies from firms encouraging Ukrainian candidates';
+
   let allJobAds = [];
   let edges = data.allSanityJobPost.edges;
 
