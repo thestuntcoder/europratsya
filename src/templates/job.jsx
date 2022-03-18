@@ -122,7 +122,7 @@ const JobPost = (props) => {
     );
 
   return (
-    <LayoutPage>
+    <LayoutPage lang={language}>
       <Helmet>
         <title>{jobTitle}</title>
         <meta name="description" content={metaDescription} />

@@ -40,7 +40,7 @@ export default function VacanciesUk({ data }) {
   }
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
         <title>
           Роботодавці які заохочують українських кандидатів подавати заявки на
