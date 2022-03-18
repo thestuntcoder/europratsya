@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
+import NavCenterUk from '../components/layout/nav-center.uk';
 import BlockContent from '../components/block-content';
 
 export const query = graphql`
@@ -121,6 +122,8 @@ const JobPost = (props) => {
       <Link to="/uk/vacancies">Вакансії</Link>
     );
 
+  const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
+
   return (
     <LayoutPage lang={language}>
       <Helmet>
@@ -132,9 +135,7 @@ const JobPost = (props) => {
         <meta property="og:image" content={metaImage} />
       </Helmet>
 
-      <div className="relative">
-        <NavCenter />
-      </div>
+      <div className="relative">{navigation}</div>
 
       <div className="overflow-hidden bg-white">
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
