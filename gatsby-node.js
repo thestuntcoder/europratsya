@@ -90,12 +90,17 @@ async function createJobPages(graphql, actions) {
   jobNodes.forEach((node) => {
     const { id, slug = {} } = node;
     if (!slug) return;
-    const path = `/job/${slug.current}`;
 
     createPage({
-      path,
+      path: `/job/${slug.current}`,
       component: require.resolve('./src/templates/job.jsx'),
-      context: { id: node.id },
+      context: { id: node.id, language: 'en' },
+    });
+
+    createPage({
+      path: `/uk/job/${slug.current}`,
+      component: require.resolve('./src/templates/job.jsx'),
+      context: { id: node.id, language: 'uk' },
     });
   });
 }
