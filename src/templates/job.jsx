@@ -114,6 +114,13 @@ const JobPost = (props) => {
       ? job.description._rawEn
       : job.description._rawUk;
 
+  const vacanciesLink =
+    language === 'en' ? (
+      <Link to="/vacancies">Vacancies</Link>
+    ) : (
+      <Link to="/uk/vacancies">Вакансії</Link>
+    );
+
   return (
     <LayoutPage>
       <Helmet>
@@ -132,7 +139,7 @@ const JobPost = (props) => {
       <div className="overflow-hidden bg-white">
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
           <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
-            <Link to="/vacancies">Vacancies</Link>
+            {vacanciesLink}
             <span className="mx-2">&gt;</span>
             <span className="text-blue-500">{jobTitle}</span>
           </h1>
