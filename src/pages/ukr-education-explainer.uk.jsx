@@ -6,8 +6,8 @@ import NavCenter from '../components/layout/nav-center';
 
 export default function UkrEducationExplainerUk() {
   const metaDescription =
-    'An introduction to the Ukrainian education system for employers considering CVs from candidates with Ukrainian university, college or secondary school qualifications.';
-  const metaTitle = 'Ukrainian qualifications FAQ';
+    "Роз'яснення української систему освіти для роботодавців, які розглядають резюме від кандидатів з кваліфікацією українського університету, коледжу або середньої школи.";
+  const metaTitle = 'Українська кваліфікація FAQ (запитання та відповіді)';
 
   return (
     <LayoutPage>
@@ -35,7 +35,7 @@ export default function UkrEducationExplainerUk() {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Ukraine education FAQ
+                Українська освіта – Запитання та відповіді
               </h1>
 
               <div className="relative text-base float-right max-w-md">
@@ -44,7 +44,7 @@ export default function UkrEducationExplainerUk() {
                     <StaticImage
                       className="rounded-lg shadow-lg object-cover object-center"
                       src="../images/education/assembly-hall-kyiv-polytechnic-institute.jpg"
-                      alt="Assembly hall Kyiv Polytechnic Institute"
+                      alt="Актовий зал Київського політехнічного інституту"
                       width="1184"
                       height="1376"
                     />
@@ -64,12 +64,14 @@ export default function UkrEducationExplainerUk() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Images from top: Igor Sikorsky Kyiv Polytechnic Institute,
-                      Kharkiv National Medical University, Lakshya MBBS (Medical
-                      school), Hlukhiv National Pedagogical University, assembly
-                      hall of the National Technical University of Ukraine Kyiv
-                      Polytechnic Institute and (below) research library of
-                      National University of Kyiv-Mohyla Academy.
+                      Зображення зверху: Київський політехнічний інститут імені
+                      Ігоря Сікорського, Харківський національний медичний
+                      університет, Лакшя МББС (медичне училище), Глухівський
+                      національний педагогічний університет, актова зала
+                      Київського політехнічного інституту Національного
+                      технічного університету України та (внизу)
+                      науково-дослідна бібліотека Національного університету ім.
+                      Києво-Могилянської академії.
                     </span>
                   </figcaption>
                 </figure>
@@ -77,41 +79,35 @@ export default function UkrEducationExplainerUk() {
 
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p className="mt-24">
-                  Ukraine has a 99.4% literacy rate, the highest in the world.
-                  Check our explainer for a quick guide to their highly ranked
-                  education system.
+                  В Україні рівень грамотності досягає 99,4%, який є найвищим у
+                  світі. Зверніться до нашого пояснювача, щоб отримати короткий
+                  посібник з системи освіти.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Which are the hardest universities to get into in Ukraine?
+                  Яка система оцінювання в українських університетах?
                 </h2>
+                <p>Рівень освіти оприділяється за</p>
                 <p>
-                  Taras Shevchenko National University of Kyiv Ivan Franko
-                  National University of Lviv V. N. Karazin Kharkiv National
-                  University.
+                  Шкалою 100 балів (90-100 = відмінно, 70-89 = добре, 50-69 =
+                  задовільно, 0-49 = незадовільно)
                 </p>
-
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  What is the grading system at Ukrainian universities?
-                </h2>
+                <p>Або</p>
                 <p>
-                  Degrees are awarded either on a<br />
-                  100 points scale (90-100 = excellent, 70-89 = good, 50-69 =
-                  satisfactory, 0-49 = unsatisfactory)
-                </p>
-                <p>or a</p>
-                <p>
-                  5 point national scale (5 = excellent, 4 = good, 3=
-                  satisfactory, 2-1= unsatisfactory)
-                  <br />
-                  Recent graduates use the European Credit Transfer and
-                  Accumulation scale. They convert differently for 2 year
-                  degrees and 4 year degrees, please check the table below
+                  5-бальна національна шкала (5 = відмінно, 4 = добре, 3 =
+                  задовільно, 2-1 = незадовільно)
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
                   ECTS Grading scale
                 </h2>
+
+                <p>
+                  В данний момент, вищі освітні заклади, використовують
+                  Європейську шкалу кредитування ( European Credit Transfer and
+                  Accumulation scale). Рівень освіти залежить від кваліфікацій
+                  які вказані нижче.
+                </p>
 
                 <table className="table-fixed border-collapse text-sm border border-slate-200 max-w-md">
                   <thead>
@@ -169,97 +165,109 @@ export default function UkrEducationExplainerUk() {
                 </table>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  What do the qualifications mean?
+                  Які університети самі популярні в Україні?
                 </h2>
                 <p>
                   <ul>
                     <li>
-                      Junior Bachelor (Molodshyi Bakalavr)- first level of
-                      higher education equals 2 years of studying
+                      Київський національний університет імені Тараса Шевченка
                     </li>
                     <li>
-                      Bachelor (Bakalavr) - higher education equals 4 years of
-                      studying
+                      Львівський національний університет імені Івана Франка
                     </li>
                     <li>
-                      Master (Magistr) - advanced academic or professional
-                      training
-                    </li>
-                    <li>
-                      Doctor of Philosophy/Art and Doctor of Science - the
-                      highest education level
+                      Харківський національний університет імені В. Н. Каразіна
                     </li>
                   </ul>
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Some applicants are from colleges and some from unis - what is
-                  the difference?
+                  Яка різниться в кваліфікаціях вказаних нижче?
                 </h2>
                 <p>
-                  Colleges offer vocational training, similar to apprenticeships
-                  for mechanics, electricians and chefs, for youth from the age
-                  of 15. With a college qualification you will be entitled to
-                  apply for university places alongside school-leavers who
-                  attended a full 12 years of school.
-                </p>
-
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  I'm looking at Ukrainian secondary school grades - there seem
-                  to be two grading systems?
-                </h2>
-                <p>
-                  School leavers <strong>after 2012</strong> are graded by a
-                  12-point system:
                   <ul>
-                    <li>10-12 (excellent, equivalent to A),</li>
-                    <li>7-9 (good, equivalent to B),</li>
-                    <li>4-6 (satisfactory, equivalent to C) and</li>
-                    <li>1-3 (unsatisfactory, equivalent to F)</li>
-                  </ul>
-                </p>
-
-                <p>
-                  School leavers <strong>before 2012</strong> were graded by a
-                  5-point system:
-                  <ul>
-                    <li>5 (excellent),</li>
-                    <li>4 (good),</li>
-                    <li>3 (satisfactory)</li>
-                    <li>1-2 (unsatisfactory)</li>
+                    <li>
+                      Молодший бакалавр (Молодий Бакалавр) - перший рівень вищої
+                      освіти (2 роки навчання)
+                    </li>
+                    <li>Бакалавр (Бакалавр) - вища освіта (4 роки навчання)</li>
+                    <li>
+                      Магістр (магістратура) - передова академічна або
+                      професійна підготовка
+                    </li>
+                    <li>
+                      Доктор філософії/мистецтва та доктор наук - найвищий
+                      рівень освіти
+                    </li>
                   </ul>
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Some applicants went to school for 11 years and others for 12
-                  - why?
+                  Яка різниця між студентами коледжу і університету?
                 </h2>
                 <p>
-                  Ukraine extended compulsory schooling to 12 years in 2018.
+                  Коледжі пропонують професійну підготовку, аналогічну навчанню
+                  механіків, електриків та шеф-кухарів, для молоді з 15 років.
+                  <br />З кваліфікацією коледжу студенти можуть, по бажанню,
+                  продовжити навчання в університетах разом із випускниками
+                  шкіл, які відвідували повну 12-річну школу.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  What’s the Ukrainian school curriculum like?
+                  Чому акредитації українських середніх шкіл мають дві системи
+                  оцінювання?
                 </h2>
                 <p>
-                  Students are taught 1 or 2 foreign languages (English and
-                  German are the most common), mathematics, chemistry, physics,
-                  biology as well as all general subjects
+                  Випускники шкіл <strong>після 2012 року</strong> оцінюються за
+                  12-бальною системою:
+                  <ul>
+                    <li>10-12 (відмінно, еквівалентно А),</li>
+                    <li>7-9 (добре, еквівалентно B),</li>
+                    <li>4-6 (задовільно, еквівалентно C) і</li>
+                    <li>1-3 (незадовільно, еквівалентно F)</li>
+                  </ul>
+                </p>
+
+                <p>
+                  Випускники шкіл <strong>до 2012 року</strong> оцінювалися за
+                  5-бальною системою:
+                  <ul>
+                    <li>5 (відмінно),</li>
+                    <li>4 (добре),</li>
+                    <li>3 (задовільно),</li>
+                    <li>2-1 (незадовільно)</li>
+                  </ul>
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Anything you recommend I check in a Ukrainian CV?
+                  Чому одні абітурієнти ходили в школу 11 років, а інші 12?
                 </h2>
                 <p>
-                  All academic institutions in Ukraine must have a license and
-                  can’t issue degrees or diplomas without accreditation from
-                  MOES.
+                  У 2018 році Україна продовжила обов'язкове навчання до 12
+                  років.
+                </p>
+
+                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                  Якою є українська шкільна програма?
+                </h2>
+                <p>
+                  Студенти вивчають 1 або 2 іноземних мов (англійська та
+                  німецька є найбільш поширеними), математика, хімія, фізика,
+                  біологія, а також всі загальні предмети.
+                </p>
+
+                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                  Що б ви рекомендували перевірити в українському резюме?
+                </h2>
+                <p>
+                  Всі навчальні заклади в Україні повинні мати ліцензію і не
+                  можуть видавати дипломи без акредитації від МОН.
                 </p>
 
                 <StaticImage
                   className="h-56 w-full object-cover"
                   src="../images/education/library-kyiv-mohyla-academy.jpg"
-                  alt="Kyiv Mohyla Academy"
+                  alt="Києво-Могилянська академія"
                   loading="auto"
                 />
               </div>

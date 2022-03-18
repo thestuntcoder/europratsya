@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
+import NavCenterUk from '../components/layout/nav-center.uk';
 import BlockContent from '../components/block-content';
 
 export const query = graphql`
@@ -14,10 +15,13 @@ export const query = graphql`
       }
       title {
         en
+        uk
       }
       seo {
         title_en
         description_en
+        title_uk
+        description_uk
         seo_image {
           asset {
             gatsbyImageData(
@@ -38,6 +42,7 @@ export const query = graphql`
       country {
         title {
           en
+          uk
         }
       }
       contact
@@ -45,6 +50,7 @@ export const query = graphql`
       employer {
         description {
           _rawEn
+          _rawUk
         }
         website
         name
@@ -71,6 +77,7 @@ export const query = graphql`
 `;
 
 const JobPost = (props) => {
+  const language = props.pageContext.language;
   const job = props.data.job;
   const company = job.employer;
   const getImg = getImage(company.image.asset.gatsbyImageData);
@@ -96,10 +103,31 @@ const JobPost = (props) => {
     metaImage = job.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
 
+  let companyDescriptionRaw =
+    language === 'en' ? company.description._rawEn : company.description._rawUk;
+
+  let jobTitle = language === 'en' ? job.title.en : job.title.uk;
+
+  let jobDescriptionRaw =
+    language === 'en'
+      ? job.description._rawEn
+      : typeof job.description._rawUk === 'undefined'
+      ? job.description._rawEn
+      : job.description._rawUk;
+
+  const vacanciesLink =
+    language === 'en' ? (
+      <Link to="/vacancies">Vacancies</Link>
+    ) : (
+      <Link to="/uk/vacancies">Вакансії</Link>
+    );
+
+  const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
+
   return (
-    <LayoutPage>
+    <LayoutPage lang={language}>
       <Helmet>
-        <title>{job.title.en}</title>
+        <title>{jobTitle}</title>
         <meta name="description" content={metaDescription} />
         <meta property="og:type" content="job post" />
         <meta property="og:title" content={metaTitle} />
@@ -107,16 +135,14 @@ const JobPost = (props) => {
         <meta property="og:image" content={metaImage} />
       </Helmet>
 
-      <div className="relative">
-        <NavCenter />
-      </div>
+      <div className="relative">{navigation}</div>
 
       <div className="overflow-hidden bg-white">
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
           <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
-            <Link to="/vacancies">Vacancies</Link>
+            {vacanciesLink}
             <span className="mx-2">&gt;</span>
-            <span className="text-blue-500">{job.title.en}</span>
+            <span className="text-blue-500">{jobTitle}</span>
           </h1>
         </div>
       </div>
@@ -155,7 +181,7 @@ const JobPost = (props) => {
               </dl>
             </div>
 
-            <BlockContent blocks={job.description._rawEn} />
+            <BlockContent blocks={jobDescriptionRaw} />
 
             <div className="mt-8 text-center">
               <div className="inline-flex rounded-full shadow">
@@ -188,7 +214,7 @@ const JobPost = (props) => {
             >
               {company.website}
             </a>
-            <BlockContent blocks={company.description._rawEn} />
+            <BlockContent blocks={companyDescriptionRaw} />
           </div>
         </div>
       </div>

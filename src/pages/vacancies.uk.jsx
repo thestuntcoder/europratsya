@@ -2,12 +2,13 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.uk';
 
-export default function Vacancies({ data }) {
+export default function VacanciesUk({ data }) {
   const metaDescription =
-    'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
-  const metaTitle = 'Job vacancies from firms encouraging Ukrainian candidates';
+    'Роботодавці які позитивно настроєнні до співбесіди з українськими кандидатами, вони також є безпечними та перевіреними.';
+  const metaTitle =
+    'Роботодавці які заохочують українських кандидатів подавати заявки на вакансії';
 
   let allJobAds = [];
   let edges = data.allSanityJobPost.edges;
@@ -17,17 +18,19 @@ export default function Vacancies({ data }) {
     if (edges[key].node.slug == null) continue;
 
     allJobAds.push(
-      <tr className="divide-x divide-gray-200">
+      <tr className="divide-x divide-gray-200" key={key}>
         <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-          <Link to={'/job/' + edges[key].node.slug.current}>
-            {edges[key].node.title.en}
+          <Link to={'/uk/job/' + edges[key].node.slug.current}>
+            {edges[key].node.title.uk === null
+              ? edges[key].node.title.en
+              : edges[key].node.title.uk}
           </Link>
         </td>
         <td className="whitespace-nowrap p-4 text-sm text-gray-500">
           {edges[key].node.employer.name}
         </td>
         <td className="whitespace-nowrap p-4 text-sm text-gray-500">
-          {edges[key].node.city + ', ' + edges[key].node.country.title.en}
+          {edges[key].node.city + ', ' + edges[key].node.country.title.uk}
         </td>
         <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-6">
           {edges[key].node.job_languages.map((c) => c.name).join(' or ')}
@@ -37,9 +40,12 @@ export default function Vacancies({ data }) {
   }
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="uk">
       <Helmet>
-        <title>Vacancies with Vetted Euro emploeyers | Europratsya</title>
+        <title>
+          Роботодавці які заохочують українських кандидатів подавати заявки на
+          вакансії | Europratsya
+        </title>
         <meta property="og:type" content="page" />
         <meta property="og:title" content={metaTitle} />
         <meta name="description" content={metaDescription} />
@@ -53,7 +59,7 @@ export default function Vacancies({ data }) {
       <div className="relative py-16 bg-gray-50 overflow-hidden">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-            Vacancies
+            Вакансії
           </h1>
           <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg mt-12">
             <table className="min-w-full divide-y divide-gray-300">
@@ -63,25 +69,25 @@ export default function Vacancies({ data }) {
                     scope="col"
                     className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pl-6"
                   >
-                    Job
+                    Робота
                   </th>
                   <th
                     scope="col"
                     className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900"
                   >
-                    Company
+                    Компанія
                   </th>
                   <th
                     scope="col"
                     className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900"
                   >
-                    Location
+                    Розташування
                   </th>
                   <th
                     scope="col"
                     className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-6"
                   >
-                    Language
+                    Мову
                   </th>
                 </tr>
               </thead>
@@ -97,7 +103,7 @@ export default function Vacancies({ data }) {
 }
 
 export const JOB_POSTS = graphql`
-  query allJobPosts {
+  query allJobPostsUk {
     allSanityJobPost {
       edges {
         node {
@@ -106,19 +112,12 @@ export const JOB_POSTS = graphql`
             title {
               en
               uk
-              de
             }
           }
           salary
           title {
             en
-          }
-          description {
-            en {
-              children {
-                text
-              }
-            }
+            uk
           }
           employer {
             name
