@@ -33,33 +33,33 @@ export default function EssentialChecklists() {
               </h1>
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Workplace guide - English
+                  Інформація по мові працевлаштуванні - Англійська
                 </h2>
                 <StaticImage
                   className="my-8 h-full w-auto"
-                  src="../images/checklist/Workplace-guide-English-2x.png"
+                  src="../images/checklist/UKR-Workplace-guide-English-2x.png"
                   alt="Workplace guide - English"
                   loading="auto"
                   objectFit="contain"
                 />
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Workplace guide - German
+                  Інформація по мові працевлаштуванні - Німецька
                 </h2>
                 <StaticImage
                   className="my-8 h-full w-auto"
-                  src="../images/checklist/Workplace-guide-German-2x.png"
+                  src="../images/checklist/UKR-Workplace-guide-German-2x.png"
                   alt="Workplace-guide-German-2x.png"
                   loading="auto"
                   objectFit="contain"
                 />
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Workplace guide - Ukrainian Russian
+                  Інформація по мові працевлаштуванні - Українська і Російська
                 </h2>
                 <StaticImage
                   className="my-8 h-full w-auto"
-                  src="../images/checklist/Workplace-guide-Ukrainian-Russian-2x.png"
+                  src="../images/checklist/UKR-Workplace-guide-Ukrainian-Russian-2x.png"
                   alt="Workplace guide - Ukrainian Russian"
                   loading="auto"
                   objectFit="contain"
