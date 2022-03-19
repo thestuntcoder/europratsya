@@ -15,9 +15,9 @@ export default function VisaPermitsUk({ data }) {
     if (data[key].slug == null) continue;
 
     countriesOutput.push(
-      <li>
+      <li key={key}>
         <Link to={'/uk/countries/' + data[key].slug.current}>
-          {data[key].title.en}
+          {data[key].title.uk}
         </Link>
       </li>
     );
@@ -73,13 +73,12 @@ export default function VisaPermitsUk({ data }) {
 
 export const COUNTRIES = graphql`
   query allSanityCountriesUk {
-    allSanityCountry(sort: { fields: title___en, order: ASC }) {
+    allSanityCountry(sort: { fields: title___uk, order: ASC }) {
       nodes {
         slug {
           current
         }
         title {
-          en
           uk
         }
         id
