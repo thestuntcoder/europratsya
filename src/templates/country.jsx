@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
+import NavCenterUk from '../components/layout/nav-center.uk';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
 
@@ -12,6 +13,7 @@ export const query = graphql`
     country: sanityCountry(id: { eq: $id }) {
       title {
         en
+        uk
       }
       seo {
         seo_image {
@@ -34,9 +36,11 @@ export const query = graphql`
     visa: sanityVisaRequirement(country: { id: { eq: $id } }) {
       description {
         _rawEn
+        _rawUk
       }
       title {
         en
+        uk
       }
     }
 
@@ -45,9 +49,11 @@ export const query = graphql`
     ) {
       description {
         _rawEn
+        _rawUk
       }
       title {
         en
+        uk
       }
     }
 
@@ -58,15 +64,22 @@ export const query = graphql`
           country {
             title {
               en
+              uk
             }
           }
           salary
           contact
           title {
             en
+            uk
           }
           description {
             en {
+              children {
+                text
+              }
+            }
+            uk {
               children {
                 text
               }
@@ -88,37 +101,43 @@ export const query = graphql`
   }
 `;
 
-function visa(visa) {
+function visa(visa, lang = 'en') {
   if (visa == null) return;
 
+  const visaName = lang === 'en' ? visa.title.en : visa.title.uk;
+  const visaDesc =
+    lang === 'en' ? visa.description._rawEn : visa.description._rawUk;
+
   return (
     <div>
-      <h2 className="text-xl mt-8 font-extrabold text-blue-500">
-        {visa.title.en}
-      </h2>
+      <h2 className="text-xl mt-8 font-extrabold text-blue-500">{visaName}</h2>
       <div className="relative max-w-7xl mx-auto py-8">
-        <BlockContent blocks={visa.description._rawEn} />
+        <BlockContent blocks={visaDesc} />
       </div>
     </div>
   );
 }
 
-function skills(skills) {
+function skills(skills, lang = 'en') {
   if (skills == null) return;
 
+  const skillsName = lang === 'en' ? skills.title.en : skills.title.uk;
+  const skillsDesc =
+    lang === 'en' ? skills.description._rawEn : skills.description._rawUk;
+
   return (
     <div>
       <h2 className="text-xl mt-8 font-extrabold text-blue-500">
-        {skills.title.en}
+        {skillsName}
       </h2>
       <div className="relative max-w-7xl mx-auto py-8">
-        <BlockContent blocks={skills.description._rawEn} />
+        <BlockContent blocks={skillsDesc} />
       </div>
     </div>
   );
 }
 
-function vacancies(ads) {
+function vacancies(ads, lang = 'en') {
   if (ads == null || ads.length === 0) return;
 
   return (
@@ -126,7 +145,7 @@ function vacancies(ads) {
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
-            Latest vacancies
+            {lang === 'en' ? 'Latest vacancies' : 'Новітні вакансії'}
           </h2>
         </div>
         <JobAds limit="24" data={ads} />
@@ -151,29 +170,32 @@ function country_image(img, country_name) {
 }
 
 const Country = (props) => {
+  const language = props.pageContext.language;
+  let countryName =
+    language === 'en'
+      ? props.data.country.title.en
+      : props.data.country.title.uk;
+
+  const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
+
   return (
-    <LayoutPage>
+    <LayoutPage lang={language}>
       <Helmet>
-        <title>{props.data.country.title.en}</title>
+        <title>{countryName}</title>
       </Helmet>
 
-      <div className="relative">
-        <NavCenter />
-      </div>
+      <div className="relative">{navigation}</div>
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          {country_image(
-            props.data.country.seo.seo_image,
-            props.data.country.title.en
-          )}
-          <h1 className="text-3xl mt-8">{props.data.country.title.en}</h1>
-          {visa(props.data.visa)}
-          {skills(props.data.skills)}
+          {country_image(props.data.country.seo.seo_image, countryName)}
+          <h1 className="text-3xl mt-8">{countryName}</h1>
+          {visa(props.data.visa, language)}
+          {skills(props.data.skills, language)}
         </div>
       </div>
 
-      {vacancies(props.data.jobs.edges)}
+      {vacancies(props.data.jobs.edges, language)}
     </LayoutPage>
   );
 };
