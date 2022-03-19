@@ -154,10 +154,10 @@ function vacancies(ads, lang = 'en') {
   );
 }
 
-function country_image(img, country_name) {
-  if (img == null) return;
+function country_image(country, country_name) {
+  if (country.seo == null && country.seo.seo_image == null) return;
 
-  const getImg = getImage(img.asset.gatsbyImageData);
+  const getImg = getImage(country.seo.seo_image.asset.gatsbyImageData);
 
   return (
     <GatsbyImage
@@ -188,7 +188,7 @@ const Country = (props) => {
 
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          {country_image(props.data.country.seo.seo_image, countryName)}
+          {country_image(props.data.country, countryName)}
           <h1 className="text-3xl mt-8">{countryName}</h1>
           {visa(props.data.visa, language)}
           {skills(props.data.skills, language)}
