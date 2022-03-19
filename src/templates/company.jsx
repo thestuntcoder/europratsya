@@ -116,7 +116,11 @@ const Company = (props) => {
   }
 
   let descriptionRaw =
-    language === 'en' ? company.description._rawEn : company.description._rawUk;
+    language === 'en'
+      ? company.description._rawEn
+      : typeof company.description._rawUk === 'undefined'
+      ? company.description._rawEn
+      : company.description._rawUk;
 
   const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
 
