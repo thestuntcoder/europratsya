@@ -21,12 +21,16 @@ async function createCountryPages(graphql, actions) {
     const { id, slug = {} } = node;
     if (!slug) return;
 
-    const path = `/countries/${slug.current}`;
+    createPage({
+      path: `/countries/${slug.current}`,
+      component: require.resolve('./src/templates/country.jsx'),
+      context: { id: node.id, language: 'en' },
+    });
 
     createPage({
-      path,
+      path: `/uk/countries/${slug.current}`,
       component: require.resolve('./src/templates/country.jsx'),
-      context: { id },
+      context: { id: node.id, language: 'uk' },
     });
   });
 }
