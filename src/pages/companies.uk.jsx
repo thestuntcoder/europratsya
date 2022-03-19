@@ -56,7 +56,7 @@ export default function Companies({ data }) {
           <p className="text-base font-semibold tracking-wider text-left text-black uppercase">
             Перевірені європейські роботодавці
           </p>
-          <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
+          <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-4 lg:mt-8">
             {employersList(data.allSanityCompany.edges)}
           </div>
         </div>
