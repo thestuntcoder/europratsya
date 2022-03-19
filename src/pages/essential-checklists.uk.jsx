@@ -2,16 +2,16 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.uk';
 
-export default function EssentialChecklists() {
+export default function EssentialChecklistsUk() {
   const metaDescription =
     'Основний контрольний список для українців, які мігрують до ЄС.';
   const metaTitle =
     'Основний контрольний список для українців, які мігрують до ЄС';
 
   return (
-    <LayoutPage>
+    <LayoutPage language="uk">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />
