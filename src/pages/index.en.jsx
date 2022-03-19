@@ -140,7 +140,7 @@ export default function Home({ data }) {
               Latest vacancies
             </h2>
           </div>
-          <JobAds limit="9" data={data.allSanityJobPost.edges} />
+          <JobAds limit="9" lang="en" data={data.allSanityJobPost.edges} />
 
           <div className="mt-8 text-center">
             <div className="inline-flex rounded-full shadow">
