@@ -155,7 +155,7 @@ function vacancies(ads, lang = 'en') {
 }
 
 function country_image(country, country_name) {
-  if (country.seo == null && country.seo.seo_image == null) return;
+  if (country.seo == null || country.seo.seo_image == null) return;
 
   const getImg = getImage(country.seo.seo_image.asset.gatsbyImageData);
 
