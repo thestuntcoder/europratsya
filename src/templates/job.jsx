@@ -104,7 +104,11 @@ const JobPost = (props) => {
   }
 
   let companyDescriptionRaw =
-    language === 'en' ? company.description._rawEn : company.description._rawUk;
+    language === 'en'
+      ? company.description._rawEn
+      : typeof company.description._rawUk === 'undefined'
+      ? company.description._rawEn
+      : company.description._rawUk;
 
   let jobTitle = language === 'en' ? job.title.en : job.title.uk;
 
