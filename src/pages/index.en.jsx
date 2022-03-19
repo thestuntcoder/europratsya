@@ -211,7 +211,7 @@ export default function Home({ data }) {
 
 export const JOB_POSTS = graphql`
   query JobPosts {
-    allSanityJobPost(sort: { fields: publishedAt, order: DESC }) {
+    allSanityJobPost(sort: { fields: _createdAt, order: DESC }) {
       edges {
         node {
           city
