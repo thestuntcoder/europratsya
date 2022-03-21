@@ -1,7 +1,7 @@
 import React from 'react';
 
 function getRaw(obj, language = 'en') {
-  if (object == null) return '';
+  if (obj == null) return '';
 
   switch (language) {
     case 'en':
@@ -19,7 +19,7 @@ function getRaw(obj, language = 'en') {
 }
 
 function getTitle(obj, language = 'en') {
-  if (object == null) return '';
+  if (obj == null) return '';
 
   switch (language) {
     case 'en':
