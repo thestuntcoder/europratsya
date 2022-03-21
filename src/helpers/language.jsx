@@ -17,3 +17,21 @@ function getRaw(obj, language = 'en') {
       break;
   }
 }
+
+function getTitle(obj, language = 'en') {
+  if (object == null) return '';
+
+  switch (language) {
+    case 'en':
+      return typeof obj.en === 'undefined' ? obj.uk : obj.en;
+      break;
+
+    case 'uk':
+      return typeof obj.uk === 'undefined' ? obj.en : obj.uk;
+      break;
+
+    case 'de':
+      return typeof obj.de === 'undefined' ? obj.en : obj.de;
+      break;
+  }
+}
