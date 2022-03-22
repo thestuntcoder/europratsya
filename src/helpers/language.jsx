@@ -37,3 +37,13 @@ export function getTitle(obj, language = 'en') {
       break;
   }
 }
+
+export function getSeo(obj, field, language, default_value = '') {
+  const param = field + '_' + language;
+
+  if (obj.seo != null && obj.seo[param] != null) {
+    return obj.seo[param];
+  }
+
+  return default_value;
+}
