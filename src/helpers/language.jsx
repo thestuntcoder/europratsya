@@ -1,11 +1,13 @@
 import React from 'react';
 
-function getRaw(obj, language = 'en') {
+export function getRaw(obj, language = 'en') {
   if (obj == null) return '';
 
   switch (language) {
     case 'en':
-      return typeof obj._rawEn === 'undefined' ? obj._rawUk : obj._rawEn;
+      return typeof obj['_rawEn'] === 'undefined'
+        ? obj['_rawUk']
+        : obj['_rawEn'];
       break;
 
     case 'uk':
@@ -18,7 +20,7 @@ function getRaw(obj, language = 'en') {
   }
 }
 
-function getTitle(obj, language = 'en') {
+export function getTitle(obj, language = 'en') {
   if (obj == null) return '';
 
   switch (language) {
