@@ -141,6 +141,7 @@ export default function ContactEmployers() {
                         autocomplete="name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Full name"
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -157,6 +158,7 @@ export default function ContactEmployers() {
                         autocomplete="email"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Email"
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -174,6 +176,7 @@ export default function ContactEmployers() {
                         id="company-role"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="CEO, HR, etc..."
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -189,6 +192,7 @@ export default function ContactEmployers() {
                         id="company-name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Company name"
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -206,6 +210,7 @@ export default function ContactEmployers() {
                         id="company-website"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="www.europratsya.com"
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -239,6 +244,7 @@ export default function ContactEmployers() {
                         id="language-1"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Language 1"
+                        onChange={handleChange}
                       />
                     </div>
                     <div>
@@ -254,6 +260,7 @@ export default function ContactEmployers() {
                         id="language-2"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Language 2"
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -270,6 +277,7 @@ export default function ContactEmployers() {
                       rows="4"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm"
                       placeholder="Message"
+                      onChange={handleChange}
                     />
                   </div>
                   <div>
