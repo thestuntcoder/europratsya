@@ -17,20 +17,41 @@ export default function Vacancies({ data }) {
     if (edges[key].node.slug == null) continue;
 
     allJobAds.push(
-      <tr className="divide-x divide-gray-200">
-        <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm font-medium text-gray-900 sm:pl-6">
-          <Link to={'/job/' + edges[key].node.slug.current}>
+      <tr>
+        <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
+          <Link
+            to={'/job/' + edges[key].node.slug.current}
+            className="text-blue-500 hover:text-blue-900"
+          >
             {edges[key].node.title.en}
           </Link>
+          <dl className="font-normal lg:hidden">
+            <dt className="sr-only">Title</dt>
+            <dd className="mt-1 truncate text-gray-700">
+              {edges[key].node.employer.name}
+            </dd>
+            <dt className="sr-only sm:hidden">Location</dt>
+            <dd className="mt-1 truncate text-gray-500 sm:hidden">
+              {edges[key].node.city + ', ' + edges[key].node.country.title.en}
+            </dd>
+          </dl>
         </td>
-        <td className="whitespace-nowrap p-4 text-sm text-gray-500">
+        <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">
           {edges[key].node.employer.name}
         </td>
-        <td className="whitespace-nowrap p-4 text-sm text-gray-500">
+        <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
           {edges[key].node.city + ', ' + edges[key].node.country.title.en}
         </td>
-        <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-6">
+        <td className="px-3 py-4 text-sm text-gray-500">
           {edges[key].node.job_languages.map((c) => c.name).join(' or ')}
+        </td>
+        <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+          <Link
+            to={'/job/' + edges[key].node.slug.current}
+            className="text-blue-500 hover:text-blue-900"
+          >
+            View →
+          </Link>
         </td>
       </tr>
     );
@@ -58,30 +79,33 @@ export default function Vacancies({ data }) {
           <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg mt-12">
             <table className="min-w-full divide-y divide-gray-300">
               <thead className="bg-gray-50">
-                <tr className="divide-x divide-gray-200">
+                <tr>
                   <th
                     scope="col"
-                    className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                    className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
                   >
                     Job
                   </th>
                   <th
                     scope="col"
-                    className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
                   >
                     Company
                   </th>
                   <th
                     scope="col"
-                    className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900"
+                    className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 sm:table-cell"
                   >
                     Location
                   </th>
                   <th
                     scope="col"
-                    className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-6"
+                    className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                   >
-                    Language
+                    Languages
+                  </th>
+                  <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
+                    <span className="sr-only">View →</span>
                   </th>
                 </tr>
               </thead>
