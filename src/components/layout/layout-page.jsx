@@ -5,6 +5,7 @@ import Header from './header';
 import Footer from './footer';
 import FooterUk from './footer.uk';
 import { useLocation } from '@reach/router';
+import ukField from '../../images/uk-field-linkedin.jpg';
 
 export default function LayoutPage(content) {
   const metaTitle =
@@ -24,7 +25,7 @@ export default function LayoutPage(content) {
         <meta property="og:site_name" content={metaTitle} />
         <meta
           property="og:image"
-          content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
+          content={'https://europratsya.com/' + ukField}
         />
         <meta property="og:type" content="website" />
         <meta
