@@ -147,7 +147,7 @@ export default function HomeUk({ data }) {
           <div className="mt-8 text-center">
             <div className="inline-flex rounded-full shadow">
               <Link
-                to="/vacancies"
+                to="/uk/vacancies"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
               >
                 Переглянути всі
