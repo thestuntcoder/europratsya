@@ -217,7 +217,7 @@ export default function ContactEmployersUk() {
                     <div>
                       <label
                         htmlFor="file"
-                        lassName="block text-sm font-medium text-gray-700"
+                        className="block text-sm font-medium text-gray-700"
                       >
                         Логотип компанії
                       </label>
