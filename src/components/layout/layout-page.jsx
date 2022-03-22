@@ -30,7 +30,7 @@ export default function LayoutPage(content) {
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={'https://europratsya.com/' + pathname}
+          content={'https://europratsya.com' + pathname}
         />
         <meta
           name="twitter:image"
