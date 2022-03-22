@@ -62,7 +62,7 @@ export default function HomeUk({ data }) {
                 <p className="mt-4 text-base text-white">
                   Будь ласка, ознайомтеся з нашими посібниками з отримання
                   робочої візи та довідником щодо нестачі навичок
-                  <Link to="/uk/skills-shortages/">країна за країною</Link>.
+                  <Link to="/uk/skills-in-demand/">країна за країною</Link>.
                 </p>
                 <p className="mt-8 text-base text-white">
                   Вам потрібна допомога з перекладом резюме?

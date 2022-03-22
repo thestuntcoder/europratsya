@@ -61,7 +61,7 @@ export default function Home({ data }) {
                 </h3>
                 <p className="mt-4 text-base text-white">
                   Please check our work visa guides and skills shortages guide{' '}
-                  <Link to="/skills-shortages/">country by country</Link>.
+                  <Link to="/skills-in-demand/">country by country</Link>.
                 </p>
                 <p className="mt-8 text-base text-white">
                   Do you need CV translation help?
