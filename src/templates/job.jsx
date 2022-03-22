@@ -6,12 +6,14 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
 import BlockContent from '../components/block-content';
+import { getRaw, getTitle, getSeo } from '../helpers/language';
 
 export const query = graphql`
   query JobTemplateQuery($id: String!) {
     job: sanityJobPost(id: { eq: $id }) {
       description {
         _rawEn
+        _rawUk
       }
       title {
         en
@@ -19,8 +21,8 @@ export const query = graphql`
       }
       seo {
         title_en
-        description_en
         title_uk
+        description_en
         description_uk
         seo_image {
           asset {
@@ -89,35 +91,22 @@ const JobPost = (props) => {
     languagesLabel = 'Optional languages';
   }
 
-  let metaTitle = job.title.en;
-  let metaDescription = job.title.en;
+  let metaTitle = getSeo(job, 'title', 'en', getTitle(job.title, language));
+  let metaDescription = getSeo(
+    job,
+    'description',
+    'en',
+    getTitle(job.title, language)
+  );
   let metaImage = company.image.asset.gatsbyImageData.images.fallback.src;
 
-  if (job.seo != null && job.seo.title_en != null) {
-    metaTitle = job.seo.title_en;
-  }
-  if (job.seo != null && job.seo.description_en != null) {
-    metaDescription = job.seo.description_en;
-  }
   if (job.seo != null && job.seo.seo_image != null) {
     metaImage = job.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
 
-  let companyDescriptionRaw =
-    language === 'en'
-      ? company.description._rawEn
-      : typeof company.description._rawUk === 'undefined'
-      ? company.description._rawEn
-      : company.description._rawUk;
-
-  let jobTitle = language === 'en' ? job.title.en : job.title.uk;
-
-  let jobDescriptionRaw =
-    language === 'en'
-      ? job.description._rawEn
-      : typeof job.description._rawUk === 'undefined'
-      ? job.description._rawEn
-      : job.description._rawUk;
+  const companyDescriptionRaw = getRaw(company.description, language);
+  const jobTitle = getTitle(job.title, language);
+  const jobDescriptionRaw = getRaw(job.description, language);
 
   const vacanciesLink =
     language === 'en' ? (
