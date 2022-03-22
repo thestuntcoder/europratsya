@@ -4,7 +4,41 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import contactImg from '../images/contact/contact-form-employers.jpg';
 
+function encode(data) {
+  const formData = new FormData();
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key]);
+  }
+
+  return formData;
+}
+
 export default function ContactEmployers() {
+  const [state, setState] = React.useState({});
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value });
+  };
+
+  const handleAttachment = (e) => {
+    setState({ ...state, [e.target.name]: e.target.files[0] });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...state,
+      }),
+    })
+      .then(() => alert('Thank you for your submission!'))
+      .catch((error) => alert(error));
+  };
+
   const metaDescription =
     'Europratsya translates your vacancy into Ukrainian and posts your vacancy ad for free to help displaced people search one database for relevant jobs.';
   const metaTitle = 'Help simplify work search for Ukrainians';
@@ -87,7 +121,9 @@ export default function ContactEmployers() {
                   name="employer"
                   method="POST"
                   data-netlify="true"
+                  enctype="multipart-form/data"
                   className="gap-y-6 grid grid-cols-1"
+                  onSubmit={handleSubmit}
                 >
                   <input type="hidden" name="form-name" value="employer" />
                   <div className="grid grid-cols-2 gap-4">
@@ -153,6 +189,39 @@ export default function ContactEmployers() {
                         id="company-name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
                         placeholder="Company name"
+                      />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label
+                        htmlFor="company-website"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Company website
+                      </label>
+                      <input
+                        type="text"
+                        name="company-website"
+                        id="company-website"
+                        className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
+                        placeholder="www.europratsya.com"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="file"
+                        lassName="block text-sm font-medium text-gray-700"
+                      >
+                        Company logo
+                      </label>
+
+                      <input
+                        type="file"
+                        name="file"
+                        id="file"
+                        className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 placeholder-gray-500 border-gray-300"
+                        onChange={handleAttachment}
                       />
                     </div>
                   </div>
