@@ -8,6 +8,7 @@
 ![Gatsby.js](https://img.shields.io/badge/Gatsby-%23663399.svg?logo=gatsby&logoColor=white&style=for-the-badge)
 [![Build Status](https://app.travis-ci.com/dejanjacimovic/europratsya.svg?branch=master)](https://app.travis-ci.com/dejanjacimovic/europratsya)
 ![Languages](https://img.shields.io/github/languages/top/dejanjacimovic/europratsya)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e2c2a393-cdac-45d1-b47e-26ac406862b6/deploy-status)](https://app.netlify.com/sites/nostalgic-beaver-cc0cd8/deploys)
 
 <h1 align="center">
   We invite <a href="https://europratsya.com/">Ukrainians to Europe</a>
