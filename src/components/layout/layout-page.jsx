@@ -25,7 +25,7 @@ export default function LayoutPage(content) {
         <meta property="og:site_name" content={metaTitle} />
         <meta
           property="og:image"
-          content={'https://europratsya.com/' + ukField}
+          content={'https://europratsya.com' + ukField}
         />
         <meta property="og:type" content="website" />
         <meta
@@ -34,7 +34,7 @@ export default function LayoutPage(content) {
         />
         <meta
           name="twitter:image"
-          content="https://d10ngartke0vp.cloudfront.net/uk-field.jpg"
+          content={'https://europratsya.com' + ukField}
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
