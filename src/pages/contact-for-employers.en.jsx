@@ -132,7 +132,7 @@ export default function ContactEmployers() {
                         htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Full name
+                        First name, last name
                       </label>
                       <input
                         type="text"
@@ -149,7 +149,7 @@ export default function ContactEmployers() {
                         htmlFor="email"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Email
+                        Your email address
                       </label>
                       <input
                         id="email"
@@ -168,7 +168,7 @@ export default function ContactEmployers() {
                         htmlFor="company-role"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Role in company
+                        Your role in company
                       </label>
                       <input
                         type="text"
@@ -191,7 +191,7 @@ export default function ContactEmployers() {
                         name="company-name"
                         id="company-name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Company name"
+                        placeholder="GmbH, SA, Ltd, AS"
                         onChange={handleChange}
                       />
                     </div>
@@ -202,7 +202,7 @@ export default function ContactEmployers() {
                         htmlFor="company-website"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Company website
+                        Your company's URL
                       </label>
                       <input
                         type="text"
@@ -216,7 +216,7 @@ export default function ContactEmployers() {
                     <div>
                       <label
                         htmlFor="file"
-                        lassName="block text-sm font-medium text-gray-700"
+                        className="block text-sm font-medium text-gray-700"
                       >
                         Company logo
                       </label>
@@ -269,7 +269,9 @@ export default function ContactEmployers() {
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Comments (max. 500 characters)
+                      Job description including requirements, or link to your
+                      own careers page. For part-time work or manual work please
+                      include wage estimate per hour in EUR.
                     </label>
                     <textarea
                       id="message"
