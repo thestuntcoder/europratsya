@@ -198,22 +198,7 @@ export default function ContactEmployees() {
                       />
                     </div>
                   </div>
-                  <div>
-                    <label
-                      htmlFor="file"
-                      lassName="block text-sm font-medium text-gray-700"
-                    >
-                      Upload CV
-                    </label>
-                    <input
-                      type="file"
-                      name="file"
-                      id="file"
-                      accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                      className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                      onChange={handleAttachment}
-                    />
-                  </div>
+                  <div></div>
                   <div>
                     <label
                       htmlFor="translated"

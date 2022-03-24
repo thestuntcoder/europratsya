@@ -214,22 +214,7 @@ export default function ContactEmployersUk() {
                         onChange={handleChange}
                       />
                     </div>
-                    <div>
-                      <label
-                        htmlFor="file"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Логотип компанії
-                      </label>
-
-                      <input
-                        type="file"
-                        name="file"
-                        id="file"
-                        className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 placeholder-gray-500 border-gray-300"
-                        onChange={handleAttachment}
-                      />
-                    </div>
+                    <div></div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
