@@ -191,7 +191,7 @@ export default function ContactEmployers() {
                         name="company-name"
                         id="company-name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="CompanyName GmbH, SA, Ltd, AS"
+                        placeholder="GmbH, SA, Ltd, AS"
                         onChange={handleChange}
                       />
                     </div>
