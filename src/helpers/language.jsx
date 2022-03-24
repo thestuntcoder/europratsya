@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function getRaw(obj, language = 'en') {
   if (obj == null) return '';
 
