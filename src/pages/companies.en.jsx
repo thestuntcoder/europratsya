@@ -15,6 +15,8 @@ function employersList(edges) {
 }
 
 function employer(company) {
+  if (company.slug === null) return;
+
   let link = '/company/' + company.slug.current;
   let getImg = getImage(company.image.asset.gatsbyImageData);
   return (
