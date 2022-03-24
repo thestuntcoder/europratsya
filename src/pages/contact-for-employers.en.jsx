@@ -132,7 +132,7 @@ export default function ContactEmployers() {
                         htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        First name, last name
+                        Your name
                       </label>
                       <input
                         type="text"
@@ -140,7 +140,7 @@ export default function ContactEmployers() {
                         id="full-name"
                         autocomplete="name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Full name"
+                        placeholder="First name, last name"
                         onChange={handleChange}
                       />
                     </div>
@@ -149,7 +149,7 @@ export default function ContactEmployers() {
                         htmlFor="email"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Your email address
+                        Email
                       </label>
                       <input
                         id="email"
@@ -157,7 +157,7 @@ export default function ContactEmployers() {
                         type="email"
                         autocomplete="email"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Email"
+                        placeholder="Your email address"
                         onChange={handleChange}
                       />
                     </div>
@@ -191,7 +191,7 @@ export default function ContactEmployers() {
                         name="company-name"
                         id="company-name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="GmbH, SA, Ltd, AS"
+                        placeholder="CompanyName GmbH, SA, Ltd, AS"
                         onChange={handleChange}
                       />
                     </div>
@@ -213,22 +213,7 @@ export default function ContactEmployers() {
                         onChange={handleChange}
                       />
                     </div>
-                    <div>
-                      <label
-                        htmlFor="file"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Company logo
-                      </label>
-
-                      <input
-                        type="file"
-                        name="file"
-                        id="file"
-                        className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 placeholder-gray-500 border-gray-300"
-                        onChange={handleAttachment}
-                      />
-                    </div>
+                    <div></div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
@@ -268,17 +253,13 @@ export default function ContactEmployers() {
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
-                    >
-                      Job description including requirements, or link to your
-                      own careers page. For part-time work or manual work please
-                      include wage estimate per hour in EUR.
-                    </label>
+                    ></label>
                     <textarea
                       id="message"
                       name="message"
                       rows="4"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm"
-                      placeholder="Message"
+                      placeholder="Job description including requirements, or link to your own careers page. For part-time work or manual work please include wage estimate per hour in EUR."
                       onChange={handleChange}
                     />
                   </div>
