@@ -123,7 +123,7 @@ export default function VacanciesDe({ data }) {
 }
 
 export const JOB_POSTS = graphql`
-  query allJobPosts {
+  query allJobPostsDe {
     allSanityJobPost {
       edges {
         node {
