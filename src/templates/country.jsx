@@ -8,99 +8,6 @@ import NavCenterUk from '../components/layout/nav-center.uk';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
 
-export const query = graphql`
-  query CountryTemplateQuery($id: String!) {
-    country: sanityCountry(id: { eq: $id }) {
-      title {
-        en
-        uk
-      }
-      seo {
-        seo_image {
-          _key
-          _type
-          _rawAsset
-          _rawHotspot
-          _rawCrop
-          asset {
-            gatsbyImageData(
-              width: 600
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
-    }
-
-    visa: sanityVisaRequirement(country: { id: { eq: $id } }) {
-      description {
-        _rawEn
-        _rawUk
-      }
-      title {
-        en
-        uk
-      }
-    }
-
-    skills: sanitySkillShortages(
-      countries: { elemMatch: { id: { eq: $id } } }
-    ) {
-      description {
-        _rawEn
-        _rawUk
-      }
-      title {
-        en
-        uk
-      }
-    }
-
-    jobs: allSanityJobPost(filter: { country: { id: { eq: $id } } }) {
-      edges {
-        node {
-          city
-          country {
-            title {
-              en
-              uk
-            }
-          }
-          salary
-          contact
-          title {
-            en
-            uk
-          }
-          description {
-            en {
-              children {
-                text
-              }
-            }
-            uk {
-              children {
-                text
-              }
-            }
-          }
-          employer {
-            name
-          }
-          job_categories {
-            title
-          }
-          validUntil
-          slug {
-            current
-          }
-        }
-      }
-    }
-  }
-`;
-
 function visa(visa, lang = 'en') {
   if (visa == null) return;
 
@@ -169,7 +76,7 @@ function country_image(country, country_name) {
   );
 }
 
-const Country = (props) => {
+export default function Country(props) {
   const language = props.pageContext.language;
   let countryName =
     language === 'en'
@@ -198,6 +105,109 @@ const Country = (props) => {
       {vacancies(props.data.jobs.edges, language)}
     </LayoutPage>
   );
-};
+}
 
-export default Country;
+export const query = graphql`
+  query CountryTemplateQuery($id: String!) {
+    country: sanityCountry(id: { eq: $id }) {
+      title {
+        en
+        uk
+        de
+      }
+      seo {
+        seo_image {
+          _key
+          _type
+          _rawAsset
+          _rawHotspot
+          _rawCrop
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+    }
+
+    visa: sanityVisaRequirement(country: { id: { eq: $id } }) {
+      description {
+        _rawEn
+        _rawUk
+        _rawDe
+      }
+      title {
+        en
+        uk
+        de
+      }
+    }
+
+    skills: sanitySkillShortages(
+      countries: { elemMatch: { id: { eq: $id } } }
+    ) {
+      description {
+        _rawEn
+        _rawUk
+        _rawDe
+      }
+      title {
+        en
+        uk
+        de
+      }
+    }
+
+    jobs: allSanityJobPost(filter: { country: { id: { eq: $id } } }) {
+      edges {
+        node {
+          city
+          country {
+            title {
+              en
+              uk
+              de
+            }
+          }
+          salary
+          contact
+          title {
+            en
+            uk
+            de
+          }
+          description {
+            en {
+              children {
+                text
+              }
+            }
+            uk {
+              children {
+                text
+              }
+            }
+            de {
+              children {
+                text
+              }
+            }
+          }
+          employer {
+            name
+          }
+          job_categories {
+            title
+          }
+          validUntil
+          slug {
+            current
+          }
+        }
+      }
+    }
+  }
+`;
