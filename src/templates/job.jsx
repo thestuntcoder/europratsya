@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
+import NavCenterUk from '../components/layout/nav-center.de';
 import BlockContent from '../components/block-content';
 import { getRaw, getTitle, getSeo } from '../helpers/language';
 
@@ -114,14 +115,32 @@ const JobPost = (props) => {
   const jobTitle = getTitle(job.title, language);
   const jobDescriptionRaw = getRaw(job.description, language);
 
-  const vacanciesLink =
-    language === 'en' ? (
-      <Link to="/vacancies">Vacancies</Link>
-    ) : (
-      <Link to="/uk/vacancies">Вакансії</Link>
-    );
+  let vacanciesLink,
+    navigation,
+    vacanciesUrl,
+    contactEmployer = {};
 
-  const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
+  switch (language) {
+    case 'de':
+      contactEmployer = 'Kontakt';
+      vacanciesUrl = '/de/vacancies';
+      vacanciesLink = <Link to={vacanciesUrl}>Stellenangebote</Link>;
+      navigation = <NavCenterDe />;
+      break;
+
+    case 'uk':
+      contactEmployer = 'Зверніться до цього роботодавця';
+      vacanciesUrl = '/uk/vacancies';
+      vacanciesLink = <Link to={vacanciesUrl}>Вакансії</Link>;
+      navigation = <NavCenterUk />;
+      break;
+
+    default:
+      contactEmployer = 'Contact this employer';
+      vacanciesUrl = '/vacancies';
+      vacanciesLink = <Link to={vacanciesUrl}>Vacancies</Link>;
+      navigation = <NavCenter />;
+  }
 
   return (
     <LayoutPage lang={language}>
@@ -187,10 +206,9 @@ const JobPost = (props) => {
                 <a
                   href={'mailto:' + job.contact}
                   rel="noreferrer"
-                  to="/vacancies"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
                 >
-                  Contact this employer
+                  {contactEmployer}
                 </a>
               </div>
             </div>
