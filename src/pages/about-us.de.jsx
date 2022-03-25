@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 import polarImg from '../images/about/vernadsky-polar-research-station.jpg';
 
 export default function AboutUs() {
@@ -30,7 +30,7 @@ export default function AboutUs() {
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
               <h2 className="text-base text-black font-bold text-3xl tracking-wide">
-                About us
+                Über uns
               </h2>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function AboutUs() {
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
                       src={polarImg}
-                      alt="Vernadsky polar research station"
+                      alt="Die Polarforschungsstation Vernadsky"
                       width="1184"
                       height="1376"
                     />
@@ -95,9 +95,10 @@ export default function AboutUs() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Vernadsky polar research station. 12 Ukrainian scientists
-                      winter here for 10 months in extreme conditions,
-                      delivering widely acclaimed climate change research.{' '}
+                      Die Polarforschungsstation Vernadsky. 12 ukrainische
+                      Wissenschaftler überwintern hier 10 Monate lang unter
+                      extremen Bedingungen und leisten vielbeachtete
+                      Forschungsarbeit zum Klimawandel.
                     </span>
                   </figcaption>
                 </figure>
@@ -106,31 +107,35 @@ export default function AboutUs() {
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                  Europratsya.com was developed by a team of digital workers
-                  from Serbia, Scotland and Italy.
+                  Europratsya.com wurde von einem Team digital Schaffernder aus
+                  Serbien, Schottland und Italien entwickelt.
                 </p>
                 <p>
-                  Our small group wanted to ensure that skills and expertise
-                  aren’t wasted when Ukrainian families are building new homes,
-                  whether temporary or for the future.{' '}
+                  Unsere kleine Gruppe wollte sicherstellen, dass Fähigkeiten
+                  und Fachwissen nicht verschwendet werden, wenn ukrainische
+                  Familien ein neues Zuhause bauen, sei es vorübergehend oder
+                  für die Zukunft.
                 </p>
                 <p>
-                  We want to match the needs of European employers with the
-                  qualifications of the highly educated Ukrainian people.
+                  Wir wollen die Bedürfnisse der europäischen Arbeitgeber mit
+                  den Qualifikationen der hochqualifizierten ukrainischen
+                  Fachkräfte in Einklang bringen.
                 </p>
                 <p>
-                  We also want to simplify research and job-hunting for people
-                  who are on the move.
+                  Außerdem wollen wir die Recherche und die Arbeitssuche für
+                  Menschen, die auf Reisen sind, vereinfachen.
                 </p>
                 <p>
-                  Europratsya CIC was founded in the UK as a not-for-profit
-                  organisation to fund the web-hosting and to employ the
-                  Ukrainian employees who deliver the translation services.
-                  Volunteers across Europe research and post updates on
-                  employment law and visas.{' '}
+                  Europratsya CIC wurde im Vereinigten Königreich als
+                  gemeinnützige Organisation gegründet, um das Web-Hosting zu
+                  finanzieren und die ukrainischen Mitarbeiter zu beschäftigen,
+                  die die Übersetzungsdienste erbringen. Freiwillige Mitarbeiter
+                  in ganz Europa recherchieren und veröffentlichen aktuelle
+                  Informationen zum Arbeitsrecht und zu bestimmungen.
                 </p>
                 <p>
-                  If you have expertise to support us, please email{` `}
+                  Wenn Sie uns mit Ihrem Fähigkeiten unterstützen möchten,
+                  senden Sie bitte eine E-Mail an
                   <a href="mailto:info@europratsya.com">info@europratsya.com</a>
                   .
                 </p>
