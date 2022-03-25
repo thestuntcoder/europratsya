@@ -6,3 +6,6 @@ public
 /coverage
 .env
 .env.*
+
+# IDE settings
+.vscode
