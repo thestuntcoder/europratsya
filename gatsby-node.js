@@ -32,6 +32,12 @@ async function createCountryPages(graphql, actions) {
       component: require.resolve('./src/templates/country.jsx'),
       context: { id: node.id, language: 'uk' },
     });
+
+    createPage({
+      path: `/de/countries/${slug.current}`,
+      component: require.resolve('./src/templates/country.jsx'),
+      context: { id: node.id, language: 'de' },
+    });
   });
 }
 
@@ -69,6 +75,12 @@ async function createEmployerPages(graphql, actions) {
       component: require.resolve('./src/templates/company.jsx'),
       context: { id: node.id, language: 'uk' },
     });
+
+    createPage({
+      path: `/de/company/${slug.current}`,
+      component: require.resolve('./src/templates/company.jsx'),
+      context: { id: node.id, language: 'de' },
+    });
   });
 }
 
@@ -105,6 +117,12 @@ async function createJobPages(graphql, actions) {
       path: `/uk/job/${slug.current}`,
       component: require.resolve('./src/templates/job.jsx'),
       context: { id: node.id, language: 'uk' },
+    });
+
+    createPage({
+      path: `/de/job/${slug.current}`,
+      component: require.resolve('./src/templates/job.jsx'),
+      context: { id: node.id, language: 'de' },
     });
   });
 }
