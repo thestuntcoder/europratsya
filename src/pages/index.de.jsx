@@ -43,8 +43,8 @@ export default function Home({ data }) {
           </div>
           <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-extrabold tracking-tight text-white text-center drop-shadow-md">
-              Our portal assists European employers in finding skilled Ukrainian
-              workers.
+              Unser Portal unterstützt europäische Arbeitgeber bei der Suche
+              nach qualifizierten ukrainischen Arbeitskräften.
             </h1>
           </div>
         </div>
@@ -56,23 +56,22 @@ export default function Home({ data }) {
           <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-8">
             <div className="flex flex-col rounded-2xl bg-gray-800 shadow-xl">
               <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8 text-center">
-                <h3 className="text-2xl font-extrabold text-white">
-                  Candidates
-                </h3>
+                <h3 className="text-2xl font-extrabold text-white">Bewerber</h3>
                 <p className="mt-4 text-base text-white">
-                  Please check our work visa guides and skills shortages guide{' '}
-                  <Link to="/skills-in-demand/">country by country</Link>.
+                  Bitte sehen Sie sich unseren Leitfaden für Arbeitsvisa und den
+                  Leitfaden zum Fachkräftemangel
+                  <Link to="/de/skills-in-demand/">Land für Land</Link> an.
                 </p>
                 <p className="mt-8 text-base text-white">
-                  Do you need CV translation help?
+                  Brauchen Sie Hilfe bei der Übersetzung Ihres Lebenslaufs?
                 </p>
                 <div className="mt-8">
                   <div className="inline-flex rounded-full shadow">
                     <Link
-                      to="/contact-for-job-seekers/"
+                      to="/de/contact-for-job-seekers/"
                       className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 uppercase"
                     >
-                      Contact us
+                      KONTAKTIEREN SIE UNS
                     </Link>
                   </div>
                 </div>
@@ -82,29 +81,30 @@ export default function Home({ data }) {
             <div className="flex flex-col rounded-2xl bg-blue-500 shadow-xl">
               <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8 text-center">
                 <h3 className="text-2xl font-extrabold text-white">
-                  Employers
+                  Arbeitgeber
                 </h3>
                 <p className="mt-4 text-base text-white">
-                  To evaluate Ukrainian CVs, please check our{' '}
-                  <Link to="/ukr-eduction-explainer/">
-                    UKR education explainer
-                  </Link>{' '}
-                  and our{' '}
-                  <Link to="/ukr-expertise-explained/">
-                    UKR expertise explainer
+                  Um ukrainische Lebensläufe zu bewerten, lesen Sie bitte unsere
+                  <Link to="/de/ukr-eduction-explainer/">
+                    Erklärungen zur Ausbildung in der Ukraine
+                  </Link>
+                  und zum
+                  <Link to="/de/ukr-expertise-explained/">
+                    Fachwissen in der Ukraine
                   </Link>
                   .
                 </p>
                 <p className="mt-8 text-base text-white">
-                  Register to post your vacancies
+                  Registrieren Sie sich, um Ihre offenen Stellen zu
+                  veröffentlichen
                 </p>
                 <div className="mt-8">
                   <div className="inline-flex rounded-full shadow">
                     <Link
-                      to="/contact-for-employers/"
+                      to="/de/contact-for-employers/"
                       className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 uppercase"
                     >
-                      Join
+                      ANMELDEN
                     </Link>
                   </div>
                 </div>
@@ -118,13 +118,15 @@ export default function Home({ data }) {
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
             <p>
-              Europratsya post jobs for candidates who need to set up a
-              temporary base for their families outside Ukraine. We also post
-              remote jobs suitable for workers based inside Ukraine.
+              Europratsya stellt Stellen für Kandidaten aus, die einen
+              vorübergehenden Wohnsitz für ihre Familien außerhalb der Ukraine
+              suchen. Wir veröffentlichen auch Stellenangebote für Arbeitnehmer,
+              die in der Ukraine leben.
             </p>
             <p>
-              One Ukrainian-language database for skills in demand and vacancies
-              across Europe - free for candidates and employers.
+              Eine ukrainischsprachige Datenbank für gefragte Qualifikationen
+              und freie Stellen in ganz Europa - kostenlos für Bewerber und
+              Arbeitgeber.
             </p>
           </div>
         </div>
@@ -137,18 +139,18 @@ export default function Home({ data }) {
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
-              Latest vacancies
+              Neueste Stellenausschreibungen
             </h2>
           </div>
-          <JobAds limit="9" lang="en" data={data.allSanityJobPost.edges} />
+          <JobAds limit="9" lang="de" data={data.allSanityJobPost.edges} />
 
           <div className="mt-8 text-center">
             <div className="inline-flex rounded-full shadow">
               <Link
-                to="/vacancies"
+                to="/de/vacancies"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
               >
-                See all vacancies
+                Alle offenen Stellen anzeigen
               </Link>
             </div>
           </div>
@@ -166,10 +168,11 @@ export default function Home({ data }) {
         <div className="absolute inset-0 bg-gray-900 opacity-30" />
         <div className="max-w-7xl mx-auto flex items-center justify-between z-10">
           <div className="m-auto text-4xl font-extrabold text-white text-center align-middle mx-auto mt-64 mb-64 z-10">
-            Several Nobel prize winners in medicine, physics, chemistry and
-            literature hail from Ukraine. Its oldest universities are from the
-            16th and 17th century, and continue to produce world-class graduates
-            in sciences, engineering, agriculture and mining.
+            Mehrere Nobelpreisträger in Medizin, Physik, Chemie und Literatur
+            stammen aus der Ukraine. Die ältesten Universitäten des Landes
+            stammen aus dem 16. und 17. Jahrhundert und bringen auch heute noch
+            Absolventen von Weltrang in den Bereichen Naturwissenschaften,
+            Ingenieurwesen, Landwirtschaft und Bergbau hervor.
           </div>
         </div>
       </div>
@@ -177,7 +180,7 @@ export default function Home({ data }) {
       <div className="bg-white">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
-            Sponsors and partners
+            SPONSOREN UND PARTNER
           </p>
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
             <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
@@ -225,10 +228,10 @@ export const JOB_POSTS = graphql`
           salary
           contact
           title {
-            en
+            de
           }
           description {
-            en {
+            de {
               children {
                 text
               }
