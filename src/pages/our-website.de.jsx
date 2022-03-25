@@ -2,13 +2,13 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 
-export default function OurWebsite() {
+export default function OurWebsiteDe() {
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
-        <title>Our website | Europratsya</title>
+        <title>Unsere Website | Europratsya</title>
       </Helmet>
 
       <div className="relative">
@@ -27,26 +27,31 @@ export default function OurWebsite() {
           <div className="mt-8">
             <div className="lg:mt-0 mt-8">
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-                Our website
+                Unsere Website
               </h1>
               <div className="prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1 mx-auto text-lg prose text-gray-500">
                 <p>
-                  This website is owned and operated by Europratsya CIC, and
-                  subject to the privacy policy accessible below.
+                  Diese Website ist Eigentum von Europratsya CIC und wird von
+                  dieser betrieben. Es gelten die unten aufgeführten
+                  Datenschutzrichtlinien.
                 </p>
                 <p>
-                  Our company address is Europratsya CIC, 32 Oakbank Crescent,
-                  Perth PH1 1DF, UK.
-                </p>
-                <p>Our corporation tax reference number is BRCT00001440441.</p>
-                <p>
-                  The content on this website is provided by Europratsya CIC and
-                  we endeavour to keep the information up to date and correct.
+                  Unsere Firmenadresse lautet Europratsya CIC, 32 Oakbank
+                  Crescent, Perth PH1 1DF, UK.
                 </p>
                 <p>
-                  Through our pages you are able to link to other websites which
-                  are not under the control of Europratsya CIC, to which our
-                  privacy policy doesn’t apply.
+                  Unsere Firmenadresse lautet Europratsya CIC, 32 Oakbank
+                  Crescent, Perth PH1 1DF, UK.
+                </p>
+                <p>
+                  Der Inhalt dieser Website wird von Europratsya CIC zur
+                  Verfügung gestellt, und wir bemühen uns, die Informationen auf
+                  dem neuesten Stand und korrekt zu halten.
+                </p>
+                <p>
+                  Über unsere Website können Sie auf andere Websites zugreifen,
+                  die nicht unter der Kontrolle von Europratsya CIC stehen und
+                  für die unsere Datenschutzbestimmungen nicht gelten.
                 </p>
               </div>
             </div>
