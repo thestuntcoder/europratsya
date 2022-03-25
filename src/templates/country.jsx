@@ -5,15 +5,16 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
+import NavCenterUk from '../components/layout/nav-center.de';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
+import { getTitle, getRaw } from '../helpers/language';
 
 function visa(visa, lang = 'en') {
   if (visa == null) return;
 
-  const visaName = lang === 'en' ? visa.title.en : visa.title.uk;
-  const visaDesc =
-    lang === 'en' ? visa.description._rawEn : visa.description._rawUk;
+  const visaName = getTitle(visa.title, lang);
+  const visaDesc = getRaw(visa.description, lang);
 
   return (
     <div>
@@ -28,9 +29,8 @@ function visa(visa, lang = 'en') {
 function skills(skills, lang = 'en') {
   if (skills == null) return;
 
-  const skillsName = lang === 'en' ? skills.title.en : skills.title.uk;
-  const skillsDesc =
-    lang === 'en' ? skills.description._rawEn : skills.description._rawUk;
+  const skillsName = getTitle(skills.title, lang);
+  const skillsDesc = getRaw(skills.description, lang);
 
   return (
     <div>
@@ -44,7 +44,7 @@ function skills(skills, lang = 'en') {
   );
 }
 
-function vacancies(ads, lang = 'en') {
+function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
   if (ads == null || ads.length === 0) return;
 
   return (
@@ -52,7 +52,7 @@ function vacancies(ads, lang = 'en') {
       <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
-            {lang === 'en' ? 'Latest vacancies' : 'Новітні вакансії'}
+            {subtitle}
           </h2>
         </div>
         <JobAds limit="24" data={ads} />
@@ -78,12 +78,27 @@ function country_image(country, country_name) {
 
 export default function Country(props) {
   const language = props.pageContext.language;
-  let countryName =
-    language === 'en'
-      ? props.data.country.title.en
-      : props.data.country.title.uk;
 
-  const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
+  let countryName = getTitle(props.data.country.title, language);
+
+  let navigation,
+    subtitle = {};
+
+  switch (language) {
+    case 'de':
+      subtitle = 'Neueste Stellenausschreibungen';
+      navigation = <NavCenterDe />;
+      break;
+
+    case 'uk':
+      subtitle = 'Новітні вакансії';
+      navigation = <NavCenterUk />;
+      break;
+
+    default:
+      navigation = <NavCenter />;
+      subtitle = 'Latest vacancies';
+  }
 
   return (
     <LayoutPage lang={language}>
@@ -102,7 +117,7 @@ export default function Country(props) {
         </div>
       </div>
 
-      {vacancies(props.data.jobs.edges, language)}
+      {vacancies(props.data.jobs.edges, language, subtitle)}
     </LayoutPage>
   );
 }
