@@ -82,7 +82,7 @@ export default class NavCenter extends React.Component {
               </div>
             </div>
             <div className="hidden md:block border-r border-gray-500 p-2">
-              <div className="text-sm font-bold mb-2">Kandidaten</div>
+              <div className="text-sm font-bold mb-2">Bewerber</div>
               <div className="md:flex md:space-x-10">
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
