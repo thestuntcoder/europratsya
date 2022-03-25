@@ -4,14 +4,14 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.de';
 import polarImg from '../images/about/vernadsky-polar-research-station.jpg';
 
-export default function AboutUs() {
+export default function AboutUsDe() {
   const metaDescription =
     'The story behind the small European team who wanted to make it simpler for Ukrainians to find safe, relevant work while they wait for their country to return to peace.';
   const metaTitle =
     'The charity group matching Ukrainian candidates with safe employers';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />
