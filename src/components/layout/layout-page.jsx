@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
 import FooterUk from './footer.uk';
+import FooterDe from './footer.de';
 import { useLocation } from '@reach/router';
 import ukField from '../../images/uk-field-linkedin.jpg';
 
@@ -16,6 +17,8 @@ export default function LayoutPage(content) {
   let footer = <Footer />;
   if (content.lang === 'uk') {
     footer = <FooterUk />;
+  } else if (content.lang === 'de') {
+    footer = <FooterDe />
   }
 
   return (
