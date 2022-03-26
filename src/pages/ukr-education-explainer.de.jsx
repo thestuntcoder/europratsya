@@ -2,12 +2,12 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 
-export default function UkrEducationExplainer() {
+export default function UkrEducationExplainerDe() {
   const metaDescription =
     'An introduction to the Ukrainian education system for employers considering CVs from candidates with Ukrainian university, college or secondary school qualifications.';
-  const metaTitle = 'Ukrainian qualifications FAQ';
+  const metaTitle = 'Bildung in der Ukraine FAQ';
 
   return (
     <LayoutPage>
@@ -35,7 +35,7 @@ export default function UkrEducationExplainer() {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Ukraine education FAQ
+                Bildung in der Ukraine FAQ
               </h1>
 
               <div className="relative text-base float-right max-w-md">
