@@ -73,7 +73,7 @@ export default function SkillsInDemand({ data }) {
 }
 
 export const COUNTRIES = graphql`
-  query allSanityCountry {
+  query allSanityCountryDe {
     allSanityCountry(sort: { fields: title___en, order: ASC }) {
       nodes {
         slug {
