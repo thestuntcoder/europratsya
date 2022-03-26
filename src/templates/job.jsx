@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
-import NavCenterUk from '../components/layout/nav-center.de';
+import NavCenterDe from '../components/layout/nav-center.de';
 import BlockContent from '../components/block-content';
 import { getRaw, getTitle, getSeo } from '../helpers/language';
 
