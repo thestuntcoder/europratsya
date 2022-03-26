@@ -76,7 +76,7 @@ export default function FooterDe() {
                       to="/de/our-website"
                       className="text-base text-gray-300 hover:text-white"
                     >
-                      Unsere Website
+                      Impressum
                     </Link>
                   </li>
                 </ul>
