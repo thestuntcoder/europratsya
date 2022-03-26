@@ -2,12 +2,12 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 
-export default function UkrExpertiseExplained() {
+export default function UkrExpertiseExplainedDe() {
   const metaDescription =
-    'An introduction to the strongest industries and fields of expertise in the Ukrainian economy.';
-  const metaTitle = 'Ukrainian sector expertise FAQ';
+    'Ich habe schon von ukrainischer IT, Software und Webdesign gehört?';
+  const metaTitle = 'Ukraine Fachwissen FAQ';
 
   return (
     <LayoutPage>
@@ -35,74 +35,80 @@ export default function UkrExpertiseExplained() {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Ukraine expertise FAQ
+                Ukraine Fachwissen FAQ
               </h1>
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  I’ve heard of Ukrainian IT, software and web design?
+                  Ich habe schon von ukrainischer IT, Software und Webdesign
+                  gehört?
                 </h2>
                 <p>
-                  There are over 166,000 software developers in Ukraine, which
-                  alongside Poland is a leading European supplier of global tech
-                  expertise. A total of 55% of the positions are middle and
-                  senior levels of experience, which come with English fluency
+                  In der Ukraine gibt es über 166.000 Softwareentwickler, die
+                  neben Polen zu den führenden europäischen Anbietern von
+                  globalem technischem Fachwissen gehören. Insgesamt 55 % der
+                  Stellen sind auf mittlerer und höherer Ebene angesiedelt und
+                  erfordern fließende Englischkenntnisse.
                 </p>
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  How developed is their aerospace engineering?
+                  Wie weit ist die Luft- und Raumfahrttechnik des Landes
+                  entwickelt?
                 </h2>
                 <p>
-                  Ukraine is one of nine countries with a full cycle of
-                  aerospace hardware engineering and production. Besides the
-                  design and production of passenger and transportation
-                  aircraft, Ukraine also boasts a network of aircraft repair
-                  enterprises, including companies involved in recovery of
-                  military planes and helicopters.
+                  Die Ukraine ist eines von neun Ländern mit einem vollständigen
+                  Zyklus der Entwicklung und Produktion von Luft- und
+                  Raumfahrthardware. Neben der Entwicklung und Herstellung von
+                  Passagier- und Transportflugzeugen verfügt die Ukraine auch
+                  über ein Netz von Flugzeugreparaturbetrieben, darunter
+                  Unternehmen, die sich mit der Bergung von Militärflugzeugen
+                  und Hubschraubern befassen.
                 </p>
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  I know about the natural resources - what is the mining
-                  expertise?
+                  Ich weiß über die natürlichen Ressourcen Bescheid - wie steht
+                  es mit dem Bergbau?
                 </h2>
                 <p>
-                  With 5% of the world’s mineral reserves Ukraine has developed
-                  a sophisticated mining industry. The country exports
-                  fuel-coke, fertilisers and sulphuric acid around the world as
-                  well as extracting iron, manganese ores, titanium and
-                  aluminium.
+                  Mit 5 % der weltweiten Mineralreserven hat die Ukraine eine
+                  hoch entwickelte Bergbauindustrie entwickelt. Das Land
+                  exportiert Heizkoks, Düngemittel und Schwefelsäure in die
+                  ganze Welt und fördert Eisen, Manganerze, Titan und Aluminium.
                 </p>
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Their medical schools are famous - does Ukraine have life
-                  sciences too?
+                  Ihre medizinischen Fakultäten sind berühmt - gibt es in der
+                  Ukraine auch Biowissenschaften?
                 </h2>
                 <p>
-                  Ukraine has attracted international students to its medical
-                  schools for decades. Interest in a high-quality yet low-cost
-                  medical education has made Ukraine a popular destination in
-                  English-speaking African countries like Nigeria and Ghana,
-                  where Ukraine is currently the third most popular study
-                  destination worldwide. Because of the historically strong
-                  engineering and technology facilities in Ukraine, the country
-                  is in the vanguard of innovative diagnostic and therapeutic
-                  methods. GlobalLink software serves over 20 million patients
-                  in 70 countries worldwide, and employ 5000 Ukrainian
-                  engineers.
+                  Die Ukraine zieht seit Jahrzehnten internationale Studenten
+                  für ihre medizinischen Fakultäten an. Das Interesse an einer
+                  hochwertigen und dennoch kostengünstigen medizinischen
+                  Ausbildung hat die Ukraine zu einem beliebten Ziel in
+                  englischsprachigen afrikanischen Ländern wie Nigeria und Ghana
+                  gemacht, wo die Ukraine derzeit das drittbeliebteste
+                  Studienziel weltweit ist. Aufgrund der traditionell starken
+                  technischen Einrichtungen in der Ukraine steht das Land an der
+                  Spitze innovativer diagnostischer und therapeutischer
+                  Methoden. GlobalLink Software bedient über 20 Millionen
+                  Patienten in 70 Ländern weltweit und beschäftigt 5000
+                  ukrainische Ingenieure.
                 </p>
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Automotive industry - what is the scope?
+                  Automobilindustrie - welche Möglichkeiten gibt es?
                 </h2>
                 <p>
-                  Ukraine’s cluster of 12 automobile manufacturers produce
-                  buses, tractors, trucks, passenger cars, trams and rail
-                  engines.
+                  Das ukrainische Cluster von 12 Automobilherstellern produziert
+                  Busse, Traktoren, Lastwagen, Personenkraftwagen, Straßenbahnen
+                  und Eisenbahnmotoren.
                 </p>
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  There’s a lot of wheat fields!
+                  Es gibt eine Menge Weizenfelder!
                 </h2>
                 <p>
-                  Ukraine sits on a third of the world’s rich black soil, which
-                  accounts for its #1 global status as a sunflower oil exporter,
-                  #2 in barley and #3 in wheat. Recent investment in
-                  eco-technologies to increase yields and sustainability have
-                  created a cluster of agricultural science centres.
+                  Die Ukraine liegt auf einem Drittel der reichen Schwarzerde
+                  der Welt, was dazu führt, dass sie weltweit die Nummer 1 bei
+                  der Ausfuhr von Sonnenblumenöl, die Nummer 2 bei Gerste und
+                  die Nummer 3 bei Weizen ist. Jüngste Investitionen in
+                  Öko-Technologien zur Steigerung von Erträgen und
+                  Nachhaltigkeit haben eine Reihe von landwirtschaftlichen
+                  Wissenschaftszentren entstehen lassen.
                 </p>
               </div>
             </div>
