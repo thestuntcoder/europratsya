@@ -40,10 +40,6 @@ export default function OurWebsiteDe() {
                   Crescent, Perth PH1 1DF, UK.
                 </p>
                 <p>
-                  Unsere Firmenadresse lautet Europratsya CIC, 32 Oakbank
-                  Crescent, Perth PH1 1DF, UK.
-                </p>
-                <p>
                   Der Inhalt dieser Website wird von Europratsya CIC zur
                   Verfügung gestellt, und wir bemühen uns, die Informationen auf
                   dem neuesten Stand und korrekt zu halten.
