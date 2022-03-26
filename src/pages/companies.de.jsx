@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 import { employersList } from '../helpers/company';
 
-export default function Companies({ data }) {
+export default function CompaniesDe({ data }) {
   const metaDescription =
     'Quality employers who are positive to reviewing Ukrainian expertise and qualifications and interviewing Ukrainian candidates, vetted by Europratsya.';
   const metaTitle = 'Employers who encourage Ukrainian candidates to apply';
@@ -27,10 +27,10 @@ export default function Companies({ data }) {
       <div className="bg-white">
         <div className="max-w-7xl sm:px-6 lg:py-16 lg:px-8 px-4 py-12 mx-auto">
           <p className="text-base font-semibold tracking-wider text-left text-black uppercase">
-            Vetted euro employers
+            Geprüfte EU-Arbeitgeber
           </p>
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-4 lg:mt-8">
-            {employersList(data.allSanityCompany.edges)}
+            {employersList(data.allSanityCompany.edges, 'de')}
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ export default function Companies({ data }) {
 }
 
 export const EMPLOYERS = graphql`
-  query Companies {
+  query CompaniesDe {
     allSanityCompany {
       edges {
         node {
