@@ -7,7 +7,7 @@ import NavCenter from '../components/layout/nav-center.de';
 export default function UkrExpertiseExplainedDe() {
   const metaDescription =
     'Ich habe schon von ukrainischer IT, Software und Webdesign gehört?';
-  const metaTitle = 'Ukraine Fachwissen FAQ';
+  const metaTitle = 'Branchen und Fachgebiete in der Ukraine FAQ';
 
   return (
     <LayoutPage>
@@ -35,7 +35,7 @@ export default function UkrExpertiseExplainedDe() {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Ukraine Fachwissen FAQ
+                Branchen und Fachgebiete in der Ukraine FAQ
               </h1>
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
