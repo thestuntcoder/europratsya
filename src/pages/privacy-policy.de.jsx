@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 
-export default function PrivacyPolicy() {
+export default function PrivacyPolicyDe() {
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>Privacy policy | Europratsya</title>
       </Helmet>

@@ -10,7 +10,7 @@ export default function UkrExpertiseExplainedDe() {
   const metaTitle = 'Branchen und Fachgebiete in der Ukraine FAQ';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

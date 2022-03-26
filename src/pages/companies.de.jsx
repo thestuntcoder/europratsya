@@ -11,7 +11,7 @@ export default function CompaniesDe({ data }) {
   const metaTitle = 'Employers who encourage Ukrainian candidates to apply';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

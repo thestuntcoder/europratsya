@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 
-export default function SkillsInDemand({ data }) {
+export default function SkillsInDemandDe({ data }) {
   const metaDescription =
     'Skills in demand per country guide for Ukrainian migrants.';
   const metaTitle = 'Skills in demand per country guide for Ukrainian migrants';
@@ -25,7 +25,7 @@ export default function SkillsInDemand({ data }) {
   }
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

@@ -10,7 +10,7 @@ export default function UkrEducationExplainerDe() {
   const metaTitle = 'Bildung in der Ukraine FAQ';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

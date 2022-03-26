@@ -3,9 +3,9 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 
-export default function VisaPermits({ data }) {
+export default function VisaPermitsDe({ data }) {
   const metaDescription =
     'Guides for visa permits per country guide for Ukrainian migrants.';
   const metaTitle =
@@ -26,7 +26,7 @@ export default function VisaPermits({ data }) {
   }
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

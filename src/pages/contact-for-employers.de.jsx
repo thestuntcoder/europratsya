@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 import contactImg from '../images/contact/contact-form-employers.jpg';
 
 function encode(data) {
@@ -14,7 +14,7 @@ function encode(data) {
   return formData;
 }
 
-export default function ContactEmployers() {
+export default function ContactEmployersDe() {
   const [state, setState] = React.useState({});
 
   const handleChange = (e) => {
@@ -44,7 +44,7 @@ export default function ContactEmployers() {
   const metaTitle = 'Help simplify work search for Ukrainians';
 
   return (
-    <LayoutPage>
+    <LayoutPage lang="de">
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />

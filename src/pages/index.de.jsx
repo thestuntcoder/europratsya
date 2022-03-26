@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import NavCenter from '../components/layout/nav-center.de';
 import JobAds from '../components/job-ads';
 
 import ukrBg from '../images/ukr-background-new.jpg';
