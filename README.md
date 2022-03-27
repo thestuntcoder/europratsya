@@ -14,9 +14,8 @@
   We invite <a href="https://europratsya.com/">Ukrainians to Europe</a>
 </h1>
 
-Since the beginning of war in Ukraine, more than 1.600.000 people left the country.
-It is estimated that 5.000.000 Ukrainians will leave their homes in 2022.
-It is pur mission to help them feel welcomed in the EU, and by future employers.
+Since the beginning of war in Ukraine, more than 3.7 million people have left Ukraine, while an estimated 6.5 million people have been displaced within the country.
+It is our mission to help them feel welcomed in the EU, and by future employers.
 
 Nobody likes leaving their home, let alone being forced out of it.
 
