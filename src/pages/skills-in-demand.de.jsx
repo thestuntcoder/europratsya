@@ -17,8 +17,8 @@ export default function SkillsInDemandDe({ data }) {
 
     countriesOutput.push(
       <li>
-        <Link to={'/countries/' + data[key].slug.current}>
-          {data[key].title.en}
+        <Link to={'/de/countries/' + data[key].slug.current}>
+          {data[key].title.de}
         </Link>
       </li>
     );
@@ -43,7 +43,7 @@ export default function SkillsInDemandDe({ data }) {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Skills in demand
+                Gefragte Qualifikationen
               </h1>
               <div className="prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <div className="relative md:flex w-full">
@@ -52,11 +52,11 @@ export default function SkillsInDemandDe({ data }) {
                   </div>
                   <div className="md:w-2/3">
                     <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                      Unemployment Map
+                      Karte der Arbeitslosigkeit
                     </h2>
                     <StaticImage
                       className="my-8 h-full w-auto"
-                      src="../images/checklist/Unemployment-Map-2x.png"
+                      src="../images/checklist/DE-Unemployment-Map-2x.png"
                       alt="Unemployment Map"
                       loading="auto"
                       objectFit="contain"
@@ -80,7 +80,7 @@ export const COUNTRIES = graphql`
           current
         }
         title {
-          en
+          de
         }
         id
       }
