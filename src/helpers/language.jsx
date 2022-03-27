@@ -4,7 +4,9 @@ export function getRaw(obj, language = 'en') {
 
   language = '_raw' + language.charAt(0).toUpperCase() + language.slice(1);
 
-  return typeof obj[language] === 'undefined'
+  return typeof obj[language] === 'undefined' ||
+    obj[language] === '' ||
+    obj[language] === null
     ? obj[altLanguage]
     : obj[language];
 }
@@ -14,7 +16,9 @@ export function getTitle(obj, language = 'en') {
 
   let altLanguage = language === 'en' ? 'uk' : 'en';
 
-  return typeof obj[language] === 'undefined'
+  return typeof obj[language] === 'undefined' ||
+    obj[language] === '' ||
+    obj[language] === null
     ? obj[altLanguage]
     : obj[language];
 }
