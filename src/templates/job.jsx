@@ -7,7 +7,7 @@ import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
 import NavCenterDe from '../components/layout/nav-center.de';
 import BlockContent from '../components/block-content';
-import { getRaw, getTitle, getSeo } from '../helpers/language';
+import { getRaw, getTitle, getSeo, getUrlPrefix } from '../helpers/language';
 
 export const query = graphql`
   query JobTemplateQuery($id: String!) {
@@ -114,30 +114,27 @@ const JobPost = (props) => {
   const companyDescriptionRaw = getRaw(company.description, language);
   const jobTitle = getTitle(job.title, language);
   const jobDescriptionRaw = getRaw(job.description, language);
+  const vacanciesUrl = getUrlPrefix(language) + '/vacancies';
 
   let vacanciesLink,
     navigation,
-    vacanciesUrl,
     contactEmployer = {};
 
   switch (language) {
     case 'de':
       contactEmployer = 'Kontakt';
-      vacanciesUrl = '/de/vacancies';
       vacanciesLink = <Link to={vacanciesUrl}>Stellenangebote</Link>;
       navigation = <NavCenterDe />;
       break;
 
     case 'uk':
       contactEmployer = 'Зверніться до цього роботодавця';
-      vacanciesUrl = '/uk/vacancies';
       vacanciesLink = <Link to={vacanciesUrl}>Вакансії</Link>;
       navigation = <NavCenterUk />;
       break;
 
     default:
       contactEmployer = 'Contact this employer';
-      vacanciesUrl = '/vacancies';
       vacanciesLink = <Link to={vacanciesUrl}>Vacancies</Link>;
       navigation = <NavCenter />;
   }
@@ -184,7 +181,7 @@ const JobPost = (props) => {
                     Location
                   </dt>
                   <dd className="text-large mt-1 font-semibold text-gray-900">
-                    {job.city + ', ' + job.country.title.en}
+                    {job.city + ', ' + getTitle(job.country.title, language)}
                   </dd>
                 </div>
 
