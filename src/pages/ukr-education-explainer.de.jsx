@@ -6,7 +6,7 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function UkrEducationExplainerDe() {
   const metaDescription =
-    'An introduction to the Ukrainian education system for employers considering CVs from candidates with Ukrainian university, college or secondary school qualifications.';
+    'Die Ukraine hat eine Alphabetisierungsquote von 99,4 % und damit die höchste der Welt. In unserer Broschüre finden Sie einen kurzen Überblick über das hochrangige Bildungssystem des Landes.';
   const metaTitle = 'Bildung in der Ukraine FAQ';
 
   return (
@@ -64,12 +64,13 @@ export default function UkrEducationExplainerDe() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Images from top: Igor Sikorsky Kyiv Polytechnic Institute,
-                      Kharkiv National Medical University, Lakshya MBBS (Medical
-                      school), Hlukhiv National Pedagogical University, assembly
-                      hall of the National Technical University of Ukraine Kyiv
-                      Polytechnic Institute and (below) research library of
-                      National University of Kyiv-Mohyla Academy.
+                      Bilder von oben: Igor Sikorsky Polytechnisches Institut
+                      Kiew, Nationale Medizinische Universität Charkiw, Lakshya
+                      MBBS (Medizinische Hochschule), Nationale Pädagogische
+                      Universität Hluchiw, Aula der Nationalen Technischen
+                      Universität der Ukraine, Polytechnisches Institut Kiew und
+                      (unten) Forschungsbibliothek der Nationalen Universität
+                      Kiew-Mohyla-Akademie.
                     </span>
                   </figcaption>
                 </figure>
@@ -77,36 +78,39 @@ export default function UkrEducationExplainerDe() {
 
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p className="mt-24">
-                  Ukraine has a 99.4% literacy rate, the highest in the world.
-                  Check our explainer for a quick guide to their highly ranked
-                  education system.
+                  Die Ukraine hat eine Alphabetisierungsquote von 99,4 % und
+                  damit die höchste der Welt. In unserer Broschüre finden Sie
+                  einen kurzen Überblick über das hochrangige Bildungssystem des
+                  Landes.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Which are the hardest universities to get into in Ukraine?
+                  Welche sind die besten Universitäten in der Ukraine?
                 </h2>
                 <p>
-                  Taras Shevchenko National University of Kyiv Ivan Franko
-                  National University of Lviv V. N. Karazin Kharkiv National
-                  University.
+                  Nationale Taras-Schewtschenko-Universität Kiew Nationale
+                  Iwan-Franko-Universität Lwiw Nationale V. N.
+                  Karazin-Universität Charkiw.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  What is the grading system at Ukrainian universities?
+                  Wie ist das Benotungssystem an ukrainischen Universitäten?
                 </h2>
                 <p>
-                  Degrees are awarded either on a<br />
-                  100 points scale (90-100 = excellent, 70-89 = good, 50-69 =
-                  satisfactory, 0-49 = unsatisfactory)
-                </p>
-                <p>or a</p>
-                <p>
-                  5 point national scale (5 = excellent, 4 = good, 3=
-                  satisfactory, 2-1= unsatisfactory)
+                  Die Abschlüsse werden entweder auf einer
                   <br />
-                  Recent graduates use the European Credit Transfer and
-                  Accumulation scale. They convert differently for 2 year
-                  degrees and 4 year degrees, please check the table below
+                  100-Punkte-Skala (90-100 = ausgezeichnet, 70-89 = gut, 50-69 =
+                  befriedigend, 0-49 = unbefriedigend)
+                </p>
+                <p>oder einer</p>
+                <p>
+                  nationalen 5-Punkte-Skala (5 = ausgezeichnet, 4 = gut, 3 =
+                  befriedigend, 2-1 = unbefriedigend)
+                  <br />
+                  Jüngere Hochschulabsolventen verwenden die Europäische Skala
+                  zur Anrechnung und Akkumulierung von Studienleistungen. Die
+                  Umrechnung erfolgt für zweijährige und vierjährige Abschlüsse
+                  unterschiedlich, siehe folgende Tabelle
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
@@ -117,13 +121,13 @@ export default function UkrEducationExplainerDe() {
                   <thead>
                     <tr>
                       <th className="border-b font-medium bg-gray-200 p-4 pl-8 pt-0 pb-3 text-slate-400 text-center">
-                        GRADE
+                        NOTE
                       </th>
                       <th className="border-b font-medium bg-gray-200 p-4 pt-0 pb-3 text-slate-400 text-center">
-                        WES UNDERGRADUATE CONVERSION
+                        WES Umrechnung 2-J Abschluss
                       </th>
                       <th className="border-b font-medium bg-gray-200 p-4 pr-8 pt-0 pb-3 text-slate-400 text-center">
-                        WES GRADUATE CONVERSION
+                        WES Umrechnung 4-J Abschluss
                       </th>
                     </tr>
                   </thead>
@@ -169,91 +173,94 @@ export default function UkrEducationExplainerDe() {
                 </table>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  What do the qualifications mean?
+                  Was bedeuten die Abschlüsse?
                 </h2>
                 <p>
                   <ul>
                     <li>
-                      Junior Bachelor (Molodshyi Bakalavr)- first level of
-                      higher education equals 2 years of studying
+                      Junior-Bachelor (Molodshyi Bakalavr) - erste Stufe der
+                      Hochschulbildung, entspricht 2 Jahren Studium
                     </li>
                     <li>
-                      Bachelor (Bakalavr) - higher education equals 4 years of
-                      studying
+                      Bachelor (Bakalavr) - höhere Ausbildung, entspricht 4
+                      Jahren Studium
                     </li>
                     <li>
-                      Master (Magistr) - advanced academic or professional
-                      training
+                      Master (Magistr) - fortgeschrittene akademische oder
+                      berufliche Ausbildung
                     </li>
                     <li>
-                      Doctor of Philosophy/Art and Doctor of Science - the
-                      highest education level
+                      Doktor der Philosophie/Kunst und Doktor der Wissenschaften
+                      - die höchste Ausbildungsstufe
                     </li>
                   </ul>
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Some applicants are from colleges and some from unis - what is
-                  the difference?
+                  Einige Bewerber kommen von Hochschulen, andere von Unis -
+                  worin besteht der Unterschied?
                 </h2>
                 <p>
-                  Colleges offer vocational training, similar to apprenticeships
-                  for mechanics, electricians and chefs, for youth from the age
-                  of 15. With a college qualification you will be entitled to
-                  apply for university places alongside school-leavers who
-                  attended a full 12 years of school.
+                  Berufsschulen bieten eine Berufsausbildung für Jugendliche ab
+                  15 Jahren an, ähnlich wie eine Lehre als Mechaniker,
+                  Elektriker oder Koch. Mit einem Berufsabschluss sind Sie
+                  berechtigt, sich zusammen mit Schulabgängern, die die vollen
+                  12 Schuljahre besucht haben, um einen Studienplatz zu
+                  bewerben.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  I'm looking at Ukrainian secondary school grades - there seem
-                  to be two grading systems?
+                  Ich schaue mir die ukrainischen Schulnoten der Oberstufe an -
+                  es scheint zwei Benotungssysteme zu geben?
                 </h2>
                 <p>
-                  School leavers <strong>after 2012</strong> are graded by a
-                  12-point system:
+                  Die Schulabgänger <strong>nach 2012</strong> werden nach einem
+                  12-Punkte-System benotet:
                   <ul>
-                    <li>10-12 (excellent, equivalent to A),</li>
-                    <li>7-9 (good, equivalent to B),</li>
-                    <li>4-6 (satisfactory, equivalent to C) and</li>
-                    <li>1-3 (unsatisfactory, equivalent to F)</li>
+                    <li>10-12 (ausgezeichnet, entspricht A),</li>
+                    <li>7-9 (gut, entspricht B),</li>
+                    <li>4-6 (befriedigend, entspricht C) und</li>
+                    <li>1-3 (nicht zufriedenstellend, entspricht F)</li>
                   </ul>
                 </p>
 
                 <p>
-                  School leavers <strong>before 2012</strong> were graded by a
-                  5-point system:
+                  Schulabgänger <strong>vor 2012</strong> wurden nach einem
+                  5-Punkte-System eingestuft:
                   <ul>
-                    <li>5 (excellent),</li>
-                    <li>4 (good),</li>
-                    <li>3 (satisfactory)</li>
-                    <li>1-2 (unsatisfactory)</li>
+                    <li>5 (ausgezeichnet),</li>
+                    <li>4 (gut),</li>
+                    <li>3 (befriedigend)</li>
+                    <li>1-2 (nicht zufriedenstellend)</li>
                   </ul>
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Some applicants went to school for 11 years and others for 12
-                  - why?
+                  Einige Bewerber gingen 11 Jahre zur Schule und andere 12 Jahre
+                  - warum?
                 </h2>
                 <p>
-                  Ukraine extended compulsory schooling to 12 years in 2018.
+                  In der Ukraine wurde die Schulpflicht 2018 auf 12 Jahre
+                  verlängert.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  What’s the Ukrainian school curriculum like?
+                  Wie sieht der ukrainische Lehrplan aus?
                 </h2>
                 <p>
-                  Students are taught 1 or 2 foreign languages (English and
-                  German are the most common), mathematics, chemistry, physics,
-                  biology as well as all general subjects
+                  Die Schüler werden in 1 oder 2 Fremdsprachen (meist Englisch
+                  und Deutsch), Mathematik, Chemie, Physik, Biologie sowie in
+                  allen allgemeinen Fächern unterrichtet.
                 </p>
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
-                  Anything you recommend I check in a Ukrainian CV?
+                  Gibt es etwas, das ich in einem ukrainischen Lebenslauf
+                  überprüfen sollte?
                 </h2>
                 <p>
-                  All academic institutions in Ukraine must have a license and
-                  can’t issue degrees or diplomas without accreditation from
-                  MOES.
+                  Alle akademischen Einrichtungen in der Ukraine müssen eine
+                  Lizenz haben und können ohne Akkreditierung durch das MOES
+                  keine Abschlüsse oder Diplome ausstellen.
                 </p>
 
                 <StaticImage
