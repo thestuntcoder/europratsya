@@ -5,8 +5,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
+import NavCenterDe from '../components/layout/nav-center.de';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
+import { getRaw, getTitle, getSeo, getUrlPrefix } from '../helpers/language';
 
 export const query = graphql`
   query CompanyTemplateQuery($id: String!) {
@@ -14,11 +16,15 @@ export const query = graphql`
       description {
         _rawEn
         _rawUk
+        _rawDe
       }
       seo {
         title_en
+        title_uk
+        title_de
         description_en
         description_uk
+        description_de
         seo_image {
           asset {
             gatsbyImageData(
@@ -66,6 +72,7 @@ export const query = graphql`
           title {
             en
             uk
+            de
           }
           description {
             en {
@@ -74,6 +81,11 @@ export const query = graphql`
               }
             }
             uk {
+              children {
+                text
+              }
+            }
+            de {
               children {
                 text
               }
@@ -115,14 +127,29 @@ const Company = (props) => {
     metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
 
-  let descriptionRaw =
-    language === 'en'
-      ? company.description._rawEn
-      : typeof company.description._rawUk === 'undefined'
-      ? company.description._rawEn
-      : company.description._rawUk;
+  const descriptionRaw = getRaw(company.description, language);
+  let companyVacancies,
+    navigation,
+    vettedEmployer = {};
 
-  const navigation = language === 'en' ? <NavCenter /> : <NavCenterUk />;
+  switch (language) {
+    case 'de':
+      companyVacancies = 'Stellenangebote des Unternehmens';
+      vettedEmployer = 'Geprüfte Arbeitgeber';
+      navigation = <NavCenterDe />;
+      break;
+
+    case 'uk':
+      companyVacancies = 'Вакансії від компанії';
+      vettedEmployer = 'Перевірені роботодавці';
+      navigation = <NavCenterUk />;
+      break;
+
+    default:
+      companyVacancies = 'Vacancies from the company';
+      vettedEmployer = 'Vetted euro employers';
+      navigation = <NavCenter />;
+  }
 
   return (
     <LayoutPage lang={language}>
@@ -140,8 +167,10 @@ const Company = (props) => {
       <div className="overflow-hidden bg-white">
         <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
           <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
-            <Link to="/companies">Vetted euro employers</Link> >{' '}
-            <span className="text-blue-500">{company.name}</span>
+            <Link to={getUrlPrefix(language) + '/companies'}>
+              {vettedEmployer}
+            </Link>
+            > <span className="text-blue-500">{company.name}</span>
           </h1>
         </div>
       </div>
@@ -170,7 +199,7 @@ const Company = (props) => {
         <div className="relative max-w-7xl mx-auto">
           <div className="text-left">
             <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
-              Vacancies from the company
+              {companyVacancies}
             </h2>
           </div>
           <JobAds limit="24" data={ads} />
