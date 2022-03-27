@@ -6,8 +6,9 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function EssentialChecklistsDe() {
   const metaDescription =
-    'An Essential checklist for Ukrainians migrating to EU.';
-  const metaTitle = 'An Essential checklist for Ukrainians migrating to EU';
+    'Eine wichtige Checkliste für Ukrainer, die in die EU einwandern.';
+  const metaTitle =
+    'Eine wichtige Checkliste für Ukrainer, die in die EU einwandern.';
 
   return (
     <LayoutPage lang="de">
@@ -28,37 +29,37 @@ export default function EssentialChecklistsDe() {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Essential Checklists
+                Wichtige Checklisten
               </h1>
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Workplace guide - English
+                  Leitfaden für den Arbeitsplatz - Englisch
                 </h2>
                 <StaticImage
                   className="my-8 h-full w-auto"
-                  src="../images/checklist/Workplace-guide-English-2x.png"
+                  src="../images/checklist/DE-Workplace-guide-English-2x.png"
                   alt="Workplace guide - English"
                   loading="auto"
                   objectFit="contain"
                 />
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Workplace guide - German
+                  Leitfaden für den Arbeitsplatz - Deutsch
                 </h2>
                 <StaticImage
                   className="my-8 h-full w-auto"
-                  src="../images/checklist/Workplace-guide-German-2x.png"
+                  src="../images/checklist/DE-Workplace-guide-German-2x.png"
                   alt="Workplace-guide-German-2x.png"
                   loading="auto"
                   objectFit="contain"
                 />
 
                 <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                  Workplace guide - Ukrainian Russian
+                  Leitfaden für den Arbeitsplatz - Ukrainisch-Russisch
                 </h2>
                 <StaticImage
                   className="my-8 h-full w-auto"
-                  src="../images/checklist/Workplace-guide-Ukrainian-Russian-2x.png"
+                  src="../images/checklist/DE-Workplace-guide-Ukrainian-Russian-2x.png"
                   alt="Workplace guide - Ukrainian Russian"
                   loading="auto"
                   objectFit="contain"
