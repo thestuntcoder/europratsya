@@ -142,7 +142,7 @@ export default function HomeDe({ data }) {
               Neueste Stellenausschreibungen
             </h2>
           </div>
-          <JobAds limit="9" lang="de" data={data.allSanityJobPost.edges} />
+          <JobAds limit="9" language="de" data={data.allSanityJobPost.edges} />
 
           <div className="mt-8 text-center">
             <div className="inline-flex rounded-full shadow">
