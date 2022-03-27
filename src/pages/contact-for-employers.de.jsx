@@ -40,8 +40,8 @@ export default function ContactEmployersDe() {
   };
 
   const metaDescription =
-    'Europratsya translates your vacancy into Ukrainian and posts your vacancy ad for free to help displaced people search one database for relevant jobs.';
-  const metaTitle = 'Help simplify work search for Ukrainians';
+    'Wenn Ihr Unternehmen ukrainische Bewerber interviewen möchte, machen wir es Ihnen mit der fachkundigen Übersetzung Ihrer Stellenanzeige ins Ukrainische einfach und kostenlos.';
+  const metaTitle = 'Wir helfen Ihnen, die Ukrainer zu erreichen';
 
   return (
     <LayoutPage lang="de">
@@ -63,7 +63,7 @@ export default function ContactEmployersDe() {
           <div className="max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none mx-auto text-base">
             <div>
               <h2 className="text-base text-3xl font-bold tracking-wide text-black">
-                Helping you reach Ukrainians
+                Wir helfen Ihnen, die Ukrainer zu erreichen
               </h2>
             </div>
           </div>
@@ -95,8 +95,9 @@ export default function ContactEmployersDe() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Central business district of Košice in Slovakia, which
-                      offers a mix of tech, manufacturing and logistics careers.
+                      Zentrales Geschäftsviertel von Košice in der Slowakei, das
+                      eine Mischung aus technischen, verarbeitenden und
+                      logistischen Berufen bietet.
                     </span>
                   </figcaption>
                 </figure>
@@ -105,17 +106,18 @@ export default function ContactEmployersDe() {
             <div className="lg:mt-0 mt-8">
               <div className="prose-blue lg:max-w-none lg:row-start-1 lg:col-start-1 mx-auto text-lg prose text-gray-500">
                 <p>
-                  If your company wants to interview Ukrainian candidates, we
-                  make it free and simple for you with expert translations of
-                  your vacancy advertisement into Ukrainian.
+                  Wenn Ihr Unternehmen ukrainische Bewerber interviewen möchte,
+                  machen wir es Ihnen mit der fachkundigen Übersetzung Ihrer
+                  Stellenanzeige ins Ukrainische einfach und kostenlos.
                 </p>
                 <p>
-                  You will help candidates search a Europe-wide database of
-                  relevant jobs in their own language.
+                  Sie helfen den Kandidaten, eine europaweite Datenbank mit
+                  relevanten Stellenangeboten in ihrer eigenen Sprache zu
+                  durchsuchen.
                 </p>
                 <p>
-                  Fill in our contact form and add your workplace's language
-                  requirements.
+                  Füllen Sie unser Kontaktformular aus und fügen Sie die
+                  Sprachanforderungen Ihres Unternehmens hinzu.
                 </p>
                 <form
                   name="employer"
@@ -132,7 +134,7 @@ export default function ContactEmployersDe() {
                         htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Your name
+                        Ihr Name
                       </label>
                       <input
                         type="text"
@@ -140,7 +142,7 @@ export default function ContactEmployersDe() {
                         id="full-name"
                         autocomplete="name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="First name, last name"
+                        placeholder="Vorname, Nachname"
                         onChange={handleChange}
                       />
                     </div>
@@ -157,7 +159,7 @@ export default function ContactEmployersDe() {
                         type="email"
                         autocomplete="email"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Your email address"
+                        placeholder="Ihre E-Mail Adresse"
                         onChange={handleChange}
                       />
                     </div>
@@ -168,14 +170,14 @@ export default function ContactEmployersDe() {
                         htmlFor="company-role"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Your role in company
+                        Ihre Rolle im Unternehmen
                       </label>
                       <input
                         type="text"
                         name="company-role"
                         id="company-role"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="CEO, HR, etc..."
+                        placeholder="CEO, HR"
                         onChange={handleChange}
                       />
                     </div>
@@ -184,7 +186,7 @@ export default function ContactEmployersDe() {
                         htmlFor="company-name"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Company name
+                        Firmenname
                       </label>
                       <input
                         type="text"
@@ -202,7 +204,7 @@ export default function ContactEmployersDe() {
                         htmlFor="company-website"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Your company's URL
+                        Die URL Ihrer Firma
                       </label>
                       <input
                         type="text"
@@ -221,14 +223,14 @@ export default function ContactEmployersDe() {
                         htmlFor="phone"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Preferred language
+                        Gewünschte Sprache
                       </label>
                       <input
                         type="text"
                         name="language-1"
                         id="language-1"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Language 1"
+                        placeholder="Sprache 1"
                         onChange={handleChange}
                       />
                     </div>
@@ -237,14 +239,14 @@ export default function ContactEmployersDe() {
                         htmlFor="language-2"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Also considered
+                        Auch als
                       </label>
                       <input
                         type="text"
                         name="language-2"
                         id="language-2"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Language 2"
+                        placeholder="Sprache 2"
                         onChange={handleChange}
                       />
                     </div>
@@ -253,13 +255,15 @@ export default function ContactEmployersDe() {
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
-                    ></label>
+                    >
+                      Kommentar
+                    </label>
                     <textarea
                       id="message"
                       name="message"
                       rows="4"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm"
-                      placeholder="Job description including requirements, or link to your own careers page. For part-time work or manual work please include wage estimate per hour in EUR."
+                      placeholder="Stellenbeschreibung mit Anforderungen oder Link zu Ihrer eigenen Karriereseite. Bei Teilzeitarbeit oder manueller Arbeit bitte den geschätzten Stundenlohn in EUR angeben."
                       onChange={handleChange}
                     />
                   </div>
@@ -268,7 +272,7 @@ export default function ContactEmployersDe() {
                       type="submit"
                       className="hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
                     >
-                      Submit
+                      Senden
                     </button>
                   </div>
                 </form>
