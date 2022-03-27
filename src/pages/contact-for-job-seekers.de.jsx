@@ -40,8 +40,8 @@ export default function ContactEmployeesDe() {
   };
 
   const metaDescription =
-    'Europratsya translates your CV into English or German for free to help you focus on finding work and planning interviews.';
-  const metaTitle = 'Time-saving CV help for Ukrainians';
+    'Europratsya übersetzt Ihren Lebenslauf kostenlos ins Englische oder Deutsche, damit Sie sich auf die Arbeitssuche und die Planung von Vorstellungsgesprächen konzentrieren können.';
+  const metaTitle = 'Zeitsparende Lebenslaufhilfe für Ukrainer';
 
   return (
     <LayoutPage lang="de">
@@ -63,7 +63,7 @@ export default function ContactEmployeesDe() {
           <div className="max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none mx-auto text-base">
             <div>
               <h2 className="text-base text-3xl font-bold tracking-wide text-black">
-                Helping you support Ukraine
+                Hilfe bei der Unterstützung der Ukraine
               </h2>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function ContactEmployeesDe() {
                     <img
                       className="object-cover object-center rounded-lg shadow-lg"
                       src={contactImg}
-                      alt="Employee at Farmasoft's logistics facilities in Kyiv"
+                      alt="Mitarbeiter in den Logistikeinrichtungen von Farmasoft in Kiew"
                       width="1184"
                       height="1376"
                     />
@@ -95,10 +95,9 @@ export default function ContactEmployeesDe() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Employee at Farmasoft's logistics facilities in Kyiv.
-                      Their staff has provided expert services to the
-                      pharmaceutical and life sciences industry in Ukraine since
-                      1999.
+                      Mitarbeiter in den Logistikeinrichtungen von Farmasoft in
+                      Kiew. Die Mitarbeiter von Farmasoft bieten der Pharma- und
+                      Biowissenschaftsindustrie in der Ukraine seit 1999.
                     </span>
                   </figcaption>
                 </figure>
@@ -107,13 +106,14 @@ export default function ContactEmployeesDe() {
             <div className="lg:mt-0 mt-8">
               <div className="prose-blue lg:max-w-none lg:row-start-1 lg:col-start-1 mx-auto text-lg prose text-gray-500">
                 <p>
-                  We help Ukrainian speakers set up a base for the short or long
-                  term outside Ukraine's borders. We also help residents of
-                  Ukraine find remote work.
+                  Wir helfen ukrainischsprachigen Menschen dabei, sich kurz-
+                  oder langfristig außerhalb der Grenzen der Ukraine. Wir helfen
+                  auch Einwohnern der Ukraine bei der Suche nach einem
+                  Arbeitsplatz im Ausland.
                 </p>
                 <p>
-                  To save you time, we will translate your CV into either
-                  English or German free of charge.
+                  Um Ihnen Zeit zu sparen, übersetzen wir Ihren Lebenslauf
+                  entweder ins Englisch oder Deutsch kostenlos.
                 </p>
                 <form
                   name="candidateUploads"
@@ -134,7 +134,7 @@ export default function ContactEmployeesDe() {
                         htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Full name
+                        Name
                       </label>
                       <input
                         type="text"
@@ -142,7 +142,7 @@ export default function ContactEmployeesDe() {
                         id="full-name"
                         autocomplete="name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Full name"
+                        placeholder="Vorname, Nachname"
                         onChange={handleChange}
                       />
                     </div>
@@ -170,14 +170,14 @@ export default function ContactEmployeesDe() {
                         htmlFor="phone"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        First language
+                        Erste Sprache
                       </label>
                       <input
                         type="text"
                         name="language-1"
                         id="language-1"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Language 1"
+                        placeholder="Sprache 1"
                         onChange={handleChange}
                       />
                     </div>
@@ -186,14 +186,14 @@ export default function ContactEmployeesDe() {
                         htmlFor="language-2"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Second language
+                        Zweite Sprache
                       </label>
                       <input
                         type="text"
                         name="language-2"
                         id="language-2"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="Language 2"
+                        placeholder="Sprache 2"
                         onChange={handleChange}
                       />
                     </div>
@@ -203,7 +203,7 @@ export default function ContactEmployeesDe() {
                       htmlFor="file"
                       lassName="block text-sm font-medium text-gray-700"
                     >
-                      Upload CV
+                      CV hochladen
                     </label>
                     <input
                       type="file"
@@ -219,7 +219,7 @@ export default function ContactEmployeesDe() {
                       htmlFor="translated"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      To be translated into
+                      Zu übersetzen in
                     </label>
                     <div className="mt-4 space-y-4">
                       <div className="flex items-center">
@@ -249,7 +249,7 @@ export default function ContactEmployeesDe() {
                           htmlFor="push-email"
                           className="block ml-3 text-sm font-medium text-gray-700"
                         >
-                          German
+                          Deutsch
                         </label>
                       </div>
                     </div>
@@ -259,14 +259,14 @@ export default function ContactEmployeesDe() {
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
                     >
-                      Comments (max. 200 characters)
+                      Kommentare
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows="4"
                       className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-sm"
-                      placeholder="Message"
+                      placeholder="Kommentare"
                       onChange={handleChange}
                     />
                   </div>
@@ -275,7 +275,7 @@ export default function ContactEmployeesDe() {
                       type="submit"
                       className="hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
                     >
-                      Submit
+                      Senden
                     </button>
                   </div>
                 </form>
