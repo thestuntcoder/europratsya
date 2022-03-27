@@ -55,7 +55,7 @@ function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
             {subtitle}
           </h2>
         </div>
-        <JobAds limit="24" data={ads} />
+        <JobAds limit="24" data={ads} language={lang} />
       </div>
     </div>
   );
