@@ -59,7 +59,7 @@ export default function HomeDe({ data }) {
                 <h3 className="text-2xl font-extrabold text-white">Bewerber</h3>
                 <p className="mt-4 text-base text-white">
                   Bitte sehen Sie sich unseren Leitfaden für Arbeitsvisa und den
-                  Leitfaden zum Fachkräftemangel
+                  Leitfaden zum Fachkräftemangel{` `}
                   <Link to="/de/skills-in-demand/">Land für Land</Link> an.
                 </p>
                 <p className="mt-8 text-base text-white">
@@ -85,10 +85,11 @@ export default function HomeDe({ data }) {
                 </h3>
                 <p className="mt-4 text-base text-white">
                   Um ukrainische Lebensläufe zu bewerten, lesen Sie bitte unsere
+                  {` `}
                   <Link to="/de/ukr-eduction-explainer/">
                     Erklärungen zur Ausbildung in der Ukraine
                   </Link>
-                  und zum
+                  und zum{` `}
                   <Link to="/de/ukr-expertise-explained/">
                     Fachwissen in der Ukraine
                   </Link>
