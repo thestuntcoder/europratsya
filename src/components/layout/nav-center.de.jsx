@@ -30,7 +30,7 @@ export default class NavCenter extends React.Component {
           <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
             <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
               <div className="flex w-full items-center justify-between md:w-auto">
-                <Link to="/" aria-label="Home">
+                <Link to="/de/" aria-label="Home">
                   <img
                     className="h-8 w-auto sm:h-12"
                     src={europratsyaLogo}
