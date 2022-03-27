@@ -3,11 +3,14 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.de';
+import { getTitle, getUrlPrefix } from '../helpers/language';
 
 export default function VacanciesDe({ data }) {
   const metaDescription =
     'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
   const metaTitle = 'Job vacancies from firms encouraging Ukrainian candidates';
+
+  const lang = 'de';
 
   let allJobAds = [];
   let edges = data.allSanityJobPost.edges;
@@ -20,10 +23,10 @@ export default function VacanciesDe({ data }) {
       <tr key={key}>
         <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
           <Link
-            to={'/de/job/' + edges[key].node.slug.current}
+            to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
             className="text-blue-500 hover:text-blue-900"
           >
-            {edges[key].node.title.de}
+            {getTitle(edges[key].node.title, lang)}
           </Link>
           <dl className="font-normal lg:hidden">
             <dt className="sr-only">Name</dt>
@@ -32,7 +35,9 @@ export default function VacanciesDe({ data }) {
             </dd>
             <dt className="sr-only sm:hidden">Ort</dt>
             <dd className="mt-1 truncate text-gray-500 sm:hidden">
-              {edges[key].node.city + ', ' + edges[key].node.country.title.de}
+              {edges[key].node.city +
+                ', ' +
+                getTitle(edges[key].node.country.title, lang)}
             </dd>
           </dl>
         </td>
@@ -42,14 +47,14 @@ export default function VacanciesDe({ data }) {
         <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
           {edges[key].node.city +
             ', ' +
-            edges[key].node.country.title.description}
+            getTitle(edges[key].node.country.title, lang)}
         </td>
         <td className="px-3 py-4 text-sm text-gray-500">
           {edges[key].node.job_languages.map((c) => c.name).join(' or ')}
         </td>
         <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
           <Link
-            to={'/de/job/' + edges[key].node.slug.current}
+            to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
             className="text-blue-500 hover:text-blue-900"
           >
             Offen →
