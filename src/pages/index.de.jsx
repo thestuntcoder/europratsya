@@ -228,9 +228,15 @@ export const JOB_POSTS = graphql`
           salary
           contact
           title {
+            en
             de
           }
           description {
+            en {
+              children {
+                text
+              }
+            }
             de {
               children {
                 text
