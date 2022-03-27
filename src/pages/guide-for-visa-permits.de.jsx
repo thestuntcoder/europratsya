@@ -7,9 +7,9 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function VisaPermitsDe({ data }) {
   const metaDescription =
-    'Guides for visa permits per country guide for Ukrainian migrants.';
+    'Leitfaden für die Erteilung von Visa pro Land Leitfaden für ukrainische Migranten';
   const metaTitle =
-    'Guides for visa permits per country guide for Ukrainian migrants';
+    'Leitfaden für die Erteilung von Visa pro Land Leitfaden für ukrainische Migranten';
 
   data = data.allSanityCountry.nodes;
   let countriesOutput = [];
@@ -44,7 +44,7 @@ export default function VisaPermitsDe({ data }) {
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-black font-bold text-3xl tracking-wide">
-                Guides for visa permits
+                Leitfäden für Visumgenehmigungen
               </h1>
               <div className="prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <div className="relative md:flex w-full">
@@ -53,11 +53,11 @@ export default function VisaPermitsDe({ data }) {
                   </div>
                   <div className="md:w-2/3">
                     <h2 className="text-base text-black font-bold text-xl tracking-wide">
-                      Unemployment Map
+                      Karte der Arbeitslosigkeit
                     </h2>
                     <StaticImage
                       className="my-8 h-full w-auto"
-                      src="../images/checklist/Unemployment-Map-2x.png"
+                      src="../images/checklist/DE-Unemployment-Map-2x.png"
                       alt="Unemployment Map"
                       loading="auto"
                       objectFit="contain"
