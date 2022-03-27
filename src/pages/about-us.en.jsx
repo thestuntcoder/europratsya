@@ -29,9 +29,9 @@ export default function AboutUs() {
           <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
-              <h2 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
                 About us
-              </h2>
+              </h1>
             </div>
           </div>
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -106,33 +106,88 @@ export default function AboutUs() {
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                 <p>
-                  Europratsya.com was developed by a team of digital workers
-                  from Serbia, Scotland and Italy.
+                  Europratsya is a nonprofit web portal which facilitates job
+                  search for Ukrainian candidates.
                 </p>
                 <p>
-                  Our small group wanted to ensure that skills and expertise
-                  aren’t wasted when Ukrainian families are building new homes,
-                  whether temporary or for the future.{' '}
+                  We are building one database for pan-European vacancies, from
+                  safe, vetted employers. There are 23 languages in the EU
+                  alone, and hundreds of thousands of workers have been
+                  displaced.
                 </p>
                 <p>
-                  We want to match the needs of European employers with the
-                  qualifications of the highly educated Ukrainian people.
+                  Conceived on the 24th February 2022, incorporated on the 25th
+                  February and launched online two weeks later, Europratsya
+                  expands its services quickly.
                 </p>
                 <p>
-                  We also want to simplify research and job-hunting for people
-                  who are on the move.
+                  We offer practical assistance: CV translation, career guidance
+                  and work planning assets online.
                 </p>
                 <p>
-                  Europratsya CIC was founded in the UK as a not-for-profit
-                  organisation to fund the web-hosting and to employ the
-                  Ukrainian employees who deliver the translation services.
-                  Volunteers across Europe research and post updates on
-                  employment law and visas.{' '}
+                  Europratsya plays a small part in the rebuilding of Ukraine by
+                  helping its citizens earn a better income and gain expertise
+                  before they return to a free Ukraine.
                 </p>
                 <p>
-                  If you have expertise to support us, please email{` `}
-                  <a href="mailto:info@europratsya.com">info@europratsya.com</a>
-                  .
+                  There is no legal commitment to hire Ukrainian candidates -
+                  signing up on Europratsya is a commitment to consider
+                  Ukrainian CVs and call them for interviews.
+                </p>
+
+                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                  The team behind Europratsya
+                </h2>
+                <p>
+                  Lead developer Dejan Jacimovic – find him on{' '}
+                  <a href="https://github.com/dejanjacimovic">GitHub</a> if
+                  you’re keen to contribute. Dejan was a 14 year old Serb when
+                  the bombs fell on his country. He understands the agony of a
+                  population under attack and he brings 23 years of coding
+                  experience and digital agency leadership to Europratsya.
+                </p>
+                <p>
+                  MD Kristine Moody – find her on Linkedin if your company wants
+                  to support with vacancy ads or funding. She brings financial
+                  and political reporting skills from the Financial Times Group
+                  and CNBC to the researchers in Europratsya. Kristine was the
+                  first non-Brit (and the first non-Oxbridge) student to start
+                  as trainee in the Financial Times. She understands about
+                  breaking barriers.
+                </p>
+                <p>
+                  Lead designer Beatrice Bermond – her years of UX and graphic
+                  design expertise from running her own web design company
+                  combines with more than ten years of humanitarian work.
+                  Beatrice manages a charity which oversees a range of
+                  counselling services and self-help groups for vulnerable women
+                  and some men in north west Italy. Beatrice knows first-hand
+                  that support needs to be targeted to make a difference.
+                </p>
+                <p>
+                  We work together with a band of Ukrainian sisters based in
+                  Chernivtsi, Katowice, Groningen and Aberdeen. Together with
+                  Solomiya Smeaton, Dorota Siemienska, Anastasiya Vuico Kateryna
+                  Hrytsiuk and Mariia Torianyk we build one Ukrainian language
+                  database to make job search simpler for those already under
+                  extreme pressure.
+                </p>
+
+                <h3 className="text-base text-black font-bold text-xl tracking-wide">
+                  Reach us
+                </h3>
+                <p>
+                  Our team of researchers speak Ukrainian, Russian, Romanian,
+                  Slovak, Polish and German as well as English, Italian, French
+                  and Norwegian. Reach all of us on{' '}
+                  <a href="mailto:info@europratsya.com">info@europratsya.com</a>{' '}
+                  and we will answer quickly to support your career moves,
+                  whether it’s for the short term or long term.
+                </p>
+                <p>
+                  We are particularly keen to create work for those still based
+                  in Ukraine – look out for our remote or hybrid remote
+                  positions.
                 </p>
               </div>
             </div>
