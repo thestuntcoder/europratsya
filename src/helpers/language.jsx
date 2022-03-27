@@ -28,3 +28,13 @@ export function getSeo(obj, field, language, default_value = '') {
 
   return default_value;
 }
+
+export function getUrlPrefix(lang) {
+  if (lang === 'uk') {
+    return '/uk';
+  } else if (lang === 'de') {
+    return '/de';
+  }
+
+  return '';
+}
