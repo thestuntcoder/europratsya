@@ -41,7 +41,7 @@ export default function ContactEmployeesDe() {
 
   const metaDescription =
     'Europratsya übersetzt Ihren Lebenslauf kostenlos ins Englische oder Deutsche, damit Sie sich auf die Arbeitssuche und die Planung von Vorstellungsgesprächen konzentrieren können.';
-  const metaTitle = 'Zeitsparende Lebenslaufhilfe für Ukrainer';
+  const metaTitle = 'Hilfe bei Lebensläufen für Ukrainer';
 
   return (
     <LayoutPage lang="de">

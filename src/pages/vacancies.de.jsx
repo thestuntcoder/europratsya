@@ -7,8 +7,9 @@ import { listVacancies } from '../helpers/vacancies';
 
 export default function VacanciesDe({ data }) {
   const metaDescription =
-    'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
-  const metaTitle = 'Job vacancies from firms encouraging Ukrainian candidates';
+    'Stellenangebote von sicheren, hochwertigen Arbeitgebern, die ukrainischen Bewerbern gegenüber positiv eingestellt sind';
+  const metaTitle =
+    'Stellenangebote von Unternehmen, die ukrainische Bewerber anwerben';
 
   const language = 'de';
 

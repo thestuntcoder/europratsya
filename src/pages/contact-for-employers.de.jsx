@@ -40,8 +40,8 @@ export default function ContactEmployersDe() {
   };
 
   const metaDescription =
-    'Wenn Ihr Unternehmen ukrainische Bewerber interviewen möchte, machen wir es Ihnen mit der fachkundigen Übersetzung Ihrer Stellenanzeige ins Ukrainische einfach und kostenlos.';
-  const metaTitle = 'Wir helfen Ihnen, die Ukrainer zu erreichen';
+    'Europratsya übersetzt Ihr Stellenangebot ins Ukrainische und veröffentlicht Ihre Stellenanzeige kostenlos, damit Vertriebene in einer Datenbank nach relevanten Stellen suchen können.';
+  const metaTitle = 'Hilfe bei der Arbeitssuche für Ukrainer';
 
   return (
     <LayoutPage lang="de">

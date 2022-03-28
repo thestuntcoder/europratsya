@@ -7,8 +7,8 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function SkillsInDemandDe({ data }) {
   const metaDescription =
-    'Skills in demand per country guide for Ukrainian migrants.';
-  const metaTitle = 'Skills in demand per country guide for Ukrainian migrants';
+    'Nachgefragte Qualifikationen Land für Land für eine einfachere Karriereplanung in Europa';
+  const metaTitle = 'Nachgefragte Qualifikationen Land für Land in Europa';
 
   data = data.allSanityCountry.nodes;
   let countriesOutput = [];

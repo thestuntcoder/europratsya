@@ -6,7 +6,7 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function UkrEducationExplainerDe() {
   const metaDescription =
-    'Die Ukraine hat eine Alphabetisierungsquote von 99,4 % und damit die höchste der Welt. In unserer Broschüre finden Sie einen kurzen Überblick über das hochrangige Bildungssystem des Landes.';
+    'Eine Einführung in das ukrainische Bildungssystem für Arbeitgeber, die Lebensläufe von Bewerbern mit ukrainischen Universitäts-, Hochschul- oder Sekundarschulabschlüssen prüfen.';
   const metaTitle = 'Bildung in der Ukraine FAQ';
 
   return (

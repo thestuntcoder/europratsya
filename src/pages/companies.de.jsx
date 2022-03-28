@@ -7,8 +7,9 @@ import { employersList } from '../helpers/company';
 
 export default function CompaniesDe({ data }) {
   const metaDescription =
-    'Quality employers who are positive to reviewing Ukrainian expertise and qualifications and interviewing Ukrainian candidates, vetted by Europratsya.';
-  const metaTitle = 'Employers who encourage Ukrainian candidates to apply';
+    'Top Arbeitgeber, die ukrainisches Fachwissen und ukrainische Qualifikationen positiv bewerten und ukrainische Bewerber interviewen, die von Europratsya überprüft wurden.';
+  const metaTitle =
+    'Arbeitgeber, die ukrainische Bewerber ermutigen, sich zu bewerben';
 
   return (
     <LayoutPage lang="de">

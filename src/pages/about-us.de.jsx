@@ -6,9 +6,9 @@ import polarImg from '../images/about/vernadsky-polar-research-station.jpg';
 
 export default function AboutUsDe() {
   const metaDescription =
-    'The story behind the small European team who wanted to make it simpler for Ukrainians to find safe, relevant work while they wait for their country to return to peace.';
+    'Die Geschichte des kleinen europäischen Teams, das es den Ukrainern erleichtern wollte, eine sichere und relevante Arbeit zu finden, während sie darauf warten, dass in ihrem Land wieder Frieden herrscht.';
   const metaTitle =
-    'The charity group matching Ukrainian candidates with safe employers';
+    'Die Wohltätigkeitsgruppe, die ukrainische Kandidaten mit sicheren Arbeitgebern zusammenbringt';
 
   return (
     <LayoutPage lang="de">

@@ -6,9 +6,8 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function EssentialChecklistsDe() {
   const metaDescription =
-    'Eine wichtige Checkliste für Ukrainer, die in die EU einwandern.';
-  const metaTitle =
-    'Eine wichtige Checkliste für Ukrainer, die in die EU einwandern.';
+    'Arbeitsvisabestimmungen Land für Land für eine einfachere Karriereplanung in Europa';
+  const metaTitle = 'Regeln für Arbeitsvisa Land für Land in Europa';
 
   return (
     <LayoutPage lang="de">

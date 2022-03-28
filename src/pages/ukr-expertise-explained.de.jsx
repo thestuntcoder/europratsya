@@ -6,7 +6,7 @@ import NavCenter from '../components/layout/nav-center.de';
 
 export default function UkrExpertiseExplainedDe() {
   const metaDescription =
-    'Ich habe schon von ukrainischer IT, Software und Webdesign gehört?';
+    'Eine Einführung in die stärksten Branchen und Fachgebiete der ukrainischen Wirtschaft.';
   const metaTitle = 'Branchen und Fachgebiete in der Ukraine FAQ';
 
   return (
