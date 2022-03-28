@@ -65,12 +65,12 @@ export default class NavCenter extends React.Component {
                 </div>
               </div>
             </div>
-            <button
-              type="submit"
+            <Link
               class="hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-6 py-3 text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
+              to="/contact-for-job-seekers/"
             >
               Need help with CV?
-            </button>
+            </Link>
             <Search indices={searchIndices} />
           </nav>
         </div>

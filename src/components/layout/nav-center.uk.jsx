@@ -65,6 +65,12 @@ export default class NavCenterUk extends React.Component {
                 </div>
               </div>
             </div>
+            <Link
+              class="hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-6 py-3 text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
+              to="/uk/contact-for-job-seekers/"
+            >
+              Потрібна допомога з резюме?
+            </Link>
             <Search indices={searchIndices} />
           </nav>
         </div>
@@ -124,6 +130,12 @@ export default class NavCenterUk extends React.Component {
                   to="/uk/ukr-expertise-explained/"
                 >
                   Експертиза пояснила
+                </Link>
+                <Link
+                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  to="/uk/contact-for-employers/"
+                >
+                  Опублікувати вакансію
                 </Link>
               </div>
             </div>
@@ -225,9 +237,15 @@ export default class NavCenterUk extends React.Component {
                 >
                   Експертиза пояснила
                 </Link>
+                <Link
+                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  to="/uk/contact-for-employers/"
+                >
+                  Опублікувати вакансію
+                </Link>
               </div>
               <div className="bg-gray-50 px-3 py-6 text-center">
-                <Link to="/uk">УКР 🇺🇦</Link>
+                <Link to="/uk">УК 🇺🇦</Link>
                 {` `}—{` `}
                 <Link to="/">EN 🇬🇧</Link>
                 {` `}—{` `}

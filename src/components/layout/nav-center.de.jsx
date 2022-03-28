@@ -65,6 +65,12 @@ export default class NavCenter extends React.Component {
                 </div>
               </div>
             </div>
+            <Link
+              class="hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-6 py-3 text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
+              to="/contact-for-job-seekers/"
+            >
+              Hilfe beim CV?
+            </Link>
             <Search indices={searchIndices} />
           </nav>
         </div>
@@ -125,17 +131,23 @@ export default class NavCenter extends React.Component {
                 >
                   UKR Fachwissen FAQ
                 </Link>
+                <Link
+                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  to="/de/contact-for-employers/"
+                >
+                  Stellenausschreibung veröffentlichen
+                </Link>
               </div>
             </div>
             <div className="hidden lg:block p-2 lg:w-60  h-full">
               <div className="text-sm font-bold mb-2 text-right">
-                <Link to="/uk">УКР 🇺🇦</Link> | <Link to="/">EN 🇬🇧</Link> |{' '}
+                <Link to="/uk">УК 🇺🇦</Link> | <Link to="/">EN 🇬🇧</Link> |{' '}
                 <Link to="/de">DE 🇩🇪</Link>
               </div>
             </div>
             <div className="hidden md:block lg:hidden p-2 md:w-20  h-full">
               <div className="text-sm font-bold mb-2 text-right">
-                <Link to="/uk">УКР 🇺🇦</Link> <br /> <Link to="/">EN 🇬🇧</Link>
+                <Link to="/uk">УК 🇺🇦</Link> <br /> <Link to="/">EN 🇬🇧</Link>
                 <br />
                 <Link to="/de">DE 🇩🇪</Link>
               </div>
@@ -224,6 +236,12 @@ export default class NavCenter extends React.Component {
                   to="/de/ukr-expertise-explained/"
                 >
                   UKR Fachwissen FAQ
+                </Link>
+                <Link
+                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  to="/de/contact-for-employers/"
+                >
+                  Stellenausschreibung veröffentlichen
                 </Link>
               </div>
               <div className="bg-gray-50 px-3 py-6 text-center">
