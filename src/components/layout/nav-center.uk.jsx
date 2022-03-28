@@ -197,6 +197,13 @@ export default class NavCenterUk extends React.Component {
                   </button>
                 </div>
               </div>
+
+              <Search
+                indices={searchIndices}
+                mobile={true}
+                classList="order-2 flex justify-end m-2 -mb-2"
+              />
+
               <div className="px-2 pt-2 pb-3">
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
@@ -247,6 +254,7 @@ export default class NavCenterUk extends React.Component {
                   Опублікувати вакансію
                 </Link>
               </div>
+
               <div className="bg-gray-50 px-3 py-6 text-center">
                 <Link to="/uk">УК 🇺🇦</Link>
                 {` `}—{` `}
