@@ -67,7 +67,7 @@ export default class NavCenter extends React.Component {
             </div>
             <Link
               class="order-2 md:order-1 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-4 py-2 lg:px-6 lg:py-3 text-xs lg:text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
-              to="/contact-for-job-seekers/"
+              to="/de/contact-for-job-seekers/"
             >
               Hilfe beim CV?
             </Link>
