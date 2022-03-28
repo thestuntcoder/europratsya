@@ -175,7 +175,7 @@ export default function ContactEmployers() {
                         name="company-role"
                         id="company-role"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="CEO, HR, etc..."
+                        placeholder="Your title"
                         onChange={handleChange}
                       />
                     </div>
@@ -191,7 +191,7 @@ export default function ContactEmployers() {
                         name="company-name"
                         id="company-name"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="GmbH, SA, Ltd, AS"
+                        placeholder="Please include GmbH, SA, Ltd, AS etc"
                         onChange={handleChange}
                       />
                     </div>
@@ -209,7 +209,7 @@ export default function ContactEmployers() {
                         name="company-website"
                         id="company-website"
                         className="focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm"
-                        placeholder="www.europratsya.com"
+                        placeholder="Your company's URL"
                         onChange={handleChange}
                       />
                     </div>
@@ -253,7 +253,9 @@ export default function ContactEmployers() {
                     <label
                       htmlFor="message"
                       className="block text-sm font-medium text-gray-700"
-                    ></label>
+                    >
+                      Comments
+                    </label>
                     <textarea
                       id="message"
                       name="message"
