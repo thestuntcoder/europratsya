@@ -27,8 +27,8 @@ export default class NavCenter extends React.Component {
     return (
       <div>
         <div className="mx-auto px-3 sm:px-5 pt-4">
-          <nav className="relative flex items-center justify-between sm:h-10 md:justify-center max-w-screen-xl mx-auto">
-            <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
+          <nav className="relative flex items-center justify-between sm:h-10 max-w-screen-xl mx-auto">
+            <div className="flex order-1 items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/" aria-label="Home">
                   <img
@@ -37,44 +37,47 @@ export default class NavCenter extends React.Component {
                     alt="Europratsya logo"
                   />
                 </Link>
-                <div className="-mr-2 flex items-center md:hidden">
-                  <button
-                    className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none"
-                    id="main-menu"
-                    type="button"
-                    aria-label="Main menu"
-                    aria-haspopup="true"
-                    onClick={() => {
-                      this.setState({ hiddenMobile: false });
-                    }}
-                  >
-                    <svg
-                      className="h-6 w-6"
-                      stroke="currentColor"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                  </button>
-                </div>
               </div>
             </div>
+            <div className="flex order-3 items-center md:hidden">
+              <button
+                className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none"
+                id="main-menu"
+                type="button"
+                aria-label="Main menu"
+                aria-haspopup="true"
+                onClick={() => {
+                  this.setState({ hiddenMobile: false });
+                }}
+              >
+                <svg
+                  className="h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
             <Link
-              class="hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-6 py-3 text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
+              class="order-2 md:order-1 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-4 py-2 lg:px-6 lg:py-3 text-xs lg:text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
               to="/contact-for-job-seekers/"
             >
               Need help with CV?
             </Link>
-            <Search indices={searchIndices} />
+            <Search
+              indices={searchIndices}
+              classList="hidden md:flex order-3"
+            />
           </nav>
         </div>
-        <div className="mx-auto px-4 sm:px-6 mt-8 border-t border-b border-gray-500 bg-gray-200 hidden sm:block">
+        <div className="mx-auto px-4 sm:px-6 mt-4 lg:mt-8 border-t border-b border-gray-500 bg-gray-200 hidden sm:block">
           <nav className="relative flex  justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto">
             <div className="hidden md:block border-r border-gray-500 p-2">
               <div className="text-sm font-bold mb-2">ABOUT</div>

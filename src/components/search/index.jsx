@@ -5,7 +5,7 @@ import SearchBox from './search-box';
 import SearchResult from './search-result';
 import useClickOutside from './use-click-outside';
 
-export default function Search({ indices }) {
+export default function Search({ indices, classList }) {
   const rootRef = createRef();
   const [query, setQuery] = useState();
   const [hasFocus, setFocus] = useState(false);
@@ -26,7 +26,7 @@ export default function Search({ indices }) {
       indexName={'Home'}
       onSearchStateChange={({ query }) => setQuery(query)}
     >
-      <div ref={rootRef}>
+      <div className={classList} ref={rootRef}>
         <SearchBox onFocus={() => setFocus(true)} hasFocus={hasFocus} />
         <SearchResult
           show={query}
