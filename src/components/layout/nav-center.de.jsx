@@ -78,10 +78,10 @@ export default class NavCenter extends React.Component {
           </nav>
         </div>
         <div className="mx-auto px-4 sm:px-6 mt-4 lg:mt-8 border-t border-b border-gray-500 bg-gray-200 hidden sm:block">
-          <nav className="relative flex  justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto">
+          <nav className="relative flex justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto overflow-hidden">
             <div className="hidden md:block border-r border-gray-500 p-2">
               <div className="text-sm font-bold mb-2">Über</div>
-              <div className="md:flex md:space-x-10">
+              <div className="md:flex md:space-x-6 lg:space-x-10">
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/about-us/"
@@ -92,7 +92,7 @@ export default class NavCenter extends React.Component {
             </div>
             <div className="hidden md:block border-r border-gray-500 p-2">
               <div className="text-sm font-bold mb-2">Bewerber</div>
-              <div className="md:flex md:space-x-10">
+              <div className="md:flex md:space-x-6 lg:space-x-10">
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/skills-in-demand/"
@@ -103,7 +103,7 @@ export default class NavCenter extends React.Component {
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/guide-for-visa-permits/"
                 >
-                  Leitfaden für Visa / Genehmigungen
+                  Leitfaden für Visa / Geneh&shy;migungen
                 </Link>
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
@@ -115,13 +115,13 @@ export default class NavCenter extends React.Component {
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/essential-checklists/"
                 >
-                  Unverzichtbare Checklisten
+                  Unverzicht&shy;bare Check&shy;listen
                 </Link>
               </div>
             </div>
             <div className="hidden md:block p-2">
               <div className="text-sm font-bold mb-2">Arbeitgeber</div>
-              <div className="md:flex md:space-x-10">
+              <div className="md:flex md:space-x-6 lg:space-x-10">
                 <Link
                   className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/de/ukr-education-explainer/"
@@ -132,23 +132,23 @@ export default class NavCenter extends React.Component {
                   className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/de/ukr-expertise-explained/"
                 >
-                  UKR Fachwissen FAQ
+                  UKR Fach&shy;wissen FAQ
                 </Link>
                 <Link
-                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  className="break-word font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/de/contact-for-employers/"
                 >
-                  Stellenausschreibung veröffentlichen
+                  Stellenauss&shy;chreibung veröff&shy;entlichen
                 </Link>
               </div>
             </div>
-            <div className="hidden lg:block p-2 lg:w-60  h-full">
+            <div className="hidden xl:block p-2 lg:w-60  h-full">
               <div className="text-sm font-bold mb-2 text-right">
                 <Link to="/uk">УК 🇺🇦</Link> | <Link to="/">EN 🇬🇧</Link> |{' '}
                 <Link to="/de">DE 🇩🇪</Link>
               </div>
             </div>
-            <div className="hidden md:block lg:hidden p-2 md:w-20  h-full">
+            <div className="hidden md:block xl:hidden p-2 md:w-20  h-full">
               <div className="text-sm font-bold mb-2 text-right">
                 <Link to="/uk">УК 🇺🇦</Link> <br /> <Link to="/">EN 🇬🇧</Link>
                 <br />
