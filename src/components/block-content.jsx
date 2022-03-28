@@ -14,7 +14,7 @@ const serializers = {
                     <a
                       key={child.key}
                       href={child.props.node.mark.href}
-                      className="text-blue-500"
+                      className="text-blue-500 hover:underline"
                     >
                       {child.props.node.children[0]}
                     </a>
