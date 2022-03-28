@@ -4,6 +4,28 @@ import BaseBlockContent from '@sanity/block-content-to-react';
 const serializers = {
   types: {
     block(props) {
+      switch (props.children.length) {
+        case 3:
+          return (
+            <p>
+              {props.children.map((child, index) => {
+                if (index === 1 && child.props.node) {
+                  return (
+                    <a
+                      key={child.key}
+                      href={child.props.node.mark.href}
+                      className="text-blue-500"
+                    >
+                      {child.props.node.children[0]}
+                    </a>
+                  );
+                }
+                return child;
+              })}
+            </p>
+          );
+      }
+
       switch (props.node.style) {
         case 'h1':
           return <h1 className="text-3xl mt-8">{props.children}</h1>;
