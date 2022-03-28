@@ -19,10 +19,12 @@ export default function Search({ indices, mobile = false, classList }) {
   );
 
   useClickOutside(rootRef, () => setFocus(false));
-  const searchBoxStyle = mobile ? 'md:hidden block' : 'hidden md:block right-0';
+  const searchBoxStyle = mobile
+    ? 'md:hidden block w-full'
+    : 'hidden md:block right-0 w-80';
   const searchResultStyle = mobile
-    ? 'md:hidden block top-20 mt-9'
-    : 'hidden md:block top-12';
+    ? 'md:hidden block max-h-96 left-4 right-5 top-20 mt-9'
+    : 'hidden md:block max-w-xs max-h-80 top-12';
 
   return (
     <InstantSearch

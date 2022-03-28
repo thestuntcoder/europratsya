@@ -65,7 +65,7 @@ const HitsInIndex = ({ index }) => (
 
 const SearchResult = ({ indices, className }) => (
   <div
-    className={`absolute max-w-xs max-h-80 shadow-lg p-2 w-screen sm:px-0 z-20 bg-gray-100 rounded overflow-y-scroll ${className}`}
+    className={`absolute shadow-lg p-2 sm:px-0 z-20 bg-gray-100 rounded overflow-y-scroll ${className}`}
   >
     {indices.map((index) => (
       <HitsInIndex index={index} key={index.name} />

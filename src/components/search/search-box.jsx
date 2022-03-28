@@ -4,9 +4,9 @@ import { connectSearchBox } from 'react-instantsearch-dom';
 export default connectSearchBox(
   ({ refine, currentRefinement, onFocus, classList }) => (
     <div
-      className={`relative md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end w-80 ${classList}`}
+      className={`relative md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end ${classList}`}
     >
-      <form className="max-w-lg w-full">
+      <form className="md:max-w-lg w-full">
         <label htmlFor="search" className="sr-only">
           Search
         </label>
