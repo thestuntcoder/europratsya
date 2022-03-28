@@ -201,7 +201,7 @@ export default class NavCenter extends React.Component {
               <Search
                 indices={searchIndices}
                 mobile={true}
-                classList="order-2 flex justify-end m-2 -mb-2"
+                classList="order-2 flex justify-end m-2 mr-3 -mb-2"
               />
 
               <div className="px-2 pt-2 pb-3">
