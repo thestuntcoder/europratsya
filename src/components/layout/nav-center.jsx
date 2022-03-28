@@ -27,7 +27,7 @@ export default class NavCenter extends React.Component {
     return (
       <div>
         <div className="mx-auto px-3 sm:px-5 pt-4">
-          <nav className="relative flex items-center justify-between sm:h-10 max-w-screen-xl mx-auto">
+          <nav className="relative flex items-center justify-between sm:h-10 max-w-screen-xl mx-auto overflow-hidden">
             <div className="flex order-1 items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/" aria-label="Home">
@@ -81,7 +81,7 @@ export default class NavCenter extends React.Component {
           <nav className="relative flex  justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto">
             <div className="hidden md:block border-r border-gray-500 p-2">
               <div className="text-sm font-bold mb-2">ABOUT</div>
-              <div className="md:flex md:space-x-10">
+              <div className="md:flex md:space-x-8 lg:space-x-10">
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/about-us/"
@@ -92,7 +92,7 @@ export default class NavCenter extends React.Component {
             </div>
             <div className="hidden md:block border-r border-gray-500 p-2">
               <div className="text-sm font-bold mb-2">CANDIDATES</div>
-              <div className="md:flex md:space-x-10">
+              <div className="md:flex md:space-x-8 lg:space-x-10">
                 <Link
                   className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/skills-in-demand/"
@@ -121,7 +121,7 @@ export default class NavCenter extends React.Component {
             </div>
             <div className="hidden md:block p-2">
               <div className="text-sm font-bold mb-2">EMPLOYERS</div>
-              <div className="md:flex md:space-x-10">
+              <div className="md:flex md:space-x-8 lg:space-x-10">
                 <Link
                   className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/ukr-education-explainer/"
