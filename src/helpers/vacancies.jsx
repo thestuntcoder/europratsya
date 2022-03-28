@@ -7,6 +7,7 @@ export function listVacancies(
   lang,
   translation = {
     title: 'Title',
+    or: ' or ',
     view: 'View',
   }
 ) {
@@ -47,7 +48,9 @@ export function listVacancies(
             getTitle(edges[key].node.country.title, lang)}
         </td>
         <td className="px-3 py-4 text-sm text-gray-500">
-          {edges[key].node.job_languages.map((c) => c.name).join(' or ')}
+          {edges[key].node.job_languages
+            .map((c) => c.name)
+            .join(translation.or)}
         </td>
         <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
           <Link
