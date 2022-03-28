@@ -7,9 +7,8 @@ import NavCenter from '../components/layout/nav-center';
 
 export default function VisaPermits({ data }) {
   const metaDescription =
-    'Guides for visa permits per country guide for Ukrainian migrants.';
-  const metaTitle =
-    'Guides for visa permits per country guide for Ukrainian migrants';
+    'Work visa rules country by country for easier career planning in Europe';
+  const metaTitle = 'Work visa rules country by country in Europe ';
 
   data = data.allSanityCountry.nodes;
   let countriesOutput = [];

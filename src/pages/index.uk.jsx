@@ -17,8 +17,9 @@ import sponsorTM from '../images/sponsors/tm.png';
 
 export default function HomeUk({ data }) {
   const metaDescription =
-    'Our web portal helps job-seekers who need to set up a temporary base for their families outside Ukraine. We also post remote jobs suitable for workers based inside Ukraine. One Ukrainian-language database for skills in demand and vacancies across Europe - free for candidates and free for employers.';
-  const metaTitle = 'Non-profit job portal for Ukrainian job-seekers in Europe';
+    'Наш вебпортал допомагає в пошуках роботи тим кому необхідно створити тимчасову базу для своїх сімей за межами України. У нас також є дистанційні робочі місця, вони підійдуть кандидатам які знаходяться в України. Одна україномовна база даних для вакансій по всій Європі - безкоштовна для кандидатів і безкоштовна для роботодавців.україномовна база даних для вакансій по всій Європі - безкоштовна для кандидатів і безкоштовна для роботодавців.';
+  const metaTitle =
+    'Некомерційний портал вакансій для українців які шукають роботу в Європі';
 
   return (
     <LayoutPage lang="uk">

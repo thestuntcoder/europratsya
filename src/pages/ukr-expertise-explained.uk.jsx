@@ -6,8 +6,9 @@ import NavCenter from '../components/layout/nav-center.uk';
 
 export default function UkrExpertiseExplainedUk() {
   const metaDescription =
-    'An introduction to the strongest industries and fields of expertise in the Ukrainian economy.';
-  const metaTitle = 'Запитання та відповіді про Україну';
+    'Ознайомлення з найсильнішими галузями виробництва та науки в економіці України.';
+  const metaTitle =
+    'Українські галузі виробництва FAQ (запитання та відповіді)';
 
   return (
     <LayoutPage lang="uk">

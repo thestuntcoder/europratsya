@@ -6,8 +6,9 @@ import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.uk';
 
 export default function SkillsInDemandUk({ data }) {
-  const metaDescription = 'Посібники для отримання візи';
-  const metaTitle = 'Посібники для отримання візи';
+  const metaDescription =
+    'Навички та професії які полегшать планування пошуків роботи в різних країнах Європи';
+  const metaTitle = 'Навички та професії які потрібні в різних країнах Європи';
 
   data = data.allSanityCountry.nodes;
   let countriesOutput = [];

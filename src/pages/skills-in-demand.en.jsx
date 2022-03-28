@@ -7,8 +7,8 @@ import NavCenter from '../components/layout/nav-center';
 
 export default function SkillsInDemand({ data }) {
   const metaDescription =
-    'Skills in demand per country guide for Ukrainian migrants.';
-  const metaTitle = 'Skills in demand per country guide for Ukrainian migrants';
+    'Skills in demand country by country for easier career planning in Europe';
+  const metaTitle = 'Skills in demand country by country in Europe';
 
   data = data.allSanityCountry.nodes;
   let countriesOutput = [];
