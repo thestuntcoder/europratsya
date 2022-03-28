@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.uk';
+import { listVacancies } from '../helpers/vacancies';
 
 export default function VacanciesUk({ data }) {
   const metaDescription =
@@ -10,55 +11,7 @@ export default function VacanciesUk({ data }) {
   const metaTitle =
     'Роботодавці які заохочують українських кандидатів подавати заявки на вакансії';
 
-  let allJobAds = [];
-  let edges = data.allSanityJobPost.edges;
-
-  for (var key in edges) {
-    if (edges[key].node.employer == null) continue;
-    if (edges[key].node.slug == null) continue;
-
-    allJobAds.push(
-      <tr key={key}>
-        <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
-          <Link
-            to={'/uk/job/' + edges[key].node.slug.current}
-            className="text-blue-500 hover:text-blue-900"
-          >
-            {edges[key].node.title.uk === null
-              ? edges[key].node.title.en
-              : edges[key].node.title.uk}
-          </Link>
-          <dl className="font-normal lg:hidden">
-            <dt className="sr-only">Робота</dt>
-            <dd className="mt-1 truncate text-gray-700">
-              {edges[key].node.employer.name}
-            </dd>
-            <dt className="sr-only sm:hidden">Місце</dt>
-            <dd className="mt-1 truncate text-gray-500 sm:hidden">
-              {edges[key].node.city + ', ' + edges[key].node.country.title.uk}
-            </dd>
-          </dl>
-        </td>
-        <td className="hidden px-3 py-4 text-sm text-gray-500 lg:table-cell">
-          {edges[key].node.employer.name}
-        </td>
-        <td className="hidden px-3 py-4 text-sm text-gray-500 sm:table-cell">
-          {edges[key].node.city + ', ' + edges[key].node.country.title.uk}
-        </td>
-        <td className="px-3 py-4 text-sm text-gray-500">
-          {edges[key].node.job_languages.map((c) => c.name).join(' або ')}
-        </td>
-        <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-          <Link
-            to={'/uk/job/' + edges[key].node.slug.current}
-            className="text-blue-500 hover:text-blue-900"
-          >
-            Вгляд →
-          </Link>
-        </td>
-      </tr>
-    );
-  }
+  const language = 'uk';
 
   return (
     <LayoutPage lang="uk">
@@ -116,7 +69,11 @@ export default function VacanciesUk({ data }) {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 bg-white">
-                {allJobAds}
+                {listVacancies(data.allSanityJobPost.edges, language, {
+                  title: 'Робота',
+                  or: ' або ',
+                  view: 'Вгляд',
+                })}
               </tbody>
             </table>
           </div>
