@@ -24,6 +24,8 @@ const serializers = {
               })}
             </p>
           );
+
+        // no default
       }
 
       switch (props.node.style) {

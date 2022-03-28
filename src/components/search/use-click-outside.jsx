@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const events = [`mousedown`, `touchstart`];
 
-export default (ref, onClickOutside) => {
+export default function useClickOutside(ref, onClickOutside) {
   const isOutside = (element) => !ref.current || !ref.current.contains(element);
 
   const onClick = (event) => {
@@ -20,4 +20,4 @@ export default (ref, onClickOutside) => {
       for (const event of events) document.removeEventListener(event, onClick);
     };
   });
-};
+}
