@@ -23,15 +23,15 @@ export default function EssentialChecklists() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Essential Checklists
               </h1>
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+              <div className="prose prose-indigo mx-auto mt-8 text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Workplace guide - English
                 </h2>
                 <StaticImage
@@ -42,7 +42,7 @@ export default function EssentialChecklists() {
                   objectFit="contain"
                 />
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Workplace guide - German
                 </h2>
                 <StaticImage
@@ -53,7 +53,7 @@ export default function EssentialChecklists() {
                   objectFit="contain"
                 />
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Workplace guide - Ukrainian Russian
                 </h2>
                 <StaticImage

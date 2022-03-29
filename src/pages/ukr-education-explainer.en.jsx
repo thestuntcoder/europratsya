@@ -23,7 +23,7 @@ export default function UkrEducationExplainer() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
+      <div className="overflow-hidden bg-white">
         <StaticImage
           className="h-56 w-full object-cover"
           src="../images/education/banner.jpg"
@@ -31,27 +31,27 @@ export default function UkrEducationExplainer() {
           loading="auto"
         />
 
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Ukraine education FAQ
               </h1>
 
-              <div className="relative text-base float-right max-w-md">
+              <div className="relative float-right max-w-md text-base">
                 <figure>
-                  <div className="max-w-md aspect-w-12 ml-8">
+                  <div className="aspect-w-12 ml-8 max-w-md">
                     <StaticImage
-                      className="rounded-lg shadow-lg object-cover object-center"
+                      className="rounded-lg object-cover object-center shadow-lg"
                       src="../images/education/assembly-hall-kyiv-polytechnic-institute.jpg"
                       alt="Assembly hall Kyiv Polytechnic Institute"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm text-gray-500 italic">
+                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
                     <svg
-                      className="flex-none w-5 h-5 text-gray-400"
+                      className="h-5 w-5 flex-none text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -75,14 +75,14 @@ export default function UkrEducationExplainer() {
                 </figure>
               </div>
 
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p className="mt-24">
                   Ukraine has a 99.4% literacy rate, the highest in the world.
                   Check our explainer for a quick guide to their highly ranked
                   education system.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Which are the hardest universities to get into in Ukraine?
                 </h2>
                 <p>
@@ -91,7 +91,7 @@ export default function UkrEducationExplainer() {
                   University.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   What is the grading system at Ukrainian universities?
                 </h2>
                 <p>
@@ -109,20 +109,20 @@ export default function UkrEducationExplainer() {
                   degrees and 4 year degrees, please check the table below
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   ECTS Grading scale
                 </h2>
 
-                <table className="table-fixed border-collapse text-sm border border-slate-200 max-w-md">
+                <table className="max-w-md table-fixed border-collapse border border-slate-200 text-sm">
                   <thead>
                     <tr>
-                      <th className="border-b font-medium bg-gray-200 p-4 pl-8 pt-0 pb-3 text-slate-400 text-center">
+                      <th className="border-b bg-gray-200 p-4 pl-8 pt-0 pb-3 text-center font-medium text-slate-400">
                         GRADE
                       </th>
-                      <th className="border-b font-medium bg-gray-200 p-4 pt-0 pb-3 text-slate-400 text-center">
+                      <th className="border-b bg-gray-200 p-4 pt-0 pb-3 text-center font-medium text-slate-400">
                         WES UNDERGRADUATE CONVERSION
                       </th>
-                      <th className="border-b font-medium bg-gray-200 p-4 pr-8 pt-0 pb-3 text-slate-400 text-center">
+                      <th className="border-b bg-gray-200 p-4 pr-8 pt-0 pb-3 text-center font-medium text-slate-400">
                         WES GRADUATE CONVERSION
                       </th>
                     </tr>
@@ -161,14 +161,14 @@ export default function UkrEducationExplainer() {
                   </tbody>
                   <tfoot>
                     <tr>
-                      <td colspan="3" className="text-sm border-t text-center">
+                      <td colspan="3" className="border-t text-center text-sm">
                         © 2019 World Education Services (wenr.wes.org)
                       </td>
                     </tr>
                   </tfoot>
                 </table>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   What do the qualifications mean?
                 </h2>
                 <p>
@@ -192,7 +192,7 @@ export default function UkrEducationExplainer() {
                   </ul>
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Some applicants are from colleges and some from unis - what is
                   the difference?
                 </h2>
@@ -204,7 +204,7 @@ export default function UkrEducationExplainer() {
                   attended a full 12 years of school.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   I'm looking at Ukrainian secondary school grades - there seem
                   to be two grading systems?
                 </h2>
@@ -230,7 +230,7 @@ export default function UkrEducationExplainer() {
                   </ul>
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Some applicants went to school for 11 years and others for 12
                   - why?
                 </h2>
@@ -238,7 +238,7 @@ export default function UkrEducationExplainer() {
                   Ukraine extended compulsory schooling to 12 years in 2018.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   What’s the Ukrainian school curriculum like?
                 </h2>
                 <p>
@@ -247,7 +247,7 @@ export default function UkrEducationExplainer() {
                   biology as well as all general subjects
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Anything you recommend I check in a Ukrainian CV?
                 </h2>
                 <p>

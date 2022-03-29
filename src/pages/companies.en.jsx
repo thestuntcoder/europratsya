@@ -25,8 +25,8 @@ export default function Companies({ data }) {
       </div>
 
       <div className="bg-white">
-        <div className="max-w-7xl sm:px-6 lg:py-16 lg:px-8 px-4 py-12 mx-auto">
-          <p className="text-base font-semibold tracking-wider text-left text-black uppercase">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+          <p className="text-left text-base font-semibold uppercase tracking-wider text-black">
             Vetted euro employers
           </p>
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-4 lg:mt-8">

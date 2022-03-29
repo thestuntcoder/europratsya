@@ -38,20 +38,20 @@ export default function SkillsInDemand({ data }) {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Skills in demand
               </h1>
-              <div className="prose-indigo text-gray-500 text-lg mx-auto mt-8 lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <div className="relative md:flex w-full">
+              <div className="prose-indigo mx-auto mt-8 text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                <div className="relative w-full md:flex">
                   <div className="md:w-1/3">
                     <ul>{countriesOutput}</ul>
                   </div>
                   <div className="md:w-2/3">
-                    <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                    <h2 className="text-base text-xl font-bold tracking-wide text-black">
                       Unemployment Map
                     </h2>
                     <StaticImage

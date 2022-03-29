@@ -24,7 +24,7 @@ export default function UkrExpertiseExplainedUk() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
+      <div className="overflow-hidden bg-white">
         <StaticImage
           className="h-56 w-full object-cover"
           src="../images/expertise/banner.jpg"
@@ -32,14 +32,14 @@ export default function UkrExpertiseExplainedUk() {
           loading="auto"
         />
 
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Запитання та відповіді про Україну
               </h1>
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Розкажіть нам про українських спеціалістів в IT, програмного
                   забезпечення та веб-дизайну?
                 </h2>
@@ -50,7 +50,7 @@ export default function UkrExpertiseExplainedUk() {
                   (середнього та вищого рівня досвіду) вільно володіють
                   англійською мовою.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Наскільки розвинена їх аерокосмічна наука та техніка?
                 </h2>
                 <p>
@@ -61,7 +61,7 @@ export default function UkrExpertiseExplainedUk() {
                   тому числі компаній що займаються відновленням військових
                   літаків та гелікоптерів.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Розкажіть нам про природні ресурси?
                 </h2>
                 <p>
@@ -70,7 +70,7 @@ export default function UkrExpertiseExplainedUk() {
                   паливний кокс, добрива та сірчану кислоту по всьому світу, а
                   також видобуває залізні, марганцеві руди, титан та алюміній.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Чому медичні університети України відомі у всьому світі?
                 </h2>
                 <p>
@@ -85,14 +85,14 @@ export default function UkrExpertiseExplainedUk() {
                   обслуговує понад 20 мільйонів пацієнтів у 70 країнах світу та
                   налічує 5000 українських інженерів.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Розкажіть нам про автомобільну промисловість?
                 </h2>
                 <p>
                   В Україні є 12 виробників які виготовляють автобуси, трактори,
                   вантажівки, легкові автомобілі, трамваї та залізничні двигуни.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Україна - житниця світу, один з найбільших виробників та
                   експортерів зерна.
                 </h2>

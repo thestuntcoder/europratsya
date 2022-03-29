@@ -23,7 +23,7 @@ export default function UkrExpertiseExplained() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
+      <div className="overflow-hidden bg-white">
         <StaticImage
           className="h-56 w-full object-cover"
           src="../images/expertise/banner.jpg"
@@ -31,14 +31,14 @@ export default function UkrExpertiseExplained() {
           loading="auto"
         />
 
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Ukraine expertise FAQ
               </h1>
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   I’ve heard of Ukrainian IT, software and web design?
                 </h2>
                 <p>
@@ -47,7 +47,7 @@ export default function UkrExpertiseExplained() {
                   expertise. A total of 55% of the positions are middle and
                   senior levels of experience, which come with English fluency
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   How developed is their aerospace engineering?
                 </h2>
                 <p>
@@ -58,7 +58,7 @@ export default function UkrExpertiseExplained() {
                   enterprises, including companies involved in recovery of
                   military planes and helicopters.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   I know about the natural resources - what is the mining
                   expertise?
                 </h2>
@@ -69,7 +69,7 @@ export default function UkrExpertiseExplained() {
                   well as extracting iron, manganese ores, titanium and
                   aluminium.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Their medical schools are famous - does Ukraine have life
                   sciences too?
                 </h2>
@@ -86,7 +86,7 @@ export default function UkrExpertiseExplained() {
                   in 70 countries worldwide, and employ 5000 Ukrainian
                   engineers.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Automotive industry - what is the scope?
                 </h2>
                 <p>
@@ -94,7 +94,7 @@ export default function UkrExpertiseExplained() {
                   buses, tractors, trucks, passenger cars, trams and rail
                   engines.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   There’s a lot of wheat fields!
                 </h2>
                 <p>

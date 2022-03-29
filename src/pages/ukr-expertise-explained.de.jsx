@@ -23,7 +23,7 @@ export default function UkrExpertiseExplainedDe() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
+      <div className="overflow-hidden bg-white">
         <StaticImage
           className="h-56 w-full object-cover"
           src="../images/expertise/banner.jpg"
@@ -31,14 +31,14 @@ export default function UkrExpertiseExplainedDe() {
           loading="auto"
         />
 
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Branchen und Fachgebiete in der Ukraine FAQ
               </h1>
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Ich habe schon von ukrainischer IT, Software und Webdesign
                   gehört?
                 </h2>
@@ -49,7 +49,7 @@ export default function UkrExpertiseExplainedDe() {
                   Stellen sind auf mittlerer und höherer Ebene angesiedelt und
                   erfordern fließende Englischkenntnisse.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Wie weit ist die Luft- und Raumfahrttechnik des Landes
                   entwickelt?
                 </h2>
@@ -62,7 +62,7 @@ export default function UkrExpertiseExplainedDe() {
                   Unternehmen, die sich mit der Bergung von Militärflugzeugen
                   und Hubschraubern befassen.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Ich weiß über die natürlichen Ressourcen Bescheid - wie steht
                   es mit dem Bergbau?
                 </h2>
@@ -72,7 +72,7 @@ export default function UkrExpertiseExplainedDe() {
                   exportiert Heizkoks, Düngemittel und Schwefelsäure in die
                   ganze Welt und fördert Eisen, Manganerze, Titan und Aluminium.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Ihre medizinischen Fakultäten sind berühmt - gibt es in der
                   Ukraine auch Biowissenschaften?
                 </h2>
@@ -90,7 +90,7 @@ export default function UkrExpertiseExplainedDe() {
                   Patienten in 70 Ländern weltweit und beschäftigt 5000
                   ukrainische Ingenieure.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Automobilindustrie - welche Möglichkeiten gibt es?
                 </h2>
                 <p>
@@ -98,7 +98,7 @@ export default function UkrExpertiseExplainedDe() {
                   Busse, Traktoren, Lastwagen, Personenkraftwagen, Straßenbahnen
                   und Eisenbahnmotoren.
                 </p>
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Es gibt eine Menge Weizenfelder!
                 </h2>
                 <p>

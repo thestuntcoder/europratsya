@@ -24,20 +24,20 @@ export default function AboutUsDe() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-          <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
-          <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+          <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
+          <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
             <div>
-              <h2 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h2 className="text-base text-3xl font-bold tracking-wide text-black">
                 Über uns
               </h2>
             </div>
           </div>
           <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-            <div className="relative lg:row-start-1 lg:col-start-2">
+            <div className="relative lg:col-start-2 lg:row-start-1">
               <svg
-                className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
+                className="absolute top-0 right-0 -mt-20 -mr-20 hidden lg:block"
                 width="404"
                 height="384"
                 fill="none"
@@ -69,20 +69,20 @@ export default function AboutUsDe() {
                   fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
                 />
               </svg>
-              <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
+              <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
-                      className="rounded-lg shadow-lg object-cover object-center"
+                      className="rounded-lg object-cover object-center shadow-lg"
                       src={polarImg}
                       alt="Die Polarforschungsstation Vernadsky"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm text-gray-500 italic">
+                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
                     <svg
-                      className="flex-none w-5 h-5 text-gray-400"
+                      className="h-5 w-5 flex-none text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -105,7 +105,7 @@ export default function AboutUsDe() {
               </div>
             </div>
             <div className="mt-8 lg:mt-0">
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p>
                   Europratsya.com wurde von einem Team digital Schaffernder aus
                   Serbien, Schottland und Italien entwickelt.

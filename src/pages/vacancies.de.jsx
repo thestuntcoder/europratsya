@@ -27,12 +27,12 @@ export default function VacanciesDe({ data }) {
         <NavCenter />
       </div>
 
-      <div className="relative py-16 bg-gray-50 overflow-hidden">
+      <div className="relative overflow-hidden bg-gray-50 py-16">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <h1 className="text-base text-3xl font-bold tracking-wide text-black">
             Stellenangebote
           </h1>
-          <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg mt-12">
+          <div className="mt-12 overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
             <table className="min-w-full divide-y divide-gray-300">
               <thead className="bg-gray-50">
                 <tr>

@@ -17,19 +17,19 @@ export default function OurWebsite() {
 
       <div className="overflow-hidden bg-white">
         <StaticImage
-          className="object-cover w-full h-56"
+          className="h-56 w-full object-cover"
           src="../images/expertise/banner.jpg"
           alt="Banner"
           loading="auto"
         />
 
-        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
+        <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="mt-8">
-            <div className="lg:mt-0 mt-8">
+            <div className="mt-8 lg:mt-0">
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Our website
               </h1>
-              <div className="prose-indigo lg:max-w-none lg:row-start-1 lg:col-start-1 mx-auto text-lg prose text-gray-500">
+              <div className="prose-indigo prose mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p>
                   This website is owned and operated by Europratsya CIC, and
                   subject to the privacy policy accessible below.

@@ -42,7 +42,7 @@ export default function Home({ data }) {
             />
           </div>
           <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-extrabold tracking-tight text-white text-center drop-shadow-md">
+            <h1 className="text-center text-3xl font-extrabold tracking-tight text-white drop-shadow-md">
               Our portal assists European employers in finding skilled Ukrainian
               workers.
             </h1>
@@ -55,7 +55,7 @@ export default function Home({ data }) {
         >
           <div className="grid grid-cols-1 gap-y-20 lg:grid-cols-2 lg:gap-y-0 lg:gap-x-8">
             <div className="flex flex-col rounded-2xl bg-gray-800 shadow-xl">
-              <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8 text-center">
+              <div className="relative flex-1 px-6 pt-12 pb-8 text-center md:px-8">
                 <h3 className="text-2xl font-extrabold text-white">
                   Candidates
                 </h3>
@@ -70,7 +70,7 @@ export default function Home({ data }) {
                   <div className="inline-flex rounded-full shadow">
                     <Link
                       to="/contact-for-job-seekers/"
-                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 uppercase"
+                      className="inline-flex items-center justify-center rounded-full border border-transparent bg-white px-5 py-3 text-base font-medium uppercase text-black hover:bg-gray-200"
                     >
                       Contact us
                     </Link>
@@ -80,7 +80,7 @@ export default function Home({ data }) {
             </div>
 
             <div className="flex flex-col rounded-2xl bg-blue-500 shadow-xl">
-              <div className="relative flex-1 px-6 pt-12 pb-8 md:px-8 text-center">
+              <div className="relative flex-1 px-6 pt-12 pb-8 text-center md:px-8">
                 <h3 className="text-2xl font-extrabold text-white">
                   Employers
                 </h3>
@@ -102,7 +102,7 @@ export default function Home({ data }) {
                   <div className="inline-flex rounded-full shadow">
                     <Link
                       to="/contact-for-employers/"
-                      className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-black bg-white hover:bg-gray-200 uppercase"
+                      className="inline-flex items-center justify-center rounded-full border border-transparent bg-white px-5 py-3 text-base font-medium uppercase text-black hover:bg-gray-200"
                     >
                       Join
                     </Link>
@@ -114,9 +114,9 @@ export default function Home({ data }) {
         </section>
       </div>
 
-      <div className="relative py-16 bg-gray-50 overflow-hidden">
+      <div className="relative overflow-hidden bg-gray-50 py-16">
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
+          <div className="prose prose-indigo prose-lg mx-auto mt-6 text-gray-500">
             <p>
               Europratsya post jobs for candidates who need to set up a
               temporary base for their families outside Ukraine. We also post
@@ -130,13 +130,13 @@ export default function Home({ data }) {
         </div>
       </div>
 
-      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
         <div className="absolute inset-0">
-          <div className="bg-white h-1/3 sm:h-2/3" />
+          <div className="h-1/3 bg-white sm:h-2/3" />
         </div>
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
-            <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
               Latest vacancies
             </h2>
           </div>
@@ -146,7 +146,7 @@ export default function Home({ data }) {
             <div className="inline-flex rounded-full shadow">
               <Link
                 to="/vacancies"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
+                className="inline-flex items-center justify-center rounded-full border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white hover:bg-blue-700"
               >
                 See all vacancies
               </Link>
@@ -155,7 +155,7 @@ export default function Home({ data }) {
         </div>
       </div>
 
-      <div className="bg-gray-100 relative h-3/4">
+      <div className="relative h-3/4 bg-gray-100">
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
@@ -164,8 +164,8 @@ export default function Home({ data }) {
           />
         </div>
         <div className="absolute inset-0 bg-gray-900 opacity-30" />
-        <div className="max-w-7xl mx-auto flex items-center justify-between z-10">
-          <div className="m-auto text-4xl font-extrabold text-white text-center align-middle mx-auto mt-64 mb-64 z-10">
+        <div className="z-10 mx-auto flex max-w-7xl items-center justify-between">
+          <div className="z-10 m-auto mx-auto mt-64 mb-64 text-center align-middle text-4xl font-extrabold text-white">
             Several Nobel prize winners in medicine, physics, chemistry and
             literature hail from Ukraine. Its oldest universities are from the
             16th and 17th century, and continue to produce world-class graduates
@@ -175,31 +175,31 @@ export default function Home({ data }) {
       </div>
 
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <p className="text-center text-base font-semibold uppercase text-gray-600 tracking-wider">
+        <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600">
             Sponsors and partners
           </p>
           <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img
                 className="max-h-12"
                 src={sponsorKaffebakeriet}
                 alt="Kaffebakeriet"
               />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img className="max-h-12" src={sponsorKodit} alt="Kodit" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img className="max-h-12" src={sponsorGrieg} alt="Grieg" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img className="max-h-12" src={sponsorSC} alt="StuntCoders" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img className="max-h-12" src={sponsorDT} alt="DayTwo" />
             </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50">
+            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img className="max-h-12" src={sponsorTM} alt="Team Magnus" />
             </div>
           </div>

@@ -23,7 +23,7 @@ export default function UkrEducationExplainerUk() {
         <NavCenter />
       </div>
 
-      <div className="bg-white overflow-hidden">
+      <div className="overflow-hidden bg-white">
         <StaticImage
           className="h-56 w-full object-cover"
           src="../images/education/banner.jpg"
@@ -31,27 +31,27 @@ export default function UkrEducationExplainerUk() {
           loading="auto"
         />
 
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-black font-bold text-3xl tracking-wide">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Українська освіта – Запитання та відповіді
               </h1>
 
-              <div className="relative text-base float-right max-w-md">
+              <div className="relative float-right max-w-md text-base">
                 <figure>
-                  <div className="max-w-md aspect-w-12 ml-8">
+                  <div className="aspect-w-12 ml-8 max-w-md">
                     <StaticImage
-                      className="rounded-lg shadow-lg object-cover object-center"
+                      className="rounded-lg object-cover object-center shadow-lg"
                       src="../images/education/assembly-hall-kyiv-polytechnic-institute.jpg"
                       alt="Актовий зал Київського політехнічного інституту"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm text-gray-500 italic">
+                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
                     <svg
-                      className="flex-none w-5 h-5 text-gray-400"
+                      className="h-5 w-5 flex-none text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -77,14 +77,14 @@ export default function UkrEducationExplainerUk() {
                 </figure>
               </div>
 
-              <div className="prose prose-indigo text-gray-500 text-lg mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
+              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p className="mt-24">
                   В Україні рівень грамотності досягає 99,4%, який є найвищим у
                   світі. Зверніться до нашого пояснювача, щоб отримати короткий
                   посібник з системи освіти.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide">
+                <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   Яка система оцінювання в українських університетах?
                 </h2>
                 <p>Рівень освіти оприділяється за</p>
@@ -98,7 +98,7 @@ export default function UkrEducationExplainerUk() {
                   задовільно, 2-1 = незадовільно)
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   ECTS Grading scale
                 </h2>
 
@@ -109,16 +109,16 @@ export default function UkrEducationExplainerUk() {
                   які вказані нижче.
                 </p>
 
-                <table className="table-fixed border-collapse text-sm border border-slate-200 max-w-md">
+                <table className="max-w-md table-fixed border-collapse border border-slate-200 text-sm">
                   <thead>
                     <tr>
-                      <th className="border-b font-medium bg-gray-200 p-4 pl-8 pt-0 pb-3 text-slate-400 text-center">
+                      <th className="border-b bg-gray-200 p-4 pl-8 pt-0 pb-3 text-center font-medium text-slate-400">
                         GRADE
                       </th>
-                      <th className="border-b font-medium bg-gray-200 p-4 pt-0 pb-3 text-slate-400 text-center">
+                      <th className="border-b bg-gray-200 p-4 pt-0 pb-3 text-center font-medium text-slate-400">
                         WES UNDERGRADUATE CONVERSION
                       </th>
-                      <th className="border-b font-medium bg-gray-200 p-4 pr-8 pt-0 pb-3 text-slate-400 text-center">
+                      <th className="border-b bg-gray-200 p-4 pr-8 pt-0 pb-3 text-center font-medium text-slate-400">
                         WES GRADUATE CONVERSION
                       </th>
                     </tr>
@@ -157,14 +157,14 @@ export default function UkrEducationExplainerUk() {
                   </tbody>
                   <tfoot>
                     <tr>
-                      <td colspan="3" className="text-sm border-t text-center">
+                      <td colspan="3" className="border-t text-center text-sm">
                         © 2019 World Education Services (wenr.wes.org)
                       </td>
                     </tr>
                   </tfoot>
                 </table>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Які університети самі популярні в Україні?
                 </h2>
                 <p>
@@ -181,7 +181,7 @@ export default function UkrEducationExplainerUk() {
                   </ul>
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Яка різниться в кваліфікаціях вказаних нижче?
                 </h2>
                 <p>
@@ -202,7 +202,7 @@ export default function UkrEducationExplainerUk() {
                   </ul>
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Яка різниця між студентами коледжу і університету?
                 </h2>
                 <p>
@@ -213,7 +213,7 @@ export default function UkrEducationExplainerUk() {
                   шкіл, які відвідували повну 12-річну школу.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Чому акредитації українських середніх шкіл мають дві системи
                   оцінювання?
                 </h2>
@@ -239,7 +239,7 @@ export default function UkrEducationExplainerUk() {
                   </ul>
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Чому одні абітурієнти ходили в школу 11 років, а інші 12?
                 </h2>
                 <p>
@@ -247,7 +247,7 @@ export default function UkrEducationExplainerUk() {
                   років.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Якою є українська шкільна програма?
                 </h2>
                 <p>
@@ -256,7 +256,7 @@ export default function UkrEducationExplainerUk() {
                   біологія, а також всі загальні предмети.
                 </p>
 
-                <h2 className="text-base text-black font-bold text-xl tracking-wide mt-8">
+                <h2 className="mt-8 text-base text-xl font-bold tracking-wide text-black">
                   Що б ви рекомендували перевірити в українському резюме?
                 </h2>
                 <p>
