@@ -24,7 +24,7 @@ export function listVacancies(
             to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
             className="text-blue-500 hover:text-blue-900"
           >
-            {getTitle(edges[key].node.country.title, lang)}
+            {getTitle(edges[key].node.title, lang)}
           </Link>
           <dl className="font-normal lg:hidden">
             <dt className="sr-only">{translation.title}</dt>
