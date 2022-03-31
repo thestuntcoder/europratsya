@@ -44,6 +44,9 @@ const serializers = {
         case 'blockquote':
           return <blockquote>{props.children}</blockquote>;
 
+        case 'li':
+          return <li className="list-disc ml-4">{props.children}</li>;
+
         default:
           return <p className="my-4">{props.children}</p>;
       }
