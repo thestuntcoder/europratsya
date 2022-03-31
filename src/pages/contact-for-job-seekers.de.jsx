@@ -115,6 +115,40 @@ export default function ContactEmployeesDe() {
                   Um Ihnen Zeit zu sparen, übersetzen wir Ihren Lebenslauf
                   entweder ins Englisch oder Deutsch kostenlos.
                 </p>
+                <div className="mt-4 mb-8 grid grid-cols-4 gap-2 p-4 bg-blue-500 rounded-lg shadow-lg text-white text-sm text-center">
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step1}
+                      alt="Step 1"
+                    />
+                    Lebenslauf hochladen
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step2}
+                      alt="Step 2"
+                    />
+                    Wir prüfen sie und passen sie an
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step3}
+                      alt="Step 3"
+                    />
+                    CV wird übersetzt
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step4}
+                      alt="Step 4"
+                    />
+                    Bereit zur Bewerbung auf offene Stellen
+                  </div>
+                </div>
                 <form
                   name="candidateUploads"
                   method="POST"

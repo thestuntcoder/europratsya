@@ -114,6 +114,40 @@ export default function ContactEmployeesUk() {
                   Щоб заощадити ваш час, ми безкоштовно перекладемо ваше резюме
                   англійською або німецькою мовами.
                 </p>
+                <div className="mt-4 mb-8 grid grid-cols-4 gap-2 p-4 bg-blue-500 rounded-lg shadow-lg text-white text-sm text-center">
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step1}
+                      alt="Step 1"
+                    />
+                    Завантажте своє резюме
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step2}
+                      alt="Step 2"
+                    />
+                    Перевіряємо і адаптуємо
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step3}
+                      alt="Step 3"
+                    />
+                    CV перекладається
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step4}
+                      alt="Step 4"
+                    />
+                    Ви готові подати заявку на вакансії
+                  </div>
+                </div>
                 <form
                   name="candidateUploads"
                   method="POST"
