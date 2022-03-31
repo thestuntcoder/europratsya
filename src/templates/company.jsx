@@ -8,7 +8,7 @@ import NavCenterUk from '../components/layout/nav-center.uk';
 import NavCenterDe from '../components/layout/nav-center.de';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
-import { getRaw, getTitle, getSeo, getUrlPrefix } from '../helpers/language';
+import { getRaw, getUrlPrefix } from '../helpers/language';
 
 export const query = graphql`
   query CompanyTemplateQuery($id: String!) {
