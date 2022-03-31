@@ -49,7 +49,9 @@ export default function VisaPermitsUk({ data }) {
               <div className="prose-indigo mx-auto mt-8 text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <div className="relative w-full md:flex">
                   <div className="md:w-1/3">
-                    <ul>{countriesOutput}</ul>
+                    <ul className="grid grid-cols-3 gap-4 md:block">
+                      {countriesOutput}
+                    </ul>
                   </div>
                   <div className="md:w-2/3">
                     <h2 className="text-base text-xl font-bold tracking-wide text-black">
