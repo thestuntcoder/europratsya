@@ -31,7 +31,9 @@ export default function ContactEmployersUk() {
         ...state,
       }),
     })
-      .then(() => alert('Дякуємо за подання!'))
+      .then(() => {
+        window.location.href = '/uk/thank-you-employer';
+      })
       .catch((error) => alert(error));
   };
 

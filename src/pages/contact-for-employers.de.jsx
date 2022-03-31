@@ -31,7 +31,9 @@ export default function ContactEmployersDe() {
         ...state,
       }),
     })
-      .then(() => alert('Thank you for your submission!'))
+      .then(() => {
+        window.location.href = '/de/thank-you-employer';
+      })
       .catch((error) => alert(error));
   };
 
