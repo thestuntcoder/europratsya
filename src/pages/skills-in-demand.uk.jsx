@@ -4,25 +4,12 @@ import { Link, graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.uk';
+import countriesOutput from '../helpers/country';
 
 export default function SkillsInDemandUk({ data }) {
   const metaDescription =
     'Навички та професії які полегшать планування пошуків роботи в різних країнах Європи';
   const metaTitle = 'Навички та професії які потрібні в різних країнах Європи';
-
-  data = data.allSanityCountry.nodes;
-  let countriesOutput = [];
-  for (var key in data) {
-    if (data[key].slug == null) continue;
-
-    countriesOutput.push(
-      <li key={key}>
-        <Link to={'/uk/countries/' + data[key].slug.current}>
-          {data[key].title.uk}
-        </Link>
-      </li>
-    );
-  }
 
   return (
     <LayoutPage lang="uk">
@@ -48,9 +35,7 @@ export default function SkillsInDemandUk({ data }) {
               <div className="prose-indigo mx-auto mt-8 text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <div className="relative w-full md:flex">
                   <div className="md:w-1/3">
-                    <ul className="grid grid-cols-3 gap-4 md:block">
-                      {countriesOutput}
-                    </ul>
+                    {countriesOutput(data.allSanityCountry.nodes, 'uk')}
                   </div>
                   <div className="md:w-2/3">
                     <h2 className="text-base text-xl font-bold tracking-wide text-black">
