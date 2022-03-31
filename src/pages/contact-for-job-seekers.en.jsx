@@ -3,6 +3,10 @@ import { Helmet } from 'react-helmet';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import contactImg from '../images/contact/contact-form-candidates.jpg';
+import step1 from '../images/contact/step1.svg';
+import step2 from '../images/contact/step2.svg';
+import step3 from '../images/contact/step3.svg';
+import step4 from '../images/contact/step4.svg';
 
 function encode(data) {
   const formData = new FormData();
@@ -115,6 +119,40 @@ export default function ContactEmployees() {
                   To save you time, we will translate your CV into either
                   English or German free of charge.
                 </p>
+                <div className="mt-4 mb-8 grid grid-cols-4 gap-2 p-4 bg-blue-500 rounded-lg shadow-lg text-white text-sm text-center">
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step1}
+                      alt="Step 1"
+                    />
+                    Upload your CV
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step2}
+                      alt="Step 2"
+                    />
+                    We check and adapt
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step3}
+                      alt="Step 3"
+                    />
+                    CV gets translated
+                  </div>
+                  <div>
+                    <img
+                      className="object-cover object-center"
+                      src={step4}
+                      alt="Step 4"
+                    />
+                    Ready to apply for vacancies
+                  </div>
+                </div>
                 <form
                   name="candidateUploads"
                   method="POST"
