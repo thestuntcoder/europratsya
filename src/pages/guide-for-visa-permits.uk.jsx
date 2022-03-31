@@ -30,7 +30,7 @@ export default function VisaPermitsUk({ data }) {
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <div className="mt-8">
             <div className="mt-8 lg:mt-0">
-              <h1 className="text-base text-3xl font-bold tracking-wide text-black">
+              <h1 className="text-base text-3xl font-bold tracking-wide text-black text-center">
                 Посібники для отримання візи
               </h1>
               <div className="prose-indigo mx-auto mt-8 text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
