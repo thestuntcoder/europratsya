@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { getUrlPrefix } from './language';
 
 export function employersList(edges, lang = 'en') {
   let output = [];
@@ -14,8 +15,7 @@ export function employersList(edges, lang = 'en') {
 function employer(company, lang = 'en') {
   if (company.slug === null) return;
 
-  const link =
-    (lang === 'en' ? '' : '/' + lang) + '/company/' + company.slug.current;
+  const link = getUrlPrefix(lang) + '/company/' + company.slug.current;
   const getImg = getImage(company.image.asset.gatsbyImageData);
 
   return (
