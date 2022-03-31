@@ -85,6 +85,12 @@ export const query = graphql`
   }
 `;
 
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
+
 const JobPost = (props) => {
   const language = props.pageContext.language;
   const job = props.data.job;
@@ -119,6 +125,10 @@ const JobPost = (props) => {
   let vacanciesLink,
     navigation,
     contactEmployer = {};
+
+  let contactLink = validateEmail(job.contact)
+    ? 'mailto:' + job.contact
+    : job.contact;
 
   switch (language) {
     case 'de':
@@ -201,8 +211,9 @@ const JobPost = (props) => {
             <div className="mt-8 text-center">
               <div className="inline-flex rounded-full shadow">
                 <a
-                  href={'mailto:' + job.contact}
+                  href={contactLink}
                   rel="noreferrer"
+                  target="_blank"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent rounded-full text-base font-medium text-white bg-blue-500 hover:bg-blue-700"
                 >
                   {contactEmployer}
