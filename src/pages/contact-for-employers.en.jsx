@@ -21,10 +21,6 @@ export default function ContactEmployers() {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const handleAttachment = (e) => {
-    setState({ ...state, [e.target.name]: e.target.files[0] });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
