@@ -44,14 +44,26 @@ const serializers = {
         case 'blockquote':
           return <blockquote>{props.children}</blockquote>;
 
-        case 'li':
-          return <li className="list-disc ml-4">{props.children}</li>;
-
         default:
           return <p className="my-4">{props.children}</p>;
       }
     },
+    code(props) {
+      console.log('code ', props);
+      return (
+        <pre data-language={props.node.language}>
+          <code>{props.node.code}</code>
+        </pre>
+      );
+    },
   },
+  list: (props) =>
+    props.type === 'bullet' ? (
+      <ul>{props.children}</ul>
+    ) : (
+      <ol>{props.children}</ol>
+    ),
+  listItem: (props) => <li className="list-disc ml-4">{props.children}</li>,
 };
 
 const BlockContent = ({ blocks }) => (
