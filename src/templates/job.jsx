@@ -9,83 +9,7 @@ import NavCenterDe from '../components/layout/nav-center.de';
 import BlockContent from '../components/block-content';
 import { getRaw, getTitle, getSeo, getUrlPrefix } from '../helpers/language';
 
-export const query = graphql`
-  query JobTemplateQuery($id: String!) {
-    job: sanityJobPost(id: { eq: $id }) {
-      description {
-        _rawEn
-        _rawUk
-        _rawDe
-      }
-      title {
-        en
-        uk
-        de
-      }
-      seo {
-        title_en
-        title_uk
-        title_de
-        description_en
-        description_uk
-        description_de
-        seo_image {
-          asset {
-            gatsbyImageData(
-              width: 600
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
-      job_languages {
-        name
-      }
-      job_categories {
-        title
-      }
-      city
-      country {
-        title {
-          en
-          uk
-          de
-        }
-      }
-      contact
-
-      employer {
-        description {
-          _rawEn
-          _rawUk
-          _rawDe
-        }
-        website
-        name
-        slug {
-          current
-        }
-        image {
-          _key
-          _type
-          _rawAsset
-          _rawHotspot
-          _rawCrop
-          asset {
-            gatsbyImageData(
-              width: 600
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
-    }
-  }
-`;
-
-const JobPost = (props) => {
+export default function JobPost(props) {
   const language = props.pageContext.language;
   const job = props.data.job;
   const company = job.employer;
@@ -239,6 +163,80 @@ const JobPost = (props) => {
       </div>
     </LayoutPage>
   );
-};
+}
 
-export default JobPost;
+export const query = graphql`
+  query JobTemplateQuery($id: String!) {
+    job: sanityJobPost(id: { eq: $id }) {
+      description {
+        _rawEn
+        _rawUk
+        _rawDe
+      }
+      title {
+        en
+        uk
+        de
+      }
+      seo {
+        title_en
+        title_uk
+        title_de
+        description_en
+        description_uk
+        description_de
+        seo_image {
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+      job_languages {
+        name
+      }
+      job_categories {
+        title
+      }
+      city
+      country {
+        title {
+          en
+          uk
+          de
+        }
+      }
+      contact
+
+      employer {
+        description {
+          _rawEn
+          _rawUk
+          _rawDe
+        }
+        website
+        name
+        slug {
+          current
+        }
+        image {
+          _key
+          _type
+          _rawAsset
+          _rawHotspot
+          _rawCrop
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+    }
+  }
+`;
