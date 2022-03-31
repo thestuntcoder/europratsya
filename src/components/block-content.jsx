@@ -45,7 +45,10 @@ const serializers = {
     link: (props) => {
       let rel,
         blank = '';
-      if (!props.mark.href.startsWith('/')) {
+      if (
+        typeof props.mark.href !== undefined &&
+        !props.mark.href.startsWith('/')
+      ) {
         rel = 'noreferrer noopener';
         blank = '_blank';
       }
