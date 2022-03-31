@@ -4,30 +4,6 @@ import BaseBlockContent from '@sanity/block-content-to-react';
 const serializers = {
   types: {
     block(props) {
-      switch (props.children.length) {
-        case 3:
-          return (
-            <p>
-              {props.children.map((child, index) => {
-                if (index === 1 && child.props.node) {
-                  return (
-                    <a
-                      key={child.key}
-                      href={child.props.node.mark.href}
-                      className="text-blue-500 hover:underline"
-                    >
-                      {child.props.node.children[0]}
-                    </a>
-                  );
-                }
-                return child;
-              })}
-            </p>
-          );
-
-        // no default
-      }
-
       switch (props.node.style) {
         case 'h1':
           return <h1 className="text-3xl mt-8">{props.children}</h1>;
@@ -49,7 +25,6 @@ const serializers = {
       }
     },
     code(props) {
-      console.log('code ', props);
       return (
         <pre data-language={props.node.language}>
           <code>{props.node.code}</code>
@@ -64,6 +39,29 @@ const serializers = {
       <ol>{props.children}</ol>
     ),
   listItem: (props) => <li className="list-disc ml-4">{props.children}</li>,
+  marks: {
+    strong: (props) => <strong>{props.children}</strong>,
+    em: (props) => <em>{props.children}</em>,
+    link: (props) => {
+      let rel,
+        blank = '';
+      if (!props.mark.href.startsWith('/')) {
+        rel = 'noreferrer noopener';
+        blank = '_blank';
+      }
+
+      return (
+        <a
+          href={props.mark.href}
+          rel={rel}
+          target={blank}
+          className="text-blue-500 hover:underline"
+        >
+          {props.children}
+        </a>
+      );
+    },
+  },
 };
 
 const BlockContent = ({ blocks }) => (
