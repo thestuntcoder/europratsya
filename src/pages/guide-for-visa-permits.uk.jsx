@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.uk';
-import countriesOutput from '../helpers/country';
+import { countriesOutput } from '../helpers/country';
 
 export default function VisaPermitsUk({ data }) {
   const metaDescription =
