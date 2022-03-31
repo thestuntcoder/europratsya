@@ -10,104 +10,7 @@ import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
 import { getRaw, getUrlPrefix } from '../helpers/language';
 
-export const query = graphql`
-  query CompanyTemplateQuery($id: String!) {
-    company: sanityCompany(id: { eq: $id }) {
-      description {
-        _rawEn
-        _rawUk
-        _rawDe
-      }
-      seo {
-        title_en
-        title_uk
-        title_de
-        description_en
-        description_uk
-        description_de
-        seo_image {
-          asset {
-            gatsbyImageData(
-              width: 600
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
-      image {
-        _key
-        _type
-        _rawAsset
-        _rawHotspot
-        _rawCrop
-        asset {
-          gatsbyImageData(
-            width: 600
-            placeholder: BLURRED
-            formats: [AUTO, WEBP, AVIF]
-          )
-        }
-      }
-      name
-      id
-      slug {
-        current
-      }
-    }
-
-    jobs: allSanityJobPost(filter: { employer: { id: { eq: $id } } }) {
-      edges {
-        node {
-          city
-          country {
-            title {
-              en
-              uk
-              de
-            }
-          }
-          salary
-          contact
-          title {
-            en
-            uk
-            de
-          }
-          description {
-            en {
-              children {
-                text
-              }
-            }
-            uk {
-              children {
-                text
-              }
-            }
-            de {
-              children {
-                text
-              }
-            }
-          }
-          employer {
-            name
-          }
-          job_categories {
-            title
-          }
-          validUntil
-          slug {
-            current
-          }
-        }
-      }
-    }
-  }
-`;
-
-const Company = (props) => {
+export default function Company(props) {
   const language = props.pageContext.language;
   let company = props.data.company;
   let ads = props.data.jobs.edges;
@@ -207,6 +110,101 @@ const Company = (props) => {
       </div>
     </LayoutPage>
   );
-};
+}
 
-export default Company;
+export const query = graphql`
+  query CompanyTemplateQuery($id: String!) {
+    company: sanityCompany(id: { eq: $id }) {
+      description {
+        _rawEn
+        _rawUk
+        _rawDe
+      }
+      seo {
+        title_en
+        title_uk
+        title_de
+        description_en
+        description_uk
+        description_de
+        seo_image {
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+      image {
+        _key
+        _type
+        _rawAsset
+        _rawHotspot
+        _rawCrop
+        asset {
+          gatsbyImageData(
+            width: 600
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+      name
+      id
+      slug {
+        current
+      }
+    }
+
+    jobs: allSanityJobPost(filter: { employer: { id: { eq: $id } } }) {
+      edges {
+        node {
+          city
+          country {
+            title {
+              en
+              uk
+              de
+            }
+          }
+          salary
+          contact
+          title {
+            en
+            uk
+            de
+          }
+          description {
+            en {
+              children {
+                text
+              }
+            }
+            uk {
+              children {
+                text
+              }
+            }
+            de {
+              children {
+                text
+              }
+            }
+          }
+          employer {
+            name
+          }
+          job_categories {
+            title
+          }
+          validUntil
+          slug {
+            current
+          }
+        }
+      }
+    }
+  }
+`;
