@@ -3,6 +3,10 @@ import { Helmet } from 'react-helmet';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center.de';
 import contactImg from '../images/contact/contact-form-candidates.jpg';
+import step1 from '../images/contact/step1.svg';
+import step2 from '../images/contact/step2.svg';
+import step3 from '../images/contact/step3.svg';
+import step4 from '../images/contact/step4.svg';
 
 function encode(data) {
   const formData = new FormData();
