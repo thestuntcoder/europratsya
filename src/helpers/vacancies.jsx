@@ -20,11 +20,13 @@ export function listVacancies(
     if (edges[key].node.slug == null) continue;
     if (
       filterCountry !== false &&
+      filterCountry !== 'false' &&
       filterCountry !== getTitle(edges[key].node.country.title, lang)
     )
       continue;
     if (
       filterLanguage !== false &&
+      filterLanguage !== 'false' &&
       !edges[key].node.job_languages.map((c) => c.name).includes(filterLanguage)
     )
       continue;
