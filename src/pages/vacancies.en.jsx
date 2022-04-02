@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
@@ -8,6 +8,12 @@ import FilterCountry from '../components/filter-country';
 import FilterLanguage from '../components/filter-language';
 
 export default function Vacancies({ data }) {
+  const [country, setCountry] = useState(true);
+
+  function changeCountry(event) {
+    setCountry(event.target.value);
+  }
+
   const metaDescription =
     'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
   const metaTitle = 'Job vacancies from firms encouraging Ukrainian candidates';
@@ -37,6 +43,8 @@ export default function Vacancies({ data }) {
               <FilterCountry
                 edges={data.allSanityJobPost.edges}
                 lang={language}
+                selectedCountry={country}
+                changeCountry={changeCountry}
               />
             </div>
             <div>
@@ -80,11 +88,16 @@ export default function Vacancies({ data }) {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 bg-white">
-                {listVacancies(data.allSanityJobPost.edges, language, {
-                  title: 'Title',
-                  or: ' or ',
-                  view: 'View',
-                })}
+                {listVacancies(
+                  data.allSanityJobPost.edges,
+                  language,
+                  {
+                    title: 'Title',
+                    or: ' or ',
+                    view: 'View',
+                  },
+                  country
+                )}
               </tbody>
             </table>
           </div>
