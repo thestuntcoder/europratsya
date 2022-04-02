@@ -68,29 +68,35 @@ export function listVacancies(
   return allJobAds;
 }
 
-export function listCountries(edges, lang) {
-  let allCountries = [];
+function createDropdown(edges, lang, name) {
+  let list = [];
   let duplicates = [];
 
   for (var key in edges) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
 
-    const title = getTitle(edges[key].node.country.title, lang);
+    const title = getTitle(edges[key].node[name].title, lang);
     if (duplicates.includes(title)) continue;
 
     duplicates.push(title);
-    allCountries.push(<option value={title}>{title}</option>);
+    list.push(<option value={title}>{title}</option>);
   }
 
   return (
     <select
-      name="country"
+      name={name}
       className="form-select appearance-none block w-1/2 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-500 focus:outline-none"
     >
-      {allCountries}
+      {list}
     </select>
   );
 }
 
-export function listLanguages(edges, lang) {}
+export function listCountries(edges, lang) {
+  return createDropdown(edges, lang, 'country');
+}
+
+export function listLanguages(edges, lang) {
+  return createDropdown(edges, lang, 'language');
+}
