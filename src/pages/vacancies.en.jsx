@@ -3,11 +3,9 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
-import {
-  listVacancies,
-  listCountries,
-  listLanguages,
-} from '../helpers/vacancies';
+import { listVacancies } from '../helpers/vacancies';
+import FilterCountry from '../components/filter-country';
+import FilterLanguage from '../components/filter-language';
 
 export default function Vacancies({ data }) {
   const metaDescription =
@@ -35,8 +33,18 @@ export default function Vacancies({ data }) {
             <h1 className="text-base text-3xl font-bold tracking-wide text-black">
               Vacancies
             </h1>
-            <div>{listCountries(data.allSanityJobPost.edges, language)}</div>
-            <div>{listLanguages(data.allSanityJobPost.edges, language)}</div>
+            <div>
+              <FilterCountry
+                edges={data.allSanityJobPost.edges}
+                lang={language}
+              />
+            </div>
+            <div>
+              <FilterLanguage
+                edges={data.allSanityJobPost.edges}
+                lang={language}
+              />
+            </div>
           </div>
           <div className="mt-12 overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
             <table className="min-w-full divide-y divide-gray-300">

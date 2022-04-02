@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { getTitle } from '../helpers/language';
 
 export default function FilterCountry(props) {
   let list = [];
@@ -10,7 +11,7 @@ export default function FilterCountry(props) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
 
-    const title = getTitle(edges[key].node.country.title, lang);
+    const title = getTitle(edges[key].node.country.title, props.lang);
     if (duplicates.includes(title)) continue;
 
     duplicates.push(title);
