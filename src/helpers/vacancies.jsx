@@ -9,13 +9,19 @@ export function listVacancies(
     title: 'Title',
     or: ' or ',
     view: 'View',
-  }
+  },
+  filterCountry = false
 ) {
   let allJobAds = [];
 
   for (var key in edges) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
+    if (
+      filterCountry !== false &&
+      filterCountry !== getTitle(edges[key].node.country.title, lang)
+    )
+      continue;
 
     allJobAds.push(
       <tr key={'tr-' + key}>
