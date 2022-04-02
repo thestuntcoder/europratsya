@@ -8,10 +8,16 @@ import FilterCountry from '../components/filter-country';
 import FilterLanguage from '../components/filter-language';
 
 export default function Vacancies({ data }) {
-  const [country, setCountry] = useState(true);
+  const [country, setCountry] = useState(false);
 
   function changeCountry(event) {
     setCountry(event.target.value);
+  }
+
+  const [lang, setLang] = useState(false);
+
+  function changeLang(event) {
+    setLang(event.target.value);
   }
 
   const metaDescription =
@@ -51,6 +57,7 @@ export default function Vacancies({ data }) {
               <FilterLanguage
                 edges={data.allSanityJobPost.edges}
                 lang={language}
+                changeLang={changeLang}
               />
             </div>
           </div>
@@ -96,7 +103,8 @@ export default function Vacancies({ data }) {
                     or: ' or ',
                     view: 'View',
                   },
-                  country
+                  country,
+                  lang
                 )}
               </tbody>
             </table>
