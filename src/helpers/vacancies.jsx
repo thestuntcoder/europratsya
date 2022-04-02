@@ -10,7 +10,8 @@ export function listVacancies(
     or: ' or ',
     view: 'View',
   },
-  filterCountry = false
+  filterCountry = false,
+  filterLanguage = false
 ) {
   let allJobAds = [];
 
@@ -20,6 +21,11 @@ export function listVacancies(
     if (
       filterCountry !== false &&
       filterCountry !== getTitle(edges[key].node.country.title, lang)
+    )
+      continue;
+    if (
+      filterLanguage !== false &&
+      !edges[key].node.job_languages.map((c) => c.name).includes(filterLanguage)
     )
       continue;
 
