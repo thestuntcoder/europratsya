@@ -16,10 +16,9 @@ export function listVacancies(
   for (var key in edges) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
-    console.log(edges[key]);
 
     allJobAds.push(
-      <tr>
+      <tr key={'tr-' + key}>
         <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
           <Link
             to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
@@ -75,12 +74,16 @@ function createDropdown(edges, lang, name) {
   for (var key in edges) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
-
+    console.log(edges[key].node[name].title);
     const title = getTitle(edges[key].node[name].title, lang);
     if (duplicates.includes(title)) continue;
 
     duplicates.push(title);
-    list.push(<option value={title}>{title}</option>);
+    list.push(
+      <option value={title} key={name + '-' + key}>
+        {title}
+      </option>
+    );
   }
 
   return (
@@ -98,5 +101,5 @@ export function listCountries(edges, lang) {
 }
 
 export function listLanguages(edges, lang) {
-  return createDropdown(edges, lang, 'language');
+  return createDropdown(edges, lang, 'job_languages');
 }
