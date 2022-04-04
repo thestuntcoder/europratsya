@@ -105,7 +105,7 @@ export default function Company(props) {
               {companyVacancies}
             </h2>
           </div>
-          <JobAds limit="24" data={ads} />
+          <JobAds limit="24" data={ads} language={language} />
         </div>
       </div>
     </LayoutPage>
