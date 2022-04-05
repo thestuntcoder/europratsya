@@ -65,6 +65,38 @@ module.exports = {
         chunkSize: 10000,
       },
     },
+
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/locales`,
+        name: 'locale',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-i18next',
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`, `uk`, `de`],
+        defaultLanguage: `en`,
+        siteUrl: `https://europratsya.com/`,
+        i18nextOptions: {
+          keySeparator: false,
+          nsSeparator: false,
+        },
+        pages: [
+          {
+            matchPath: '/:lang?/blog/:uid',
+            getLanguageFromPath: true,
+            excludeLanguages: ['de'],
+          },
+          {
+            matchPath: '/preview',
+            languages: ['en'],
+          },
+        ],
+      },
+    },
   ],
 };
 
