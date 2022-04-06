@@ -118,7 +118,7 @@ export default function ContactEmployeesUk() {
                   Щоб заощадити ваш час, ми безкоштовно перекладемо ваше резюме
                   англійською або німецькою мовами.
                 </p>
-                <div className="mt-4 mb-8 grid grid-cols-4 gap-2 p-4 bg-blue-500 rounded-lg shadow-lg text-white text-sm text-center">
+                <div className="mt-4 mb-8 grid grid-cols-4 gap-2 rounded-lg bg-blue-500 p-4 text-center text-sm text-white shadow-lg">
                   <div>
                     <img
                       className="object-cover object-center"

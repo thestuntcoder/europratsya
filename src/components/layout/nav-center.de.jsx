@@ -26,9 +26,9 @@ export default class NavCenter extends React.Component {
 
     return (
       <div>
-        <div className="mx-auto px-3 sm:px-5 pt-4">
-          <nav className="relative flex items-center justify-between sm:h-10 max-w-screen-xl mx-auto">
-            <div className="flex order-1 items-center">
+        <div className="mx-auto px-3 pt-4 sm:px-5">
+          <nav className="relative mx-auto flex max-w-screen-xl items-center justify-between sm:h-10">
+            <div className="order-1 flex items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/de/" aria-label="Home">
                   <img
@@ -39,7 +39,7 @@ export default class NavCenter extends React.Component {
                 </Link>
               </div>
             </div>
-            <div className="flex order-3 items-center md:hidden">
+            <div className="order-3 flex items-center md:hidden">
               <button
                 className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-150 ease-in-out hover:bg-gray-100 hover:text-gray-500 focus:bg-gray-100 focus:text-gray-500 focus:outline-none"
                 id="main-menu"
@@ -66,7 +66,7 @@ export default class NavCenter extends React.Component {
               </button>
             </div>
             <Link
-              className="order-2 md:order-1 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 inline-flex justify-center px-4 py-2 lg:px-6 lg:py-3 text-xs lg:text-sm font-medium text-white bg-blue-500 border border-transparent rounded-md shadow-sm"
+              className="order-2 inline-flex justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 md:order-1 lg:px-6 lg:py-3 lg:text-sm"
               to="/de/contact-for-job-seekers/"
             >
               Hilfe beim CV?
@@ -77,79 +77,79 @@ export default class NavCenter extends React.Component {
             />
           </nav>
         </div>
-        <div className="mx-auto px-4 sm:px-6 mt-4 lg:mt-8 border-t border-b border-gray-500 bg-gray-200 hidden sm:block">
-          <nav className="relative flex justify-between sm:h-18 md:justify-center max-w-screen-xl mx-auto overflow-hidden">
-            <div className="hidden md:block border-r border-gray-500 p-2">
-              <div className="text-sm font-bold mb-2">Über</div>
+        <div className="mx-auto mt-4 hidden border-t border-b border-gray-500 bg-gray-200 px-4 sm:block sm:px-6 lg:mt-8">
+          <nav className="sm:h-18 relative mx-auto flex max-w-screen-xl justify-between overflow-hidden md:justify-center">
+            <div className="hidden border-r border-gray-500 p-2 md:block">
+              <div className="mb-2 text-sm font-bold">Über</div>
               <div className="md:flex md:space-x-6 lg:space-x-10">
                 <Link
-                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/about-us/"
                 >
                   Über uns
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block border-r border-gray-500 p-2">
-              <div className="text-sm font-bold mb-2">Bewerber</div>
+            <div className="hidden border-r border-gray-500 p-2 md:block">
+              <div className="mb-2 text-sm font-bold">Bewerber</div>
               <div className="md:flex md:space-x-6 lg:space-x-10">
                 <Link
-                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/skills-in-demand/"
                 >
                   Gefragte Fähigkeiten
                 </Link>
                 <Link
-                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/guide-for-visa-permits/"
                 >
                   Leitfaden für Visa / Geneh&shy;migungen
                 </Link>
                 <Link
-                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/companies/"
                 >
                   Geprüfte EU-Arbeitgeber
                 </Link>
                 <Link
-                  className="font-medium text-sm text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/de/essential-checklists/"
                 >
                   Unverzicht&shy;bare Check&shy;listen
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block p-2">
-              <div className="text-sm font-bold mb-2">Arbeitgeber</div>
+            <div className="hidden p-2 md:block">
+              <div className="mb-2 text-sm font-bold">Arbeitgeber</div>
               <div className="md:flex md:space-x-6 lg:space-x-10">
                 <Link
-                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/de/ukr-education-explainer/"
                 >
                   UKR Bildungs-FAQ
                 </Link>
                 <Link
-                  className="font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/de/ukr-expertise-explained/"
                 >
                   UKR Fach&shy;wissen FAQ
                 </Link>
                 <Link
-                  className="break-word font-medium text-sm text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
+                  className="break-word text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/de/contact-for-employers/"
                 >
                   Stellenauss&shy;chreibung veröff&shy;entlichen
                 </Link>
               </div>
             </div>
-            <div className="hidden xl:block p-2 lg:w-60  h-full">
-              <div className="text-sm font-bold mb-2 text-right">
+            <div className="hidden h-full p-2 lg:w-60  xl:block">
+              <div className="mb-2 text-right text-sm font-bold">
                 <Link to="/uk">УК 🇺🇦</Link> | <Link to="/">EN 🇬🇧</Link> |{' '}
                 <Link to="/de">DE 🇩🇪</Link>
               </div>
             </div>
-            <div className="hidden md:block xl:hidden p-2 md:w-20  h-full">
-              <div className="text-sm font-bold mb-2 text-right">
+            <div className="hidden h-full p-2 md:block md:w-20  xl:hidden">
+              <div className="mb-2 text-right text-sm font-bold">
                 <Link to="/uk">УК 🇺🇦</Link> <br /> <Link to="/">EN 🇬🇧</Link>
                 <br />
                 <Link to="/de">DE 🇩🇪</Link>
