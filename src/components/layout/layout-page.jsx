@@ -18,7 +18,7 @@ export default function LayoutPage(content) {
   if (content.lang === 'uk') {
     footer = <FooterUk />;
   } else if (content.lang === 'de') {
-    footer = <FooterDe />
+    footer = <FooterDe />;
   }
 
   return (

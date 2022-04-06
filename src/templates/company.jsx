@@ -68,7 +68,7 @@ export default function Company(props) {
       <div className="relative">{navigation}</div>
 
       <div className="overflow-hidden bg-white">
-        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
+        <div className="relative mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
             <Link to={getUrlPrefix(language) + '/companies'}>
               {vettedEmployer}
@@ -78,8 +78,8 @@ export default function Company(props) {
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <GatsbyImage
             image={getImg}
             className="h-24"
@@ -89,19 +89,19 @@ export default function Company(props) {
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <BlockContent blocks={descriptionRaw} />
         </div>
       </div>
 
-      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
         <div className="absolute inset-0">
-          <div className="bg-white h-1/3 sm:h-2/3" />
+          <div className="h-1/3 bg-white sm:h-2/3" />
         </div>
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative mx-auto max-w-7xl">
           <div className="text-left">
-            <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
               {companyVacancies}
             </h2>
           </div>

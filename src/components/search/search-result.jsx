@@ -10,11 +10,11 @@ const HitCount = connectStateResults(({ searchResults }) => {
   const hitCount = searchResults && searchResults.nbHits;
 
   return hitCount > 0 ? (
-    <div className="text-xs text-right mx-4 italic">
+    <div className="mx-4 text-right text-xs italic">
       {hitCount} result{hitCount !== 1 ? `s` : ``}
     </div>
   ) : (
-    <div className="text-xs text-right mx-4 italic">No results</div>
+    <div className="mx-4 text-right text-xs italic">No results</div>
   );
 });
 
@@ -65,7 +65,7 @@ const HitsInIndex = ({ index }) => (
 
 const SearchResult = ({ indices, className }) => (
   <div
-    className={`absolute shadow-lg p-2 sm:px-0 z-20 bg-gray-100 rounded overflow-y-scroll ${className}`}
+    className={`absolute z-20 overflow-y-scroll rounded bg-gray-100 p-2 shadow-lg sm:px-0 ${className}`}
   >
     {indices.map((index) => (
       <HitsInIndex index={index} key={index.name} />

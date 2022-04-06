@@ -19,7 +19,7 @@ function employer(company, lang = 'en') {
   const getImg = getImage(company.image.asset.gatsbyImageData);
 
   return (
-    <div className="bg-gray-50 flex justify-center col-span-1 px-8 py-8">
+    <div className="col-span-1 flex justify-center bg-gray-50 px-8 py-8">
       <Link to={link}>
         <GatsbyImage
           image={getImg}
