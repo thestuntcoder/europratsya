@@ -14,7 +14,7 @@
   We invite <a href="https://europratsya.com/">Ukrainians to Europe</a>
 </h1>
 
-Since the beginning of war in Ukraine, more than 3.7 million people have left Ukraine, while an estimated 6.5 million people have been displaced within the country.
+Since the beginning of war in Ukraine, more than 3.7 million people have left Ukraine, while an estimated seven (7) million people have been displaced within the country.
 It is our mission to help them feel welcomed in the EU, and by future employers.
 
 Nobody likes leaving their home, let alone being forced out of it.
