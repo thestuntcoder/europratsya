@@ -27,7 +27,7 @@ export default class NavCenter extends React.Component {
     return (
       <div>
         <div className="mx-auto px-3 pt-4 sm:px-5">
-          <nav className="relative mx-auto flex max-w-screen-xl items-center justify-between overflow-hidden sm:h-10">
+          <nav className="relative mx-auto flex max-w-screen-xl items-center justify-between sm:h-10">
             <div className="order-1 flex items-center">
               <div className="flex w-full items-center justify-between md:w-auto">
                 <Link to="/" aria-label="Home">
