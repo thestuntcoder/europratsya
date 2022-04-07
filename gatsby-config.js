@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: `Europratsya`,
-    siteUrl: `http://www.europratsya.com/`,
+    siteUrl: `https://europratsya.com/`,
   },
   plugins: [
     'gatsby-plugin-netlify-cms',
@@ -76,10 +76,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-react-i18next',
       options: {
-        localeJsonSourceName: `locale`,
-        languages: [`en`, `uk`, `de`],
-        defaultLanguage: `en`,
-        siteUrl: `https://europratsya.com/`,
+        localeJsonSourceName: 'locale',
+        languages: ['en', 'uk', 'de'],
+        defaultLanguage: 'en',
+        siteUrl: 'https://europratsya.com/',
         i18nextOptions: {
           keySeparator: false,
           nsSeparator: false,
