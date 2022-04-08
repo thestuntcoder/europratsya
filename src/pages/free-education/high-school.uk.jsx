@@ -30,7 +30,7 @@ export default function HighSchool() {
           <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
             <div>
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-                Tips to complete high school
+                Поради щодо закінчення середньої школи
               </h1>
             </div>
           </div>
@@ -95,8 +95,8 @@ export default function HighSchool() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Foldable paper model of the trailblazing US army
-                      helicopter designed by aviation pioneer Igor Sikorsky
+                      Складна паперова модель перспективного гелікоптера армії
+                      США, розробленого піонером авіації Ігорем Сікорським
                     </span>
                   </figcaption>
                 </figure>
@@ -128,10 +128,10 @@ export default function HighSchool() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Yulia Zdanovska won silver at the 2017 European Girls'
-                      Mathematical Olympiad. To honor her memory as a maths
-                      teacher in Kharkiv MIT offers tailored coursework for
-                      Ukrainian high school pupils.
+                      Юлія Здановська завоювала срібло на Європейській олімпіаді
+                      з математики серед дівчат 2017 року. На вшанування її
+                      пам’яті як вчитель математики в Харківському МІТ пропонує
+                      курсові роботи для українських старшокласників.
                     </span>
                   </figcaption>
                 </figure>
@@ -140,66 +140,66 @@ export default function HighSchool() {
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p>
-                  Ukrainian education authorities are planning one single 2022
-                  exam testing Ukrainian language, history and maths.
+                  Українські органи освіти планують у 2022 році один єдиний
+                  іспит з української мови, історії та математики.
                 </p>
                 <p>
-                  Ukrainian government information on remote learning can be
-                  found{' '}
+                  Інформацію українського уряду про дистанційне навчання можна
+                  знайти{' '}
                   <a href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti">
-                    here
+                    тут
                   </a>
                   .
                 </p>
                 <p>
-                  They advice that all high school leavers in 2022 write a
-                  motivation letter to prepare themselves for autumn
-                  applications for further education.
+                  Вони радять всім випускникам 2022 року написати мотиваційний
+                  лист, щоб підготуватися до осінніх заяв на подальшу освіту.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Bonus resources UKR
+                  Бонусні ресурси укр
                 </h2>
                 <p>
-                  Please check the following free resources to prepare for the
-                  end of year exam.
+                  Будь ласка, перегляньте наведені нижче безкоштовні ресурси,
+                  щоб підготуватися до іспиту в кінці року.
                 </p>
                 <p>
                   <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about">
-                    Ukrainian language and literature
+                    Українська мова та література
                   </a>
                   ,{' '}
                   <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about">
-                    Maths
+                    математика
                   </a>
                   , and{' '}
                   <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about">
-                    History
+                    Історія
                   </a>
                   .
                 </p>
                 <p>
-                  Please check these{' '}
-                  <a href="https://zno.mavka.org/chooseTest">free exercises</a>{' '}
-                  from the three subjects.
+                  Перевірте ці безкоштовні вправи з{' '}
+                  <a href="https://zno.mavka.org/chooseTest">трьох предметів</a>
+                  .
                 </p>
                 <p>
-                  Estonia supports Ukrainian high school students with{' '}
+                  Естонія підтримує українських старшокласників ресурсами,{' '}
                   <a href="https://www.edtechestonia.org/ukraine-ua">
-                    resources accessed here
+                    доступними тут
                   </a>
                   .
                 </p>
                 <p>
-                  Also check this{' '}
+                  Також перевірте цей{' '}
                   <a href="https://zno.osvita.ua/">
-                    Ukrainian website with previous years’ state exams
-                  </a>{' '}
-                  for high school students.
+                    український веб-сайт із державними екзаменами попередніх
+                    років для старшокласників
+                  </a>
+                  .
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Bonus resources EN
+                  Бонусні ресурси EN
                 </h2>
                 <p>
                   MIT, US offers a{' '}
