@@ -129,7 +129,7 @@ export default function University() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Learners from anywhere in the world can enrol in an MIT
+                      Learners from anywhere in the world can enroll in an MIT
                       course of their choosing and learn at no cost, or aim to
                       earn a certificate of completion for a low fee.
                     </span>
