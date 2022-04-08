@@ -30,7 +30,7 @@ export default function UniversityUk() {
           <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
             <div>
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-                Tips to complete university
+                Поради щодо закінчення університету
               </h1>
             </div>
           </div>
@@ -95,9 +95,10 @@ export default function UniversityUk() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Vernadsky polar research station. 12 Ukrainian scientists
-                      winter here for 10 months in extreme conditions,
-                      delivering widely acclaimed climate change research.{' '}
+                      Полярна дослідна станція імені Вернадського. 12
+                      українських вчених зимують тут протягом 10 місяців в
+                      екстремальних умовах, проводячи широко відомі дослідження
+                      зміни клімату.
                     </span>
                   </figcaption>
                 </figure>
@@ -129,9 +130,10 @@ export default function UniversityUk() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Learners from anywhere in the world can enrol in an MIT
-                      course of their choosing and learn at no cost, or aim to
-                      earn a certificate of completion for a low fee.
+                      Студенти з будь-якої точки світу можуть записатися на
+                      курси MIT на свій вибір і навчатися безкоштовно, або
+                      прагнути отримати сертифікат про закінчення за невисоку
+                      плату.
                     </span>
                   </figcaption>
                 </figure>
@@ -140,27 +142,28 @@ export default function UniversityUk() {
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p>
-                  Individual faculties will guide you on level of disruption and
-                  advice for your specific course.
+                  Окремі викладачі підкажуть вам рівень зривів і порадять для
+                  вашого конкретного курсу.
                 </p>
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Bonus resources UKR
+                  Бонусні ресурси Україна
                 </h2>
                 <p>
-                  You can access free online courses with certificates in
-                  Ukrainian <a href="http://prometheus.org.ua/">here</a> and{' '}
-                  <a href="https://vumonline.ua/">here</a>.
+                  Ви можете отримати доступ до безкоштовних онлайн-курсів із
+                  сертифікатами українською мовою{' '}
+                  <a href="http://prometheus.org.ua/">тут</a> і{' '}
+                  <a href="https://vumonline.ua/">тут</a>.
                 </p>
                 <p>
-                  The language courses listed are free for Ukrainians:{' '}
+                  Перераховані мовні курси є безкоштовними для українців:{' '}
                   <a href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/">
-                    Mondly, 3 month courses for 13 different languages and Busuu
+                    Mondly, 3-місячні курси для 13 різних мов і Busuu
                   </a>
                   .
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Bonus resources EN
+                  Бонусні ресурси EN
                 </h2>
                 <p>
                   Free course material for a range of STEM subjects is offered
