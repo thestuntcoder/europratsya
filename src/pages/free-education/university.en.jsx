@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
-import polarImg from '../images/free-education/vernadsky-polar-research-station.jpg';
-import mitCoursesImg from '../images/free-education/mit-courses.jpg';
+import LayoutPage from '../../components/layout/layout-page';
+import NavCenter from '../../components/layout/nav-center';
+import polarImg from '../../images/free-education/vernadsky-polar-research-station.jpg';
+import mitCoursesImg from '../../images/free-education/mit-courses.jpg';
 
 export default function University() {
   const metaDescription =
