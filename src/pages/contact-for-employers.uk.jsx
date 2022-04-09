@@ -121,7 +121,7 @@ export default function ContactEmployersUk() {
                   method="POST"
                   enctype="multipart-form/data"
                   data-netlify="true"
-                  className="grid grid-cols-1 gap-y-6"
+                  className="grid grid-cols-1 gap-y-6 mt-8"
                   onSubmit={handleSubmit}
                 >
                   <input type="hidden" name="form-name" value="employer" />
@@ -138,7 +138,7 @@ export default function ContactEmployersUk() {
                         name="full-name"
                         id="full-name"
                         autocomplete="name"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Повне ім'я"
                         onChange={handleChange}
                       />
@@ -155,7 +155,7 @@ export default function ContactEmployersUk() {
                         name="email"
                         type="email"
                         autocomplete="email"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="електронна@пошта"
                         onChange={handleChange}
                       />
@@ -173,7 +173,7 @@ export default function ContactEmployersUk() {
                         type="text"
                         name="company-role"
                         id="company-role"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="CEO, HR"
                         onChange={handleChange}
                       />
@@ -189,7 +189,7 @@ export default function ContactEmployersUk() {
                         type="text"
                         name="company-name"
                         id="company-name"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Назва компанії"
                         onChange={handleChange}
                       />
@@ -207,7 +207,7 @@ export default function ContactEmployersUk() {
                         type="text"
                         name="company-website"
                         id="company-website"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="www.europratsya.com"
                         onChange={handleChange}
                       />
@@ -226,7 +226,7 @@ export default function ContactEmployersUk() {
                         type="text"
                         name="language-1"
                         id="language-1"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="англійська"
                         onChange={handleChange}
                       />
@@ -242,7 +242,7 @@ export default function ContactEmployersUk() {
                         type="text"
                         name="language-2"
                         id="language-2"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="німецький"
                         onChange={handleChange}
                       />
@@ -259,8 +259,8 @@ export default function ContactEmployersUk() {
                       id="message"
                       name="message"
                       rows="4"
-                      className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                      placeholder="Message"
+                      className="block w-full rounded-md border border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
+                      placeholder="Коментар"
                       onChange={handleChange}
                     />
                   </div>
