@@ -13,20 +13,21 @@ import { getRaw, getUrlPrefix } from '../helpers/language';
 export default function Page(props) {
   const language = props.pageContext.language;
   let page = props.data.page;
+
   let getImg = getImage(page.sidebarImage.asset.gatsbyImageData);
 
-  let metaTitle = company.name;
-  let metaDescription = company.name;
-  let metaImage = company.image.asset.gatsbyImageData.images.fallback.src;
+  let metaTitle = page.title;
+  let metaDescription = page.title;
+  let metaImage = page.sidebarImage.asset.gatsbyImageData.images.fallback.src;
 
-  if (company.seo != null && company.seo.title_en != null) {
-    metaTitle = company.seo.title_en;
+  if (page.seo != null && page.seo.title_en != null) {
+    metaTitle = page.seo.title_en;
   }
-  if (company.seo != null && company.seo.description_en != null) {
-    metaDescription = company.seo.description_en;
+  if (page.seo != null && page.seo.description_en != null) {
+    metaDescription = page.seo.description_en;
   }
-  if (company.seo != null && company.seo.seo_image != null) {
-    metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
+  if (page.seo != null && page.seo.seo_image != null) {
+    metaImage = page.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
 
   const descriptionRaw = getRaw(page.body, language);

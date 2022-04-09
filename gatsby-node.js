@@ -15,26 +15,26 @@ async function createPagePages(graphql, actions) {
   `);
 
   if (result.errors) throw result.errors;
-  const pageNodes = (result.data.allPage || {}).nodes || [];
+  const pageNodes = (result.data.allSanityPage || {}).nodes || [];
 
   pageNodes.forEach((node) => {
     const { id, slug = {} } = node;
     if (!slug) return;
 
     createPage({
-      path: `/page/${slug.current}`,
+      path: `/${slug.current}`,
       component: require.resolve('./src/templates/page.jsx'),
       context: { id: node.id, language: 'en' },
     });
 
     createPage({
-      path: `/uk/page/${slug.current}`,
+      path: `/uk/${slug.current}`,
       component: require.resolve('./src/templates/page.jsx'),
       context: { id: node.id, language: 'uk' },
     });
 
     createPage({
-      path: `/de/page/${slug.current}`,
+      path: `/de/${slug.current}`,
       component: require.resolve('./src/templates/page.jsx'),
       context: { id: node.id, language: 'de' },
     });
