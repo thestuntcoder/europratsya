@@ -179,7 +179,7 @@ export default function ContactEmployees() {
                         name="full-name"
                         id="full-name"
                         autocomplete="name"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500  placeholder:italic"
                         placeholder="Full name"
                         onChange={handleChange}
                       />
@@ -196,8 +196,8 @@ export default function ContactEmployees() {
                         name="email"
                         type="email"
                         autocomplete="email"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="Email"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500  placeholder:italic"
+                        placeholder="Your email"
                         onChange={handleChange}
                       />
                     </div>
@@ -214,7 +214,7 @@ export default function ContactEmployees() {
                         type="text"
                         name="language-1"
                         id="language-1"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Language 1"
                         onChange={handleChange}
                       />
@@ -230,7 +230,7 @@ export default function ContactEmployees() {
                         type="text"
                         name="language-2"
                         id="language-2"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Language 2"
                         onChange={handleChange}
                       />
@@ -248,7 +248,7 @@ export default function ContactEmployees() {
                       name="file"
                       id="file"
                       accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                      className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
                       onChange={handleAttachment}
                     />
                   </div>
@@ -295,7 +295,7 @@ export default function ContactEmployees() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-gray-700"
+                      className="block text-sm font-medium text-gray-700 placeholder:italic"
                     >
                       Comments (max. 200 characters)
                     </label>
@@ -303,7 +303,7 @@ export default function ContactEmployees() {
                       id="message"
                       name="message"
                       rows="4"
-                      className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                       placeholder="Message"
                       onChange={handleChange}
                     />

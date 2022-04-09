@@ -178,8 +178,8 @@ export default function ContactEmployeesUk() {
                         name="full-name"
                         id="full-name"
                         autocomplete="name"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="Full name"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500  placeholder:italic"
+                        placeholder="Твоє ім'я"
                         onChange={handleChange}
                       />
                     </div>
@@ -195,7 +195,7 @@ export default function ContactEmployeesUk() {
                         name="email"
                         type="email"
                         autocomplete="email"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Email"
                         onChange={handleChange}
                       />
@@ -213,8 +213,8 @@ export default function ContactEmployeesUk() {
                         type="text"
                         name="language-1"
                         id="language-1"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="Language 1"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
+                        placeholder="Мова 1"
                         onChange={handleChange}
                       />
                     </div>
@@ -229,8 +229,8 @@ export default function ContactEmployeesUk() {
                         type="text"
                         name="language-2"
                         id="language-2"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                        placeholder="Language 2"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
+                        placeholder="Мова 2"
                         onChange={handleChange}
                       />
                     </div>
@@ -247,7 +247,7 @@ export default function ContactEmployeesUk() {
                       name="file"
                       id="file"
                       accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-                      className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
                       onChange={handleAttachment}
                     />
                   </div>
@@ -264,7 +264,7 @@ export default function ContactEmployeesUk() {
                           id="push-everything"
                           name="push-notifications"
                           type="radio"
-                          className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          className="h-4 w-4 border border-gray-300 text-blue-600 focus:ring-blue-500"
                           onChange={handleChange}
                         />
                         <label
@@ -279,7 +279,7 @@ export default function ContactEmployeesUk() {
                           id="push-email"
                           name="push-notifications"
                           type="radio"
-                          className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
+                          className="h-4 w-4 border border-gray-300 text-blue-600 focus:ring-blue-500"
                           onChange={handleChange}
                         />
                         <label
@@ -302,8 +302,8 @@ export default function ContactEmployeesUk() {
                       id="message"
                       name="message"
                       rows="4"
-                      className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                      placeholder="Message"
+                      className="block w-full rounded-md border border - gray - 300; px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
+                      placeholder="Коментарі"
                       onChange={handleChange}
                     />
                   </div>
