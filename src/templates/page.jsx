@@ -81,15 +81,9 @@ export default function Page(props) {
   const language = props.pageContext.language;
 
   let page = props.data.page;
-  let sidebar = page.sidebarImage === null;
 
   let metaTitle = getTitle(page.title, language);
   let metaDescription = getTitle(page.body, language);
-
-  if (sidebar) {
-    // let metaImage = page.sidebarImage.asset.gatsbyImageData.images.fallback.src;
-  }
-  console.log(page.sidebarImage, page.sidebarImage != null);
 
   const descriptionRaw = getRaw(page.body, language);
   let navigation = {};
