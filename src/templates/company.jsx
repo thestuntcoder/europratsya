@@ -8,7 +8,7 @@ import NavCenterUk from '../components/layout/nav-center.uk';
 import NavCenterDe from '../components/layout/nav-center.de';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
-import { getRaw, getUrlPrefix } from '../helpers/language';
+import { getRaw, getUrlPrefix, getSeo } from '../helpers/language';
 
 export default function Company(props) {
   const language = props.pageContext.language;
@@ -16,16 +16,11 @@ export default function Company(props) {
   let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
 
-  let metaTitle = company.name;
-  let metaDescription = company.name;
+  let metaTitle = getSeo(company, 'title', language, company.name);
+  let metaDescription = getSeo(company, 'description', language, company.name);
+
   let metaImage = company.image.asset.gatsbyImageData.images.fallback.src;
 
-  if (company.seo != null && company.seo.title_en != null) {
-    metaTitle = company.seo.title_en;
-  }
-  if (company.seo != null && company.seo.description_en != null) {
-    metaDescription = company.seo.description_en;
-  }
   if (company.seo != null && company.seo.seo_image != null) {
     metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
