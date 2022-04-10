@@ -79,13 +79,10 @@ function getSidebar(getImg, description) {
 
 export default function Page(props) {
   const language = props.pageContext.language;
-
   let page = props.data.page;
+  let metaTitle = getTitle(page.seo.title, language);
+  let metaDescription = getTitle(page.seo.description, language);
 
-  let metaTitle = getTitle(page.title, language);
-  let metaDescription = getTitle(page.body, language);
-
-  const descriptionRaw = getRaw(page.body, language);
   let navigation = {};
 
   switch (language) {
@@ -123,10 +120,9 @@ export default function Page(props) {
           <div
             className={
               'mx-auto max-w-prose text-base lg:max-w-none ' +
-                page.sidebarImage !=
-              null
+              (page.sidebarImage != null
                 ? 'lg:grid lg:grid-cols-2 lg:gap-8'
-                : ''
+                : '')
             }
           >
             <div>
@@ -137,9 +133,10 @@ export default function Page(props) {
           </div>
           <div
             className={
-              'mt-8 ' + page.sidebarImage != null
+              'mt-8 ' +
+              (page.sidebarImage != null
                 ? 'lg:grid lg:grid-cols-2 lg:gap-8'
-                : ''
+                : '')
             }
           >
             {page.sidebarImage != null
@@ -150,7 +147,7 @@ export default function Page(props) {
               : ''}
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-                <BlockContent blocks={descriptionRaw} />
+                <BlockContent blocks={getRaw(page.body, language)} />
               </div>
             </div>
           </div>
