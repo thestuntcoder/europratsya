@@ -7,7 +7,7 @@ import NavCenter from '../components/layout/nav-center';
 import NavCenterUk from '../components/layout/nav-center.uk';
 import NavCenterDe from '../components/layout/nav-center.de';
 import BlockContent from '../components/block-content';
-import { getRaw, getTitle } from '../helpers/language';
+import { getRaw, getTitle, getSeo } from '../helpers/language';
 
 function getSidebar(getImg, description) {
   return (
@@ -80,8 +80,19 @@ function getSidebar(getImg, description) {
 export default function Page(props) {
   const language = props.pageContext.language;
   let page = props.data.page;
-  let metaTitle = getTitle(page.seo.title, language);
-  let metaDescription = getTitle(page.seo.description, language);
+
+  let metaTitle = getSeo(
+    page,
+    'title',
+    language,
+    getTitle(page.title, language)
+  );
+  let metaDescription = getSeo(
+    page,
+    'description',
+    language,
+    getTitle(page.title, language)
+  );
 
   let navigation = {};
 
