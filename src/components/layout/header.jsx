@@ -23,9 +23,6 @@ export default function Header() {
           src="https://plausible.io/js/plausible.js"
         />
       )}
-      {typeof window !== 'undefined' && (
-        <script src="https://cdn.tailwindcss.com" />
-      )}
     </Helmet>
   );
 }
