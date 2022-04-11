@@ -30,7 +30,7 @@ export default function HighSchool() {
           <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
             <div>
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-                Поради щодо закінчення середньої школи
+                Можливості для безкоштовної освіти - старша школа
               </h1>
             </div>
           </div>
@@ -139,33 +139,42 @@ export default function HighSchool() {
             </div>
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                <h2 className="text-base text-2xl font-bold tracking-wide text-black">
+                  Покроковий посібник по завершенню вищої середньої освіти.
+                </h2>
                 <p>
-                  Українські органи освіти планують у 2022 році один єдиний
-                  іспит з української мови, історії та математики.
+                  <strong>Рішення міністерства освіти:</strong>
+                  <br />
+                  Замість традиційного ЗНО міністерство освіти планує провести
+                  Національний мультипредметний тест, що відбуватиметься у формі
+                  онлайн тестування. Тест складатиметься з трьох предметів:
+                  українська мова, математика, історія України.
+                  <a href="https://mon.gov.ua/ua/news/vidbuvsya-onlajn-brifing-shodo-vstupnoyi-kampaniyi-v-2022-roci">
+                    Посилання на брифінг міністерства.
+                  </a>
                 </p>
                 <p>
-                  Інформацію українського уряду про дистанційне навчання можна
-                  знайти{' '}
+                  Інформацію, щодо дистанційного навчання можна знайти
                   <a href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti">
                     тут
                   </a>
                   .
                 </p>
                 <p>
-                  Вони радять всім випускникам 2022 року написати мотиваційний
-                  лист, щоб підготуватися до осінніх заяв на подальшу освіту.
+                  Уряд зазначив, що абітурієнти матимуть також писати
+                  мотиваційні листи для вступу на бакалаврат.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Бонусні ресурси укр
+                  Допоміжні ресурси українською
                 </h2>
                 <p>
-                  Будь ласка, перегляньте наведені нижче безкоштовні ресурси,
-                  щоб підготуватися до іспиту в кінці року.
+                  Наступні безкоштовні ресурси можуть допомогти у підготовці до
+                  тестування:
                 </p>
                 <p>
                   <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about">
-                    Українська мова та література
+                    Українська мова
                   </a>
                   ,{' '}
                   <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about">
@@ -173,46 +182,43 @@ export default function HighSchool() {
                   </a>
                   , and{' '}
                   <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about">
-                    Історія
+                    історія України
                   </a>
                   .
                 </p>
                 <p>
-                  Перевірте ці безкоштовні вправи з{' '}
-                  <a href="https://zno.mavka.org/chooseTest">трьох предметів</a>
-                  .
+                  Тут можна знайти{' '}
+                  <a href="https://zno.mavka.org/chooseTest">
+                    безкоштовні вправи
+                  </a>{' '}
+                  з цих предметів.
                 </p>
                 <p>
-                  Естонія підтримує українських старшокласників ресурсами,{' '}
-                  <a href="https://www.edtechestonia.org/ukraine-ua">
-                    доступними тут
-                  </a>
-                  .
+                  Естонія надає безкоштовні навчальні ресурси як підтримку для
+                  учнів старшої школи в Україні. Їх можна знайти
+                  <a href="https://www.edtechestonia.org/ukraine-ua">тут</a>.
                 </p>
                 <p>
-                  Також перевірте цей{' '}
-                  <a href="https://zno.osvita.ua/">
-                    український веб-сайт із державними екзаменами попередніх
-                    років для старшокласників
-                  </a>
-                  .
+                  На <a href="https://zno.osvita.ua/">цьому сайті</a> можна
+                  знайти приклади минулорічних ЗНО.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Бонусні ресурси EN
+                  Допоміжні ресурси англійською
                 </h2>
                 <p>
-                  MIT, US offers a{' '}
+                  MIT, США надає{' '}
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnl5405N6vq2VqV9bsMvw2DWWai2zUv42aZ_HvItuBSd5ug/viewform">
-                    Ukrainian-language support programme
+                    програму підтримки
                   </a>{' '}
-                  for talented mathematicians in yr 9-11. APPLY BY 12.04.22.
-                  Approx 30 Ukrainian high school children will be taught in
-                  Ukrainian, Russian and English in a free math enrichment
-                  programme. The course starts in late April. Should you miss
-                  it, search "Ukraine" on{' '}
-                  <a href="https://www.mit.edu/">MITs home page</a> to check for
-                  further support.
+                  українською мовою для талановитих математиків з 9-11 класів.
+                  ПОДАННЯ ЗАЯВ ДО 12.04.2022. Приблизно 30 учнів старшої школи
+                  зможуть навчатися українською, російською та англійською в
+                  безкоштовній освітній програмі з математики. Курс починається
+                  в кінця квітня. Якщо ти пропустив дедлайн - введи Ukraine у
+                  пошуку на{' '}
+                  <a href="https://www.mit.edu/">головній сторінці MIT</a>, щоб
+                  звернутися за допомогою.
                 </p>
               </div>
             </div>
