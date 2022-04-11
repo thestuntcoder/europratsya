@@ -69,13 +69,13 @@ export default class NavCenter extends React.Component {
               className="order-2 inline-flex justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 md:order-1 lg:px-6 lg:py-3 lg:text-sm"
               to="/free-education/university"
             >
-              How to complete University
+              How to complete university
             </Link>
             <Link
               className="order-2 inline-flex justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 md:order-1 lg:px-6 lg:py-3 lg:text-sm"
               to="/free-education/high-school"
             >
-              How to complete High-school
+              How to complete high school
             </Link>
             <Search
               indices={searchIndices}
