@@ -30,7 +30,7 @@ export default function UniversityUk() {
           <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
             <div>
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-                Поради щодо закінчення університету
+                Поради з навчання в університеті
               </h1>
             </div>
           </div>
@@ -95,10 +95,10 @@ export default function UniversityUk() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Полярна дослідна станція імені Вернадського. 12
-                      українських вчених зимують тут протягом 10 місяців в
-                      екстремальних умовах, проводячи широко відомі дослідження
-                      зміни клімату.
+                      Антарктична станція Академік Вернадський. 12 українських
+                      науковців зимують тут протягом 10-ти місяців в
+                      екстремальних умовах, проводячи широко відоме дослідження
+                      змін клімату.
                     </span>
                   </figcaption>
                 </figure>
@@ -130,10 +130,9 @@ export default function UniversityUk() {
                       />
                     </svg>
                     <span className="ml-2">
-                      Студенти з будь-якої точки світу можуть записатися на
-                      курси MIT на свій вибір і навчатися безкоштовно, або
-                      прагнути отримати сертифікат про закінчення за невисоку
-                      плату.
+                      Учні з будь-якої точки світу можуть записатися на обраний
+                      курс та вчитися безкоштовно або також отримати сертифікат
+                      про проходження курсу за невелику оплату.
                     </span>
                   </figcaption>
                 </figure>
@@ -142,85 +141,87 @@ export default function UniversityUk() {
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                 <p>
-                  Окремі викладачі підкажуть вам рівень зривів і порадять для
-                  вашого конкретного курсу.
+                  Українські університети приймають рішення щодо навчання
+                  автономно, залежно від їхньої ситуації.
                 </p>
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Бонусні ресурси Україна
+                  Допоміжні ресурси українською.
                 </h2>
                 <p>
-                  Ви можете отримати доступ до безкоштовних онлайн-курсів із
-                  сертифікатами українською мовою{' '}
+                  Безкоштовні онлайн курси з сертифікатами можна знайти{` `}
                   <a href="http://prometheus.org.ua/">тут</a> і{' '}
                   <a href="https://vumonline.ua/">тут</a>.
                 </p>
                 <p>
-                  Перераховані мовні курси є безкоштовними для українців:{' '}
+                  Перелічені мовні курси безкоштовні для українців:{' '}
                   <a href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/">
-                    Mondly, 3-місячні курси для 13 різних мов і Busuu
+                    Mondly, трьохмісячні курси з 13-ти мов
+                  </a>
+                  та{' '}
+                  <a href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/">
+                    Busuu
                   </a>
                   .
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Бонусні ресурси EN
+                  Допоміжні ресурси англійською.
                 </h2>
                 <p>
-                  Free course material for a range of STEM subjects is offered
-                  by MITs <a href="https://ocw.mit.edu/">OpenCourseWare</a>.
-                  Check the online publication of materials from over 2,500 MIT
-                  courses to prepare for exams in your chosen field.
+                  Безкоштовні курси з багатьох предметів у галузі STEM пропонує
+                  платформа MITу{' '}
+                  <a href="https://ocw.mit.edu/">OpenCourseWare</a>. В онлайн
+                  доступі є матеріали більше ніж з 2500 курсів MIT, які
+                  допоможуть підготуватися до екзамену в обраній сфері.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Low cost international accreditations and certifications
+                  Недорога міжнародна акредитація/сертифікація.
                 </h2>
                 <p>
-                  One of the best free online offers globally is from MIT, US.
-                  They offer two platforms{' '}
+                  Одні з найкращих доступних онлайн можливостей надаються MIT,
+                  США. Вони пропонують дві платформи{' '}
                   <a href="https://www.edx.org/">edX</a> and{' '}
-                  <a href="https://mitxonline.mit.edu/">
-                    MITx Online for their massive, open, online courses
-                  </a>
-                  . They range from{' '}
+                  <a href="https://mitxonline.mit.edu/">MITx Online</a> зі
+                  своїми численними відкритими онлайн курсами. Вони охоплюють як
                   <a href="https://openlearning.mit.edu/mit-students/first-year-stem-classes-mit">
-                    foundational STEM courses
+                    базові курси STEM
                   </a>
-                  , through explorations of the humanities and social sciences,
-                  to advanced master’s level subjects that may fast-track a
-                  master’s degree.
+                  , так і дослідження гуманітарних та соціальних наук, а також
+                  навіть поглиблені курси магістерського рівня, що можуть
+                  прискорити отримання ступеня магістра.
                 </p>
                 <p>
                   <a href="https://openlearning.mit.edu/courses-programs/mitx-courses-edx">
-                    MITx courses
+                    Курси MITx
                   </a>{' '}
-                  come directly from the MIT classroom and span the full breadth
-                  of the world-leading university’s academic programs.
+                  сформовані на основі курсів у MIT та охоплюють весь спектр
+                  передових університетських програм цього університету.
                 </p>
                 <p>
-                  Learners from anywhere in the world can enrol in a course of
-                  their choosing and learn at no cost, or aim to earn a
-                  certificate of completion for a low fee. MITx courses are
-                  educational experiences that include interactions, such as
-                  problems that provide immediate feedback, discussion forums,
-                  videos, readings, and tools that deepen their learning.
+                  Учні з будь-якої точки світу можуть записатися на обраний курс
+                  та вчитися безкоштовно або також отримати сертифікат про
+                  проходження курсу за невелику оплату. Курси MITx дають досвід
+                  навчання, що включає вирішення завдань, після яких одразу
+                  надається фідбек, форуми для обговорення, відео, навчальна
+                  література та інструменти, що поглиблюють вивчення.
                 </p>
                 <p>
-                  Also check out Coursera, another prestigious provider of
-                  massive, open, online courses. Choose between day-long courses
-                  which lead to certifications, low price, fully remote
-                  bachelor’s and master’s degrees and 100% free courses from the
-                  world’s most famous universities. If your Ukrainian university
-                  has applied, you might be eligible for free access to the
-                  entire programme, including the degree courses.
+                  Також оцініть Coursera, ще одна компанія, що надає численні
+                  безкоштовні онлайн курси. На вибір доступні одноденні курси,
+                  що надають сертифікати; недорогі дистанційні програми
+                  бакалаврату та магістратури та на 100% безкоштовні курси від
+                  найбільш відомих світових університетів. Якщо твій університет
+                  подав на програму Coursera for Campus, тобі буде доступна
+                  розширена база безкоштовних курсів.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                  Scholarships
+                  Стипендії:
                 </h2>
                 <p>
-                  Current students and prospective applicants can check for
-                  scholarship opportunities here:
+                  Студенти університетів та абітурієнти можуть розглянути
+                  можливості для отримання стипендій тут:
                 </p>
                 <ul>
                   <li>
@@ -234,23 +235,23 @@ export default function UniversityUk() {
                     </a>
                   </li>
                   <li>
-                    Estonia offers{' '}
+                    Естонія пропонує{' '}
                     <a href="https://ut.ee/en/content/bachelors-and-masters-studies-university-tartu">
-                      250 free bachelor programs
+                      250 стипендій для бакалаврів
                     </a>
                     .
                   </li>
                   <li>
-                    Please check the{' '}
+                    Ознайомтесь з{' '}
                     <a href="https://www.russellgroup.ac.uk/news/russell-group-universities-response-to-the-invasion-of-ukraine/">
-                      support offered by the 24 leading universities in the UK
-                    </a>{' '}
-                    (known as the Russell Group) aimed at displaced Ukrainian
-                    university students.
+                      підтримкою
+                    </a>
+                    , яку пропонують 24 передових університети у Великобританії
+                    (відомі як Russell Group) для переміщених студентів
+                    українських університетів.
                   </li>
                   <li>
-                    Here’s an overview of scholarships for Ukrainians in
-                    European countries:{' '}
+                    Огляд стипендій, що пропонують європейські країни:
                     <a href="https://www.scholars-ua.com/">
                       https://www.scholars-ua.com/
                     </a>
