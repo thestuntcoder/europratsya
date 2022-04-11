@@ -24,7 +24,7 @@ export default function Header() {
         />
       )}
       {typeof window !== 'undefined' && (
-        <script defer src="https://cdn.tailwindcss.com" />
+        <script src="https://cdn.tailwindcss.com" />
       )}
     </Helmet>
   );
