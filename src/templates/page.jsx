@@ -110,7 +110,7 @@ export default function Page(props) {
   }
 
   return (
-    <LayoutPage>
+    <LayoutPage lang={language}>
       <Helmet>
         <title>{metaTitle}</title>
         <meta property="og:type" content="page" />
