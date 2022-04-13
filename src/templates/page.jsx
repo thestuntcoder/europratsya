@@ -188,6 +188,20 @@ export const query = graphql`
         title_de
         title_en
         title_uk
+        seo_image {
+          _key
+          _type
+          _rawAsset
+          _rawHotspot
+          _rawCrop
+          asset {
+            gatsbyImageData(
+              width: 600
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
       }
       body {
         _rawDe
