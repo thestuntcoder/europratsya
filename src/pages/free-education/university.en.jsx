@@ -25,19 +25,19 @@ export default function University() {
       </div>
 
       <div className="overflow-hidden bg-white">
-        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-          <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
-          <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
+          <div className="left-3/4 bg-gray-50 lg:block absolute top-0 bottom-0 hidden w-screen" />
+          <div className="max-w-prose lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8 mx-auto text-base">
             <div>
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Tips to complete university
               </h1>
             </div>
           </div>
-          <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-            <div className="relative lg:col-start-2 lg:row-start-1">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-8 mt-8">
+            <div className="lg:col-start-2 lg:row-start-1 relative">
               <svg
-                className="absolute top-0 right-0 -mt-20 -mr-20 hidden lg:block"
+                className="lg:block absolute top-0 right-0 hidden -mt-20 -mr-20"
                 width="404"
                 height="384"
                 fill="none"
@@ -69,20 +69,20 @@ export default function University() {
                   fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
                 />
               </svg>
-              <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
+              <div className="max-w-prose lg:max-w-none relative mx-auto text-base">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
-                      className="rounded-lg object-cover object-center shadow-lg"
+                      className="object-cover object-center rounded-lg shadow-lg"
                       src={polarImg}
                       alt="Vernadsky polar research station"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
+                  <figcaption className="flex mt-3 text-sm italic text-gray-500">
                     <svg
-                      className="h-5 w-5 flex-none text-gray-400"
+                      className="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -103,20 +103,20 @@ export default function University() {
                 </figure>
               </div>
 
-              <div className="relative mx-auto max-w-prose text-base lg:max-w-none mt-8">
+              <div className="max-w-prose lg:max-w-none relative mx-auto mt-8 text-base">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
-                      className="rounded-lg object-cover object-center shadow-lg"
+                      className="object-cover object-center rounded-lg shadow-lg"
                       src={mitCoursesImg}
                       alt="Learners from anywhere in the world can enrol in an MIT course of their choosing and learn at no cost"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
+                  <figcaption className="flex mt-3 text-sm italic text-gray-500">
                     <svg
-                      className="h-5 w-5 flex-none text-gray-400"
+                      className="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -137,8 +137,8 @@ export default function University() {
                 </figure>
               </div>
             </div>
-            <div className="mt-8 lg:mt-0">
-              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+            <div className="lg:mt-0 mt-8">
+              <div className="prose-indigo lg:col-start-1 lg:row-start-1 lg:max-w-none mx-auto text-lg prose text-gray-500">
                 <p>
                   Individual faculties will guide you on level of disruption and
                   advice for your specific course.
@@ -150,14 +150,14 @@ export default function University() {
                   You can access free online courses with certificates in
                   Ukrainian{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="http://prometheus.org.ua/"
                   >
                     here
                   </a>{' '}
                   and{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://vumonline.ua/"
                   >
                     here
@@ -167,7 +167,7 @@ export default function University() {
                 <p>
                   The language courses listed are free for Ukrainians:{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/"
                   >
                     Mondly, 3 month courses for 13 different languages and Busuu
@@ -182,7 +182,7 @@ export default function University() {
                   Free course material for a range of STEM subjects is offered
                   by MITs{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://ocw.mit.edu/"
                   >
                     OpenCourseWare
@@ -198,21 +198,21 @@ export default function University() {
                   One of the best free online offers globally is from MIT, US.
                   They offer two platforms{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://www.edx.org/"
                   >
                     edX
                   </a>{' '}
                   and{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://mitxonline.mit.edu/"
                   >
                     MITx Online for their massive, open, online courses
                   </a>
                   . They range from{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://openlearning.mit.edu/mit-students/first-year-stem-classes-mit"
                   >
                     foundational STEM courses
@@ -223,7 +223,7 @@ export default function University() {
                 </p>
                 <p>
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://openlearning.mit.edu/courses-programs/mitx-courses-edx"
                   >
                     MITx courses
@@ -259,7 +259,7 @@ export default function University() {
                 <ul>
                   <li>
                     <a
-                      className="blue-500 hover:underline"
+                      className="hover:underline text-blue-500"
                       href="https://uglobal.university/"
                     >
                       https://uglobal.university/
@@ -267,7 +267,7 @@ export default function University() {
                   </li>
                   <li>
                     <a
-                      className="blue-500 hover:underline"
+                      className="hover:underline text-blue-500"
                       href="https://support.uastudents.de/"
                     >
                       https://support.uastudents.de/
@@ -276,7 +276,7 @@ export default function University() {
                   <li>
                     Estonia offers{' '}
                     <a
-                      className="blue-500 hover:underline"
+                      className="hover:underline text-blue-500"
                       href="https://ut.ee/en/content/bachelors-and-masters-studies-university-tartu"
                     >
                       250 free bachelor programs
@@ -286,7 +286,7 @@ export default function University() {
                   <li>
                     Please check the{' '}
                     <a
-                      className="blue-500 hover:underline"
+                      className="hover:underline text-blue-500"
                       href="https://www.russellgroup.ac.uk/news/russell-group-universities-response-to-the-invasion-of-ukraine/"
                     >
                       support offered by the 24 leading universities in the UK
@@ -298,7 +298,7 @@ export default function University() {
                     Here’s an overview of scholarships for Ukrainians in
                     European countries:{' '}
                     <a
-                      className="blue-500 hover:underline"
+                      className="hover:underline text-blue-500"
                       href="https://www.scholars-ua.com/"
                     >
                       https://www.scholars-ua.com/

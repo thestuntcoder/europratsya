@@ -25,19 +25,19 @@ export default function HighSchool() {
       </div>
 
       <div className="overflow-hidden bg-white">
-        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-          <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-gray-50 lg:block" />
-          <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 py-16 mx-auto">
+          <div className="left-3/4 bg-gray-50 lg:block absolute top-0 bottom-0 hidden w-screen" />
+          <div className="max-w-prose lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8 mx-auto text-base">
             <div>
               <h1 className="text-base text-3xl font-bold tracking-wide text-black">
                 Можливості для безкоштовної освіти - старша школа
               </h1>
             </div>
           </div>
-          <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
-            <div className="relative lg:col-start-2 lg:row-start-1">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-8 mt-8">
+            <div className="lg:col-start-2 lg:row-start-1 relative">
               <svg
-                className="absolute top-0 right-0 -mt-20 -mr-20 hidden lg:block"
+                className="lg:block absolute top-0 right-0 hidden -mt-20 -mr-20"
                 width="404"
                 height="384"
                 fill="none"
@@ -69,20 +69,20 @@ export default function HighSchool() {
                   fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)"
                 />
               </svg>
-              <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
+              <div className="max-w-prose lg:max-w-none relative mx-auto text-base">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
-                      className="rounded-lg object-cover object-center shadow-lg"
+                      className="object-cover object-center rounded-lg shadow-lg"
                       src={helicopterImg}
                       alt="Foldable paper model of the trailblazing US army helicopter designed by aviation pioneer Igor Sikorsky"
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
+                  <figcaption className="flex mt-3 text-sm italic text-gray-500">
                     <svg
-                      className="h-5 w-5 flex-none text-gray-400"
+                      className="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -102,20 +102,20 @@ export default function HighSchool() {
                 </figure>
               </div>
 
-              <div className="relative mx-auto max-w-prose text-base lg:max-w-none mt-8">
+              <div className="max-w-prose lg:max-w-none relative mx-auto mt-8 text-base">
                 <figure>
                   <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                     <img
-                      className="rounded-lg object-cover object-center shadow-lg"
+                      className="object-cover object-center rounded-lg shadow-lg"
                       src={yuliaImg}
                       alt="Yulia Zdanovska won silver at the 2017 European Girls' Mathematical Olympiad. To honor her memory as a maths teacher in Kharkiv MIT offers tailored coursework for Ukrainian high school pupils."
                       width="1184"
                       height="1376"
                     />
                   </div>
-                  <figcaption className="mt-3 flex text-sm italic text-gray-500">
+                  <figcaption className="flex mt-3 text-sm italic text-gray-500">
                     <svg
-                      className="h-5 w-5 flex-none text-gray-400"
+                      className="flex-none w-5 h-5 text-gray-400"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20"
                       fill="currentColor"
@@ -137,8 +137,8 @@ export default function HighSchool() {
                 </figure>
               </div>
             </div>
-            <div className="mt-8 lg:mt-0">
-              <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+            <div className="lg:mt-0 mt-8">
+              <div className="prose-indigo lg:col-start-1 lg:row-start-1 lg:max-w-none mx-auto text-lg prose text-gray-500">
                 <h2 className="text-base text-2xl font-bold tracking-wide text-black">
                   Покроковий посібник по завершенню вищої середньої освіти.
                 </h2>
@@ -150,7 +150,7 @@ export default function HighSchool() {
                   онлайн тестування. Тест складатиметься з трьох предметів:
                   українська мова, математика, історія України.
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://mon.gov.ua/ua/news/vidbuvsya-onlajn-brifing-shodo-vstupnoyi-kampaniyi-v-2022-roci"
                   >
                     Посилання на брифінг міністерства.
@@ -159,7 +159,7 @@ export default function HighSchool() {
                 <p>
                   Інформацію, щодо дистанційного навчання можна знайти
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti"
                   >
                     тут
@@ -180,21 +180,21 @@ export default function HighSchool() {
                 </p>
                 <p>
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about"
                   >
                     Українська мова
                   </a>
                   ,{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about"
                   >
                     математика
                   </a>
                   , and{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about"
                   >
                     історія України
@@ -204,7 +204,7 @@ export default function HighSchool() {
                 <p>
                   Тут можна знайти{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://zno.mavka.org/chooseTest"
                   >
                     безкоштовні вправи
@@ -215,7 +215,7 @@ export default function HighSchool() {
                   Естонія надає безкоштовні навчальні ресурси як підтримку для
                   учнів старшої школи в Україні. Їх можна знайти
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://www.edtechestonia.org/ukraine-ua"
                   >
                     тут
@@ -225,7 +225,7 @@ export default function HighSchool() {
                 <p>
                   На{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://zno.osvita.ua/"
                   >
                     цьому сайті
@@ -239,7 +239,7 @@ export default function HighSchool() {
                 <p>
                   MIT, США надає{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdFnl5405N6vq2VqV9bsMvw2DWWai2zUv42aZ_HvItuBSd5ug/viewform"
                   >
                     програму підтримки
@@ -251,7 +251,7 @@ export default function HighSchool() {
                   в кінця квітня. Якщо ти пропустив дедлайн - введи Ukraine у
                   пошуку на{' '}
                   <a
-                    className="blue-500 hover:underline"
+                    className="hover:underline text-blue-500"
                     href="https://www.mit.edu/"
                   >
                     головній сторінці MIT
