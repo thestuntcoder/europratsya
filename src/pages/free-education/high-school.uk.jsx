@@ -149,13 +149,19 @@ export default function HighSchool() {
                   Національний мультипредметний тест, що відбуватиметься у формі
                   онлайн тестування. Тест складатиметься з трьох предметів:
                   українська мова, математика, історія України.
-                  <a href="https://mon.gov.ua/ua/news/vidbuvsya-onlajn-brifing-shodo-vstupnoyi-kampaniyi-v-2022-roci">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://mon.gov.ua/ua/news/vidbuvsya-onlajn-brifing-shodo-vstupnoyi-kampaniyi-v-2022-roci"
+                  >
                     Посилання на брифінг міністерства.
                   </a>
                 </p>
                 <p>
                   Інформацію, щодо дистанційного навчання можна знайти
-                  <a href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti"
+                  >
                     тут
                   </a>
                   .
@@ -173,22 +179,34 @@ export default function HighSchool() {
                   тестування:
                 </p>
                 <p>
-                  <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about"
+                  >
                     Українська мова
                   </a>
                   ,{' '}
-                  <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about"
+                  >
                     математика
                   </a>
                   , and{' '}
-                  <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about"
+                  >
                     історія України
                   </a>
                   .
                 </p>
                 <p>
                   Тут можна знайти{' '}
-                  <a href="https://zno.mavka.org/chooseTest">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://zno.mavka.org/chooseTest"
+                  >
                     безкоштовні вправи
                   </a>{' '}
                   з цих предметів.
@@ -196,11 +214,23 @@ export default function HighSchool() {
                 <p>
                   Естонія надає безкоштовні навчальні ресурси як підтримку для
                   учнів старшої школи в Україні. Їх можна знайти
-                  <a href="https://www.edtechestonia.org/ukraine-ua">тут</a>.
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://www.edtechestonia.org/ukraine-ua"
+                  >
+                    тут
+                  </a>
+                  .
                 </p>
                 <p>
-                  На <a href="https://zno.osvita.ua/">цьому сайті</a> можна
-                  знайти приклади минулорічних ЗНО.
+                  На{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://zno.osvita.ua/"
+                  >
+                    цьому сайті
+                  </a>{' '}
+                  можна знайти приклади минулорічних ЗНО.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
@@ -208,7 +238,10 @@ export default function HighSchool() {
                 </h2>
                 <p>
                   MIT, США надає{' '}
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnl5405N6vq2VqV9bsMvw2DWWai2zUv42aZ_HvItuBSd5ug/viewform">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdFnl5405N6vq2VqV9bsMvw2DWWai2zUv42aZ_HvItuBSd5ug/viewform"
+                  >
                     програму підтримки
                   </a>{' '}
                   українською мовою для талановитих математиків з 9-11 класів.
@@ -217,8 +250,13 @@ export default function HighSchool() {
                   безкоштовній освітній програмі з математики. Курс починається
                   в кінця квітня. Якщо ти пропустив дедлайн - введи Ukraine у
                   пошуку на{' '}
-                  <a href="https://www.mit.edu/">головній сторінці MIT</a>, щоб
-                  звернутися за допомогою.
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://www.mit.edu/"
+                  >
+                    головній сторінці MIT
+                  </a>
+                  , щоб звернутися за допомогою.
                 </p>
               </div>
             </div>

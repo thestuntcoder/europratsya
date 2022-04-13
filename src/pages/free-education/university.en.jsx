@@ -148,12 +148,28 @@ export default function University() {
                 </h2>
                 <p>
                   You can access free online courses with certificates in
-                  Ukrainian <a href="http://prometheus.org.ua/">here</a> and{' '}
-                  <a href="https://vumonline.ua/">here</a>.
+                  Ukrainian{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="http://prometheus.org.ua/"
+                  >
+                    here
+                  </a>{' '}
+                  and{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://vumonline.ua/"
+                  >
+                    here
+                  </a>
+                  .
                 </p>
                 <p>
                   The language courses listed are free for Ukrainians:{' '}
-                  <a href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/"
+                  >
                     Mondly, 3 month courses for 13 different languages and Busuu
                   </a>
                   .
@@ -164,9 +180,15 @@ export default function University() {
                 </h2>
                 <p>
                   Free course material for a range of STEM subjects is offered
-                  by MITs <a href="https://ocw.mit.edu/">OpenCourseWare</a>.
-                  Check the online publication of materials from over 2,500 MIT
-                  courses to prepare for exams in your chosen field.
+                  by MITs{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://ocw.mit.edu/"
+                  >
+                    OpenCourseWare
+                  </a>
+                  . Check the online publication of materials from over 2,500
+                  MIT courses to prepare for exams in your chosen field.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
@@ -175,12 +197,24 @@ export default function University() {
                 <p>
                   One of the best free online offers globally is from MIT, US.
                   They offer two platforms{' '}
-                  <a href="https://www.edx.org/">edX</a> and{' '}
-                  <a href="https://mitxonline.mit.edu/">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://www.edx.org/"
+                  >
+                    edX
+                  </a>{' '}
+                  and{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://mitxonline.mit.edu/"
+                  >
                     MITx Online for their massive, open, online courses
                   </a>
                   . They range from{' '}
-                  <a href="https://openlearning.mit.edu/mit-students/first-year-stem-classes-mit">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://openlearning.mit.edu/mit-students/first-year-stem-classes-mit"
+                  >
                     foundational STEM courses
                   </a>
                   , through explorations of the humanities and social sciences,
@@ -188,7 +222,10 @@ export default function University() {
                   master’s degree.
                 </p>
                 <p>
-                  <a href="https://openlearning.mit.edu/courses-programs/mitx-courses-edx">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://openlearning.mit.edu/courses-programs/mitx-courses-edx"
+                  >
                     MITx courses
                   </a>{' '}
                   come directly from the MIT classroom and span the full breadth
@@ -221,25 +258,37 @@ export default function University() {
                 </p>
                 <ul>
                   <li>
-                    <a href="https://uglobal.university/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://uglobal.university/"
+                    >
                       https://uglobal.university/
                     </a>
                   </li>
                   <li>
-                    <a href="https://support.uastudents.de/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://support.uastudents.de/"
+                    >
                       https://support.uastudents.de/
                     </a>
                   </li>
                   <li>
                     Estonia offers{' '}
-                    <a href="https://ut.ee/en/content/bachelors-and-masters-studies-university-tartu">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://ut.ee/en/content/bachelors-and-masters-studies-university-tartu"
+                    >
                       250 free bachelor programs
                     </a>
                     .
                   </li>
                   <li>
                     Please check the{' '}
-                    <a href="https://www.russellgroup.ac.uk/news/russell-group-universities-response-to-the-invasion-of-ukraine/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://www.russellgroup.ac.uk/news/russell-group-universities-response-to-the-invasion-of-ukraine/"
+                    >
                       support offered by the 24 leading universities in the UK
                     </a>{' '}
                     (known as the Russell Group) aimed at displaced Ukrainian
@@ -248,7 +297,10 @@ export default function University() {
                   <li>
                     Here’s an overview of scholarships for Ukrainians in
                     European countries:{' '}
-                    <a href="https://www.scholars-ua.com/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://www.scholars-ua.com/"
+                    >
                       https://www.scholars-ua.com/
                     </a>
                   </li>

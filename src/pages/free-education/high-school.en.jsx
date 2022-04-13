@@ -146,7 +146,10 @@ export default function HighSchool() {
                 <p>
                   Ukrainian government information on remote learning can be
                   found{' '}
-                  <a href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://mon.gov.ua/ua/news/distancijni-shkoli-ta-navchalni-platformi-nadayut-bezkoshtovnij-dostup-dlya-zdobuvachiv-osviti"
+                  >
                     here
                   </a>
                   .
@@ -165,34 +168,54 @@ export default function HighSchool() {
                   end of year exam.
                 </p>
                 <p>
-                  <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+UKR101+2017_T1/about"
+                  >
                     Ukrainian language and literature
                   </a>
                   ,{' '}
-                  <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+MATH101+2017_T1/about"
+                  >
                     Maths
                   </a>
                   , and{' '}
-                  <a href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://courses.prometheus.org.ua/courses/course-v1:ZNO+HISTORY101+2017_T1/about"
+                  >
                     History
                   </a>
                   .
                 </p>
                 <p>
                   Please check these{' '}
-                  <a href="https://zno.mavka.org/chooseTest">free exercises</a>{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://zno.mavka.org/chooseTest"
+                  >
+                    free exercises
+                  </a>{' '}
                   from the three subjects.
                 </p>
                 <p>
                   Estonia supports Ukrainian high school students with{' '}
-                  <a href="https://www.edtechestonia.org/ukraine-ua">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://www.edtechestonia.org/ukraine-ua"
+                  >
                     resources accessed here
                   </a>
                   .
                 </p>
                 <p>
                   Also check this{' '}
-                  <a href="https://zno.osvita.ua/">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://zno.osvita.ua/"
+                  >
                     Ukrainian website with previous years’ state exams
                   </a>{' '}
                   for high school students.
@@ -203,7 +226,10 @@ export default function HighSchool() {
                 </h2>
                 <p>
                   MIT, US offers a{' '}
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnl5405N6vq2VqV9bsMvw2DWWai2zUv42aZ_HvItuBSd5ug/viewform">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdFnl5405N6vq2VqV9bsMvw2DWWai2zUv42aZ_HvItuBSd5ug/viewform"
+                  >
                     Ukrainian-language support programme
                   </a>{' '}
                   for talented mathematicians in yr 9-11. APPLY BY 12.04.22.
@@ -211,8 +237,13 @@ export default function HighSchool() {
                   Ukrainian, Russian and English in a free math enrichment
                   programme. The course starts in late April. Should you miss
                   it, search "Ukraine" on{' '}
-                  <a href="https://www.mit.edu/">MITs home page</a> to check for
-                  further support.
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://www.mit.edu/"
+                  >
+                    MITs home page
+                  </a>{' '}
+                  to check for further support.
                 </p>
               </div>
             </div>

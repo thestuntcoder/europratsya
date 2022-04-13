@@ -149,16 +149,34 @@ export default function UniversityUk() {
                 </h2>
                 <p>
                   Безкоштовні онлайн курси з сертифікатами можна знайти{` `}
-                  <a href="http://prometheus.org.ua/">тут</a> і{' '}
-                  <a href="https://vumonline.ua/">тут</a>.
+                  <a
+                    className="blue-500 hover:underline"
+                    href="http://prometheus.org.ua/"
+                  >
+                    тут
+                  </a>{' '}
+                  і{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://vumonline.ua/"
+                  >
+                    тут
+                  </a>
+                  .
                 </p>
                 <p>
                   Перелічені мовні курси безкоштовні для українців:{' '}
-                  <a href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/"
+                  >
                     Mondly, трьохмісячні курси з 13-ти мов
                   </a>
                   та{' '}
-                  <a href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="http://busuu.com/ru/c/ukraina-navchaisya-bezkoshtovnonians/"
+                  >
                     Busuu
                   </a>
                   .
@@ -170,9 +188,14 @@ export default function UniversityUk() {
                 <p>
                   Безкоштовні курси з багатьох предметів у галузі STEM пропонує
                   платформа MITу{' '}
-                  <a href="https://ocw.mit.edu/">OpenCourseWare</a>. В онлайн
-                  доступі є матеріали більше ніж з 2500 курсів MIT, які
-                  допоможуть підготуватися до екзамену в обраній сфері.
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://ocw.mit.edu/"
+                  >
+                    OpenCourseWare
+                  </a>
+                  . В онлайн доступі є матеріали більше ніж з 2500 курсів MIT,
+                  які допоможуть підготуватися до екзамену в обраній сфері.
                 </p>
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
@@ -181,10 +204,25 @@ export default function UniversityUk() {
                 <p>
                   Одні з найкращих доступних онлайн можливостей надаються MIT,
                   США. Вони пропонують дві платформи{' '}
-                  <a href="https://www.edx.org/">edX</a> and{' '}
-                  <a href="https://mitxonline.mit.edu/">MITx Online</a> зі
-                  своїми численними відкритими онлайн курсами. Вони охоплюють як
-                  <a href="https://openlearning.mit.edu/mit-students/first-year-stem-classes-mit">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://www.edx.org/"
+                  >
+                    edX
+                  </a>{' '}
+                  and{' '}
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://mitxonline.mit.edu/"
+                  >
+                    MITx Online
+                  </a>{' '}
+                  зі своїми численними відкритими онлайн курсами. Вони охоплюють
+                  як
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://openlearning.mit.edu/mit-students/first-year-stem-classes-mit"
+                  >
                     базові курси STEM
                   </a>
                   , так і дослідження гуманітарних та соціальних наук, а також
@@ -192,7 +230,10 @@ export default function UniversityUk() {
                   прискорити отримання ступеня магістра.
                 </p>
                 <p>
-                  <a href="https://openlearning.mit.edu/courses-programs/mitx-courses-edx">
+                  <a
+                    className="blue-500 hover:underline"
+                    href="https://openlearning.mit.edu/courses-programs/mitx-courses-edx"
+                  >
                     Курси MITx
                   </a>{' '}
                   сформовані на основі курсів у MIT та охоплюють весь спектр
@@ -225,25 +266,37 @@ export default function UniversityUk() {
                 </p>
                 <ul>
                   <li>
-                    <a href="https://uglobal.university/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://uglobal.university/"
+                    >
                       https://uglobal.university/
                     </a>
                   </li>
                   <li>
-                    <a href="https://support.uastudents.de/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://support.uastudents.de/"
+                    >
                       https://support.uastudents.de/
                     </a>
                   </li>
                   <li>
                     Естонія пропонує{' '}
-                    <a href="https://ut.ee/en/content/bachelors-and-masters-studies-university-tartu">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://ut.ee/en/content/bachelors-and-masters-studies-university-tartu"
+                    >
                       250 стипендій для бакалаврів
                     </a>
                     .
                   </li>
                   <li>
                     Ознайомтесь з{' '}
-                    <a href="https://www.russellgroup.ac.uk/news/russell-group-universities-response-to-the-invasion-of-ukraine/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://www.russellgroup.ac.uk/news/russell-group-universities-response-to-the-invasion-of-ukraine/"
+                    >
                       підтримкою
                     </a>
                     , яку пропонують 24 передових університети у Великобританії
@@ -252,7 +305,10 @@ export default function UniversityUk() {
                   </li>
                   <li>
                     Огляд стипендій, що пропонують європейські країни:
-                    <a href="https://www.scholars-ua.com/">
+                    <a
+                      className="blue-500 hover:underline"
+                      href="https://www.scholars-ua.com/"
+                    >
                       https://www.scholars-ua.com/
                     </a>
                   </li>
