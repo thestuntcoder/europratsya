@@ -157,7 +157,7 @@ export default function UniversityUk() {
                   </a>{' '}
                   і{' '}
                   <a
-                    className="text-blue - 500; hover:underline"
+                    className="text-blue-500 hover:underline"
                     href="https://vumonline.ua/"
                   >
                     тут
