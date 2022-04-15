@@ -1,8 +1,14 @@
 import React from 'react';
 import BaseBlockContent from '@sanity/block-content-to-react';
+import htm from 'htm';
+import vhtml from 'vhtml';
+import { toHTML, uriLooksSafe } from '@portabletext/to-html';
+
+const html = htm.bind(vhtml);
 
 const serializers = {
   types: {
+    image: ({ value }) => '',
     block(props) {
       switch (props.node.style) {
         case 'h1':
