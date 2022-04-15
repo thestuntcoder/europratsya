@@ -103,7 +103,7 @@ export default class NavCenterUk extends React.Component {
                   className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                   to="/uk/vacancies/"
                 >
-                  Новітні вакансії 🔔
+                  Нові вакансії 🔔
                 </Link>
                 <Link
                   className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
@@ -132,13 +132,13 @@ export default class NavCenterUk extends React.Component {
                   className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/uk/ukr-education-explainer/"
                 >
-                  Освіта пояснила
+                  Освіта Поширені питання
                 </Link>
                 <Link
                   className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                   to="/uk/ukr-expertise-explained/"
                 >
-                  Експерт&shy;иза пояснила
+                  Кваліфікація Поширені питання
                 </Link>
                 <Link
                   className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
@@ -221,7 +221,7 @@ export default class NavCenterUk extends React.Component {
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/uk/vacancies/"
                 >
-                  Новітні вакансії 🔔
+                  Нові вакансії 🔔
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
@@ -245,13 +245,13 @@ export default class NavCenterUk extends React.Component {
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/uk/ukr-education-explainer/"
                 >
-                  Освіта пояснила
+                  Освіта Поширені питання
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/uk/ukr-expertise-explained/"
                 >
-                  Експертиза пояснила
+                  Кваліфікація Поширені питання
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
