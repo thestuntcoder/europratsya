@@ -38,6 +38,7 @@
     "gatsby-source-filesystem": "^4.8.1",
     "gatsby-source-sanity": "^7.3.2",
     "gatsby-transformer-sharp": "^4.8.0",
+    "htm": "^3.1.0",
     "netlify-cms-app": "^2.15.66",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
