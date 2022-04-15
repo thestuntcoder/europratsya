@@ -61,12 +61,15 @@ export default function HomeUk({ data }) {
                   Кандидати
                 </h3>
                 <p className="mt-4 text-base text-white">
-                  Будь ласка, ознайомтеся з нашими посібниками з отримання
-                  робочої візи та довідником щодо нестачі навичок
-                  <Link to="/uk/skills-in-demand/">країна за країною</Link>.
+                  Кандидати Будь ласка, ознайомтеся з нашими посібниками з
+                  отримання робочої візи та посібником з потреб в
+                  <Link to="/uk/skills-in-demand/">
+                    кардах у різних країнах
+                  </Link>
+                  .
                 </p>
                 <p className="mt-8 text-base text-white">
-                  Вам потрібна допомога з перекладом резюме?
+                  Потрібна домопога з перекладом резюме?
                 </p>
                 <div className="mt-8">
                   <div className="inline-flex rounded-full shadow">
