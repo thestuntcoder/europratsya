@@ -91,7 +91,7 @@ export default function Country(props) {
       break;
 
     case 'uk':
-      subtitle = 'Новітні вакансії';
+      subtitle = 'Нові вакансії';
       navigation = <NavCenterUk />;
       break;
 

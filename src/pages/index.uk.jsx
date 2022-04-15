@@ -145,7 +145,7 @@ export default function HomeUk({ data }) {
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
-              Новітні вакансії
+              Нові вакансії
             </h2>
           </div>
           <JobAds limit="9" data={data.allSanityJobPost.edges} language="uk" />

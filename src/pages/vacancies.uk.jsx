@@ -92,10 +92,10 @@ export default function VacanciesUk({ data }) {
                     scope="col"
                     className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                   >
-                    Мову
+                    Мова
                   </th>
                   <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
-                    <span className="sr-only">Вгляд →</span>
+                    <span className="sr-only">Огляд →</span>
                   </th>
                 </tr>
               </thead>
@@ -106,7 +106,7 @@ export default function VacanciesUk({ data }) {
                   {
                     title: 'Робота',
                     or: ' або ',
-                    view: 'Вгляд',
+                    view: 'Огляд',
                   },
                   country,
                   lang
