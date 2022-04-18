@@ -1,6 +1,5 @@
 import React from 'react';
 import BaseBlockContent from '@sanity/block-content-to-react';
-import { toHTML, uriLooksSafe } from '@portabletext/to-html';
 
 const serializers = {
   types: {
