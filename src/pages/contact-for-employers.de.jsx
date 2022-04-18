@@ -122,7 +122,7 @@ export default function ContactEmployersDe() {
                   method="POST"
                   data-netlify="true"
                   enctype="multipart-form/data"
-                  className="grid grid-cols-1 gap-y-6"
+                  className="grid grid-cols-1 gap-y-6 mt-8"
                   onSubmit={handleSubmit}
                 >
                   <input type="hidden" name="form-name" value="employer" />
@@ -139,7 +139,7 @@ export default function ContactEmployersDe() {
                         name="full-name"
                         id="full-name"
                         autocomplete="name"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Vorname, Nachname"
                         onChange={handleChange}
                       />
@@ -156,7 +156,7 @@ export default function ContactEmployersDe() {
                         name="email"
                         type="email"
                         autocomplete="email"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Ihre E-Mail Adresse"
                         onChange={handleChange}
                       />
@@ -174,7 +174,7 @@ export default function ContactEmployersDe() {
                         type="text"
                         name="company-role"
                         id="company-role"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="CEO, HR"
                         onChange={handleChange}
                       />
@@ -190,7 +190,7 @@ export default function ContactEmployersDe() {
                         type="text"
                         name="company-name"
                         id="company-name"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="GmbH, SA, Ltd, AS"
                         onChange={handleChange}
                       />
@@ -208,7 +208,7 @@ export default function ContactEmployersDe() {
                         type="text"
                         name="company-website"
                         id="company-website"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="www.europratsya.com"
                         onChange={handleChange}
                       />
@@ -227,7 +227,7 @@ export default function ContactEmployersDe() {
                         type="text"
                         name="language-1"
                         id="language-1"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Sprache 1"
                         onChange={handleChange}
                       />
@@ -243,7 +243,7 @@ export default function ContactEmployersDe() {
                         type="text"
                         name="language-2"
                         id="language-2"
-                        className="block w-full rounded-md border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                        className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                         placeholder="Sprache 2"
                         onChange={handleChange}
                       />
@@ -260,7 +260,7 @@ export default function ContactEmployersDe() {
                       id="message"
                       name="message"
                       rows="4"
-                      className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="block w-full rounded-md border border-gray-300 px-4 py-3 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 placeholder:italic"
                       placeholder="Stellenbeschreibung mit Anforderungen oder Link zu Ihrer eigenen Karriereseite. Bei Teilzeitarbeit oder manueller Arbeit bitte den geschätzten Stundenlohn in EUR angeben."
                       onChange={handleChange}
                     />

@@ -24,7 +24,7 @@ export default function Search({ indices, mobile = false, classList }) {
     : 'hidden md:block right-0 w-80';
   const searchResultStyle = mobile
     ? 'md:hidden block max-h-96 left-4 right-5 top-20 mt-9'
-    : 'hidden md:block max-w-xs max-h-80 top-12';
+    : 'hidden md:block max-w-xs w-80 max-h-80 top-12';
 
   return (
     <InstantSearch

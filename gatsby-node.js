@@ -1,3 +1,46 @@
+async function createPagePages(graphql, actions) {
+  const { createPage } = actions;
+
+  const result = await graphql(`
+    {
+      allSanityPage {
+        nodes {
+          slug {
+            current
+          }
+          id
+        }
+      }
+    }
+  `);
+
+  if (result.errors) throw result.errors;
+  const pageNodes = (result.data.allSanityPage || {}).nodes || [];
+
+  pageNodes.forEach((node) => {
+    const { id, slug = {} } = node;
+    if (!slug) return;
+
+    createPage({
+      path: `/${slug.current}`,
+      component: require.resolve('./src/templates/page.jsx'),
+      context: { id: node.id, language: 'en' },
+    });
+
+    createPage({
+      path: `/uk/${slug.current}`,
+      component: require.resolve('./src/templates/page.jsx'),
+      context: { id: node.id, language: 'uk' },
+    });
+
+    createPage({
+      path: `/de/${slug.current}`,
+      component: require.resolve('./src/templates/page.jsx'),
+      context: { id: node.id, language: 'de' },
+    });
+  });
+}
+
 async function createCountryPages(graphql, actions) {
   const { createPage } = actions;
 
@@ -128,6 +171,7 @@ async function createJobPages(graphql, actions) {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
+  await createPagePages(graphql, actions);
   await createCountryPages(graphql, actions);
   await createEmployerPages(graphql, actions);
   await createJobPages(graphql, actions);

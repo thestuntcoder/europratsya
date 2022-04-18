@@ -6,12 +6,12 @@ export default connectSearchBox(
     <div
       className={`relative md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end ${classList}`}
     >
-      <form className="md:max-w-lg w-full">
+      <form className="w-full md:max-w-lg">
         <label htmlFor="search" className="sr-only">
           Search
         </label>
         <div className="relative">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <svg
               className="h-5 w-5 text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ export default connectSearchBox(
           <input
             id="search"
             name="search"
-            className="block w-full pl-10 pr-3 py-2 border border-transparent rounded-md leading-5 bg-gray-100 text-gray-600 placeholder-gray-400 focus:outline-none focus:bg-gray-200 focus:border-blue-500 focus:ring-grey-300 focus:text-gray-900 text-xs md:text-base"
+            className="focus:ring-grey-300 block w-full rounded-md border border-transparent bg-gray-100 py-2 pl-10 pr-3 text-xs leading-5 text-gray-600 placeholder-gray-400 focus:border-blue-500 focus:bg-gray-200 focus:text-gray-900 focus:outline-none md:text-base"
             placeholder="France, PHP, work visa"
             type="search"
             aria-label="Search"

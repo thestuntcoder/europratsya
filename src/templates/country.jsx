@@ -18,8 +18,8 @@ function visa(visa, lang = 'en') {
 
   return (
     <div>
-      <h2 className="text-xl mt-8 font-extrabold text-blue-500">{visaName}</h2>
-      <div className="relative max-w-7xl mx-auto py-8">
+      <h2 className="mt-8 text-xl font-extrabold text-blue-500">{visaName}</h2>
+      <div className="relative mx-auto max-w-7xl py-8">
         <BlockContent blocks={visaDesc} />
       </div>
     </div>
@@ -34,10 +34,10 @@ function skills(skills, lang = 'en') {
 
   return (
     <div>
-      <h2 className="text-xl mt-8 font-extrabold text-blue-500">
+      <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {skillsName}
       </h2>
-      <div className="relative max-w-7xl mx-auto py-8">
+      <div className="relative mx-auto max-w-7xl py-8">
         <BlockContent blocks={skillsDesc} />
       </div>
     </div>
@@ -48,10 +48,10 @@ function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
   if (ads == null || ads.length === 0) return;
 
   return (
-    <div className="bg-gray-100 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div className="overflow-hidden bg-gray-100">
+      <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
             {subtitle}
           </h2>
         </div>
@@ -69,7 +69,7 @@ function country_image(country, country_name) {
   return (
     <GatsbyImage
       image={getImg}
-      className="w-full md:w-2/5 float-right ml-4 mb-4"
+      className="float-right ml-4 mb-4 w-full md:w-2/5"
       alt={country_name}
       objectFit="contain"
     />
@@ -91,7 +91,7 @@ export default function Country(props) {
       break;
 
     case 'uk':
-      subtitle = 'Новітні вакансії';
+      subtitle = 'Нові вакансії';
       navigation = <NavCenterUk />;
       break;
 
@@ -108,10 +108,10 @@ export default function Country(props) {
 
       <div className="relative">{navigation}</div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           {country_image(props.data.country, countryName)}
-          <h1 className="text-3xl mt-8">{countryName}</h1>
+          <h1 className="mt-8 text-3xl">{countryName}</h1>
           {visa(props.data.visa, language)}
           {skills(props.data.skills, language)}
         </div>

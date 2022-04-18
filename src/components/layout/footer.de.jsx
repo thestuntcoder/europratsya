@@ -5,7 +5,7 @@ import europratsyaLogo from '../../images/europratsya-white.svg';
 export default function FooterDe() {
   return (
     <footer className="bg-gray-800" aria-labelledby="footer-heading">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -19,7 +19,7 @@ export default function FooterDe() {
                 </Link>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   Sprachen
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -58,7 +58,7 @@ export default function FooterDe() {
 
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   Allgemein zugängliche Information
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -82,7 +82,7 @@ export default function FooterDe() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                   Kontakte
                 </h3>
                 <ul className="mt-4 space-y-4">
@@ -110,7 +110,7 @@ export default function FooterDe() {
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div></div>
             <div className="mt-12 md:mt-0">
-              <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-400">
                 Gesellschaft
               </h3>
               <ul className="mt-4 space-y-4">
@@ -139,7 +139,7 @@ export default function FooterDe() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+          <p className="mt-8 text-base text-gray-400 md:order-1 md:mt-0">
             &copy; 2022 Europratsya. Alle Rechte vorbehalten.
           </p>
         </div>

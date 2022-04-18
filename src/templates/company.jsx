@@ -8,7 +8,7 @@ import NavCenterUk from '../components/layout/nav-center.uk';
 import NavCenterDe from '../components/layout/nav-center.de';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
-import { getRaw, getUrlPrefix } from '../helpers/language';
+import { getRaw, getUrlPrefix, getSeo } from '../helpers/language';
 
 export default function Company(props) {
   const language = props.pageContext.language;
@@ -16,16 +16,11 @@ export default function Company(props) {
   let ads = props.data.jobs.edges;
   let getImg = getImage(company.image.asset.gatsbyImageData);
 
-  let metaTitle = company.name;
-  let metaDescription = company.name;
+  let metaTitle = getSeo(company, 'title', language, company.name);
+  let metaDescription = getSeo(company, 'description', language, company.name);
+
   let metaImage = company.image.asset.gatsbyImageData.images.fallback.src;
 
-  if (company.seo != null && company.seo.title_en != null) {
-    metaTitle = company.seo.title_en;
-  }
-  if (company.seo != null && company.seo.description_en != null) {
-    metaDescription = company.seo.description_en;
-  }
   if (company.seo != null && company.seo.seo_image != null) {
     metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
@@ -68,7 +63,7 @@ export default function Company(props) {
       <div className="relative">{navigation}</div>
 
       <div className="overflow-hidden bg-white">
-        <div className="max-w-7xl sm:px-6 lg:px-8 relative px-4 mx-auto mt-12">
+        <div className="relative mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
           <h1 className="mb-12 text-base text-3xl font-bold tracking-wide text-black">
             <Link to={getUrlPrefix(language) + '/companies'}>
               {vettedEmployer}
@@ -78,8 +73,8 @@ export default function Company(props) {
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <GatsbyImage
             image={getImg}
             className="h-24"
@@ -89,23 +84,23 @@ export default function Company(props) {
         </div>
       </div>
 
-      <div className="bg-white overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="overflow-hidden bg-white">
+        <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <BlockContent blocks={descriptionRaw} />
         </div>
       </div>
 
-      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
         <div className="absolute inset-0">
-          <div className="bg-white h-1/3 sm:h-2/3" />
+          <div className="h-1/3 bg-white sm:h-2/3" />
         </div>
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative mx-auto max-w-7xl">
           <div className="text-left">
-            <h2 className="text-3xl tracking-tight font-extrabold text-yellow-400 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
               {companyVacancies}
             </h2>
           </div>
-          <JobAds limit="24" data={ads} />
+          <JobAds limit="24" data={ads} language={language} />
         </div>
       </div>
     </LayoutPage>

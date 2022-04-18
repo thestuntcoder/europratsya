@@ -1,4 +1,3 @@
-import './css/tailwind.css';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './header';
@@ -18,7 +17,7 @@ export default function LayoutPage(content) {
   if (content.lang === 'uk') {
     footer = <FooterUk />;
   } else if (content.lang === 'de') {
-    footer = <FooterDe />
+    footer = <FooterDe />;
   }
 
   return (

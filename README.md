@@ -1,9 +1,3 @@
-<!-- markdownlint-configure-file {
-  "first-line-h1": false,
-  "no-inline-html": false,
-  "no-trailing-punctuation": false
-} -->
-
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white&style=for-the-badge)
 ![Gatsby.js](https://img.shields.io/badge/Gatsby-%23663399.svg?logo=gatsby&logoColor=white&style=for-the-badge)
 [![Build Status](https://app.travis-ci.com/dejanjacimovic/europratsya.svg?branch=master)](https://app.travis-ci.com/dejanjacimovic/europratsya)
@@ -14,7 +8,8 @@
   We invite <a href="https://europratsya.com/">Ukrainians to Europe</a>
 </h1>
 
-Since the beginning of war in Ukraine, more than 3.7 million people have left Ukraine, while an estimated 6.5 million people have been displaced within the country.
+Since the beginning of war in Ukraine, more than 3.7 million people have left Ukraine, while an estimated seven (7) million people have been displaced within the country.
+
 It is our mission to help them feel welcomed in the EU, and by future employers.
 
 Nobody likes leaving their home, let alone being forced out of it.

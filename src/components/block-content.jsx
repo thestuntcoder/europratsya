@@ -1,21 +1,39 @@
 import React from 'react';
 import BaseBlockContent from '@sanity/block-content-to-react';
+import { toHTML, uriLooksSafe } from '@portabletext/to-html';
 
 const serializers = {
   types: {
+    image: ({ value }) => '',
     block(props) {
       switch (props.node.style) {
         case 'h1':
-          return <h1 className="text-3xl mt-8">{props.children}</h1>;
+          return (
+            <h1 className="mt-8 text-base text-3xl font-bold tracking-wide text-black">
+              {props.children}
+            </h1>
+          );
 
         case 'h2':
-          return <h2 className="text-3xl mt-4">{props.children}</h2>;
+          return (
+            <h2 className="mt-4 text-base text-2xl font-bold tracking-wide text-black">
+              {props.children}
+            </h2>
+          );
 
         case 'h3':
-          return <h3 className="text-2xl mt-2">{props.children}</h3>;
+          return (
+            <h3 className="mt-2 text-xl font-bold tracking-wide text-black">
+              {props.children}
+            </h3>
+          );
 
         case 'h4':
-          return <h4 className="text-xl mt-2">{props.children}</h4>;
+          return (
+            <h4 className="mt-2 font-bold tracking-wide text-black">
+              {props.children}
+            </h4>
+          );
 
         case 'blockquote':
           return <blockquote>{props.children}</blockquote>;
@@ -38,7 +56,7 @@ const serializers = {
     ) : (
       <ol>{props.children}</ol>
     ),
-  listItem: (props) => <li className="list-disc ml-4">{props.children}</li>,
+  listItem: (props) => <li className="ml-4 list-disc">{props.children}</li>,
   marks: {
     strong: (props) => <strong>{props.children}</strong>,
     em: (props) => <em>{props.children}</em>,

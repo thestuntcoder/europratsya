@@ -9,16 +9,30 @@ export function listVacancies(
     title: 'Title',
     or: ' or ',
     view: 'View',
-  }
+  },
+  filterCountry = false,
+  filterLanguage = false
 ) {
   let allJobAds = [];
 
   for (var key in edges) {
     if (edges[key].node.employer == null) continue;
     if (edges[key].node.slug == null) continue;
+    if (
+      filterCountry !== false &&
+      filterCountry !== 'false' &&
+      filterCountry !== getTitle(edges[key].node.country.title, lang)
+    )
+      continue;
+    if (
+      filterLanguage !== false &&
+      filterLanguage !== 'false' &&
+      !edges[key].node.job_languages.map((c) => c.name).includes(filterLanguage)
+    )
+      continue;
 
     allJobAds.push(
-      <tr>
+      <tr key={'tr-' + key}>
         <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
           <Link
             to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}

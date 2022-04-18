@@ -1,11 +1,25 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import LayoutPage from '../components/layout/layout-page';
 import NavCenter from '../components/layout/nav-center';
 import { listVacancies } from '../helpers/vacancies';
+import FilterCountry from '../components/filter-country';
+import FilterLanguage from '../components/filter-language';
 
 export default function Vacancies({ data }) {
+  const [country, setCountry] = useState(false);
+
+  function changeCountry(event) {
+    setCountry(event.target.value);
+  }
+
+  const [lang, setLang] = useState(false);
+
+  function changeLang(event) {
+    setLang(event.target.value);
+  }
+
   const metaDescription =
     'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
   const metaTitle = 'Job vacancies from firms encouraging Ukrainian candidates';
@@ -27,9 +41,26 @@ export default function Vacancies({ data }) {
 
       <div className="relative overflow-hidden bg-gray-50 py-16">
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <h1 className="text-base text-3xl font-bold tracking-wide text-black">
-            Vacancies
-          </h1>
+          <div className="md:grid md:grid-cols-3 md:gap-8">
+            <h1 className="text-base text-3xl font-bold tracking-wide text-black">
+              Vacancies
+            </h1>
+            <div>
+              <FilterCountry
+                edges={data.allSanityJobPost.edges}
+                lang={language}
+                selectedCountry={country}
+                changeCountry={changeCountry}
+              />
+            </div>
+            <div>
+              <FilterLanguage
+                edges={data.allSanityJobPost.edges}
+                lang={language}
+                changeLang={changeLang}
+              />
+            </div>
+          </div>
           <div className="mt-12 overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
             <table className="min-w-full divide-y divide-gray-300">
               <thead className="bg-gray-50">
@@ -64,11 +95,17 @@ export default function Vacancies({ data }) {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 bg-white">
-                {listVacancies(data.allSanityJobPost.edges, language, {
-                  title: 'Title',
-                  or: ' or ',
-                  view: 'View',
-                })}
+                {listVacancies(
+                  data.allSanityJobPost.edges,
+                  language,
+                  {
+                    title: 'Title',
+                    or: ' or ',
+                    view: 'View',
+                  },
+                  country,
+                  lang
+                )}
               </tbody>
             </table>
           </div>
