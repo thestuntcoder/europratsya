@@ -26,7 +26,6 @@
     "algoliasearch": "^4.12.1",
     "gatsby": "^4.8.0",
     "gatsby-plugin-algolia": "^0.26.0",
-    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^2.8.1",
     "gatsby-plugin-manifest": "^4.8.1",
     "gatsby-plugin-mdx": "^3.8.1",
