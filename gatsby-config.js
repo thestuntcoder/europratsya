@@ -23,15 +23,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyDefault: 'en',
-        langKeyForNull: 'en',
-        prefixDefault: false,
-        useLangKeyLayout: false,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/icon.png',
@@ -82,20 +73,12 @@ module.exports = {
         defaultLanguage: 'en',
         siteUrl: 'https://europratsya.com/',
         i18nextOptions: {
+          defaultNS: 'translation',
+          lowerCaseLng: true,
+          saveMissing: true,
           keySeparator: false,
           nsSeparator: false,
         },
-        pages: [
-          {
-            matchPath: '/:lang?/blog/:uid',
-            getLanguageFromPath: true,
-            excludeLanguages: ['de'],
-          },
-          {
-            matchPath: '/preview',
-            languages: ['en'],
-          },
-        ],
       },
     },
   ],
