@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
+import Navigation from '../components/layout/navigation';
 import JobAds from '../components/job-ads';
 
 import ukrBg from '../images/ukr-background-new.jpg';
@@ -38,7 +38,7 @@ export default function Home({ data }) {
       </Helmet>
 
       <div className="relative">
-        <NavCenter />
+        <Navigation lang={language} />
 
         <div className="relative bg-gray-800 pb-32">
           <div className="absolute inset-0">
