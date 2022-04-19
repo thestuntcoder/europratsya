@@ -160,7 +160,7 @@ export default function Home({ data }) {
           </div>
           <JobAds
             limit="9"
-            lang={language}
+            language={language}
             data={data.allSanityJobPost.edges}
           />
 
