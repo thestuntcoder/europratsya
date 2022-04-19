@@ -10,5 +10,7 @@
   "Company": "Gesellschaft",
   "Location": "Ort",
   "Languages": "Sprache",
-  "View": "Offen"
+  "View": "Offen",
+  "Select country": "Land auswählen",
+  "Select language": "Sprache auswählen"
 }

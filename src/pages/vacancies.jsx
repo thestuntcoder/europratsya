@@ -54,6 +54,7 @@ export default function Vacancies({ data }) {
                 lang={language}
                 selectedCountry={country}
                 changeCountry={changeCountry}
+                default={t('Select country')}
               />
             </div>
             <div>
@@ -61,6 +62,7 @@ export default function Vacancies({ data }) {
                 edges={data.allSanityJobPost.edges}
                 lang={language}
                 changeLang={changeLang}
+                default={t('Select language')}
               />
             </div>
           </div>

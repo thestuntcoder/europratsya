@@ -10,5 +10,7 @@
   "Company": "Company",
   "Location": "Location",
   "Languages": "Languages",
-  "View": "View"
+  "View": "View",
+  "Select country": "Select country",
+  "Select language": "Select language"
 }
