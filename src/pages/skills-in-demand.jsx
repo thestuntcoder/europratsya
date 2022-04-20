@@ -16,6 +16,40 @@ export default function SkillsInDemand({ data }) {
   );
   const metaTitle = t('Skills in demand country by country in Europe');
 
+  let imgUnemployment = (
+    <StaticImage
+      className="my-8 h-full w-auto"
+      src="../images/checklist/en-Unemployment-Map-2x.png"
+      alt={t('Unemployment Map')}
+      loading="auto"
+      objectFit="contain"
+    />
+  );
+
+  if (language === 'uk') {
+    imgUnemployment = (
+      <StaticImage
+        className="my-8 h-full w-auto"
+        src="../images/checklist/uk-Unemployment-Map-2x.png"
+        alt={t('Unemployment Map')}
+        loading="auto"
+        objectFit="contain"
+      />
+    );
+  }
+
+  if (language === 'de') {
+    imgUnemployment = (
+      <StaticImage
+        className="my-8 h-full w-auto"
+        src="../images/checklist/de-Unemployment-Map-2x.png"
+        alt={t('Unemployment Map')}
+        loading="auto"
+        objectFit="contain"
+      />
+    );
+  }
+
   return (
     <LayoutPage lang={language}>
       <Helmet>
@@ -46,13 +80,7 @@ export default function SkillsInDemand({ data }) {
                     <h2 className="text-base text-xl font-bold tracking-wide text-black">
                       <Trans>Unemployment Map</Trans>
                     </h2>
-                    <StaticImage
-                      className="my-8 h-full w-auto"
-                      src="../images/checklist/Unemployment-Map-2x.png"
-                      alt={t('Unemployment Map')}
-                      loading="auto"
-                      objectFit="contain"
-                    />
+                    {imgUnemployment}
                   </div>
                 </div>
               </div>
