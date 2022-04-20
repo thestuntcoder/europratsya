@@ -116,6 +116,8 @@ export const COUNTRIES = graphql`
         }
         title {
           en
+          uk
+          de
         }
         id
       }
