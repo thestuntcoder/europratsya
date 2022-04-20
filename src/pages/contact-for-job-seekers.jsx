@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
+import { getUrlPrefix } from '../helpers/language';
 
 import contactImg from '../images/contact/contact-form-candidates.jpg';
 import step1 from '../images/contact/step1.svg';
@@ -45,7 +46,9 @@ export default function ContactEmployees({ data }) {
         ...state,
       }),
     })
-      .then(() => alert('Thank you for your submission!'))
+      .then(() => {
+        window.location.href = getUrlPrefix(language) + '/thank-you';
+      })
       .catch((error) => alert(error));
   };
 

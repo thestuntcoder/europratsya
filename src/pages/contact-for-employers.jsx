@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
+import { getUrlPrefix } from '../helpers/language';
+
 import contactImg from '../images/contact/contact-form-employers.jpg';
 
 function encode(data) {
@@ -37,7 +39,7 @@ export default function ContactEmployers({ data }) {
       }),
     })
       .then(() => {
-        window.location.href = '/' + language + '/thank-you';
+        window.location.href = getUrlPrefix(language) + '/thank-you';
       })
       .catch((error) => alert(error));
   };
