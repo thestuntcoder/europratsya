@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 import contactImg from '../images/contact/contact-form-employers.jpg';
@@ -16,7 +16,7 @@ function encode(data) {
   return formData;
 }
 
-export default function ContactEmployers() {
+export default function ContactEmployers({ data }) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
 
@@ -296,3 +296,22 @@ export default function ContactEmployers() {
     </LayoutPage>
   );
 }
+
+export const TRANS_EMPLOYERS = graphql`
+  query EmployerTranslation($language: String!) {
+    locales: allLocale(
+      filter: {
+        ns: { in: ["translation", "contact"] }
+        language: { eq: $language }
+      }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
