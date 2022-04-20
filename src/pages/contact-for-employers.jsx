@@ -42,9 +42,8 @@ export default function ContactEmployers({ data }) {
       .catch((error) => alert(error));
   };
 
-  const metaDescription =
-    'Europratsya translates your vacancy into Ukrainian and posts your vacancy ad for free to help displaced people search one database for relevant jobs.';
-  const metaTitle = 'Help simplify work search for Ukrainians';
+  const metaDescription = t('meta_employers_description');
+  const metaTitle = t('meta_employers_title');
 
   return (
     <LayoutPage lang={language}>

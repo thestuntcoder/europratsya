@@ -49,9 +49,8 @@ export default function ContactEmployees({ data }) {
       .catch((error) => alert(error));
   };
 
-  const metaDescription =
-    'Europratsya translates your CV into English or German for free to help you focus on finding work and planning interviews.';
-  const metaTitle = 'Time-saving CV help for Ukrainians';
+  const metaDescription = t('meta_candidates_description');
+  const metaTitle = t('meta_candidates_title');
 
   return (
     <LayoutPage lang={language}>
