@@ -146,7 +146,7 @@ export default function ContactEmployees({ data }) {
                       src={step2}
                       alt="Step 2"
                     />
-                    We check and adapt
+                    <Trans>We check and adapt</Trans>
                   </div>
                   <div>
                     <img
