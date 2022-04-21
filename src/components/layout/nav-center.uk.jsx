@@ -1,5 +1,6 @@
 import { createRef, default as React, useState, useMemo } from 'react';
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import Flag from '../../components/flag';
 import europratsyaLogo from '../../images/europratsya.svg';
 
 import Search from '../search';
@@ -145,9 +146,8 @@ export default function NavCenter() {
               {languages.map((lng) => (
                 <div>
                   <Link to={originalPath} language={lng} key={lng}>
-                    {lng}{' '}
+                    {lng} <Flag lang={lng} />
                   </Link>{' '}
-                  |
                 </div>
               ))}
             </div>
@@ -157,7 +157,7 @@ export default function NavCenter() {
               {languages.map((lng) => (
                 <div>
                   <Link to={originalPath} language={lng} key={lng}>
-                    {lng}{' '}
+                    <Flag lang={lng} />
                   </Link>
                   <br />
                 </div>
@@ -278,12 +278,15 @@ export default function NavCenter() {
 
             <div className="bg-gray-50 px-3 py-6 text-center">
               {languages.map((lng) => (
-                <div>
-                  <Link to={originalPath} language={lng} key={lng}>
-                    {lng}
-                    {` `}
-                  </Link>
-                </div>
+                <Link
+                  to={originalPath}
+                  language={lng}
+                  key={lng}
+                  className="mr-4 block inline"
+                >
+                  {lng}
+                  <Flag lang={lng} />
+                </Link>
               ))}
             </div>
           </div>
