@@ -156,6 +156,10 @@ if you run into any issues: <https://tailwindcss.com/docs/>
 
 All design files can be found under `/design_files` as PDFs.
 
+## Copyright
+
+Language are from here: https://www.iconfinder.com/iconsets/195-flat-flag-psd-icons
+
 ---
 
 # Sharing is caring !
