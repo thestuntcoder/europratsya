@@ -21,7 +21,7 @@ export function countriesOutput(data, language) {
   return <ul className="grid grid-cols-3 gap-4 md:block">{countriesOut}</ul>;
 }
 
-export function countriesDropdown(data, language, select_a_country) {
+export function countriesDropdown(data, language, selectCountry, handleChange) {
   let countriesOut = [];
   for (var key in data) {
     if (data[key].slug == null) continue;
@@ -40,8 +40,9 @@ export function countriesDropdown(data, language, select_a_country) {
     <select
       name="countries"
       className="rounded-lg border border-gray-200 bg-gray-50"
+      onChange={handleChange}
     >
-      <option>{select_a_country}</option>
+      <option>{selectCountry}</option>
       {countriesOut}
     </select>
   );
