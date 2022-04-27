@@ -5,7 +5,7 @@ import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 import { StaticImage } from 'gatsby-plugin-image';
-import { countriesOutput } from '../helpers/country';
+import { countriesDropdown } from '../helpers/country';
 
 export default function SkillsInDemand({ data }) {
   const { t, i18n } = useTranslation();
@@ -66,26 +66,19 @@ export default function SkillsInDemand({ data }) {
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-          <div className="mt-8">
-            <div className="mt-8 lg:mt-0">
-              <h1 className="text-center text-base text-3xl font-bold tracking-wide text-black">
-                <Trans>Skills in demand</Trans>
-              </h1>
-              <div className="prose-indigo mx-auto mt-8 text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-                <div className="relative w-full md:flex">
-                  <div className="md:w-1/3">
-                    {countriesOutput(data.allSanityCountry.nodes, language)}
-                  </div>
-                  <div className="md:w-2/3">
-                    <h2 className="text-base text-xl font-bold tracking-wide text-black">
-                      <Trans>Unemployment Map</Trans>
-                    </h2>
-                    {imgUnemployment}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <h4 className="mr-8 mb-12 text-xl font-bold tracking-wide text-black">
+            <Trans>Choose a country of interest</Trans>
+            {` `}
+            {countriesDropdown(
+              data.allSanityCountry.nodes,
+              language,
+              t('Select a country')
+            )}
+          </h4>
+          <h1 className="text-center text-base text-3xl font-bold tracking-wide text-black">
+            <Trans>Skills in demand</Trans>
+          </h1>
+          {imgUnemployment}
         </div>
       </div>
     </LayoutPage>
