@@ -11,6 +11,11 @@ export default function SkillsInDemand({ data }) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
 
+  const handleChange = (e) => {
+    e.preventDefault();
+    window.location.href = e.target.value;
+  };
+
   const metaDescription = t(
     'Skills in demand country by country for easier career planning in Europe'
   );
@@ -72,7 +77,8 @@ export default function SkillsInDemand({ data }) {
             {countriesDropdown(
               data.allSanityCountry.nodes,
               language,
-              t('Select a country')
+              t('Select a country'),
+              handleChange
             )}
           </h4>
           <h1 className="text-center text-base text-3xl font-bold tracking-wide text-black">
