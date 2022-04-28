@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { countriesDropdown } from './helpers/country';
+import { countriesDropdown } from '../helpers/country';
 
 export default function CountrySelector(content) {
   const handleChange = (e) => {
@@ -11,8 +11,8 @@ export default function CountrySelector(content) {
     <div>
       {content.children}
       {countriesDropdown(
-        data.allSanityCountry.nodes,
-        language,
+        content.data.allSanityCountry.nodes,
+        content.lang,
         content.selectCountry,
         handleChange
       )}
