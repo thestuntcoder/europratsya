@@ -82,22 +82,18 @@ export default function Country(props) {
 
   let countryName = getTitle(props.data.country.title, language);
 
-  let navigation,
-    subtitle = {};
+  let subtitle = {};
 
   switch (language) {
     case 'de':
       subtitle = 'Neueste Stellenausschreibungen';
-      navigation = <NavCenterDe />;
       break;
 
     case 'uk':
       subtitle = 'Нові вакансії';
-      navigation = <NavCenterUk />;
       break;
 
     default:
-      navigation = <NavCenter />;
       subtitle = 'Latest vacancies';
   }
 
@@ -113,6 +109,15 @@ export default function Country(props) {
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
+          <CountrySelector
+            selectCountry={t('Select a country')}
+            data={props.data}
+            lang={language}
+          >
+            <Trans>Choose a country of interest</Trans>
+            {` `}
+          </CountrySelector>
+
           {country_image(props.data.country, countryName)}
           <h1 className="mt-8 text-3xl">{countryName}</h1>
           {visa(props.data.visa, language)}
@@ -237,6 +242,20 @@ export const query = graphql`
             current
           }
         }
+      }
+    }
+
+    allSanityCountry(sort: { fields: title___en, order: ASC }) {
+      nodes {
+        slug {
+          current
+        }
+        title {
+          en
+          uk
+          de
+        }
+        id
       }
     }
   }
