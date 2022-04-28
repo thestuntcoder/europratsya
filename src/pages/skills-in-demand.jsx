@@ -72,7 +72,11 @@ export default function SkillsInDemand({ data }) {
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <h4 className="mr-8 mb-12 text-xl font-bold tracking-wide text-black">
-            <CountrySelector selectCountry={t('Select a country')}>
+            <CountrySelector
+              selectCountry={t('Select a country')}
+              data={data}
+              lang={language}
+            >
               <Trans>Choose a country of interest</Trans>
               {` `}
             </CountrySelector>
