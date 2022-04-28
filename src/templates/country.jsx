@@ -1,14 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
-import NavCenterUk from '../components/layout/nav-center.uk';
-import NavCenterDe from '../components/layout/nav-center.de';
+import Navigation from '../components/layout/navigation';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
 import { getTitle, getRaw } from '../helpers/language';
+import CountrySelector from '../components/country-selector';
 
 function visa(visa, lang = 'en') {
   if (visa == null) return;
@@ -77,6 +77,7 @@ function country_image(country, country_name) {
 }
 
 export default function Country(props) {
+  const { t, i18n } = useTranslation();
   const language = props.pageContext.language;
 
   let countryName = getTitle(props.data.country.title, language);
@@ -106,7 +107,9 @@ export default function Country(props) {
         <title>{countryName}</title>
       </Helmet>
 
-      <div className="relative">{navigation}</div>
+      <div className="relative">
+        <Navigation lang={language} />
+      </div>
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
@@ -123,7 +126,19 @@ export default function Country(props) {
 }
 
 export const query = graphql`
-  query CountryTemplateQuery($id: String!) {
+  query CountryTemplateQuery($id: String!, $language: String!) {
+    locales: allLocale(
+      filter: { ns: { in: ["translation"] }, language: { eq: $language } }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+
     country: sanityCountry(id: { eq: $id }) {
       title {
         en
