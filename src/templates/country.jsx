@@ -77,7 +77,7 @@ function country_image(country, country_name) {
 }
 
 export default function Country(props) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const language = props.pageContext.language;
 
   let countryName = getTitle(props.data.country.title, language);
