@@ -11,11 +11,6 @@ export default function SkillsInDemand({ data }) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
 
-  const handleChange = (e) => {
-    e.preventDefault();
-    window.location.href = e.target.value;
-  };
-
   const metaDescription = t(
     'Skills in demand country by country for easier career planning in Europe'
   );
