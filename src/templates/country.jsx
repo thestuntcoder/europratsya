@@ -44,6 +44,24 @@ function skills(skills, lang = 'en') {
   );
 }
 
+function accreditation(accreditation, lang = 'en') {
+  if (accreditation == null) return;
+
+  const accreditationName = getTitle(accreditation.title, lang);
+  const accreditationDesc = getRaw(accreditation.description, lang);
+
+  return (
+    <div>
+      <h2 className="mt-8 text-xl font-extrabold text-blue-500">
+        {accreditationName}
+      </h2>
+      <div className="relative mx-auto max-w-7xl py-8">
+        <BlockContent blocks={accreditationDesc} />
+      </div>
+    </div>
+  );
+}
+
 function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
   if (ads == null || ads.length === 0) return;
 
@@ -122,6 +140,7 @@ export default function Country(props) {
           <h1 className="mt-8 text-3xl">{countryName}</h1>
           {visa(props.data.visa, language)}
           {skills(props.data.skills, language)}
+          {accreditation(props.data.accreditation, language)}
         </div>
       </div>
 
@@ -182,6 +201,21 @@ export const query = graphql`
     }
 
     skills: sanitySkillShortages(
+      countries: { elemMatch: { id: { eq: $id } } }
+    ) {
+      description {
+        _rawEn
+        _rawUk
+        _rawDe
+      }
+      title {
+        en
+        uk
+        de
+      }
+    }
+
+    accreditation: sanityAccreditation(
       countries: { elemMatch: { id: { eq: $id } } }
     ) {
       description {
