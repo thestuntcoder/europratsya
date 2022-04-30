@@ -18,6 +18,7 @@ function visa(visa, lang = 'en') {
 
   return (
     <div>
+      <a name="visa" />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">{visaName}</h2>
       <div className="relative mx-auto max-w-7xl py-8">
         <BlockContent blocks={visaDesc} />
@@ -34,6 +35,7 @@ function skills(skills, lang = 'en') {
 
   return (
     <div>
+      <a name="skills" />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {skillsName}
       </h2>
@@ -52,6 +54,7 @@ function accreditation(accreditation, lang = 'en') {
 
   return (
     <div>
+      <a name="accreditation" />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {accreditationName}
       </h2>
@@ -69,6 +72,7 @@ function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
     <div className="overflow-hidden bg-gray-100">
       <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
+          <a name="vacancies" />
           <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
             {subtitle}
           </h2>
@@ -138,6 +142,42 @@ export default function Country(props) {
 
           {country_image(props.data.country, countryName)}
           <h1 className="mt-8 text-3xl">{countryName}</h1>
+          <ul>
+            {props.data.visa !== null && (
+              <li className="ml-4 list-disc">
+                <a href="#visa" className="text-blue-500 hover:underline">
+                  <Trans>Visa</Trans>
+                </a>
+              </li>
+            )}
+            {props.data.skills !== null && (
+              <li className="ml-4 list-disc">
+                <a href="#skills" className="text-blue-500 hover:underline">
+                  <Trans>Skills</Trans>
+                </a>
+              </li>
+            )}
+            {props.data.accreditation !== null && (
+              <li className="ml-4 list-disc">
+                <a
+                  href="#accreditation"
+                  className="text-blue-500 hover:underline"
+                >
+                  <Trans>Accreditation</Trans>
+                </a>
+              </li>
+            )}
+            {!(
+              props.data.jobs.edges == null ||
+              props.data.jobs.edges.length === 0
+            ) && (
+              <li className="ml-4 list-disc">
+                <a href="#vacancies" className="text-blue-500 hover:underline">
+                  <Trans>Vacancies</Trans>
+                </a>
+              </li>
+            )}
+          </ul>
           {visa(props.data.visa, language)}
           {skills(props.data.skills, language)}
           {accreditation(props.data.accreditation, language)}
