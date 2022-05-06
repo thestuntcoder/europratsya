@@ -18,8 +18,8 @@ function visa(visa, lang = 'en') {
 
   return (
     <div>
-      <a
-        name="visa" // eslint-disable-line
+      <a // eslint-disable-line
+        name="visa"
       />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">{visaName}</h2>
       <div className="relative mx-auto max-w-7xl py-8">
@@ -37,8 +37,8 @@ function skills(skills, lang = 'en') {
 
   return (
     <div>
-      <a
-        name="skills" // eslint-disable-line
+      <a // eslint-disable-line
+        name="skills"
       />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {skillsName}
@@ -58,8 +58,8 @@ function accreditation(accreditation, lang = 'en') {
 
   return (
     <div>
-      <a
-        name="accreditation" // eslint-disable-line
+      <a // eslint-disable-line
+        name="accreditation"
       />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {accreditationName}
@@ -78,8 +78,8 @@ function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
     <div className="overflow-hidden bg-gray-100">
       <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <a
-            name="vacancies" // eslint-disable-line
+          <a // eslint-disable-line
+            name="vacancies"
           />
           <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
             {subtitle}
