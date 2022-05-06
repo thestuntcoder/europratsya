@@ -1,4 +1,4 @@
-import { createRef, default as React, useState, useMemo } from 'react';
+import { default as React, useState } from 'react';
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import Flag from '../../components/flag';
 import europratsyaLogo from '../../images/europratsya.svg';
@@ -7,11 +7,11 @@ import Search from '../search';
 const searchIndices = [{ name: `Home` }];
 
 export default function NavCenter() {
-  const [hiddenMobile, setHiddenMobile] = useState(true);
-  const [hiddenSubmenu, setHiddenSubmenu] = useState(true);
-  const [hiddenDesktop, setHiddenDesktop] = useState(true);
+  const [hiddenMobile, setHiddenMobile] = useState(true); // eslint-disable-line
+  const [hiddenSubmenu, setHiddenSubmenu] = useState(true); // eslint-disable-line
+  const [hiddenDesktop, setHiddenDesktop] = useState(true); // eslint-disable-line
 
-  const { languages, originalPath, t } = useI18next();
+  const { languages, originalPath } = useI18next();
 
   let hiddenMobileVal =
     'absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-50';
