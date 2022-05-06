@@ -18,7 +18,9 @@ function visa(visa, lang = 'en') {
 
   return (
     <div>
-      <a name="visa" />
+      <a
+        name="visa" // eslint-disable-line
+      />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">{visaName}</h2>
       <div className="relative mx-auto max-w-7xl py-8">
         <BlockContent blocks={visaDesc} />
@@ -35,7 +37,9 @@ function skills(skills, lang = 'en') {
 
   return (
     <div>
-      <a name="skills" />
+      <a
+        name="skills" // eslint-disable-line
+      />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {skillsName}
       </h2>
@@ -54,7 +58,9 @@ function accreditation(accreditation, lang = 'en') {
 
   return (
     <div>
-      <a name="accreditation" />
+      <a
+        name="accreditation" // eslint-disable-line
+      />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">
         {accreditationName}
       </h2>
@@ -72,7 +78,9 @@ function vacancies(ads, lang = 'en', subtitle = 'Latest vacancies') {
     <div className="overflow-hidden bg-gray-100">
       <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <a name="vacancies" />
+          <a
+            name="vacancies" // eslint-disable-line
+          />
           <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl">
             {subtitle}
           </h2>
@@ -99,7 +107,7 @@ function country_image(country, country_name) {
 }
 
 export default function Country(props) {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(); // eslint-disable-line
   const language = props.pageContext.language;
 
   let countryName = getTitle(props.data.country.title, language);
