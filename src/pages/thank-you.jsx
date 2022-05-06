@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 
 export default function ThankYou({ data }) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const language = i18n.language;
 
   return (
