@@ -86,7 +86,7 @@ export default function Company(props) {
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
-          <BlockContent blocks={descriptionRaw} />
+          <BlockContent value={descriptionRaw} />
         </div>
       </div>
 

@@ -23,7 +23,7 @@ function visa(visa, lang = 'en') {
       />
       <h2 className="mt-8 text-xl font-extrabold text-blue-500">{visaName}</h2>
       <div className="relative mx-auto max-w-7xl py-8">
-        <BlockContent blocks={visaDesc} />
+        <BlockContent value={visaDesc} />
       </div>
     </div>
   );
@@ -44,7 +44,7 @@ function skills(skills, lang = 'en') {
         {skillsName}
       </h2>
       <div className="relative mx-auto max-w-7xl py-8">
-        <BlockContent blocks={skillsDesc} />
+        <BlockContent value={skillsDesc} />
       </div>
     </div>
   );
@@ -65,7 +65,7 @@ function accreditation(accreditation, lang = 'en') {
         {accreditationName}
       </h2>
       <div className="relative mx-auto max-w-7xl py-8">
-        <BlockContent blocks={accreditationDesc} />
+        <BlockContent value={accreditationDesc} />
       </div>
     </div>
   );

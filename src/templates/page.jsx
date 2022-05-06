@@ -158,7 +158,7 @@ export default function Page(props) {
               : ''}
             <div className="mt-8 lg:mt-0">
               <div className="prose prose-indigo mx-auto text-lg text-gray-500 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-                <BlockContent blocks={getRaw(page.body, language)} />
+                <BlockContent value={getRaw(page.body, language)} />
               </div>
             </div>
           </div>

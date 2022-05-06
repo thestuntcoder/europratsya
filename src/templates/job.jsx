@@ -124,7 +124,7 @@ export default function JobPost(props) {
               </dl>
             </div>
 
-            <BlockContent blocks={jobDescriptionRaw} />
+            <BlockContent value={jobDescriptionRaw} />
 
             <div className="mt-8 text-center">
               <div className="inline-flex rounded-full shadow">
@@ -157,7 +157,7 @@ export default function JobPost(props) {
             >
               {company.website}
             </a>
-            <BlockContent blocks={companyDescriptionRaw} />
+            <BlockContent value={companyDescriptionRaw} />
           </div>
         </div>
       </div>
