@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 export default function FilterLanguage(props) {
   let list = [];
