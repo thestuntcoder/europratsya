@@ -3,12 +3,23 @@ import { PortableText } from '@portabletext/react';
 import urlBuilder from '@sanity/image-url';
 import { getImageDimensions } from '@sanity/asset-utils';
 
+const SampleImageComponent = ({ value }) => {
+  const { width, height } = getImageDimensions(value);
+  return (
+    <img
+      src={urlBuilder().image(value).width(800).fit('max').auto('format').url()}
+      alt={value.alt || ' '}
+      loading="lazy"
+      style={{
+        aspectRatio: width / height,
+      }}
+    />
+  );
+};
+
 const serializers = {
   types: {
-    image: ({ value }) => {
-      console.log(value);
-      return null;
-    },
+    image: ({ value }) => <SampleImageComponent value={value} />,
   },
   block: {
     h1: ({ children }) => (
