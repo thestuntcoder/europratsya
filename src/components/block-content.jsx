@@ -73,24 +73,12 @@ const serializers = {
   marks: {
     strong: ({ children }) => <strong>{children}</strong>,
     em: ({ children }) => <em>{children}</em>,
-    link: ({ children }) => {
-      let rel,
-        blank = '';
-      if (
-        typeof children.mark.href !== 'undefined' &&
-        !children.mark.href.startsWith('/')
-      ) {
-        rel = 'noreferrer noopener';
-        blank = '_blank';
-      }
-
+    link: ({ children, value }) => {
+      const rel = !value.href.startsWith('/')
+        ? 'noreferrer noopener'
+        : undefined;
       return (
-        <a
-          href={children.mark.href}
-          rel={rel}
-          target={blank}
-          className="text-blue-500 hover:underline"
-        >
+        <a href={value.href} rel={rel}>
           {children}
         </a>
       );
