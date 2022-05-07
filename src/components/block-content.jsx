@@ -74,11 +74,19 @@ const serializers = {
     strong: ({ children }) => <strong>{children}</strong>,
     em: ({ children }) => <em>{children}</em>,
     link: ({ children, value }) => {
+      if (value.href === undefined) {
+        value.href = 'javascript:void(0);';
+      }
+
       const rel = !value.href.startsWith('/')
         ? 'noreferrer noopener'
         : undefined;
       return (
-        <a href={value.href} rel={rel}>
+        <a
+          href={value.href}
+          className="text-blue-500 hover:underline"
+          rel={rel}
+        >
           {children}
         </a>
       );
