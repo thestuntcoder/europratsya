@@ -3,11 +3,25 @@ import { PortableText } from '@portabletext/react';
 import urlBuilder from '@sanity/image-url';
 import { getImageDimensions } from '@sanity/asset-utils';
 
+const sanityClient = require('@sanity/client');
+const client = sanityClient({
+  projectId: process.env.SANITY_PROJECT_ID,
+  dataset: process.env.SANITY_DATASET,
+  apiVersion: '2021-03-25',
+  token: process.env.SANITY_TOKEN,
+  useCdn: true,
+});
+
 const SampleImageComponent = ({ value }) => {
   const { width, height } = getImageDimensions(value);
   return (
     <img
-      src={urlBuilder().image(value).width(800).fit('max').auto('format').url()}
+      src={urlBuilder(client)
+        .image(value)
+        .width(800)
+        .fit('max')
+        .auto('format')
+        .url()}
       alt={value.alt || ' '}
       loading="lazy"
       style={{
