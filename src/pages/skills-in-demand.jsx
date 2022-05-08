@@ -19,7 +19,7 @@ export default function SkillsInDemand({ data }) {
   let imgUnemployment = (
     <StaticImage
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-Unemployment-Map-2x.png"
+      src="../images/checklist/en-unemployment-map-2x.png"
       alt={t('Unemployment Map')}
       loading="auto"
       objectFit="contain"
@@ -30,7 +30,7 @@ export default function SkillsInDemand({ data }) {
     imgUnemployment = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-Unemployment-Map-2x.png"
+        src="../images/checklist/uk-unemployment-map-2x.png"
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"
@@ -42,7 +42,7 @@ export default function SkillsInDemand({ data }) {
     imgUnemployment = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-Unemployment-Map-2x.png"
+        src="../images/checklist/de-unemployment-map-2x.png"
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"

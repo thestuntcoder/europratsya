@@ -18,7 +18,7 @@ export default function EssentialChecklists({ data }) {
   let imgEnglish = (
     <StaticImage
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-Workplace-guide-English-2x.png"
+      src="../images/checklist/en-workplace-guide-english-2x.png"
       alt={t('Workplace guide - English')}
       loading="auto"
       objectFit="contain"
@@ -27,7 +27,7 @@ export default function EssentialChecklists({ data }) {
   let imgGerman = (
     <StaticImage
       className="my-8 h-full w-auto"
-      src={'../images/checklist/en-Workplace-guide-German-2x.png'}
+      src={'../images/checklist/en-workplace-guide-german-2x.png'}
       alt={t('Workplace guide - German')}
       loading="auto"
       objectFit="contain"
@@ -36,7 +36,7 @@ export default function EssentialChecklists({ data }) {
   let imgRussian = (
     <StaticImage
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-Workplace-guide-Ukrainian-Russian-2x.png"
+      src="../images/checklist/en-workplace-guide-ukrainian-russian-2x.png"
       alt={t('Workplace guide - Ukrainian Russian')}
       loading="auto"
       objectFit="contain"
@@ -47,7 +47,7 @@ export default function EssentialChecklists({ data }) {
     imgEnglish = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-Workplace-guide-English-2x.png"
+        src="../images/checklist/uk-workplace-guide-english-2x.png"
         alt={t('Workplace guide - English')}
         loading="auto"
         objectFit="contain"
@@ -57,7 +57,7 @@ export default function EssentialChecklists({ data }) {
     imgGerman = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src={'../images/checklist/uk-Workplace-guide-German-2x.png'}
+        src={'../images/checklist/uk-workplace-guide-german-2x.png'}
         alt={t('Workplace guide - German')}
         loading="auto"
         objectFit="contain"
@@ -67,7 +67,7 @@ export default function EssentialChecklists({ data }) {
     imgRussian = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-Workplace-guide-Ukrainian-Russian-2x.png"
+        src="../images/checklist/uk-workplace-guide-ukrainian-russian-2x.png"
         alt={t('Workplace guide - Ukrainian Russian')}
         loading="auto"
         objectFit="contain"
@@ -79,7 +79,7 @@ export default function EssentialChecklists({ data }) {
     imgEnglish = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-Workplace-guide-English-2x.png"
+        src="../images/checklist/de-workplace-guide-english-2x.png"
         alt={t('Workplace guide - English')}
         loading="auto"
         objectFit="contain"
@@ -89,7 +89,7 @@ export default function EssentialChecklists({ data }) {
     imgGerman = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src={'../images/checklist/de-Workplace-guide-German-2x.png'}
+        src={'../images/checklist/de-workplace-guide-german-2x.png'}
         alt={t('Workplace guide - German')}
         loading="auto"
         objectFit="contain"
@@ -99,7 +99,7 @@ export default function EssentialChecklists({ data }) {
     imgRussian = (
       <StaticImage
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-Workplace-guide-Ukrainian-Russian-2x.png"
+        src="../images/checklist/de-workplace-guide-ukrainian-russian-2x.png"
         alt={t('Workplace guide - Ukrainian Russian')}
         loading="auto"
         objectFit="contain"
