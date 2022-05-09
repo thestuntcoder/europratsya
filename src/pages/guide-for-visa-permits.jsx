@@ -7,6 +7,10 @@ import Navigation from '../components/layout/navigation';
 import { StaticImage } from 'gatsby-plugin-image';
 import CountrySelector from '../components/country-selector';
 
+import enMap from '../images/checklist/en-unemployment-map-2x.png';
+import ukMap from '../images/checklist/uk-unemployment-map-2x.png';
+import deMap from '../images/checklist/de-unemployment-map-2x.png';
+
 export default function VisaPermits({ data }) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
@@ -17,9 +21,9 @@ export default function VisaPermits({ data }) {
   const metaTitle = t('Guide for visa permits country by country in Europe');
 
   let imgUnemployment = (
-    <StaticImage
+    <img
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-unemployment-map-2x.png"
+      src={enMap}
       alt={t('Unemployment Map')}
       loading="auto"
       objectFit="contain"
@@ -28,9 +32,9 @@ export default function VisaPermits({ data }) {
 
   if (language === 'uk') {
     imgUnemployment = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-unemployment-map-2x.png"
+        src={ukMap}
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"
@@ -40,9 +44,9 @@ export default function VisaPermits({ data }) {
 
   if (language === 'de') {
     imgUnemployment = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-unemployment-map-2x.png"
+        src={deMap}
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"
