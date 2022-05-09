@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
-import { StaticImage } from 'gatsby-plugin-image';
 import CountrySelector from '../components/country-selector';
 
 import enMap from '../images/checklist/en-unemployment-map-2x.png';
