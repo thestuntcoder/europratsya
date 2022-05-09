@@ -1,14 +1,21 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 
-import enWorkplaceEn from '../images/checklist/en-workplace-guide-english-2x.png';
-import enWorkplaceDe from '../images/checklist/en-workplace-guide-german-2x.png';
-import enWorkplaceRu from '../images/checklist/en-workplace-guide-ukrainian-russian-2x.png';
+import enWorkplaceEn from '../images/checklist/enWorkplaceEn.png';
+import enWorkplaceDe from '../images/checklist/enWorkplaceDe.png';
+import enWorkplaceRu from '../images/checklist/enWorkplaceRu.png';
+
+import ukWorkplaceEn from '../images/checklist/ukWorkplaceEn.png';
+import ukWorkplaceDe from '../images/checklist/ukWorkplaceDe.png';
+import ukWorkplaceRu from '../images/checklist/ukWorkplaceRu.png';
+
+import deWorkplaceEn from '../images/checklist/deWorkplaceEn.png';
+import deWorkplaceDe from '../images/checklist/deWorkplaceDe.png';
+import deWorkplaceRu from '../images/checklist/deWorkplaceRu.png';
 
 export default function EssentialChecklists({ data }) {
   const { t, i18n } = useTranslation();
@@ -49,9 +56,9 @@ export default function EssentialChecklists({ data }) {
 
   if (language === 'uk') {
     imgEnglish = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-workplace-guide-english-2x.png"
+        src={ukWorkplaceEn}
         alt={t('Workplace guide - English')}
         loading="auto"
         objectFit="contain"
@@ -59,9 +66,9 @@ export default function EssentialChecklists({ data }) {
     );
 
     imgGerman = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src={'../images/checklist/uk-workplace-guide-german-2x.png'}
+        src={ukWorkplaceDe}
         alt={t('Workplace guide - German')}
         loading="auto"
         objectFit="contain"
@@ -69,9 +76,9 @@ export default function EssentialChecklists({ data }) {
     );
 
     imgRussian = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-workplace-guide-ukrainian-russian-2x.png"
+        src={ukWorkplaceRu}
         alt={t('Workplace guide - Ukrainian Russian')}
         loading="auto"
         objectFit="contain"
@@ -81,9 +88,9 @@ export default function EssentialChecklists({ data }) {
 
   if (language === 'de') {
     imgEnglish = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-workplace-guide-english-2x.png"
+        src={deWorkplaceEn}
         alt={t('Workplace guide - English')}
         loading="auto"
         objectFit="contain"
@@ -91,9 +98,9 @@ export default function EssentialChecklists({ data }) {
     );
 
     imgGerman = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src={'../images/checklist/de-workplace-guide-german-2x.png'}
+        src={deWorkplaceDe}
         alt={t('Workplace guide - German')}
         loading="auto"
         objectFit="contain"
@@ -101,9 +108,9 @@ export default function EssentialChecklists({ data }) {
     );
 
     imgRussian = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-workplace-guide-ukrainian-russian-2x.png"
+        src={deWorkplaceRu}
         alt={t('Workplace guide - Ukrainian Russian')}
         loading="auto"
         objectFit="contain"
