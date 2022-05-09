@@ -65,13 +65,13 @@ export default function NavCenter() {
             className="order-2 inline-flex justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 md:order-1 lg:px-6 lg:py-3 lg:text-sm"
             to="/free-education-university"
           >
-            Як закінчити університет?
+            Поради для студентів
           </Link>
           <Link
             className="order-2 inline-flex justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 md:order-1 lg:px-6 lg:py-3 lg:text-sm"
             to="/free-education-high-school"
           >
-            Як закінчити середню школу?
+            Поради для учнів школи
           </Link>
           <Search indices={searchIndices} classList="hidden md:flex order-3" />
         </nav>
@@ -236,13 +236,13 @@ export default function NavCenter() {
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/free-education-university"
               >
-                Як закінчити університет?
+                Поради для студентів
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/free-education-high-school"
               >
-                How to complete high school
+                Поради для учнів школи
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
