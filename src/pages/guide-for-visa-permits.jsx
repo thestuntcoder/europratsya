@@ -6,9 +6,9 @@ import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 import CountrySelector from '../components/country-selector';
 
-import enMap from '../images/checklist/en-unemployment-map-2x.png';
-import ukMap from '../images/checklist/uk-unemployment-map-2x.png';
-import deMap from '../images/checklist/de-unemployment-map-2x.png';
+import enMap from '../images/checklist/enUnemploymentMap.png';
+import ukMap from '../images/checklist/ukUnemploymentMap.png';
+import deMap from '../images/checklist/deUnemploymentMap.png';
 
 export default function VisaPermits({ data }) {
   const { t, i18n } = useTranslation();
