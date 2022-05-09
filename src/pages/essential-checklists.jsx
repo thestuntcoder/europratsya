@@ -18,7 +18,7 @@ export default function EssentialChecklists({ data }) {
   let imgEnglish = (
     <StaticImage
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-workplace-guide-english-2x.png"
+      src={'../images/checklist/en-workplace-guide-english-2x.png'}
       alt={t('Workplace guide - English')}
       loading="auto"
       objectFit="contain"
@@ -132,16 +132,25 @@ export default function EssentialChecklists({ data }) {
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   <Trans>Workplace guide - English</Trans>
                 </h2>
+                <p className="mt-8 text-base text-gray-500">
+                  <Trans>english_main_text</Trans>
+                </p>
                 {imgEnglish}
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   <Trans>Workplace guide - German</Trans>
                 </h2>
+                <p className="mt-8 text-base text-gray-500">
+                  <Trans>german_main_text</Trans>
+                </p>
                 {imgGerman}
 
                 <h2 className="text-base text-xl font-bold tracking-wide text-black">
                   <Trans>Workplace guide - Ukrainian Russian</Trans>
                 </h2>
+                <p className="mt-8 text-base text-gray-500">
+                  <Trans>ukrainian_main_text</Trans>
+                </p>
                 {imgRussian}
               </div>
             </div>
