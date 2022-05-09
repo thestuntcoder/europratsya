@@ -6,6 +6,10 @@ import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 
+import enWorkplaceEn from '../images/checklist/en-workplace-guide-english-2x.png';
+import enWorkplaceDe from '../images/checklist/en-workplace-guide-german-2x.png';
+import enWorkplaceRu from '../images/checklist/en-workplace-guide-ukrainian-russian-2x.png';
+
 export default function EssentialChecklists({ data }) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
@@ -16,27 +20,27 @@ export default function EssentialChecklists({ data }) {
   const metaTitle = t('An Essential checklist for Ukrainians migrating to EU');
 
   let imgEnglish = (
-    <StaticImage
+    <img
       className="my-8 h-full w-auto"
-      src={'../images/checklist/en-workplace-guide-english-2x.png'}
+      src={enWorkplaceEn}
       alt={t('Workplace guide - English')}
       loading="auto"
       objectFit="contain"
     />
   );
   let imgGerman = (
-    <StaticImage
+    <img
       className="my-8 h-full w-auto"
-      src={'../images/checklist/en-workplace-guide-german-2x.png'}
+      src={enWorkplaceDe}
       alt={t('Workplace guide - German')}
       loading="auto"
       objectFit="contain"
     />
   );
   let imgRussian = (
-    <StaticImage
+    <img
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-workplace-guide-ukrainian-russian-2x.png"
+      src={enWorkplaceRu}
       alt={t('Workplace guide - Ukrainian Russian')}
       loading="auto"
       objectFit="contain"
