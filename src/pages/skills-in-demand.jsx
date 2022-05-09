@@ -4,8 +4,11 @@ import { graphql } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
-import { StaticImage } from 'gatsby-plugin-image';
 import CountrySelector from '../components/country-selector';
+
+import enMap from '../images/checklist/en-unemployment-map-2x.png';
+import ukMap from '../images/checklist/uk-unemployment-map-2x.png';
+import deMap from '../images/checklist/de-unemployment-map-2x.png';
 
 export default function SkillsInDemand({ data }) {
   const { t, i18n } = useTranslation();
@@ -17,9 +20,9 @@ export default function SkillsInDemand({ data }) {
   const metaTitle = t('Skills in demand country by country in Europe');
 
   let imgUnemployment = (
-    <StaticImage
+    <img
       className="my-8 h-full w-auto"
-      src="../images/checklist/en-unemployment-map-2x.png"
+      src={enMap}
       alt={t('Unemployment Map')}
       loading="auto"
       objectFit="contain"
@@ -28,9 +31,9 @@ export default function SkillsInDemand({ data }) {
 
   if (language === 'uk') {
     imgUnemployment = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/uk-unemployment-map-2x.png"
+        src={ukMap}
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"
@@ -40,9 +43,9 @@ export default function SkillsInDemand({ data }) {
 
   if (language === 'de') {
     imgUnemployment = (
-      <StaticImage
+      <img
         className="my-8 h-full w-auto"
-        src="../images/checklist/de-unemployment-map-2x.png"
+        src={deMap}
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"
