@@ -96,25 +96,25 @@ export default function NavCenter() {
                 className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/vacancies/"
               >
-                Нові вакансії 🔔
+                Нові вакансії
               </Link>
               <Link
                 className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/guide-for-visa-permits/"
               >
-                Посібник для отримання візи/дозволів
+                Інформація щодо отримання візи/дозволів
               </Link>
               <Link
                 className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/companies/"
               >
-                Перев&shy;ірені євро&shy;пейські робот&shy;одавці
+                Перевірені європейські роботодавці
               </Link>
               <Link
                 className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
                 to="/essential-checklists/"
               >
-                Kонтро&shy;льні списки
+                Мовна мапа вакансій
               </Link>
             </div>
           </div>
@@ -125,19 +125,19 @@ export default function NavCenter() {
                 className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                 to="/ukr-education-explainer/"
               >
-                Освіта Поширені питання
+                Освіта в Україні
               </Link>
               <Link
                 className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                 to="/ukr-expertise-explained/"
               >
-                Кваліфікація Поширені питання
+                Галузі в Україні
               </Link>
               <Link
                 className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
                 to="/contact-for-employers/"
               >
-                Опублік&shy;увати вакансію
+                Опублікувати вакансію
               </Link>
             </div>
           </div>
@@ -224,13 +224,13 @@ export default function NavCenter() {
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/vacancies/"
               >
-                Нові вакансії 🔔
+                Нові вакансії
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/guide-for-visa-permits/"
               >
-                Посібник для отримання візи/дозволів
+                Інформація щодо отримання візи/дозволів
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
@@ -254,19 +254,19 @@ export default function NavCenter() {
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/essential-checklists/"
               >
-                Kонтрольні списки
+                Мовна мапа вакансій
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/ukr-education-explainer/"
               >
-                Освіта Поширені питання
+                Освіта в Україні
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                 to="/ukr-expertise-explained/"
               >
-                Кваліфікація Поширені питання
+                Галузі в Україні
               </Link>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
