@@ -207,24 +207,56 @@ export default function Home({ data }) {
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
               <img
                 className="max-h-12"
+                width="190"
+                height="48"
                 src={sponsorKaffebakeriet}
                 alt="Kaffebakeriet"
               />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-              <img className="max-h-12" src={sponsorKodit} alt="Kodit" />
+              <img
+                className="max-h-12"
+                width="200"
+                src={sponsorKodit}
+                alt="Kodit"
+              />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-              <img className="max-h-12" src={sponsorGrieg} alt="Grieg" />
+              <img
+                className="max-h-12"
+                width="48"
+                height="48"
+                src={sponsorGrieg}
+                alt="Grieg"
+              />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-              <img className="max-h-12" src={sponsorSC} alt="StuntCoders" />
+              <img
+                className="max-h-12"
+                width="304"
+                height="48"
+                src={sponsorSC}
+                alt="StuntCoders"
+              />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-              <img className="max-h-12" src={sponsorDT} alt="DayTwo" />
+              <img
+                className="max-h-12"
+                width="230"
+                height="48"
+                src={sponsorDT}
+                alt="DayTwo"
+              />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-              <img className="max-h-12" src={sponsorTM} alt="Team Magnus" />
+              <img
+                className="max-h-12"
+                width="210"
+                h
+                eight="48"
+                src={sponsorTM}
+                alt="Team Magnus"
+              />
             </div>
           </div>
         </div>
