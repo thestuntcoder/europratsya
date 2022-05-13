@@ -217,6 +217,7 @@ export default function Home({ data }) {
               <img
                 className="max-h-12"
                 width="200"
+                height="48"
                 src={sponsorKodit}
                 alt="Kodit"
               />
@@ -252,8 +253,7 @@ export default function Home({ data }) {
               <img
                 className="max-h-12"
                 width="210"
-                h
-                eight="48"
+                height="48"
                 src={sponsorTM}
                 alt="Team Magnus"
               />
