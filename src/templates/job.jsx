@@ -3,9 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
-import NavCenterUk from '../components/layout/nav-center.uk';
-import NavCenterDe from '../components/layout/nav-center.de';
+import Navigation from '../components/layout/navigation';
 import BlockContent from '../components/block-content';
 import { getRaw, getTitle, getSeo, getUrlPrefix } from '../helpers/language';
 
@@ -41,7 +39,6 @@ export default function JobPost(props) {
   const vacanciesUrl = getUrlPrefix(language) + '/vacancies';
 
   let vacanciesLink,
-    navigation,
     contactEmployer = {};
 
   let contactLink = /(.+)@(.+){2,}\.(.+){2,}/.test(job.contact)
@@ -52,19 +49,16 @@ export default function JobPost(props) {
     case 'de':
       contactEmployer = 'Kontakt';
       vacanciesLink = <Link to={vacanciesUrl}>Stellenangebote</Link>;
-      navigation = <NavCenterDe />;
       break;
 
     case 'uk':
       contactEmployer = 'Зверніться до цього роботодавця';
       vacanciesLink = <Link to={vacanciesUrl}>Вакансії</Link>;
-      navigation = <NavCenterUk />;
       break;
 
     default:
       contactEmployer = 'Contact this employer';
       vacanciesLink = <Link to={vacanciesUrl}>Vacancies</Link>;
-      navigation = <NavCenter />;
   }
 
   return (
@@ -78,7 +72,9 @@ export default function JobPost(props) {
         <meta property="og:image" content={metaImage} />
       </Helmet>
 
-      <div className="relative">{navigation}</div>
+      <div className="relative">
+        <Navigation lang={language} />
+      </div>
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
