@@ -6,7 +6,6 @@ module.exports = {
     siteUrl: `https://europratsya.com/`,
   },
   plugins: [
-    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
