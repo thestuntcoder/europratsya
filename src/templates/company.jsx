@@ -3,9 +3,7 @@ import { Helmet } from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
-import NavCenterUk from '../components/layout/nav-center.uk';
-import NavCenterDe from '../components/layout/nav-center.de';
+import Navigation from '../components/layout/navigation';
 import JobAds from '../components/job-ads';
 import BlockContent from '../components/block-content';
 import { getRaw, getUrlPrefix, getSeo } from '../helpers/language';
@@ -27,26 +25,22 @@ export default function Company(props) {
 
   const descriptionRaw = getRaw(company.description, language);
   let companyVacancies,
-    navigation,
     vettedEmployer = {};
 
   switch (language) {
     case 'de':
       companyVacancies = 'Stellenangebote des Unternehmens';
       vettedEmployer = 'Geprüfte Arbeitgeber';
-      navigation = <NavCenterDe />;
       break;
 
     case 'uk':
       companyVacancies = 'Вакансії від компанії';
       vettedEmployer = 'Перевірені роботодавці';
-      navigation = <NavCenterUk />;
       break;
 
     default:
       companyVacancies = 'Vacancies from the company';
       vettedEmployer = 'Vetted euro employers';
-      navigation = <NavCenter />;
   }
 
   return (
@@ -60,7 +54,9 @@ export default function Company(props) {
         <meta property="og:image" content={metaImage} />
       </Helmet>
 
-      <div className="relative">{navigation}</div>
+      <div className="relative">
+        <Navigation lang={language} />
+      </div>
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto mt-12 max-w-7xl px-4 sm:px-6 lg:px-8">
