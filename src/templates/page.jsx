@@ -3,9 +3,7 @@ import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import LayoutPage from '../components/layout/layout-page';
-import NavCenter from '../components/layout/nav-center';
-import NavCenterUk from '../components/layout/nav-center.uk';
-import NavCenterDe from '../components/layout/nav-center.de';
+import Navigation from '../components/layout/navigation';
 import BlockContent from '../components/block-content';
 import { getRaw, getTitle, getSeo } from '../helpers/language';
 
@@ -94,21 +92,6 @@ export default function Page(props) {
     getTitle(page.title, language)
   );
 
-  let navigation = {};
-
-  switch (language) {
-    case 'de':
-      navigation = <NavCenterDe />;
-      break;
-
-    case 'uk':
-      navigation = <NavCenterUk />;
-      break;
-
-    default:
-      navigation = <NavCenter />;
-  }
-
   return (
     <LayoutPage lang={language}>
       <Helmet>
@@ -119,7 +102,9 @@ export default function Page(props) {
         <meta property="og:description" content={metaDescription} />
       </Helmet>
 
-      <div className="relative">{navigation}</div>
+      <div className="relative">
+        <Navigation lang={language} />
+      </div>
 
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
