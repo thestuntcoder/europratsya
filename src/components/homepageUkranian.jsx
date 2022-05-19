@@ -11,6 +11,8 @@ import sponsorSC from '../images/sponsors/stuntcoders.png';
 import sponsorDT from '../images/sponsors/daytwo.svg';
 import sponsorGrieg from '../images/sponsors/grieg.svg';
 import sponsorTM from '../images/sponsors/tm.png';
+import sponsorBlum from '../images/sponsors/blum.webp';
+import sponsorAreas from '../images/sponsors/areas.webp';
 
 import magnifyingGlass from '../images/index/vacancies.svg';
 import trainIcon from '../images/index/move.svg';
@@ -39,7 +41,7 @@ export default function HomepageUkranian({ language }) {
         </div>
 
         <section
-          className="relative z-10 mx-auto -mt-32 2xl:max-w-[75%] xl:max-w-[95%] px-4 pb-4 sm:px-6 lg:px-8"
+          className="relative z-10 mx-auto -mt-32 2xl:max-w-[75%] xl:max-w-[95%] px-4 pb-4 sm:px-6 lg:px-8 mb-24"
           aria-labelledby="contact-heading"
         >
           <div className="grid grid-cols-1 gap-y-10 2xl:grid-cols-4  xl:grid-cols-2 xl:gap-y-2 md:grid-cols-2 md:gap-y-2 md:gap-x-2 lg:gap-x-2">
@@ -164,35 +166,6 @@ export default function HomepageUkranian({ language }) {
         </section>
       </div>
 
-      <div className="relative overflow-hidden bg-gray-50 py-16">
-        <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-indigo prose-lg mx-auto mt-6 text-gray-500">
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
-        <div className="absolute inset-0">
-          <div className="h-1/3 bg-white sm:h-2/3" />
-        </div>
-        <div className="relative mx-auto max-w-7xl">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight text-yellow-400 sm:text-4xl"></h2>
-          </div>
-
-          <div className="mt-8 text-center">
-            <div className="inline-flex rounded-full shadow">
-              <Link
-                to="/vacancies"
-                className="inline-flex items-center justify-center rounded-full border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white hover:bg-blue-700"
-              ></Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div className="relative h-3/4 bg-gray-100">
         <div className="absolute inset-0">
           <img
@@ -201,64 +174,64 @@ export default function HomepageUkranian({ language }) {
             alt="Ukrainian universities"
           />
         </div>
-        <div className="absolute inset-0 bg-gray-900 opacity-30" />
+        <div className="absolute inset-0 bg-gray-900 opacity-50" />
         <div className="z-10 mx-auto flex max-w-7xl items-center justify-between">
-          <div className="z-10 m-auto mx-auto mt-64 mb-64 text-center align-middle text-4xl font-extrabold text-white"></div>
+          <div className="z-10 m-auto mx-auto mt-64 mb-64 text-center align-middle text-3xl px-3 sm:text-4xl font-extrabold text-white">
+            <p>
+              Кілька лауреатів нобелівської премії в медицині, фізиці, хімії та
+              літературі походять з України. Найдавніші університети в Україні
+              були відкриті ще у 16-17 століттях та продовжують випускати
+              висококласних науковців, інженерів, архітекторів та шахтарів.
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="bg-white">
         <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-          <p className="text-center text-base font-semibold uppercase tracking-wider text-gray-600"></p>
-          <div className="mt-6 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-8">
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+          <p className="text-left text-xl font-semibold uppercase tracking-wider text-gray-600">
+            Спонсори і партнери
+          </p>
+          <div className="mt-6 grid grid-cols-3 gap-8 sm:grid-cols-5 lg:mt-8">
+            <div className="col-span-1 flex justify-center">
               <img
-                className="max-h-12"
+                className="h-full w-full object-contain"
                 width="190"
                 height="48"
-                src={sponsorKaffebakeriet}
-                alt="Kaffebakeriet"
+                src={sponsorBlum}
+                alt="Blum"
               />
             </div>
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+            <div className="col-span-1 flex justify-center">
               <img
-                className="max-h-12"
+                className="h-full w-full object-contain"
                 width="200"
                 height="48"
-                src={sponsorKodit}
-                alt="Kodit"
+                src={sponsorAreas}
+                alt="Areas"
               />
             </div>
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+            <div className="col-span-1 flex justify-center">
               <img
-                className="max-h-12"
-                width="48"
-                height="48"
-                src={sponsorGrieg}
-                alt="Grieg"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
-              <img
-                className="max-h-12"
+                className="h-full w-full object-contain"
                 width="304"
                 height="48"
                 src={sponsorSC}
                 alt="StuntCoders"
               />
             </div>
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+            <div className="col-span-1 flex justify-center">
               <img
-                className="max-h-12"
+                className="h-full w-full object-contain"
                 width="230"
                 height="48"
                 src={sponsorDT}
                 alt="DayTwo"
               />
             </div>
-            <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
+            <div className="col-span-1 flex justify-center">
               <img
-                className="max-h-12"
+                className="h-full w-full object-contain"
                 width="210"
                 height="48"
                 src={sponsorTM}
