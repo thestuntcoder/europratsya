@@ -23,24 +23,41 @@ export default function Company(props) {
     metaImage = company.seo.seo_image.asset.gatsbyImageData.images.fallback.src;
   }
 
+  let contactEmployerDirectly = '';
+
   const descriptionRaw = getRaw(company.description, language);
   let companyVacancies,
+    contactEmployer,
     vettedEmployer = {};
 
   switch (language) {
     case 'de':
       companyVacancies = 'Stellenangebote des Unternehmens';
       vettedEmployer = 'Geprüfte Arbeitgeber';
+      contactEmployer = 'Kontaktieren Sie diesen Arbeitgeber direkt';
       break;
 
     case 'uk':
       companyVacancies = 'Вакансії від компанії';
       vettedEmployer = 'Перевірені роботодавці';
+      contactEmployer = 'Зверніться безпосередньо до роботодавця';
       break;
 
     default:
       companyVacancies = 'Vacancies from the company';
       vettedEmployer = 'Vetted euro employers';
+      contactEmployer = 'Contact this employer directly';
+  }
+
+  if (company.url_of_employer !== '') {
+    contactEmployerDirectly = (
+      <a
+        href={company.url_of_employer}
+        className="text-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:block md:order-1 lg:px-6 lg:py-3 lg:text-sm"
+      >
+        {contactEmployer}
+      </a>
+    );
   }
 
   return (
@@ -83,6 +100,7 @@ export default function Company(props) {
       <div className="overflow-hidden bg-white">
         <div className="relative mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8">
           <BlockContent value={descriptionRaw} />
+          {contactEmployerDirectly}
         </div>
       </div>
 
@@ -143,6 +161,7 @@ export const query = graphql`
         }
       }
       name
+      url_of_employer
       id
       slug {
         current
