@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
@@ -23,6 +23,21 @@ export default function Vacancies({ data }) {
   function changeLang(event) {
     setLang(event.target.value);
   }
+
+  useEffect(() => {
+    const dataCountry = window.localStorage.getItem('COUNTRY_FILTER');
+    const dataLanguage = window.localStorage.getItem('LANGUAGE_FILTER');
+
+    if (dataCountry !== null && dataLanguage !== null) {
+      setCountry(JSON.parse(dataCountry));
+      setLang(JSON.parse(dataLanguage));
+    }
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('COUNTRY_FILTER', JSON.stringify(country));
+    window.localStorage.setItem('LANGUAGE_FILTER', JSON.stringify(lang));
+  }, [country, lang]);
 
   const metaDescription =
     'Job vacancies from safe, quality employers who are positive to interviewing Ukrainian candidates.';
@@ -61,6 +76,7 @@ export default function Vacancies({ data }) {
               <FilterLanguage
                 edges={data.allSanityJobPost.edges}
                 lang={language}
+                selectedLanguage={lang}
                 changeLang={changeLang}
                 default={t('Select language')}
               />
