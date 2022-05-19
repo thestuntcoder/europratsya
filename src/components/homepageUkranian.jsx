@@ -5,11 +5,8 @@ import Navigation from './layout/navigation';
 import ukrBg from '../images/ukr-background-new.jpg';
 import ukrUniBg from '../images/ukr-universities.jpg';
 
-import sponsorKaffebakeriet from '../images/sponsors/kaffebakeriet.jpeg';
-import sponsorKodit from '../images/sponsors/kodit.png';
 import sponsorSC from '../images/sponsors/stuntcoders.png';
 import sponsorDT from '../images/sponsors/daytwo.svg';
-import sponsorGrieg from '../images/sponsors/grieg.svg';
 import sponsorTM from '../images/sponsors/tm.png';
 import sponsorBlum from '../images/sponsors/blum.webp';
 import sponsorAreas from '../images/sponsors/areas.webp';
