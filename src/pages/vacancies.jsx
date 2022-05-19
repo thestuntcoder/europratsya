@@ -24,8 +24,6 @@ export default function Vacancies({ data }) {
     setLang(event.target.value);
   }
 
-  // saving the filter state for country and language in local storage
-
   useEffect(() => {
     const dataCountry = window.localStorage.getItem('COUNTRY_FILTER');
     const dataLanguage = window.localStorage.getItem('LANGUAGE_FILTER');
