@@ -12,10 +12,10 @@ import sponsorDT from '../images/sponsors/daytwo.svg';
 import sponsorGrieg from '../images/sponsors/grieg.svg';
 import sponsorTM from '../images/sponsors/tm.png';
 
-import magnifyingGlass from '../images/icons/vacancies-03.svg';
-import trainIcon from '../images/icons/move-03.svg';
-import calculator from '../images/icons/calculator-03.svg';
-import cv from '../images/icons/cv-help-03.svg';
+import magnifyingGlass from '../images/index/vacancies.svg';
+import trainIcon from '../images/index/move.svg';
+import calculator from '../images/index/calculator.svg';
+import cv from '../images/index/cv-help.svg';
 
 export default function HomepageUkranian({ language }) {
   return (
@@ -39,10 +39,10 @@ export default function HomepageUkranian({ language }) {
         </div>
 
         <section
-          className="relative z-10 mx-auto -mt-32 2xl:max-w-[80%] xl:max-w-[95%] px-4 pb-4 sm:px-6 lg:px-8"
+          className="relative z-10 mx-auto -mt-32 2xl:max-w-[75%] xl:max-w-[95%] px-4 pb-4 sm:px-6 lg:px-8"
           aria-labelledby="contact-heading"
         >
-          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-y-2 md:gap-x-2 lg:grid-cols-4 lg:gap-y-0 lg:gap-x-2">
+          <div className="grid grid-cols-1 gap-y-10 2xl:grid-cols-4  xl:grid-cols-2 xl:gap-y-2 md:grid-cols-2 md:gap-y-2 md:gap-x-2 lg:gap-x-2">
             <div className="w-full px-4 py-8 bg-gray-800 flex flex-col items-center ">
               <img
                 src={magnifyingGlass}
