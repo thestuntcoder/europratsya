@@ -153,7 +153,7 @@ export default function NavCenter() {
                   </li>
                   <li>
                     <Link
-                      to="/"
+                      to="/contact-for-employers"
                       class="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
@@ -255,7 +255,7 @@ export default function NavCenter() {
                   </li>
                   <li>
                     <Link
-                      to="/career-tools"
+                      to="/free-resources"
                       class="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
@@ -411,7 +411,7 @@ export default function NavCenter() {
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/"
+                  to="/contact-for-employers"
                 >
                   Post vacancies
                 </Link>
@@ -480,7 +480,7 @@ export default function NavCenter() {
                 </Link>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/career-tools"
+                  to="/free-resources"
                 >
                   Free career tools
                 </Link>
