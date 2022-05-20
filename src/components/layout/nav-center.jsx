@@ -7,11 +7,18 @@ import Search from '../search';
 const searchIndices = [{ name: `Home` }];
 
 export default function NavCenter() {
-  const [hiddenMobile, setHiddenMobile] = useState(true); // eslint-disable-line
-  const [hiddenSubmenu, setHiddenSubmenu] = useState(true); // eslint-disable-line
-  const [hiddenDesktop, setHiddenDesktop] = useState(true); // eslint-disable-line
+  const [hiddenMobile, setHiddenMobile] = useState(true);
 
   const { languages, originalPath } = useI18next();
+
+  function showSubMenu(e) {
+    let panel = e.currentTarget.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  }
 
   let hiddenMobileVal =
     'absolute top-0 inset-x-0 p-2 transition transform origin-top-right z-50';
@@ -22,7 +29,7 @@ export default function NavCenter() {
 
   return (
     <div>
-      <div className="mx-auto px-3 pt-4 sm:px-5">
+      <div className="mx-auto px-3 pt-4 pb-4 sm:px-5 md:pb-0">
         <nav className="relative mx-auto flex max-w-screen-xl items-center justify-between sm:h-10">
           <div className="order-1 flex items-center">
             <div className="flex w-full items-center justify-between md:w-auto">
@@ -61,88 +68,218 @@ export default function NavCenter() {
               </svg>
             </button>
           </div>
-          <Link
-            className="order-2 inline-flex hidden justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:block md:order-1 lg:px-6 lg:py-3 lg:text-sm"
-            to="/free-education-university"
-          >
-            How to complete university
-          </Link>
-          <Link
-            className="order-2 inline-flex hidden justify-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:block md:order-1 lg:px-6 lg:py-3 lg:text-sm"
-            to="/free-education-high-school"
-          >
-            How to complete high school
-          </Link>
           <Search indices={searchIndices} classList="hidden md:flex order-3" />
         </nav>
       </div>
-      <div className="mx-auto mt-4 hidden border-t border-b border-gray-500 bg-gray-200 px-4 sm:block sm:px-6 lg:mt-8">
-        <nav className="sm:h-18 relative  mx-auto flex max-w-screen-xl justify-between md:justify-center">
-          <div className="hidden border-r border-gray-500 p-2 md:block">
-            <div className="mb-2 text-sm font-bold">ABOUT</div>
-            <div className="md:flex md:space-x-8 lg:space-x-10">
+      <div className="mx-auto mt-4 hidden bg-gray-100 px-4 md:block sm:px-6 lg:mt-4">
+        <nav className="sm:h-18 relative hidden mx-auto md:flex max-w-screen-xl justify-left md:justify-left">
+          <div class="p-2 lg:p-4 flex items-center justify-center">
+            <div class="group relative">
+              <button class="flex items-center h-10 text-sm lg:text-base rounded px-0 font-semibold text-gray-600 hover:text-black ">
+                <p>Candidates</p>
+                <svg
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <nav
+                tabindex="0"
+                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+              >
+                <ul class="py-1">
+                  <li>
+                    <Link
+                      to="/vacancies"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Vacancies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/cv-career-advisory-service"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Free CV & career advisory service
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="p-2 lg:p-4  flex items-center justify-center">
+            <div class="group relative">
+              <button class="flex items-center text-sm lg:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black ">
+                <p>Employers</p>
+                <svg
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <nav
+                tabindex="0"
+                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+              >
+                <ul class="py-1">
+                  <li>
+                    <Link
+                      to="/companies"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Vetted euro employers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Post vacancies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/ukr-education-explainer/"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      UKR education FAQ
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="p-2 lg:p-4 flex items-center justify-center">
+            <div class="group relative">
               <Link
-                className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                to="/fair-pay-calculator"
+                class="flex items-center h-10 text-sm lg:text-base rounded px-0 font-semibold text-gray-600 hover:text-black "
+              >
+                Fair pay calculator
+              </Link>
+            </div>
+          </div>
+
+          <div class="p-2 lg:p-4  flex items-center justify-center">
+            <div class="group relative">
+              <button class="flex items-center text-sm lg:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black ">
+                <p>Career support centre</p>
+                <svg
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <nav
+                tabindex="0"
+                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+              >
+                <ul class="py-1">
+                  <li>
+                    <Link
+                      to="/"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Guide to accreditation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/guide-for-visa-permits/"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Guide to work visas
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/free-education-university"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Guide to free education (university)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/free-education-high-school"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Guide to free education (high school)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/skills-in-demand/"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      In demand work skills
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/career-tools"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    >
+                      Free career tools
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="p-2 lg:p-4  flex items-center justify-center">
+            <div class="group relative">
+              <Link
                 to="/about-us/"
+                class="flex items-center text-sm lg:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black "
               >
                 About us
               </Link>
             </div>
           </div>
-          <div className="hidden border-r border-gray-500 p-2 md:block">
-            <div className="mb-2 text-sm font-bold">CANDIDATES</div>
-            <div className="md:flex md:space-x-8 lg:space-x-10">
-              <Link
-                className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/skills-in-demand/"
-              >
-                Skills in demand
-              </Link>
-              <Link
-                className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/guide-for-visa-permits/"
-              >
-                Guide for visa/permits
-              </Link>
-              <Link
-                className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/companies/"
-              >
-                Vetted euro employers
-              </Link>
-              <Link
-                className="text-sm font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
-                to="/essential-checklists/"
-              >
-                Essential checklists
-              </Link>
-            </div>
-          </div>
-          <div className="hidden p-2 md:block">
-            <div className="mb-2 text-sm font-bold">EMPLOYERS</div>
-            <div className="md:flex md:space-x-8 lg:space-x-10">
-              <Link
-                className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
-                to="/ukr-education-explainer/"
-              >
-                UKR education FAQ
-              </Link>
-              <Link
-                className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
-                to="/ukr-expertise-explained/"
-              >
-                UKR expertise FAQ
-              </Link>
-              <Link
-                className="text-sm font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-700"
-                to="/contact-for-employers/"
-              >
-                Publish job opening
-              </Link>
-            </div>
-          </div>
-          <div className="hidden h-full p-2 lg:block  lg:w-60">
-            <div className="mb-2 text-right text-sm font-bold">
+
+          <div className="hidden h-full p-2 lg:block lg:w-40 ml-auto">
+            <div className="mb-0 text-right text-sm font-bold">
               {languages.map((lng) => (
                 <div>
                   <Link to={originalPath} language={lng} key={lng}>
@@ -152,8 +289,8 @@ export default function NavCenter() {
               ))}
             </div>
           </div>
-          <div className="hidden h-full p-2 md:block md:w-20  lg:hidden">
-            <div className="mb-2 text-right text-sm font-bold">
+          <div className="hidden h-full px-2 py-4 md:flex md:items-center md:w-30 ml-auto lg:hidden">
+            <div className="flex items-center gap-1 h-10 text-right text-sm font-bold">
               {languages.map((lng) => (
                 <Link to={originalPath} language={lng} key={lng}>
                   <Flag lang={lng} />
@@ -212,76 +349,157 @@ export default function NavCenter() {
               classList="order-2 flex justify-end m-2 mr-3 -mb-2"
             />
 
-            <div className="px-2 pt-2 pb-3">
+            <div className="px-2 pt-3 pb-3">
+              <button
+                className="mt-1 flex items-center rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out  hover:text-gray-900  focus:text-gray-900 focus:outline-none"
+                onClick={showSubMenu}
+              >
+                <p>Candidates</p>
+                <svg
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div className="hidden px-5 pt-2 pb-3">
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/vacancies"
+                >
+                  Vacancies
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/cv-career-advisory-service"
+                >
+                  Free CV & career advisory service
+                </Link>
+              </div>
+              <button
+                className="mt-1 flex items-center rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out  hover:text-gray-900  focus:text-gray-900 focus:outline-none"
+                onClick={showSubMenu}
+              >
+                <p>Employers </p>
+                <svg
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div className="hidden px-5 pt-2 pb-3">
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/companies"
+                >
+                  Vetted euro employers
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/"
+                >
+                  Post vacancies
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/ukr-education-explainer/"
+                >
+                  UKR education FAQ
+                </Link>
+              </div>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/about-us/"
+                to="/fair-pay-calculator"
+              >
+                Fair pay calculator
+              </Link>
+              <button
+                className="mt-1 flex items-center rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out  hover:text-gray-900  focus:text-gray-900 focus:outline-none"
+                onClick={showSubMenu}
+              >
+                <p>Career support centre</p>
+                <svg
+                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div className="hidden px-5 pt-2 pb-3">
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/vacancies"
+                >
+                  Guide to accreditation
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/guide-for-visa-permits/"
+                >
+                  Guide to work visas
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/free-education-university"
+                >
+                  Guide to free education (university)
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/free-education-high-school"
+                >
+                  Guide to free education (high school)
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/skills-in-demand/"
+                >
+                  In demand work skills
+                </Link>
+                <Link
+                  className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                  to="/career-tools"
+                >
+                  Free career tools
+                </Link>
+              </div>
+              <Link
+                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
+                to="/about-us"
               >
                 About us
               </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/skills-in-demand/"
-              >
-                Skills in demand
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/guide-for-visa-permits/"
-              >
-                Guide for visa/permits
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/free-education-university"
-              >
-                How to complete university
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/free-education-high-school"
-              >
-                How to complete high school
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/companies/"
-              >
-                Vetted euro employers
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/essential-checklists/"
-              >
-                Essential checklists
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/ukr-education-explainer/"
-              >
-                UKR education FAQ
-              </Link>
-              <Link
-                className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/ukr-expertise-explained/"
-              >
-                UKR expertise FAQ
-              </Link>
-              <Link
-                className="fmt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/contact-for-employers/"
-              >
-                Publish job opening
-              </Link>
             </div>
 
-            <div className="bg-gray-50 px-3 py-6 text-center">
+            <div className="bg-gray-50 flex justify-center gap-2 px-3 py-6 text-center">
               {languages.map((lng) => (
                 <Link
                   to={originalPath}
                   language={lng}
                   key={lng}
-                  className="mr-4 block inline"
+                  className="mr-4 flex gap-1"
                 >
                   {lng}
                   <Flag lang={lng} />
