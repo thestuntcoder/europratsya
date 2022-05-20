@@ -60,7 +60,7 @@ export default function Vacancies({ data }) {
       <div className="relative overflow-hidden bg-gray-50 py-16">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="md:grid md:grid-cols-3 md:gap-8">
-            <h1 className="text-base text-3xl font-bold tracking-wide text-black">
+            <h1 className="text-3xl font-bold tracking-wide text-black">
               <Trans>Vacancies</Trans>
             </h1>
             <div>
