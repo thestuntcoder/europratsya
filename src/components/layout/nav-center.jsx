@@ -7,7 +7,7 @@ import Search from '../search';
 const searchIndices = [{ name: `Home` }];
 
 export default function NavCenter() {
-  const [hiddenMobile, setHiddenMobile] = useState(true); // eslint-disable-line
+  const [hiddenMobile, setHiddenMobile] = useState(true);
 
   const { languages, originalPath } = useI18next();
 

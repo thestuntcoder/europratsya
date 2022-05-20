@@ -261,7 +261,7 @@ export default function NavCenter() {
                   to={originalPath}
                   language={lng}
                   key={lng}
-                  className="mr-4 block inline"
+                  className="mr-4 block"
                 >
                   {lng}
                   <Flag lang={lng} />
