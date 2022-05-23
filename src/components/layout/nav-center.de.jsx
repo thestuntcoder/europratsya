@@ -107,7 +107,7 @@ export default function NavCenter() {
                   </li>
                   <li>
                     <Link
-                      to="/cv-career-advisory-service"
+                      to="/contact-for-job-seekers/"
                       class="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
