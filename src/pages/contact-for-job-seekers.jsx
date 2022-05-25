@@ -300,21 +300,6 @@ export default function ContactEmployees({ data }) {
                           <Trans>English</Trans>
                         </label>
                       </div>
-                      <div className="flex items-center">
-                        <input
-                          id="push-email"
-                          name="push-notifications"
-                          type="radio"
-                          className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-500"
-                          onChange={handleChange}
-                        />
-                        <label
-                          htmlFor="push-email"
-                          className="ml-3 block text-sm font-medium text-gray-700"
-                        >
-                          <Trans>German</Trans>
-                        </label>
-                      </div>
                     </div>
                   </div>
                   <div>
