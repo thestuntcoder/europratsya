@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import LayoutPage from '../components/layout/layout-page';
 import Navigation from '../components/layout/navigation';
 import { getUrlPrefix } from '../helpers/language';
@@ -132,6 +132,17 @@ export default function ContactEmployees({ data }) {
                     To save you time, we will translate your CV into either
                     English or German free of charge.
                   </Trans>
+                </p>
+                <p className="my-2 italic">
+                  <Trans>Before sending, </Trans>
+                  <Link
+                    className="text-blue-500"
+                    to="/pro-tips-to-adjust-ukr-cvs/"
+                  >
+                    <Trans>
+                      check our pro tips to adjust UKR CVs for EU employers.
+                    </Trans>
+                  </Link>
                 </p>
                 <div className="mt-4 mb-8 grid grid-cols-4 gap-2 rounded-lg bg-blue-500 p-4 text-center text-sm text-white shadow-lg">
                   <div>
