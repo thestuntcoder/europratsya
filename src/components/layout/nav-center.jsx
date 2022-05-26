@@ -234,13 +234,12 @@ export default function NavCenter() {
                     </a>
                   </li>
                   <li>
-                    <Link
-                      to="/free-education-high-school"
+                    <a
+                      href="/free-education-high-school/"
                       className="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Guide to free education (high school)
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link
@@ -463,12 +462,12 @@ export default function NavCenter() {
                 >
                   Guide to free education (university)
                 </a>
-                <Link
+                <a
+                  href="/free-education-high-school/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/free-education-high-school"
                 >
                   Guide to free education (high school)
-                </Link>
+                </a>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/skills-in-demand/"
