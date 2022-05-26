@@ -71,14 +71,14 @@ export default function NavCenter() {
           <Search indices={searchIndices} classList="hidden md:flex order-3" />
         </nav>
       </div>
-      <div className="mx-auto mt-4 hidden bg-gray-100 px-4 md:block sm:px-6 lg:mt-4">
-        <nav className="sm:h-18 relative hidden mx-auto md:flex max-w-screen-xl justify-left md:justify-left">
-          <div class="p-2 lg:p-4 flex items-center justify-center">
-            <div class="group relative">
-              <button class="flex items-center h-10 text-sm lg:text-base rounded px-0 font-semibold text-gray-600 hover:text-black ">
+      <div className="mx-auto mt-4 hidden bg-gray-100 px-4 sm:px-6 md:block lg:mt-4">
+        <nav className="sm:h-18 justify-left md:justify-left relative mx-auto hidden max-w-screen-xl md:flex">
+          <div className="flex items-center justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <button className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black lg:text-base ">
                 <p>Candidates</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -93,13 +93,13 @@ export default function NavCenter() {
               </button>
               <nav
                 tabindex="0"
-                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
               >
-                <ul class="py-1">
+                <ul className="py-1">
                   <li>
                     <Link
                       to="/vacancies"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Vacancies
@@ -108,7 +108,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/contact-for-job-seekers/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Free CV & career advisory service
@@ -119,12 +119,12 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="p-2 lg:p-4  flex items-center justify-center">
-            <div class="group relative">
-              <button class="flex items-center text-sm lg:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black ">
+          <div className="flex items-center  justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <button className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black lg:text-base ">
                 <p>Employers</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -139,13 +139,13 @@ export default function NavCenter() {
               </button>
               <nav
                 tabindex="0"
-                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
               >
-                <ul class="py-1">
+                <ul className="py-1">
                   <li>
                     <Link
                       to="/companies"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Vetted euro employers
@@ -154,43 +154,42 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/contact-for-employers"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Post vacancies
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/ukr-education-explainer/"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    <a
+                      href="/ukr-education-explainer/"
+                      className="block px-4 py-2 hover:bg-gray-100"
                     >
                       UKR education FAQ
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
 
-          <div class="p-2 lg:p-4 flex items-center justify-center">
-            <div class="group relative">
-              <Link
-                to="/fair-pay-calculator"
-                class="flex items-center h-10 text-sm lg:text-base rounded px-0 font-semibold text-gray-600 hover:text-black "
+          <div className="flex items-center justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <a
+                href={'/fair-pay-calculator/'}
+                className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black lg:text-base "
               >
                 Fair pay calculator
-              </Link>
+              </a>
             </div>
           </div>
 
-          <div class="p-2 lg:p-4  flex items-center justify-center">
-            <div class="group relative">
-              <button class="flex items-center text-sm lg:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black ">
+          <div className="flex items-center  justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <button className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black lg:text-base ">
                 <p>Career support centre</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -205,13 +204,13 @@ export default function NavCenter() {
               </button>
               <nav
                 tabindex="0"
-                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
               >
-                <ul class="py-1">
+                <ul className="py-1">
                   <li>
                     <Link
                       to="/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Guide to accreditation
@@ -220,65 +219,62 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/guide-for-visa-permits/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Guide to work visas
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/free-education-university"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    <a
+                      href="/free-education-university/"
+                      className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Guide to free education (university)
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="/free-education-high-school"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    <a
+                      href="/free-education-high-school/"
+                      className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Guide to free education (high school)
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link
                       to="/skills-in-demand/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       In demand work skills
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/free-resources"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    <a
+                      href="/free-resources/"
+                      className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Free career tools
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
 
-          <div class="p-2 lg:p-4  flex items-center justify-center">
-            <div class="group relative">
-              <Link
-                to="/about-us/"
-                class="flex items-center text-sm lg:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black "
+          <div className="flex items-center  justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <a
+                href="/about-us/"
+                className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black lg:text-base"
               >
                 About us
-              </Link>
+              </a>
             </div>
           </div>
 
-          <div className="hidden h-full p-2 lg:block lg:w-40 ml-auto">
+          <div className="ml-auto hidden h-full p-2 lg:block lg:w-40">
             <div className="mb-0 text-right text-sm font-bold">
               {languages.map((lng) => (
                 <div>
@@ -289,8 +285,8 @@ export default function NavCenter() {
               ))}
             </div>
           </div>
-          <div className="hidden h-full px-2 py-4 md:flex md:items-center md:w-30 ml-auto lg:hidden">
-            <div className="flex items-center gap-1 h-10 text-right text-sm font-bold">
+          <div className="md:w-30 ml-auto hidden h-full px-2 py-4 md:flex md:items-center lg:hidden">
+            <div className="flex h-10 items-center gap-1 text-right text-sm font-bold">
               {languages.map((lng) => (
                 <Link to={originalPath} language={lng} key={lng}>
                   <Flag lang={lng} />
@@ -356,7 +352,7 @@ export default function NavCenter() {
               >
                 <p>Candidates</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -389,7 +385,7 @@ export default function NavCenter() {
               >
                 <p>Employers </p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -415,26 +411,26 @@ export default function NavCenter() {
                 >
                   Post vacancies
                 </Link>
-                <Link
+                <a
+                  href="/ukr-education-explainer/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/ukr-education-explainer/"
                 >
                   UKR education FAQ
-                </Link>
+                </a>
               </div>
-              <Link
+              <a
+                href={'/fair-pay-calculator/'}
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/fair-pay-calculator"
               >
                 Fair pay calculator
-              </Link>
+              </a>
               <button
                 className="mt-1 flex items-center rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out  hover:text-gray-900  focus:text-gray-900 focus:outline-none"
                 onClick={showSubMenu}
               >
                 <p>Career support centre</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -460,30 +456,30 @@ export default function NavCenter() {
                 >
                   Guide to work visas
                 </Link>
-                <Link
+                <a
+                  href="/free-education-university/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/free-education-university"
                 >
                   Guide to free education (university)
-                </Link>
-                <Link
+                </a>
+                <a
+                  href="/free-education-high-school/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/free-education-high-school"
                 >
                   Guide to free education (high school)
-                </Link>
+                </a>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/skills-in-demand/"
                 >
                   In demand work skills
                 </Link>
-                <Link
+                <a
+                  href="/free-resources/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/free-resources"
                 >
                   Free career tools
-                </Link>
+                </a>
               </div>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
@@ -493,7 +489,7 @@ export default function NavCenter() {
               </Link>
             </div>
 
-            <div className="bg-gray-50 flex justify-center gap-2 px-3 py-6 text-center">
+            <div className="flex justify-center gap-2 bg-gray-50 px-3 py-6 text-center">
               {languages.map((lng) => (
                 <Link
                   to={originalPath}

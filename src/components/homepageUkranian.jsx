@@ -38,21 +38,21 @@ export default function HomepageUkranian({ language }) {
         </div>
 
         <section
-          className="relative z-10 mx-auto -mt-32 2xl:max-w-[75%] xl:max-w-[95%] px-4 pb-4 sm:px-6 lg:px-8 mb-24"
+          className="relative z-10 mx-auto -mt-32 mb-24 px-4 pb-4 sm:px-6 lg:px-8 xl:max-w-[95%] 2xl:max-w-[75%]"
           aria-labelledby="contact-heading"
         >
-          <div className="grid grid-cols-1 gap-y-10 2xl:grid-cols-4  xl:grid-cols-2 xl:gap-y-2 md:grid-cols-2 md:gap-y-2 md:gap-x-2 lg:gap-x-2">
-            <div className="w-full px-4 py-8 bg-gray-800 flex flex-col items-center ">
+          <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2  md:gap-y-2 md:gap-x-2 lg:gap-x-2 xl:grid-cols-2 xl:gap-y-2 2xl:grid-cols-4">
+            <div className="flex w-full flex-col items-center bg-gray-800 px-4 py-8 ">
               <img
                 src={magnifyingGlass}
                 alt="Icon of Magnifying Glass"
-                className="w-16 md:w-24 lg:w-36 mb-2"
+                className="mb-2 w-16 md:w-24 lg:w-36"
               />
-              <h3 className="text-3xl font-extrabold text-white leading-8 mb-2 text-center">
+              <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Шукаєте
                 <br /> роботу?
               </h3>
-              <p className="flex-1 text-white font-bold text-lg leading-5 text-center mt-6">
+              <p className="mt-6 flex-1 text-center text-lg font-bold leading-5 text-white">
                 <span className="font-extrabold text-[#D6D648] ">
                   OУ нашій базі вакансій можна знайти роботу
                 </span>{' '}
@@ -63,23 +63,23 @@ export default function HomepageUkranian({ language }) {
               </p>
               <Link
                 to="/vacancies"
-                className="w-10/12 mt-10 text-center px-5 py-2 rounded-full border border-transparent bg-blue-600 text-xl font-extrabold uppercase text-white hover:bg-blue-300"
+                className="mt-10 w-10/12 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Вакансії
               </Link>
             </div>
 
-            <div className="w-full px-4 py-8 bg-gray-800 flex flex-col items-center ">
+            <div className="flex w-full flex-col items-center bg-gray-800 px-4 py-8 ">
               <img
                 src={trainIcon}
                 alt="Icon of a train"
-                className="w-16 md:w-24 lg:w-36 mb-2"
+                className="mb-2 w-16 md:w-24 lg:w-36"
               />
-              <h3 className="text-3xl font-extrabold text-white leading-8 mb-2 text-center">
+              <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Плануєте
                 <br /> переїхати за <br /> кордон?
               </h3>
-              <p className="flex-1 text-white font-bold text-lg leading-5 text-center mt-6">
+              <p className="mt-6 flex-1 text-center text-lg font-bold leading-5 text-white">
                 <span className="font-extrabold text-[#D6D648] ">
                   У нас зібрана інформація щодо працевлаштування
                 </span>{' '}
@@ -94,26 +94,26 @@ export default function HomepageUkranian({ language }) {
               </p>
               <Link
                 to="/"
-                className="mt-10 text-center px-5 py-2 rounded-full border border-transparent bg-blue-600 text-xl font-extrabold uppercase text-white hover:bg-blue-300"
+                className="mt-10 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Корисна інформація
               </Link>
             </div>
 
-            <div className="w-full px-4 py-8 bg-gray-800 flex flex-col items-center ">
+            <div className="flex w-full flex-col items-center bg-gray-800 px-4 py-8 ">
               <img
                 src={calculator}
                 alt="Icon of a calculator"
-                className="w-16 md:w-24 lg:w-36 mb-2"
+                className="mb-2 w-16 md:w-24 lg:w-36"
               />
-              <h3 className="text-3xl font-extrabold text-white leading-8 mb-2 text-center">
+              <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Є питання
                 <br />
                 щодо
                 <br />
                 зарплати?
               </h3>
-              <p className="flex-1 text-white font-bold text-lg leading-5 text-center mt-6">
+              <p className="mt-6 flex-1 text-center text-lg font-bold leading-5 text-white">
                 Тут ви можете перевірити, чи роботодавець пропонує
                 <span className="font-extrabold text-[#D6D648] ">
                   справедливу оплату праці.
@@ -128,23 +128,23 @@ export default function HomepageUkranian({ language }) {
               </p>
               <Link
                 to="/"
-                className="mt-10 text-center px-5 py-2 rounded-full border border-transparent bg-blue-600 text-xl font-extrabold uppercase text-white hover:bg-blue-300"
+                className="mt-10 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Перевірити рівень ЗП
               </Link>
             </div>
 
-            <div className="w-full px-4 py-8 bg-gray-800 flex flex-col items-center ">
+            <div className="flex w-full flex-col items-center bg-gray-800 px-4 py-8 ">
               <img
                 src={cv}
                 alt="Icon of CV"
-                className="w-16 md:w-24 lg:w-36 mb-2"
+                className="mb-2 w-16 md:w-24 lg:w-36"
               />
-              <h3 className="text-3xl font-extrabold text-white leading-8 mb-2 text-center">
+              <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Потрібна
                 <br /> допомога з <br /> резюме?
               </h3>
-              <p className="flex-1 text-white font-bold text-lg leading-5 text-center mt-6">
+              <p className="mt-6 flex-1 text-center text-lg font-bold leading-5 text-white">
                 <span className="font-extrabold text-[#D6D648] ">
                   Ми перекладаємо CV з української чи російської
                 </span>{' '}
@@ -154,7 +154,7 @@ export default function HomepageUkranian({ language }) {
               </p>
               <Link
                 to="/"
-                className="w-10/12 mt-10 text-center px-5 py-2 rounded-full border border-transparent bg-blue-600 text-xl font-extrabold uppercase text-white hover:bg-blue-300"
+                className="mt-10 w-10/12 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Допомога з CV
               </Link>
@@ -173,7 +173,7 @@ export default function HomepageUkranian({ language }) {
         </div>
         <div className="absolute inset-0 bg-gray-900 opacity-50" />
         <div className="z-10 mx-auto flex max-w-7xl items-center justify-between">
-          <div className="z-10 m-auto mx-auto mt-64 mb-64 text-center align-middle text-3xl px-3 sm:text-4xl font-extrabold text-white">
+          <div className="z-10 m-auto mx-auto mt-64 mb-64 px-3 text-center align-middle text-3xl font-extrabold text-white sm:text-4xl">
             <p>
               Кілька лауреатів нобелівської премії в медицині, фізиці, хімії та
               літературі походять з України. Найдавніші університети в Україні
