@@ -252,13 +252,12 @@ export default function NavCenter() {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/free-resources"
+                    <a
+                      href="/free-resources/"
                       className="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Free career tools
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -476,12 +475,12 @@ export default function NavCenter() {
                 >
                   In demand work skills
                 </Link>
-                <Link
+                <a
+                  href="/free-resources/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/free-resources"
                 >
                   Free career tools
-                </Link>
+                </a>
               </div>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"

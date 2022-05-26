@@ -252,13 +252,12 @@ export default function NavCenter() {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/career-tools"
+                    <a
+                      href="/de/free-resources/"
                       className="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Kostenlose Karriere-Tools
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -476,12 +475,12 @@ export default function NavCenter() {
                 >
                   Gefragte berufliche Qualifikationen
                 </Link>
-                <Link
+                <a
+                  href="/de/free-resources/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/career-tools"
                 >
                   Kostenlose Karriere-Tools
-                </Link>
+                </a>
               </div>
               <Link
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
