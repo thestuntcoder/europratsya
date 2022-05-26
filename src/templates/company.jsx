@@ -53,7 +53,7 @@ export default function Company(props) {
     contactEmployerDirectly = (
       <a
         href={company.url_of_employer}
-        className="text-center rounded-md border border-transparent bg-blue-500 px-4 py-2 text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:block md:order-1 lg:px-6 lg:py-3 lg:text-sm"
+        className="rounded-md border border-transparent bg-blue-500 px-4 py-2 text-center text-xs font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 sm:block md:order-1 lg:px-6 lg:py-3 lg:text-sm"
       >
         {contactEmployer}
       </a>
