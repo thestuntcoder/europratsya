@@ -6,12 +6,12 @@ import flagUk from '../images/lang/uk.png';
 
 export default function Flag(props) {
   if (props.lang === 'uk') {
-    return <img src={flagUk} alt="uk" className="h-6 inline" />;
+    return <img src={flagUk} alt="uk" className="inline h-6" />;
   }
 
   if (props.lang === 'de') {
-    return <img src={flagDe} alt="de" className="h-6 inline" />;
+    return <img src={flagDe} alt="de" className="inline h-6" />;
   }
 
-  return <img src={flagEn} alt="en" className="h-6 inline" />;
+  return <img src={flagEn} alt="en" className="inline h-6" />;
 }

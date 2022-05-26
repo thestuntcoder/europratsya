@@ -71,11 +71,11 @@ export default function NavCenter() {
           <Search indices={searchIndices} classList="hidden md:flex order-3" />
         </nav>
       </div>
-      <div className="mx-auto mt-4 hidden bg-gray-100 px-4 md:block sm:px-6 lg:mt-4">
-        <nav className="sm:h-18 relative hidden mx-auto md:flex max-w-screen-xl justify-left md:justify-left">
-          <div class="p-2 lg:p-4 flex items-center justify-center">
+      <div className="mx-auto mt-4 hidden bg-gray-100 px-4 sm:px-6 md:block lg:mt-4">
+        <nav className="sm:h-18 justify-left md:justify-left relative mx-auto hidden max-w-screen-xl md:flex">
+          <div class="flex items-center justify-center p-2 lg:p-4">
             <div class="group relative">
-              <button class="flex items-center h-10 text-sm 2xl:text-base rounded px-0 font-semibold text-gray-600 hover:text-black ">
+              <button class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
                 <p>Кандидатам</p>
                 <svg
                   class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
@@ -119,9 +119,9 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="p-2 lg:p-4  flex items-center justify-center">
+          <div class="flex items-center  justify-center p-2 lg:p-4">
             <div class="group relative">
-              <button class="flex items-center text-sm 2xl:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black ">
+              <button class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
                 <p>Роботодавцям</p>
                 <svg
                   class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
@@ -174,20 +174,20 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="p-2 lg:p-4 flex items-center justify-center">
+          <div class="flex items-center justify-center p-2 lg:p-4">
             <div class="group relative">
               <Link
                 to="/fair-pay-calculator"
-                class="flex items-center h-10 text-sm 2xl:text-base rounded px-0 font-semibold text-gray-600 hover:text-black "
+                class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base "
               >
                 Калькулятор справедливої оплати праці
               </Link>
             </div>
           </div>
 
-          <div class="p-2 lg:p-4  flex items-center justify-center">
+          <div class="flex items-center  justify-center p-2 lg:p-4">
             <div class="group relative">
-              <button class="flex items-center text-sm 2xl:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black ">
+              <button class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
                 <p>Центр підтримки з працевлаштування</p>
                 <svg
                   class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
@@ -267,18 +267,18 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="p-2 lg:p-4  flex items-center justify-center">
+          <div class="flex items-center  justify-center p-2 lg:p-4">
             <div class="group relative">
               <Link
                 to="/about-us/"
-                class="flex items-center text-sm 2xl:text-base h-10 rounded px-0 font-semibold text-gray-600 hover:text-black "
+                class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base "
               >
                 Про нас
               </Link>
             </div>
           </div>
 
-          <div className="hidden h-full p-2 xl:block lg:w-15 ml-auto">
+          <div className="lg:w-15 ml-auto hidden h-full p-2 xl:block">
             <div className="mb-0 text-right text-sm font-bold">
               {languages.map((lng) => (
                 <div>
@@ -289,8 +289,8 @@ export default function NavCenter() {
               ))}
             </div>
           </div>
-          <div className="hidden h-full px-2 py-4 md:flex md:items-center md:w-30 ml-auto xl:hidden">
-            <div className="flex items-center gap-1 h-10 text-right text-sm font-bold">
+          <div className="md:w-30 ml-auto hidden h-full px-2 py-4 md:flex md:items-center xl:hidden">
+            <div className="flex h-10 items-center gap-1 text-right text-sm font-bold">
               {languages.map((lng) => (
                 <Link to={originalPath} language={lng} key={lng}>
                   <Flag lang={lng} />
@@ -493,7 +493,7 @@ export default function NavCenter() {
               </Link>
             </div>
 
-            <div className="bg-gray-50 flex justify-center gap-2 px-3 py-6 text-center">
+            <div className="flex justify-center gap-2 bg-gray-50 px-3 py-6 text-center">
               {languages.map((lng) => (
                 <Link
                   to={originalPath}

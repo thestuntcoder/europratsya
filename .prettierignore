@@ -3,3 +3,4 @@ package-lock.json
 public
 tailwind.css
 .cache/*
+DEPLOY.md
