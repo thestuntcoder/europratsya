@@ -73,12 +73,12 @@ export default function NavCenter() {
       </div>
       <div className="mx-auto mt-4 hidden bg-gray-100 px-4 sm:px-6 md:block lg:mt-4">
         <nav className="sm:h-18 justify-left md:justify-left relative mx-auto hidden max-w-screen-xl md:flex">
-          <div class="flex items-center justify-center p-2 lg:p-4">
-            <div class="group relative">
-              <button class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
+          <div className="flex items-center justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <button className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
                 <p>Кандидатам</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -93,13 +93,13 @@ export default function NavCenter() {
               </button>
               <nav
                 tabindex="0"
-                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
               >
-                <ul class="py-1">
+                <ul className="py-1">
                   <li>
                     <Link
                       to="/vacancies"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Вакансії
@@ -108,7 +108,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/contact-for-job-seekers/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Безкоштовний переклад CV та консультування
@@ -119,12 +119,12 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="flex items-center  justify-center p-2 lg:p-4">
-            <div class="group relative">
-              <button class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
+          <div className="flex items-center  justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <button className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
                 <p>Роботодавцям</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -139,13 +139,13 @@ export default function NavCenter() {
               </button>
               <nav
                 tabindex="0"
-                class="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-10 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
               >
-                <ul class="py-1">
+                <ul className="py-1">
                   <li>
                     <Link
                       to="/companies"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Перевірені Європейські роботодавці
@@ -154,7 +154,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/contact-for-employers"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Опублікувати вакансію
@@ -173,23 +173,23 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="flex items-center justify-center p-2 lg:p-4">
-            <div class="group relative">
+          <div className="flex items-center justify-center p-2 lg:p-4">
+            <div className="group relative">
               <a
                 href={'/uk/fair-pay-calculator'}
-                class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base"
+                className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base"
               >
                 Калькулятор справедливої оплати праці
               </a>
             </div>
           </div>
 
-          <div class="flex items-center  justify-center p-2 lg:p-4">
-            <div class="group relative">
-              <button class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
+          <div className="flex items-center  justify-center p-2 lg:p-4">
+            <div className="group relative">
+              <button className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base ">
                 <p>Центр підтримки з працевлаштування</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -204,13 +204,13 @@ export default function NavCenter() {
               </button>
               <nav
                 tabindex="0"
-                class="invisible absolute left-0 top-full z-20 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
+                className="invisible absolute left-0 top-full z-20 w-60 rounded border-2 border-gray-100 bg-white opacity-0 drop-shadow-md transition-all group-focus-within:visible group-focus-within:translate-y-1 group-focus-within:opacity-100"
               >
-                <ul class="py-1">
+                <ul className="py-1">
                   <li>
                     <Link
                       to="/skills-in-demand/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Довідник з акредитації
@@ -219,7 +219,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/guide-for-visa-permits/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Довідник з отримання візи
@@ -236,7 +236,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/free-education-high-school"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Довідник з безкоштовної освіти (випускникам)
@@ -245,7 +245,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/skills-in-demand/"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Затребуванні робочі навички
@@ -254,7 +254,7 @@ export default function NavCenter() {
                   <li>
                     <Link
                       to="/career-tools"
-                      class="block px-4 py-2 hover:bg-gray-100"
+                      className="block px-4 py-2 hover:bg-gray-100"
                       activeClassName="block px-4 py-2 hover:bg-gray-100"
                     >
                       Безкоштовні ресурси для працевлаштування
@@ -265,11 +265,11 @@ export default function NavCenter() {
             </div>
           </div>
 
-          <div class="flex items-center  justify-center p-2 lg:p-4">
-            <div class="group relative">
+          <div className="flex items-center  justify-center p-2 lg:p-4">
+            <div className="group relative">
               <Link
                 to="/about-us/"
-                class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base "
+                className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base "
               >
                 Про нас
               </Link>
@@ -354,7 +354,7 @@ export default function NavCenter() {
               >
                 <p>Кандидатам</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -387,7 +387,7 @@ export default function NavCenter() {
               >
                 <p>Роботодавцям </p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
@@ -432,7 +432,7 @@ export default function NavCenter() {
               >
                 <p>Центр підтримки з працевлаштування</p>
                 <svg
-                  class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"
