@@ -175,12 +175,12 @@ export default function NavCenter() {
 
           <div class="flex items-center justify-center p-2 lg:p-4">
             <div class="group relative">
-              <Link
-                to="/fair-pay-calculator"
-                class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base "
+              <a
+                href={'/uk/fair-pay-calculator'}
+                class="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base"
               >
                 Калькулятор справедливої оплати праці
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -421,12 +421,12 @@ export default function NavCenter() {
                   Освіта в Україні
                 </a>
               </div>
-              <Link
+              <a
+                href={'/uk/fair-pay-calculator'}
                 className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                to="/fair-pay-calculator"
               >
                 Калькулятор справедливої оплати праці
-              </Link>
+              </a>
               <button
                 className="mt-1 flex items-center rounded-md px-3 py-2 text-base font-medium text-gray-700 transition duration-150 ease-in-out  hover:text-gray-900  focus:text-gray-900 focus:outline-none"
                 onClick={showSubMenu}
