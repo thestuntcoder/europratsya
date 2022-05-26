@@ -267,12 +267,12 @@ export default function NavCenter() {
 
           <div className="flex items-center  justify-center p-2 lg:p-4">
             <div className="group relative">
-              <Link
-                to="/about-us/"
-                className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black 2xl:text-base "
+              <a
+                href="/uk/about-us/"
+                className="flex h-10 items-center rounded px-0 text-sm font-semibold text-gray-600 hover:text-black lg:text-base"
               >
                 Про нас
-              </Link>
+              </a>
             </div>
           </div>
 
