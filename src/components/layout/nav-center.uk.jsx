@@ -226,13 +226,12 @@ export default function NavCenter() {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/free-education-university"
-                      class="block px-4 py-2 hover:bg-gray-100"
-                      activeClassName="block px-4 py-2 hover:bg-gray-100"
+                    <a
+                      href="/uk/free-education-university/"
+                      className="block px-4 py-2 hover:bg-gray-100"
                     >
                       Довідник з безкоштовної освіти (студентам)
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link
@@ -459,12 +458,12 @@ export default function NavCenter() {
                 >
                   Довідник з отримання візи
                 </Link>
-                <Link
+                <a
+                  href="/uk/free-education-university/"
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/free-education-university"
                 >
                   Довідник з безкоштовної освіти (студентам)
-                </Link>
+                </a>
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
                   to="/free-education-high-school"
