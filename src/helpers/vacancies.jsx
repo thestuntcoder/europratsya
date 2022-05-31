@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import { getTitle, getUrlPrefix } from './language';
 
 export function listVacancies(
@@ -34,12 +33,12 @@ export function listVacancies(
     allJobAds.push(
       <tr key={'tr-' + key}>
         <td className="w-full max-w-0 py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:w-auto sm:max-w-none sm:pl-6">
-          <Link
-            to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
+          <a
+            href={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
             className="text-blue-500 hover:text-blue-900"
           >
             {getTitle(edges[key].node.title, lang)}
-          </Link>
+          </a>
           <dl className="font-normal lg:hidden">
             <dt className="sr-only">{translation.title}</dt>
             <dd className="mt-1 truncate text-gray-700">
@@ -67,12 +66,12 @@ export function listVacancies(
             .join(translation.or)}
         </td>
         <td className="py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-          <Link
-            to={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
+          <a
+            href={getUrlPrefix(lang) + '/job/' + edges[key].node.slug.current}
             className="text-blue-500 hover:text-blue-900"
           >
             {translation.view} →
-          </Link>
+          </a>
         </td>
       </tr>
     );
