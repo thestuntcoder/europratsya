@@ -63,21 +63,21 @@ export default function FooterDe() {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link
-                      to="/de/privacy-policy"
+                    <a
+                      href="/de/privacy-policy"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       Datenschutz
-                    </Link>
+                    </a>
                   </li>
 
                   <li>
-                    <Link
-                      to="/de/our-website"
+                    <a
+                      href="/de/our-website"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       Impressum
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>

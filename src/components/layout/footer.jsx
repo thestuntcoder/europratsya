@@ -66,21 +66,21 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link
-                      to="/privacy-policy"
+                    <a
+                      href="/privacy-policy"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       Privacy policy
-                    </Link>
+                    </a>
                   </li>
 
                   <li>
-                    <Link
-                      to="/our-website"
+                    <a
+                      href="/our-website"
                       className="text-base text-gray-300 hover:text-white"
                     >
                       Our website
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
