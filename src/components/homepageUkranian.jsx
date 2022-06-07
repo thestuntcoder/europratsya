@@ -92,12 +92,12 @@ export default function HomepageUkranian({ language }) {
                   перевірена на урядових вебсайтах.
                 </span>
               </p>
-              <Link
-                to="/"
+              <a
+                href="/uk/free-resources"
                 className="mt-10 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Корисна інформація
-              </Link>
+              </a>
             </div>
 
             <div className="flex w-full flex-col items-center bg-gray-800 px-4 py-8 ">
@@ -126,12 +126,12 @@ export default function HomepageUkranian({ language }) {
                   перевірити чи вам платять відповідно до ринкової ставки.
                 </span>
               </p>
-              <Link
-                to="/"
+              <a
+                href="/uk/fair-pay-calculator"
                 className="mt-10 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Перевірити рівень ЗП
-              </Link>
+              </a>
             </div>
 
             <div className="flex w-full flex-col items-center bg-gray-800 px-4 py-8 ">
@@ -152,12 +152,12 @@ export default function HomepageUkranian({ language }) {
                 наповнення та оформлення СV, щоб збільшити ваші шанси попасти на
                 співбесіду.
               </p>
-              <Link
-                to="/"
+              <a
+                href="/uk/contact-for-job-seekers"
                 className="mt-10 w-10/12 rounded-full border border-transparent bg-blue-600 px-5 py-2 text-center text-xl font-extrabold uppercase text-white hover:bg-blue-300"
               >
                 Допомога з CV
-              </Link>
+              </a>
             </div>
           </div>
         </section>
