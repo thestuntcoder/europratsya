@@ -446,7 +446,7 @@ export default function NavCenter() {
               <div className="hidden px-5 pt-2 pb-3">
                 <Link
                   className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:bg-gray-50 hover:text-gray-900 focus:bg-gray-50 focus:text-gray-900 focus:outline-none"
-                  to="/vacancies"
+                  to="/skills-in-demand/"
                 >
                   Leitfaden für die Akkreditierung
                 </Link>
