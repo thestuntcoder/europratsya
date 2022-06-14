@@ -5,7 +5,7 @@ import { getImageDimensions } from '@sanity/asset-utils';
 
 const sanityClient = require('@sanity/client');
 const client = sanityClient({
-  projectId: process.env.SANITY_PROJECT_ID,
+  projectId: process.env.GATSBY_SANITY_PROJECT_ID,
   dataset: process.env.SANITY_DATASET,
   apiVersion: '2021-03-25',
   token: process.env.SANITY_TOKEN,
@@ -73,10 +73,12 @@ const serializers = {
   marks: {
     strong: ({ children }) => <strong>{children}</strong>,
     em: ({ children }) => <em>{children}</em>,
-    link: ({ children, value }) => {
+    link: ({ children, value, mark }) => {
       if (value.href === undefined) {
         value.href = 'javascript:void(0);';
       }
+
+      const target_attr = mark.blank ? '_blank' : '_self';
 
       const rel = !value.href.startsWith('/')
         ? 'noreferrer noopener'
@@ -84,6 +86,7 @@ const serializers = {
       return (
         <a
           href={value.href}
+          target={target_attr}
           className="text-blue-500 hover:underline"
           rel={rel}
         >

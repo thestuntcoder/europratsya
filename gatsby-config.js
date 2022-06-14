@@ -14,7 +14,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        projectId: process.env.SANITY_PROJECT_ID,
+        projectId: process.env.GATSBY_SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
         token: process.env.SANITY_TOKEN,
         watchMode: true,
@@ -92,7 +92,7 @@ function requireConfig(path) {
     );
     return {
       api: {
-        projectId: process.env.SANITY_PROJECT_ID || '',
+        projectId: process.env.GATSBY_SANITY_PROJECT_ID || '',
         dataset: process.env.SANITY_DATASET || '',
       },
     };
