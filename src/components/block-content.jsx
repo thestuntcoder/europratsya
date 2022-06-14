@@ -73,10 +73,12 @@ const serializers = {
   marks: {
     strong: ({ children }) => <strong>{children}</strong>,
     em: ({ children }) => <em>{children}</em>,
-    link: ({ children, value }) => {
+    link: ({ children, value, mark }) => {
       if (value.href === undefined) {
         value.href = 'javascript:void(0);';
       }
+
+      const target_attr = mark.blank ? '_blank' : '_self';
 
       const rel = !value.href.startsWith('/')
         ? 'noreferrer noopener'
@@ -84,6 +86,7 @@ const serializers = {
       return (
         <a
           href={value.href}
+          target={target_attr}
           className="text-blue-500 hover:underline"
           rel={rel}
         >
