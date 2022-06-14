@@ -5,7 +5,7 @@ import { getImageDimensions } from '@sanity/asset-utils';
 
 const sanityClient = require('@sanity/client');
 const client = sanityClient({
-  projectId: process.env.SANITY_PROJECT_ID,
+  projectId: process.env.GATSBY_SANITY_PROJECT_ID,
   dataset: process.env.SANITY_DATASET,
   apiVersion: '2021-03-25',
   token: process.env.SANITY_TOKEN,
