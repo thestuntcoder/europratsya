@@ -73,12 +73,12 @@ const serializers = {
   marks: {
     strong: ({ children }) => <strong>{children}</strong>,
     em: ({ children }) => <em>{children}</em>,
-    link: ({ children, value, mark }) => {
+    link: ({ children, value }) => {
       if (value.href === undefined) {
         value.href = 'javascript:void(0);';
       }
 
-      const target_attr = mark.blank ? '_blank' : '_self';
+      const target_attr = value?.blank ? '_blank' : '_self';
 
       const rel = !value.href.startsWith('/')
         ? 'noreferrer noopener'
