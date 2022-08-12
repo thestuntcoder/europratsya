@@ -27,6 +27,7 @@ export default function HomepageEnglish({ language, data }) {
               className="h-full w-full object-cover"
               src={ukrBg}
               alt={t('We welcome Ukrainians to European Union.')}
+              loading="lazy"
             />
           </div>
           <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -164,6 +165,7 @@ export default function HomepageEnglish({ language, data }) {
             className="h-full w-full object-cover"
             src={ukrUniBg}
             alt="Ukrainian universities"
+            loading="lazy"
           />
         </div>
         <div className="absolute inset-0 bg-gray-900 opacity-30" />
@@ -192,6 +194,7 @@ export default function HomepageEnglish({ language, data }) {
                 height="48"
                 src={sponsorKaffebakeriet}
                 alt="Kaffebakeriet"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
@@ -201,6 +204,7 @@ export default function HomepageEnglish({ language, data }) {
                 height="48"
                 src={sponsorKodit}
                 alt="Kodit"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
@@ -210,6 +214,7 @@ export default function HomepageEnglish({ language, data }) {
                 height="48"
                 src={sponsorGrieg}
                 alt="Grieg"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
@@ -219,6 +224,7 @@ export default function HomepageEnglish({ language, data }) {
                 height="48"
                 src={sponsorSC}
                 alt="StuntCoders"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
@@ -228,6 +234,7 @@ export default function HomepageEnglish({ language, data }) {
                 height="48"
                 src={sponsorDT}
                 alt="DayTwo"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center bg-gray-50 py-8 px-8">
@@ -237,6 +244,7 @@ export default function HomepageEnglish({ language, data }) {
                 height="48"
                 src={sponsorTM}
                 alt="Team Magnus"
+                loading="lazy"
               />
             </div>
           </div>

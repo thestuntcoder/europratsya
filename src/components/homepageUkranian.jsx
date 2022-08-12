@@ -28,6 +28,7 @@ export default function HomepageUkranian({ language }) {
               className="h-full w-full object-cover"
               src={ukrBg}
               alt="We welcome Ukrainians to European Union."
+              loading="lazy"
             />
           </div>
           <div className="relative mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
@@ -47,6 +48,7 @@ export default function HomepageUkranian({ language }) {
                 src={magnifyingGlass}
                 alt="Icon of Magnifying Glass"
                 className="mb-2 w-16 md:w-24 lg:w-36"
+                loading="lazy"
               />
               <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Шукаєте
@@ -74,6 +76,7 @@ export default function HomepageUkranian({ language }) {
                 src={trainIcon}
                 alt="Icon of a train"
                 className="mb-2 w-16 md:w-24 lg:w-36"
+                loading="lazy"
               />
               <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Плануєте
@@ -105,6 +108,7 @@ export default function HomepageUkranian({ language }) {
                 src={calculator}
                 alt="Icon of a calculator"
                 className="mb-2 w-16 md:w-24 lg:w-36"
+                loading="lazy"
               />
               <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Є питання
@@ -139,6 +143,7 @@ export default function HomepageUkranian({ language }) {
                 src={cv}
                 alt="Icon of CV"
                 className="mb-2 w-16 md:w-24 lg:w-36"
+                loading="lazy"
               />
               <h3 className="mb-2 text-center text-3xl font-extrabold leading-8 text-white">
                 Потрібна
@@ -169,6 +174,7 @@ export default function HomepageUkranian({ language }) {
             className="h-full w-full object-cover"
             src={ukrUniBg}
             alt="Ukrainian universities"
+            loading="lazy"
           />
         </div>
         <div className="absolute inset-0 bg-gray-900 opacity-50" />
@@ -197,6 +203,7 @@ export default function HomepageUkranian({ language }) {
                 height="48"
                 src={sponsorBlum}
                 alt="Blum"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center">
@@ -206,6 +213,7 @@ export default function HomepageUkranian({ language }) {
                 height="48"
                 src={sponsorAreas}
                 alt="Areas"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center">
@@ -215,6 +223,7 @@ export default function HomepageUkranian({ language }) {
                 height="48"
                 src={sponsorSC}
                 alt="StuntCoders"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center">
@@ -224,6 +233,7 @@ export default function HomepageUkranian({ language }) {
                 height="48"
                 src={sponsorDT}
                 alt="DayTwo"
+                loading="lazy"
               />
             </div>
             <div className="col-span-1 flex justify-center">
@@ -233,6 +243,7 @@ export default function HomepageUkranian({ language }) {
                 height="48"
                 src={sponsorTM}
                 alt="Team Magnus"
+                loading="lazy"
               />
             </div>
           </div>
