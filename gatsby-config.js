@@ -68,7 +68,7 @@ module.exports = {
       resolve: 'gatsby-plugin-react-i18next',
       options: {
         localeJsonSourceName: 'locale',
-        languages: ['en', 'uk', 'de'],
+        languages: ['en', 'uk'],
         defaultLanguage: 'en',
         siteUrl: 'https://europratsya.com/',
         i18nextOptions: {
