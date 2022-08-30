@@ -1,7 +1,6 @@
 import * as React from 'react';
 import NavCenter from './nav-center';
 import NavCenterUk from './nav-center.uk';
-import NavCenterDe from './nav-center.de';
 
 export default function Navigation(props) {
   let navigation = <NavCenter />;
