@@ -13,10 +13,6 @@ import ukWorkplaceEn from '../images/checklist/ukWorkplaceEn.png';
 import ukWorkplaceDe from '../images/checklist/ukWorkplaceDe.png';
 import ukWorkplaceRu from '../images/checklist/ukWorkplaceRu.png';
 
-import deWorkplaceEn from '../images/checklist/deWorkplaceEn.png';
-import deWorkplaceDe from '../images/checklist/deWorkplaceDe.png';
-import deWorkplaceRu from '../images/checklist/deWorkplaceRu.png';
-
 export default function EssentialChecklists({ data }) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
@@ -35,15 +31,7 @@ export default function EssentialChecklists({ data }) {
       objectFit="contain"
     />
   );
-  let imgGerman = (
-    <img
-      className="my-8 h-full w-auto"
-      src={enWorkplaceDe}
-      alt={t('Workplace guide - German')}
-      loading="auto"
-      objectFit="contain"
-    />
-  );
+
   let imgRussian = (
     <img
       className="my-8 h-full w-auto"
@@ -65,52 +53,10 @@ export default function EssentialChecklists({ data }) {
       />
     );
 
-    imgGerman = (
-      <img
-        className="my-8 h-full w-auto"
-        src={ukWorkplaceDe}
-        alt={t('Workplace guide - German')}
-        loading="auto"
-        objectFit="contain"
-      />
-    );
-
     imgRussian = (
       <img
         className="my-8 h-full w-auto"
         src={ukWorkplaceRu}
-        alt={t('Workplace guide - Ukrainian Russian')}
-        loading="auto"
-        objectFit="contain"
-      />
-    );
-  }
-
-  if (language === 'de') {
-    imgEnglish = (
-      <img
-        className="my-8 h-full w-auto"
-        src={deWorkplaceEn}
-        alt={t('Workplace guide - English')}
-        loading="auto"
-        objectFit="contain"
-      />
-    );
-
-    imgGerman = (
-      <img
-        className="my-8 h-full w-auto"
-        src={deWorkplaceDe}
-        alt={t('Workplace guide - German')}
-        loading="auto"
-        objectFit="contain"
-      />
-    );
-
-    imgRussian = (
-      <img
-        className="my-8 h-full w-auto"
-        src={deWorkplaceRu}
         alt={t('Workplace guide - Ukrainian Russian')}
         loading="auto"
         objectFit="contain"
