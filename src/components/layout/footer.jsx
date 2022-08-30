@@ -45,16 +45,6 @@ export default function Footer() {
                       English 🇬🇧{' '}
                     </Link>
                   </li>
-
-                  <li>
-                    <Link
-                      to="/de"
-                      className="text-base text-gray-300 hover:text-white"
-                    >
-                      {' '}
-                      Deutsch 🇩🇪{' '}
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
