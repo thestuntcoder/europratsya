@@ -157,20 +157,16 @@ export const query = graphql`
   query PageTemplateQuery($id: String!) {
     page: sanityPage(id: { eq: $id }) {
       footnote {
-        de
         en
         uk
       }
       title {
-        de
         en
         uk
       }
       seo {
-        description_de
         description_en
         description_uk
-        title_de
         title_en
         title_uk
         seo_image {
@@ -189,7 +185,6 @@ export const query = graphql`
         }
       }
       body {
-        _rawDe
         _rawEn
         _rawUk
       }

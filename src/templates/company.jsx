@@ -127,15 +127,12 @@ export const query = graphql`
       description {
         _rawEn
         _rawUk
-        _rawDe
       }
       seo {
         title_en
         title_uk
-        title_de
         description_en
         description_uk
-        description_de
         seo_image {
           asset {
             gatsbyImageData(
@@ -176,7 +173,6 @@ export const query = graphql`
             title {
               en
               uk
-              de
             }
           }
           salary
@@ -184,7 +180,6 @@ export const query = graphql`
           title {
             en
             uk
-            de
           }
           description {
             en {
@@ -193,11 +188,6 @@ export const query = graphql`
               }
             }
             uk {
-              children {
-                text
-              }
-            }
-            de {
               children {
                 text
               }

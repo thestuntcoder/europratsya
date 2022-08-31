@@ -167,20 +167,16 @@ export const query = graphql`
       description {
         _rawEn
         _rawUk
-        _rawDe
       }
       title {
         en
         uk
-        de
       }
       seo {
         title_en
         title_uk
-        title_de
         description_en
         description_uk
-        description_de
         seo_image {
           asset {
             gatsbyImageData(
@@ -202,7 +198,6 @@ export const query = graphql`
         title {
           en
           uk
-          de
         }
       }
       contact
@@ -211,7 +206,6 @@ export const query = graphql`
         description {
           _rawEn
           _rawUk
-          _rawDe
         }
         website
         name

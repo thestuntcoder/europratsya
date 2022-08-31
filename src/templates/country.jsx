@@ -239,12 +239,10 @@ export const query = graphql`
       description {
         _rawEn
         _rawUk
-        _rawDe
       }
       title {
         en
         uk
-        de
       }
     }
 
@@ -254,12 +252,10 @@ export const query = graphql`
       description {
         _rawEn
         _rawUk
-        _rawDe
       }
       title {
         en
         uk
-        de
       }
     }
 
@@ -269,12 +265,10 @@ export const query = graphql`
       description {
         _rawEn
         _rawUk
-        _rawDe
       }
       title {
         en
         uk
-        de
       }
     }
 
@@ -286,7 +280,6 @@ export const query = graphql`
             title {
               en
               uk
-              de
             }
           }
           salary
@@ -294,7 +287,6 @@ export const query = graphql`
           title {
             en
             uk
-            de
           }
           description {
             en {
@@ -303,11 +295,6 @@ export const query = graphql`
               }
             }
             uk {
-              children {
-                text
-              }
-            }
-            de {
               children {
                 text
               }
@@ -335,7 +322,6 @@ export const query = graphql`
         title {
           en
           uk
-          de
         }
         id
       }
