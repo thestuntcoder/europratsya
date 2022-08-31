@@ -27,9 +27,7 @@ export default function Home({ data }) {
         <meta property="og:description" content={metaDescription} />
       </Helmet>
 
-      {(language === 'en' || language === 'de') && (
-        <HomepageEnglish language={language} data={data} />
-      )}
+      {language === 'en' && <HomepageEnglish language={language} data={data} />}
       {language === 'uk' && <HomepageUkranian language={language} />}
     </LayoutPage>
   );
