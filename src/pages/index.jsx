@@ -58,23 +58,16 @@ export const JOB_POSTS = graphql`
             title {
               en
               uk
-              de
             }
           }
           salary
           contact
           title {
             en
-            de
             uk
           }
           description {
             en {
-              children {
-                text
-              }
-            }
-            de {
               children {
                 text
               }

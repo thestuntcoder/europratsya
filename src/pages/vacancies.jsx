@@ -163,14 +163,12 @@ export const JOB_POSTS = graphql`
             title {
               en
               uk
-              de
             }
           }
           salary
           title {
             en
             uk
-            de
           }
           employer {
             name
