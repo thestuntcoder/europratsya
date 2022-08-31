@@ -8,7 +8,6 @@ import CountrySelector from '../components/country-selector';
 
 import enMap from '../images/checklist/enUnemploymentMap.png';
 import ukMap from '../images/checklist/ukUnemploymentMap.png';
-import deMap from '../images/checklist/deUnemploymentMap.png';
 
 export default function SkillsInDemand({ data }) {
   const { t, i18n } = useTranslation();
@@ -34,18 +33,6 @@ export default function SkillsInDemand({ data }) {
       <img
         className="my-8 h-full w-auto"
         src={ukMap}
-        alt={t('Unemployment Map')}
-        loading="auto"
-        objectFit="contain"
-      />
-    );
-  }
-
-  if (language === 'de') {
-    imgUnemployment = (
-      <img
-        className="my-8 h-full w-auto"
-        src={deMap}
         alt={t('Unemployment Map')}
         loading="auto"
         objectFit="contain"
@@ -114,7 +101,6 @@ export const COUNTRIES = graphql`
         title {
           en
           uk
-          de
         }
         id
       }
