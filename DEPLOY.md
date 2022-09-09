@@ -1,1 +1,1 @@
-Thursday, 8 September, 23:10 CEST
+Friday, 9 September, 23:09 CEST
