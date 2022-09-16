@@ -1,1 +1,1 @@
-Thursday, 15 September, 23:10 CEST
+Friday, 16 September, 23:10 CEST
