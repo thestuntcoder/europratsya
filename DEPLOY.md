@@ -1,1 +1,1 @@
-Wednesday, 7 December, 22:08 CET
+Thursday, 8 December, 22:08 CET
