@@ -1,1 +1,1 @@
-Saturday, 31 December, 22:07 CET
+Sunday, 1 January, 22:07 CET
