@@ -1,1 +1,1 @@
-Thursday, 26 January, 22:07 CET
+Friday, 27 January, 22:07 CET
