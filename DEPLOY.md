@@ -1,1 +1,1 @@
-Thursday, 1 June, 23:07 CEST
+Friday, 2 June, 23:07 CEST
