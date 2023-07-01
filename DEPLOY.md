@@ -1,1 +1,1 @@
-Friday, 30 June, 23:07 CEST
+Saturday, 1 July, 23:07 CEST
