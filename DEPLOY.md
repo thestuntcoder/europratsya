@@ -1,1 +1,1 @@
-Thursday, 10 August, 23:07 CEST
+Friday, 11 August, 23:07 CEST
