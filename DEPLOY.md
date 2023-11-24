@@ -1,1 +1,1 @@
-Thursday, 23 November, 22:07 CET
+Friday, 24 November, 22:07 CET
