@@ -1,1 +1,1 @@
-Thursday, 30 November, 22:02 CET
+Friday, 1 December, 22:02 CET
