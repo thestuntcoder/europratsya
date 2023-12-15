@@ -1,1 +1,1 @@
-Thursday, 14 December, 22:02 CET
+Friday, 15 December, 22:02 CET
