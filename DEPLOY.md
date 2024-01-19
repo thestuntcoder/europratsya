@@ -1,1 +1,1 @@
-Thursday, 18 January, 22:02 CET
+Friday, 19 January, 22:02 CET
