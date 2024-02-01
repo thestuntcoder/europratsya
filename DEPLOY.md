@@ -1,1 +1,1 @@
-Wednesday, 31 January, 22:02 CET
+Thursday, 1 February, 22:02 CET
