@@ -1,1 +1,1 @@
-Thursday, 22 February, 22:02 CET
+Friday, 23 February, 22:02 CET
