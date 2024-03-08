@@ -1,1 +1,1 @@
-Thursday, 7 March, 22:02 CET
+Friday, 8 March, 22:02 CET
