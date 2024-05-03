@@ -1,1 +1,1 @@
-Thursday, 2 May, 23:03 CEST
+Friday, 3 May, 23:03 CEST
