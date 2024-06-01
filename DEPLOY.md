@@ -1,1 +1,1 @@
-Friday, 31 May, 23:03 CEST
+Saturday, 1 June, 23:03 CEST
