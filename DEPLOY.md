@@ -1,1 +1,1 @@
-Saturday, 6 July, 23:03 CEST
+Sunday, 7 July, 23:03 CEST
