@@ -1,1 +1,1 @@
-Thursday, 18 July, 23:02 CEST
+Friday, 19 July, 23:02 CEST
