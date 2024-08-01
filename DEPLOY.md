@@ -1,1 +1,1 @@
-Wednesday, 31 July, 23:03 CEST
+Thursday, 1 August, 23:03 CEST
