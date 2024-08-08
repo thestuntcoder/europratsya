@@ -1,1 +1,1 @@
-Wednesday, 7 August, 23:02 CEST
+Thursday, 8 August, 23:02 CEST
