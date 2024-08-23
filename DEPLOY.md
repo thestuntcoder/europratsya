@@ -1,1 +1,1 @@
-Thursday, 22 August, 23:03 CEST
+Friday, 23 August, 23:03 CEST
