@@ -1,1 +1,1 @@
-Saturday, 31 August, 23:03 CEST
+Sunday, 1 September, 23:03 CEST
