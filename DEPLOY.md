@@ -1,1 +1,1 @@
-Thursday, 10 October, 23:03 CEST
+Friday, 11 October, 23:03 CEST
