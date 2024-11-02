@@ -1,1 +1,1 @@
-Friday, 1 November, 22:03 CET
+Saturday, 2 November, 22:03 CET
