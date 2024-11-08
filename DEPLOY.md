@@ -1,1 +1,1 @@
-Thursday, 7 November, 22:02 CET
+Friday, 8 November, 22:02 CET
