@@ -1,1 +1,1 @@
-Wednesday, 18 December, 22:03 CET
+Thursday, 19 December, 22:03 CET
