@@ -1,1 +1,1 @@
-Wednesday, 25 December, 22:02 CET
+Thursday, 26 December, 22:02 CET
